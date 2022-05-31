@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 {disabeled() === "true" ? (
-                  <NavLinks className="2xl:text-desc text-navsmall :text-xs md:text-xs">
+                  <NavLinks className="2xl:text-desc text-navsmall :text-xs md:text-xs"> 
                     <Link to="/Products" duration={500} offset={-80}>
                       Products
                     </Link>
@@ -139,4 +139,4 @@ const Navbar = ({ toggle }) => {
   );
 };
 
-export default Navbar;
+export default Navbar; 

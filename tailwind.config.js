@@ -23,6 +23,7 @@ module.exports = {
         descnew: '19px',
         footerheading: '34px',
         '36px': '36px',
+        '16px':'16px'
         // '8px':'10px'
       },
       fontWeight: {

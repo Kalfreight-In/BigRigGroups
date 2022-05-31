@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between">
           <div
             id="one"
-            // className="flex-1 lg:w-1/2  lg:block "
-            className="flex-1 lg:block hidden"
+            className="flex-1 lg:w-1/2  lg:block "
+            // className="flex-1 lg:block hidden"
             style={{
               backgroundImage:
                 "url(" +
@@ -63,7 +63,7 @@ export default function Footer() {
 
               <div id="language" className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <span>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</span>
+                  <span>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</span> 
                 </div>
               </div>
             </div>
@@ -81,19 +81,19 @@ export default function Footer() {
               <br />
 
               <div id="ancrtrl" className="text-white 2xl:leading-8 leading-6 ">
-                <a href="" className="block">
+                <a href="" className="block md:text-16px text-navsmall font-medium">
                   Dry van for sale
                 </a>
-                <a href="" className="block">
+                <a href="" className="block md:text-16px text-navsmall font-medium">
                   Reefer trailer for sale
                 </a>
-                <a href="" className="block">
+                <a href="" className="block md:text-16px text-navsmall font-medium">
                   Flatbed for sale
                 </a>
-                <a href="" className="block">
+                <a href="" className="block md:text-16px text-navsmall font-medium">
                   Used Trailers for sale
                 </a>
-                <a href="" className="block">
+                <a href="" className="block md:text-16px text-navsmall font-medium">
                   Used Trucks for sale
                 </a>
               </div>
@@ -116,19 +116,19 @@ export default function Footer() {
                 className="text-white  2xl:leading-8 leading-6"
               >
                 <div>
-                  <a href="">Financing Options</a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Financing Options</a>
                 </div>
                 <div>
-                  <a href="">24*7 Roadside Assistance </a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>24*7 Roadside Assistance </a>
                 </div>
                 <div>
-                  <a href="">Scheduled Maintenance</a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Scheduled Maintenance</a>
                 </div>
                 <div>
-                  <a href="">Careers</a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Careers</a>
                 </div>
                 <div>
-                  <a href="">News & Events</a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>News & Events</a>
                 </div>
               </div>
             </div>
@@ -143,21 +143,21 @@ export default function Footer() {
 
               <div id="ancrtire" className="text-white 2xl:leading-8 leading-6 ">
                 <div>
-                  <a href="">
+                  <a href="" className='md:text-16px text-navsmall font-medium'>
                     Trailers / Trucks & Leasing - trailers@bigrigcanada.com
                   </a>
                 </div>
                 <div>
-                  <a href="">Tires – tires@bigrigcanada.com </a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Tires – tires@bigrigcanada.com </a>
                 </div>
                 <div>
-                  <a href="">Partz – partz@bigrigcanada.com </a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Partz – partz@bigrigcanada.com </a>
                 </div>
                 <div>
-                  <a href="">Careers- hr@bigrigcanada.com </a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>Careers- hr@bigrigcanada.com </a>
                 </div>
                 <div>
-                  <a href="">For all other enquires reach us at – info@bigrigcanada.com   </a>
+                  <a href="" className='md:text-16px text-navsmall font-medium'>For all other enquires reach us at – info@bigrigcanada.com   </a>  
                 </div>
               </div>
             </div>
