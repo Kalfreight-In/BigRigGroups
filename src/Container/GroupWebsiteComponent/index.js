@@ -42,7 +42,7 @@ function GroupWebsiteComponent() {
                 </div>
               </motion.div>
               <div className="md:6/12 flex-col flex content-center  flex-1">
-                <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 xl:ml-28 2xl:ml-48 mt-2">
+                <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 laptop:ml-28  mt-2">
                   <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
@@ -86,12 +86,12 @@ function GroupWebsiteComponent() {
                     <section className="centered-container">
                       <a className="link link--arrowed " href="#">
                         <div className="flex flex-row align-center justify-center pt-2">
-                          <h2 className="text-lg text-Lightblue font-semibold md:text-md text-center pr-4"> 
+                          <h2 className="text-lg text-Lightblue font-semibold md:text-md text-center pr-4">
                             Coming soon
                           </h2>
 
                           <svg
-                            className="arrow-icon" 
+                            className="arrow-icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"

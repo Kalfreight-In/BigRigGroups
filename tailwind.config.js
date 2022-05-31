@@ -14,6 +14,16 @@ module.exports = {
 
   theme: {
     extend: {
+      screens: {
+        tablet: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        laptop: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
       fontSize: {
         heading: '3rem',
         subheading: '2rem',
@@ -23,7 +33,7 @@ module.exports = {
         descnew: '1rem',
         footerheading: '34px',
         '36px': '36px',
-        '16px':'16px'
+        '16px': '16px',
         // '8px':'10px'
       },
       fontWeight: {
