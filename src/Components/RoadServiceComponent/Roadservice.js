@@ -15,7 +15,10 @@ export default function Roadservice() {
             <h1 className="text-white text-heading font-heading lg:text-2xl 2xl:pl-0 pl-6">
               24/7 Road Service
             </h1>
-            <p className="text-white  font-desc 2xl:text-xl text-descnew 2xl:w-11/12 w-full 2xl:pl-0 pl-6 2xl:pt-4 pt-2">
+            <p
+            //  className="text-white  font-desc 2xl:text-xl text-descnew 2xl:w-11/12 w-full 2xl:pl-0 pl-6 2xl:pt-4 pt-2"
+            className='text-white font-desc 2xl:text-xl text-descnew'
+            >
               We understand the value of your time. Hence to minimize delays and
               improve downtime, we offer 24*7 roadside assistance, even in
               remote areas. A vast vendor network spread across British Columbia
