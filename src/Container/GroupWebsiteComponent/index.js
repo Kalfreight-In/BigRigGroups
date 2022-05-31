@@ -70,11 +70,11 @@ function GroupWebsiteComponent() {
                       </p>
                       {data.desc1 ? (
                         <div className="lg:mt-2 ">
-                          <p className="2xl:mt-12 text-black font-desc text-descnew ">
+                          <p className="text-black font-desc text-descnew ">
                             {data.desc1[0].head}
                           </p>
                           {data.desc1[0].desc.map((info) => (
-                            <p className="2xl:mt-12 lg:mt-2 text-Description font-desc text-descnew ">
+                            <p className=" laptop:mt-2 text-Description font-desc text-descnew ">
                               * {info.desc}
                             </p>
                           ))}
