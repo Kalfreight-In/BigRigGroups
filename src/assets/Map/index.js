@@ -1,6 +1,10 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { isMobile, browserName } from 'react-device-detect';
+import { useHover } from '../../Hooks/Hover';
+
 function Map() {
+  const [hoverRef, isHovered] = useHover();
+  const [hoverRef1, isHovered1] = useHover();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +107,7 @@ function Map() {
           className="cls-1"
         ></path>
       </g>
-      <g id="BC">
+      <g id="BC" ref={hoverRef}>
         <path
           d="M12.33 377.85S106.39 434 172.37 453l-33 111.19.57 22.6 10.39 10.39 7.31 20.21 22.6 37.89 6 33.57-91-24.43-14.61-7.31 3.7-9.11-.91-4.34-5.14 2.51-6-3.88 5.59.92-.34-9.71-2.53-.63-2.51 3.42-4.8-.45V630l4.57-2.86v-3.31l-4.26-2 2.66-6.8-3.77-.12-4.68 3.89-6.39-3.66 1.26-3.14 6.05-.46v-2.39l-5.48-.15-2.4-5.82-4.68-.46-4.22.92 3.76-2.64-2.39-2-3-1.14.91-7.2 5.37-1.28-.12-3.31-7.5-.07s2.85-5.13 13.24-5.59l.46-7.08 3.92-2.67-.57-3h-3.12l-10.05 5.59-.46-3.65-3.08-1.6 6.39-5.36-.91-3.64-4.79-5.13.11-1.26 3-6.28 1.6 2.51 3.08-.45V545l-3.88-3.42 2.85-1.6-.17-4.26-4.68.58-5.6 4.56-3.42-12.21s3.08-1.26 3.08-1.72-.11-3.31-.11-3.31l-3.43-.34v-2.62l8.16-5.94 6.39.12-2.17-4.11 4.34-2.06-1.14-5.48-4.68 4.57 5.36-11.87s-1.37-9.59-1.6-10.05-8.79-11.76-8.79-11.76l1.37-48.74-4.7-13.24 2.17-15.1-9-2.4-8.33 1.14-8.33 3.88zM7.19 514.61l-4 9.24 4 3s-1.37 4.34-.8 4.22 5.82 0 5.82 0l6.17-8.21-5 2.39-3.31-.45-.8-3.43 3.88-1zm-2.28 19.86h6.51s-4.46 6.16-.69 18.95c0 0-5.48-2.28-4.22-15.64z"
           className="cls-1"
@@ -122,6 +126,7 @@ function Map() {
         id="Alberta"
         d="M189.73 690.29c-.35-.91-7-37.56-7-37.56s-23.52-37.21-23.52-38.24-7-21.69-7-21.69l-9.59-8.56v-16.55l33.45-112s55.37 17.47 88.47 22.26L236.23 698z"
         className="cls-1"
+        ref={hoverRef1}
       ></path>
 
       <path
@@ -129,36 +134,42 @@ function Map() {
         d="M208.37 572.61a9.37 9.37 0 10-18.74 0c0 7 9.37 17.18 9.37 17.18s9.37-10.15 9.37-17.18zm-12.49 0a3.12 3.12 0 113.12 3.12 3.12 3.12 0 01-3.12-3.12zm-7.81 18.74v3.13h21.86v-3.13z"
         className="cls-2 Marker"
       ></path>
-      <g id="Text-BC">
-        <rect
-          id="bc-2"
-          width="215.39"
-          height="28.82"
-          x="119.92"
-          y="530.71"
-          className="cls-3"
-          data-name="bc"
-          rx="4.97"
-        ></rect>
-        <text x="119.92" y="550.71" fill="black">
-          1225 Riverside Rd, BC V2S 7P1
-        </text>
-      </g>
-      <g id="Text-alberta">
-        <rect
-          id="alberta-2"
-          width="195.39"
-          height="28.82"
-          x="222.94"
-          y="564.95"
-          className="cls-3"
-          data-name="alberta"
-          rx="4.97"
-        ></rect>
-        <text x="222.94" y="584.95" fill="black">
-          9115 52 St SE, AB T2C 2R4
-        </text>
-      </g>
+      {isHovered ? (
+        <g id="Text-BC">
+          <rect
+            id="bc-2"
+            width="215.39"
+            height="28.82"
+            x="119.92"
+            y="530.71"
+            className="cls-3"
+            data-name="bc"
+            rx="4.97"
+          ></rect>
+
+          <text x="119.92" y="550.71" fill="black">
+            1225 Riverside Rd, BC V2S 7P1
+          </text>
+        </g>
+      ) : null}
+      {isHovered1 ? (
+        <g id="Text-alberta">
+          <rect
+            id="alberta-2"
+            width="195.39"
+            height="28.82"
+            x="222.94"
+            y="564.95"
+            className="cls-3"
+            data-name="alberta"
+            rx="4.97"
+          ></rect>
+
+          <text x="222.94" y="584.95" fill="black">
+            9115 52 St SE, AB T2C 2R4
+          </text>
+        </g>
+      ) : null}
     </svg>
   );
 }

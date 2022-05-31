@@ -12,7 +12,7 @@ export default function Abouthome() {
           style={{
             backgroundImage:
               'url(' +
-              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.svg' +
+              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png' +
               ')',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
