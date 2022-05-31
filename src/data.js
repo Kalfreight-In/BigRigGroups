@@ -33,7 +33,7 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasing.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasingLogo.png',
-    icon: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/b14fcada80e930a65933829f228e72d2de3bc620/src/assets/Images/icons/TruckAndTrailers-icon.svg',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/TruckAndTrailers-icon.svg',
     heading: 'Trailers & Leasing',
     desc: [
       {
@@ -58,7 +58,7 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
-    icon: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/b14fcada80e930a65933829f228e72d2de3bc620/src/assets/Images/icons/partz-icon.svg ',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/partz-icon.svg ',
     heading: 'Partz ',
     desc: [
       {
@@ -80,7 +80,7 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtire.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtirelogo.png',
-    icon: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/b14fcada80e930a65933829f228e72d2de3bc620/src/assets/Images/icons/tire-icon.svg',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/tire-icon.svg',
     heading: 'Tires & Services',
     desc: [
       {
@@ -182,12 +182,12 @@ export const BrandCompnentBrands = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
     heading: 'Havco',
   },
-  {
-    id: '13',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/good-year.png',
-    heading: 'Havco',
-  },
+  // {
+  //   id: '13',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/good-year.png',
+  //   heading: 'Havco',
+  // },
   {
     id: '14',
     imageurl:
@@ -282,25 +282,25 @@ export const BigTireBrands = [
         heading: 'Havco',
       },
 
-      {
-        id: '10',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/apollo.png',
-        heading: 'Havco',
-      },
-      {
-        id: '11',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/continental.png',
-        heading: 'Havco',
-      },
+      // {
+      //   id: '10',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/apollo.png',
+      //   heading: 'Havco',
+      // },
+      // {
+      //   id: '11',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/continental.png',
+      //   heading: 'Havco',
+      // },
 
-      {
-        id: '13',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/good-year.png',
-        heading: 'Havco',
-      },
+      // {
+      //   id: '13',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/good-year.png',
+      //   heading: 'Havco',
+      // },
       {
         id: '14',
         imageurl:

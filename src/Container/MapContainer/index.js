@@ -33,7 +33,7 @@ export const MapConatiner = () => {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/2845566198fed37254513e33cdae98a495757082/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="70"
               className="pr-8"
             ></motion.img>
@@ -52,7 +52,7 @@ export const MapConatiner = () => {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/2845566198fed37254513e33cdae98a495757082/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="70"
               className="pr-8"
             ></motion.img>
@@ -76,7 +76,7 @@ export const MapConatiner = () => {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/2845566198fed37254513e33cdae98a495757082/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="70"
               className="pr-8 pt-4"
             ></motion.img>
@@ -92,7 +92,7 @@ export const MapConatiner = () => {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/2845566198fed37254513e33cdae98a495757082/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="70"
               className="pr-8 pt-4"
             ></motion.img>
@@ -108,7 +108,7 @@ export const MapConatiner = () => {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/2845566198fed37254513e33cdae98a495757082/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="70"
               className="pr-8 pt-4"
             ></motion.img>
