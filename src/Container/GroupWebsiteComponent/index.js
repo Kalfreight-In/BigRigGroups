@@ -42,7 +42,7 @@ function GroupWebsiteComponent() {
                 </div>
               </motion.div>
               <div className="md:6/12 flex-col flex content-center  flex-1">
-                <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-48 mt-2">
+                <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 xl:ml-28 2xl:ml-48 mt-2">
                   <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
@@ -62,16 +62,23 @@ function GroupWebsiteComponent() {
                   </div>
                   {data.desc.map((data) => (
                     <div className="2xl:w-3/4 2xl:mt-4 lg:mt-2  " key={data.id}>
-                      <h2 className="2xl:mt-4  lg:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
+                      {/* <h2 className="2xl:mt-4  lg:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
                         {data.head}
-                      </h2>
+                      </h2> */}
                       <p className="mt-2  text-Description font-desc text-descnew ">
-                        {data.desc1}
+                        {data.desc}
                       </p>
-                      {data.desc2 ? (
-                        <p className="2xl:mt-12 lg:mt-4 text-Description font-desc text-descnew ">
-                          {data.desc1}
-                        </p>
+                      {data.desc1 ? (
+                        <div className="lg:mt-2 ">
+                          <p className="2xl:mt-12 text-black font-desc text-descnew ">
+                            {data.desc1[0].head}
+                          </p>
+                          {data.desc1[0].desc.map((info) => (
+                            <p className="2xl:mt-12 lg:mt-2 text-Description font-desc text-descnew ">
+                              * {info.desc}
+                            </p>
+                          ))}
+                        </div>
                       ) : null}
                     </div>
                   ))}
@@ -115,7 +122,7 @@ function GroupWebsiteComponent() {
                   ) : (
                     <div>
                       <button className="text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-36 md:32 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
-                        Inventory
+                        {data.cta.heading}
                       </button>
                     </div>
                   )}

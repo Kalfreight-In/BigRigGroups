@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+
+import emailjs from 'emailjs-com';
 const Contactform = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -19,21 +21,35 @@ const Contactform = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setButtonText('Sending...');
+    // setButtonText('Sending...');
+    // emailjs
+    //   .sendForm(
+    //     'service_2vrcmgl',
+    //     'template_w4rsa4r',
+    //     form.current,
+    //     'YOUR_USER_ID'
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+    // let data = {
+    //   name: name,
+    //   email: email,
+    //   message: message,
+    // };
 
-    let data = {
-      name: name,
-      email: email,
-      message: message,
-    };
-
-    axios
-      .post('API_URI', data)
-      .then((res) => [setSuccess(true), resetForm()])
-      .catch(() => {
-        setError(true);
-        console.log('Message not sent');
-      });
+    // axios
+    //   .post('API_URI', data)
+    //   .then((res) => [setSuccess(true), resetForm()])
+    //   .catch(() => {
+    //     setError(true);
+    //     console.log('Message not sent');
+    //   });
   };
 
   return (

@@ -38,13 +38,51 @@ export const GroupWebsiteComponentdata = [
     desc: [
       {
         id: 1,
-        head: `Trucks`,
-        desc1: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from brands like Thermo King, Carrier, and more.  `,
+        // head: `Trucks`,
+        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from brands like Thermo King, Carrier, and more.  `,
       },
       {
         id: 2,
-        head: `Trailers`,
-        desc1: `We have quality used trailers for sale, which vary from 2008 to 2023, with various makes from Utility, Wabash, Stoughton, and Great Dane. In addition, we have used trucks from Volvo, Peterbilt, Freightliner, and Kenworth from the year anywhere from 2015 to 2023. `,
+        // head: `Trailers`,
+        desc: `To cater to your trailer financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.`,
+      },
+      {
+        id: 3,
+        // head: `Trailers`,
+        desc: `We have quality used trailers for sale, which vary from 2008 to 2023, with various makes from Utility, Wabash, Stoughton, and Great Dane. In addition, we have used trucks from Volvo, Peterbilt, Freightliner, and Kenworth from the year anywhere from 2015 to 2023.`,
+      },
+      {
+        id: 4,
+        // head: `Trailers`,
+        desc1: [
+          {
+            head: 'For more information, please connect with our sales representative.',
+            desc: [
+              {
+                id: 1,
+                // head: `Trucks`,
+                desc: `Phone: 800-977-0010  `,
+              },
+              {
+                id: 2,
+                // head: `Trailers`,
+                desc: `Email: trailers@bigrigcanada.com `,
+              },
+              {
+                id: 3,
+                // head: `Trailers`,
+                desc: `For Financial solutions:`,
+              },
+            ],
+          },
+        ],
+
+        // `For more information, please connect with our sales representative.
+        // Phone: 800-977-0010
+
+        // Email: trailers@bigrigcanada.com
+
+        // For Financial solutions:  `,
       },
     ],
     cta: {
@@ -63,16 +101,45 @@ export const GroupWebsiteComponentdata = [
     desc: [
       {
         id: 1,
-        head: `Heavy Duty Parts`,
-        desc1: `BigRig Partz is the fastest-growing OE & OEM aftermarket parts supplier for commercial vehicles. The comprehensive inventory covers all makes & models from 100+ brands to cater to every demand of your commercial vehicle. In addition, we have partnered with tier 1 and tier 2 parts suppliers to deliver genuine products.  `,
+        // head: `Heavy Duty Parts`,
+        desc: `BigRig Partz is the fastest-growing OE & OEM aftermarket parts supplier for commercial vehicles. The comprehensive inventory covers all makes & models from 100+ brands to cater to every demand of your commercial vehicle. In addition, we have partnered with tier 1 and tier 2 parts suppliers to deliver genuine products.  `,
         // desc2: `Our “Culturally Diverse” Parts Professionals around the country are able to assist and provide outstanding customer service and break through any language barrier.`,
+      },
+
+      {
+        id: 2,
+        // head: `Trailers`,
+        desc1: [
+          {
+            head: 'For more information, please get in touch with our parts experts.',
+            desc: [
+              {
+                id: 1,
+                // head: `Trucks`,
+                desc: `   Phone: 800-977-0010   `,
+              },
+              {
+                id: 2,
+                // head: `Trailers`,
+                desc: ` Email: partz@bigrigcanada.com `,
+              },
+            ],
+          },
+        ],
+
+        // `For more information, please connect with our sales representative.
+        // Phone: 800-977-0010
+
+        // Email: trailers@bigrigcanada.com
+
+        // For Financial solutions:  `,
       },
     ],
     cta: {
-      heading: 'Inventory',
+      heading: 'Inquery Now',
       link: 'Inventory',
     },
-    comingsoon: true,
+    comingsoon: false,
   },
   {
     id: '3',
@@ -85,20 +152,57 @@ export const GroupWebsiteComponentdata = [
     desc: [
       {
         id: 1,
-        head: `Commercial Tires`,
-        desc1: `BigRig Tires & Services is the fastest growing distributor of commercial vehicles, industrial, and agricultural tires. BKT, Apollo, Prinx Tires, Pirelli, Continental, and Cooper are notable brands offered.  `,
+        // head: `Commercial Tires`,
+        desc: `BigRig Tires & Services is the fastest growing distributor of commercial vehicles, industrial, and agricultural tires. BKT, Apollo, Prinx Tires, Pirelli, Continental, and Cooper are notable brands offered.  `,
       },
       {
         id: 2,
-        head: `24/7  Road service`,
-        desc1: `Kal Tires has 9 distribution centers, 4 service centers and nationwide 24/7 emergency road service. Exclusive with major tire manufactures such as Goodyear, Cooper, BKT, Michelin, Yokohama, Double Coin, Pirelli and Hankook. We offer national account billing for Goodyear, Cooper, Michelin, Yokohama and Hankook products. `,
+        // head: `24/7  Road service`,
+        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, heavy-duty wheel alignments and maintenance in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc`,
+      },
+      // {
+      //   id: 3,
+      //   // head: `24/7  Road service`,
+      //   desc: `For more information, please get in touch with our tire enthusiasts.
+
+      //   Phone: 800-977-0010
+
+      //   Email: tires@bigrigcanada.com `,
+      // },
+      {
+        id: 3,
+        // head: `Trailers`,
+        desc1: [
+          {
+            head: 'For more information, please get in touch with our tire enthusiasts.',
+            desc: [
+              {
+                id: 1,
+                // head: `Trucks`,
+                desc: `Phone: 800-977-0010`,
+              },
+              {
+                id: 2,
+                // head: `Trailers`,
+                desc: `Email: tires@bigrigcanada.com`,
+              },
+            ],
+          },
+        ],
+
+        // `For more information, please connect with our sales representative.
+        // Phone: 800-977-0010
+
+        // Email: trailers@bigrigcanada.com
+
+        // For Financial solutions:  `,
       },
     ],
     cta: {
-      heading: 'Inventory',
+      heading: 'Book a Service',
       link: 'Inventory',
     },
-    comingsoon: true,
+    comingsoon: false,
   },
 ];
 

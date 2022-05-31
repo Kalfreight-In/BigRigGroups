@@ -20,7 +20,7 @@ module.exports = {
         desc: '1.3rem',
         navsmall: '14px',
         navsmallne: '10px;',
-        descnew: '19px',
+        descnew: '1rem',
         footerheading: '34px',
         '36px': '36px',
         // '8px':'10px'
