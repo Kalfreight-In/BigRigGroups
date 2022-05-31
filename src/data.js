@@ -164,18 +164,18 @@ export const BrandCompnentBrands = [
     heading: 'Havco',
   },
 
-  {
-    id: '10',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/apollo.png',
-    heading: 'Havco',
-  },
-  {
-    id: '11',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/continental.png',
-    heading: 'Havco',
-  },
+  // {
+  //   id: '10',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/apollo.png',
+  //   heading: 'Havco',
+  // },
+  // {
+  //   id: '11',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/continental.png',
+  //   heading: 'Havco',
+  // },
   {
     id: '12',
     imageurl:
