@@ -57,7 +57,7 @@ export function Slideshow() {
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider 2xl:ml-40 lg:ml-32 transition ease-in-out delay-150 mb-20"
+          className="slideshowSlider 2xl:ml-40 lg:ml-32 transition ease-in-out delay-100 mb-20"
           style={{
             transform: `translate3d(${
               -index * (isMobile ? 100 : 33.33333333333333333)
