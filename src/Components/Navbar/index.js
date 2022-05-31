@@ -36,11 +36,11 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-18">
-            <NavLogo to="/bigriggroup" onClick={toggleHome}>
+            <NavLogo to="/BigRigGroups" onClick={toggleHome}>
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-6"
-                src="https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/navlogo.svg"
+                src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/navlogo.svg"
                 alt="logo"
                 width="80%"
               />
@@ -49,7 +49,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="/bigriggroup"
+                  to="/BigRigGroups"
                   onClick={toggleHome}
                   className="2xl:text-desc text-navsmall md:text-sm lg:text-xs"
                 >
@@ -125,7 +125,7 @@ const Navbar = ({ toggle }) => {
             <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-64 lg:w-36 md:32 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md ">
               <div>
                 <img
-                  src="https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/Vectorphone.svg"
+                  src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                   alt=""
                   className="text-white mr-2"
                 />

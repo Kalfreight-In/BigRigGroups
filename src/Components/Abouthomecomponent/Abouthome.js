@@ -12,7 +12,7 @@ export default function Abouthome() {
           style={{
             backgroundImage:
               'url(' +
-              'https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/abouthomeimage.svg' +
+              'https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/abouthomeimage.svg' +
               ')',
             backgroundPosition: 'center',
             backgroundSize: 'cover',

@@ -22,7 +22,7 @@ function App() {
       <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
       <Navbar toggle={toggle}></Navbar>
       <Routes>
-        <Route path="/bigriggroup" element={<Home />} />
+        <Route path="/BigRigGroups" element={<Home />} />
         <Route
           path="/partz"
           element={

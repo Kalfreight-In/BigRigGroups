@@ -29,7 +29,7 @@ export default function Roadservice() {
             </div>
           </div>
           <img
-            src="https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/blacknewtruck.svg"
+            src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/blacknewtruck.svg"
             alt="truck"
             className="w-full h-full flex-1"
           />

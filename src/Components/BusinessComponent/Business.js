@@ -62,7 +62,7 @@ export default function Business() {
                         style={{
                           // backgroundImage:
                           //   'url(' +
-                          //   'https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/businessback.svg' +
+                          //   'https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/businessback.svg' +
                           //   ')',
                           backgroundPosition: 'center',
                           backgroundSize: 'cover',

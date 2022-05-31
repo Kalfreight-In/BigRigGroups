@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Formcomp from './Formcomp';
 
 export default function contact() {
-
-
-
   return (
     <>
       <div id="maincontainer" className="h-screen">
@@ -84,7 +81,7 @@ export default function contact() {
 
           <div id="secondmain">
             <img
-              src="https://raw.githubusercontent.com/shantanusoam/bigriggroup/master/src/assets/Images/redtruck.svg"
+              src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/redtruck.svg"
               alt=""
             />
           </div>
@@ -93,4 +90,3 @@ export default function contact() {
     </>
   );
 }
-
