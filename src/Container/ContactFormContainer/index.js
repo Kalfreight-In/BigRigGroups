@@ -21,7 +21,7 @@ export const ContactFormContainer = () => {
 
       {/* <div className="flex ">
         <img
-          src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/Partz.png"
+          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png"
           width="300"
         />
       </div> */}
@@ -29,12 +29,12 @@ export const ContactFormContainer = () => {
         <div
           className={'h-screen w-full bg-cover bg-no-repeat bg-center'}
           style={{
-            backgroundImage: `url(https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/redtruckConTact.png)`,
+            backgroundImage: `url(https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png)`,
           }}
         >
           {/* <img
           className="w-full"
-          src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/e6c3841952235a1866804c85e994f1d5c540c214/src/assets/Images/rednewtruck.svg"
+          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/e6c3841952235a1866804c85e994f1d5c540c214/src/assets/Images/rednewtruck.svg"
           alt=""
         /> */}
         </div>

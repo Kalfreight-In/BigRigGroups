@@ -81,7 +81,7 @@ export default function contact() {
 
           <div id="secondmain">
             <img
-              src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/redtruck.svg"
+              src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruck.svg"
               alt=""
             />
           </div>

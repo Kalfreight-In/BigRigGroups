@@ -1,7 +1,7 @@
 {
   "name": "BigRigGroups",
   "version": "0.1.0",
-  "homepage": "https://kalfreight-in.github.io/BigRigGroupss",
+  "homepage": "https://kalfreight-in.github.io/BigRigGroups",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

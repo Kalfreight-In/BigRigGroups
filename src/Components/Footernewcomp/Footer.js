@@ -12,7 +12,7 @@ export default function Footer() {
             style={{
               backgroundImage:
                 'url(' +
-                'https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
+                'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
                 ')',
               backgroundPosition: 'center',
               backgroundSize: 'contain',
@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="lg:ml-36 ml-4 lg:mt-0 mt-8">
               <div id="logo">
                 <img
-                  src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
+                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
                   className="2xl:h-28 lg:h-24  h-20"
                   href="mailto:umarkhurshid3@gmail.com"
@@ -33,7 +33,7 @@ export default function Footer() {
               <div id="email" className="text-white flex  lg:mt-12 mt-4">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
+                    src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
                     alt=""
                     className="text-white mt-2 "
                   />
@@ -49,7 +49,7 @@ export default function Footer() {
               <div id="phone" className="text-white flex mt-4">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/shantanusoam/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
+                    src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                     alt=""
                     className="text-white mt-2"
                   />
