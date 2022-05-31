@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BigRigGroups/static/css/main.9534aee5.css",
-    "main.js": "/BigRigGroups/static/js/main.4e5ee276.js",
+    "main.css": "/BigRigGroups/static/css/main.8c82e051.css",
+    "main.js": "/BigRigGroups/static/js/main.4bf48b1e.js",
     "static/js/787.d2d676fc.chunk.js": "/BigRigGroups/static/js/787.d2d676fc.chunk.js",
     "static/media/Bgvideo.mp4": "/BigRigGroups/static/media/Bgvideo.189f0dec0bc1233c2f2a.mp4",
     "static/media/GroupWebsitesBackground.png": "/BigRigGroups/static/media/GroupWebsitesBackground.3ccb87f16ae5f4d0c348.png",
     "index.html": "/BigRigGroups/index.html",
     "static/media/arrow.svg": "/BigRigGroups/static/media/arrow.40ca6620c1e5dfb4dcfb7546972ef2e1.svg",
-    "main.9534aee5.css.map": "/BigRigGroups/static/css/main.9534aee5.css.map",
-    "main.4e5ee276.js.map": "/BigRigGroups/static/js/main.4e5ee276.js.map",
+    "main.8c82e051.css.map": "/BigRigGroups/static/css/main.8c82e051.css.map",
+    "main.4bf48b1e.js.map": "/BigRigGroups/static/js/main.4bf48b1e.js.map",
     "787.d2d676fc.chunk.js.map": "/BigRigGroups/static/js/787.d2d676fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9534aee5.css",
-    "static/js/main.4e5ee276.js"
+    "static/css/main.8c82e051.css",
+    "static/js/main.4bf48b1e.js"
   ]
 }
