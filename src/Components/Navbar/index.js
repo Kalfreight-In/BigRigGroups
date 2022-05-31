@@ -33,9 +33,9 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
-          <div className="flex flex-row ml-18">
+          <div className="flex flex-row ml-16">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
@@ -68,8 +68,8 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {disabeled() === "true" ? (
-                  <NavLinks className="2xl:text-desc text-navsmall :text-xs md:text-xs"> 
+                {disabeled() === 'true' ? (
+                  <NavLinks className="2xl:text-desc text-navsmall :text-xs md:text-xs">
                     <Link to="/Products" duration={500} offset={-80}>
                       Products
                     </Link>
@@ -121,8 +121,8 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
           </div>
 
-          <NavBtn>
-            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-64 lg:w-36 md:32 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md ">
+          <NavBtn className="mr-16">
+            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-64 lg:w-48 md:32 2xl:h-16 h-12 2xl:text-xl xl:text-lg lg:text-md md:text-md">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
@@ -139,4 +139,4 @@ const Navbar = ({ toggle }) => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

@@ -6,6 +6,8 @@ const Contactform = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [phoneno, setphoneno] = useState('');
+  const [ROC, setROC] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -21,35 +23,29 @@ const Contactform = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setButtonText('Sending...');
-    // emailjs
-    //   .sendForm(
-    //     'service_2vrcmgl',
-    //     'template_w4rsa4r',
-    //     form.current,
-    //     'YOUR_USER_ID'
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-    // let data = {
-    //   name: name,
-    //   email: email,
-    //   message: message,
-    // };
+    setButtonText('Sending...');
+    // emailjs.sendForm('service_2vrcmgl', 'template_w4rsa4r', form.current).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+    let data = {
+      name: name,
+      email: email,
+      message: message,
+      phoneno: phoneno,
+    };
 
-    // axios
-    //   .post('API_URI', data)
-    //   .then((res) => [setSuccess(true), resetForm()])
-    //   .catch(() => {
-    //     setError(true);
-    //     console.log('Message not sent');
-    //   });
+    axios
+      .post('http://localhost:5000/api/v1', data)
+      .then((res) => [setSuccess(true), resetForm()])
+      .catch(() => {
+        setError(true);
+        console.log('Message not sent');
+      });
   };
 
   return (
@@ -115,6 +111,8 @@ const Contactform = () => {
             <input
               type="text"
               list="cars"
+              onChange={(e) => setROC(e.target.value)}
+              value={ROC}
               placeholder=" &nbsp; Reason for contacting"
               className="border block w-full bg-white text-gray-700  border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               required
@@ -137,8 +135,8 @@ const Contactform = () => {
                 E-mail
               </label> */}
               <input
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
+                onChange={(e) => setphoneno(e.target.value)}
+                value={phoneno}
                 class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 placeholder="Phone Number"
