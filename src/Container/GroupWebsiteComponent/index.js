@@ -85,13 +85,13 @@ function GroupWebsiteComponent() {
                   {data.comingsoon ? (
                     <section className="centered-container">
                       <a className="link link--arrowed " href="#">
-                        <div className="flex flex-row align-center justify-center">
-                          <h2 className="text-lg text-Lightblue font-semibold md:text-md text-center pr-4">
+                        <div className="flex flex-row align-center justify-center pt-2">
+                          <h2 className="text-lg text-Lightblue font-semibold md:text-md text-center pr-4"> 
                             Coming soon
                           </h2>
 
                           <svg
-                            className="arrow-icon"
+                            className="arrow-icon" 
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
