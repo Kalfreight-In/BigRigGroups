@@ -7,19 +7,18 @@ export default function Footer() {
       <div className="bg-Lightblue">
         <div className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between">
           <div
-            id="one"
             className="flex-1 lg:w-1/2  lg:block "
             // className="flex-1 lg:block hidden"
             style={{
               backgroundImage:
-                "url(" +
-                "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg" +
-                ")",
-              backgroundPosition: "center",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              width: "full",
-              marginRight: "5rem",
+                'url(' +
+                'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
+                ')',
+              backgroundPosition: 'center',
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              width: 'full',
+              marginRight: '5rem',
             }}
           >
             <div className="lg:ml-36 ml-4 lg:mt-0 mt-8">
@@ -74,7 +73,7 @@ export default function Footer() {
               className="lg:flex-2 pr-4 flex-1  lg:w-2/12 lg:pl-0 pl-4"
             >
               <div className="text-white ">
-                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5  2xl:leading-10 leading-6">
+                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
                   Inventory
                 </h1>
               </div>
@@ -116,19 +115,29 @@ export default function Footer() {
                 className="text-white  2xl:leading-8 leading-6"
               >
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Financing Options</a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Financing Options
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>24*7 Roadside Assistance </a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    24*7 Roadside Assistance{' '}
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Scheduled Maintenance</a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Scheduled Maintenance
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Careers</a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Careers
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>News & Events</a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    News & Events
+                  </a>
                 </div>
               </div>
             </div>
@@ -141,23 +150,34 @@ export default function Footer() {
               </div>
               <br />
 
-              <div id="ancrtire" className="text-white 2xl:leading-8 leading-6 ">
+              <div
+                id="ancrtire"
+                className="text-white 2xl:leading-8 leading-6 "
+              >
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>
+                  <a href="" className="block md:text-16px text-navsmall">
                     Trailers / Trucks & Leasing - trailers@bigrigcanada.com
                   </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Tires – tires@bigrigcanada.com </a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Tires – tires@bigrigcanada.com{' '}
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Partz – partz@bigrigcanada.com </a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Partz – partz@bigrigcanada.com{' '}
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>Careers- hr@bigrigcanada.com </a>
+                  <a href="" className="block md:text-16px text-navsmall">
+                    Careers- hr@bigrigcanada.com{' '}
+                  </a>
                 </div>
                 <div>
-                  <a href="" className='block md:text-16px text-navsmall'>For all other enquires reach us at – info@bigrigcanada.com </a>  
+                  <a href="" className="block md:text-16px text-navsmall">
+                    For all other enquires reach us at – info@bigrigcanada.com{' '}
+                  </a>
                 </div>
               </div>
             </div>
