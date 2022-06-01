@@ -104,11 +104,7 @@ export default function Business() {
                     </div>
                   </motion.div>
                 ))}
-                {/* <div class="item item-1"></div>
-                <div class="item item-2"></div> */}
-                {/* <div class="item item-3"></div>
-                <div class="item item-4"></div>
-                <div class="item item-5"></div> */}
+            
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
   };
   // useEffect(() => {
   //   window.addEventListener('scroll', changeNav);
-  // }, []);
+  // }, []); 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
