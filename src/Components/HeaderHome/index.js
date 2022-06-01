@@ -39,7 +39,10 @@ const HeroSection = () => {
         <ContainerMain>
           <HeroP>Transforming The Trucking Dynamics </HeroP>
 
-          <Samosa>Shop Dry Vans, Reefers, Trucks , Parts, and more.</Samosa>
+          <Samosa>
+            Offering New & Used Dry Vans, Trucks & Reefers
+            <br></br> Aftermarket Parts, Tires, and Services
+          </Samosa>
         </ContainerMain>
 
         {/* <PCENTER class="text-gray-600 p-8">

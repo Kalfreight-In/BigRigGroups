@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
-import {AiOutlineClockCircle} from "react-icons/ai"
+import { AiOutlineClockCircle } from 'react-icons/ai';
 
 export default function Footer() {
   return (
@@ -44,7 +44,7 @@ export default function Footer() {
                   <span className="block">Working hours</span>
                   <span className="text-2xl font-bold">
                     8 AM to 5 PM <br />
-                  (Monday to Friday) 
+                    (Monday to Friday) 
                   </span>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <a href="" className="block md:text-16px text-navsmall">
                   Used Trailers for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall"> 
+                <a href="" className="block md:text-16px text-navsmall">
                   Used Trucks for sale
                 </a>
               </div>
@@ -127,7 +127,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a href="" className="block md:text-16px text-navsmall">
-                    24*7 Roadside Assistance{" "}
+                    24*7 Roadside Assistance{' '}
                   </a>
                 </div>
                 <div>
@@ -151,7 +151,7 @@ export default function Footer() {
             <div id="four" className="lg:flex-2 flex-1 lg:w-1/6 leading-8">
               <div className="text-white">
                 <h1 className=" font-bold  2xl:text-footerheading text-desc">
-                  Tires & Services
+                  Contact Us
                 </h1>
               </div>
               <br />
@@ -167,22 +167,22 @@ export default function Footer() {
                 </div>
                 <div>
                   <a href="" className="block md:text-16px text-navsmall">
-                    Tires – tires@bigrigcanada.com{" "}
+                    Tires – tires@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
                   <a href="" className="block md:text-16px text-navsmall">
-                    Partz – partz@bigrigcanada.com{" "}
+                    Partz – partz@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
                   <a href="" className="block md:text-16px text-navsmall">
-                    Careers- hr@bigrigcanada.com{" "}
+                    Careers- hr@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
                   <a href="" className="block md:text-16px text-navsmall">
-                    For all other enquires reach us at – info@bigrigcanada.com{" "}
+                    For all other enquires reach us at – info@bigrigcanada.com{' '}
                   </a>
                 </div>
               </div>
@@ -197,4 +197,3 @@ export default function Footer() {
     </>
   );
 }
-

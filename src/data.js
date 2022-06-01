@@ -28,13 +28,13 @@ export const ServiceComponentdata = [
 
 export const GroupWebsiteComponentdata = [
   {
-    id: "1",
+    id: '1',
     imageurl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasing.png",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasing.png',
     Logourl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasingLogo.png",
-    icon: "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/TruckAndTrailers-icon.svg",
-    heading: "Trailers & Leasing",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasingLogo.png',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/TruckAndTrailers-icon.svg',
+    heading: 'Trailers & Leasing',
     desc: [
       {
         id: 1,
@@ -56,7 +56,7 @@ export const GroupWebsiteComponentdata = [
         // head: `Trailers`,
         desc1: [
           {
-            head: "For more information, please connect with our sales representative.",
+            head: 'For more information, please connect with our sales representative.',
             desc: [
               {
                 id: 1,
@@ -86,13 +86,13 @@ export const GroupWebsiteComponentdata = [
     },
   },
   {
-    id: "2",
+    id: '2',
     imageurl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png',
     Logourl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png",
-    icon: "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/partz-icon.svg ",
-    heading: "Partz ",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/partz-icon.svg ',
+    heading: 'Partz ',
     desc: [
       {
         id: 1,
@@ -106,7 +106,7 @@ export const GroupWebsiteComponentdata = [
         // head: `Trailers`,
         desc1: [
           {
-            head: "For more information, please get in touch with our parts experts.",
+            head: 'For more information, please get in touch with our parts experts.',
             desc: [
               {
                 id: 1,
@@ -131,19 +131,19 @@ export const GroupWebsiteComponentdata = [
       },
     ],
     cta: {
-      heading: "Inquiry Now",
-      link: "Inventory",
+      heading: 'Check our inventory',
+      link: 'Inventory',
     },
     comingsoon: false,
   },
   {
-    id: "3",
+    id: '3',
     imageurl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtire.png",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtire.png',
     Logourl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtirelogo.png",
-    icon: "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/tire-icon.svg",
-    heading: "Tires & Services",
+      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtirelogo.png',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/tire-icon.svg',
+    heading: 'Tires & Services',
     desc: [
       {
         id: 1,
@@ -169,7 +169,7 @@ export const GroupWebsiteComponentdata = [
         // head: `Trailers`,
         desc1: [
           {
-            head: "For more information, please get in touch with our tire enthusiasts.",
+            head: 'For more information, please get in touch with our tire enthusiasts.',
             desc: [
               {
                 id: 1,
@@ -194,8 +194,8 @@ export const GroupWebsiteComponentdata = [
       },
     ],
     cta: {
-      heading: "Book a Service",
-      link: "Inventory",
+      heading: 'Book a Service',
+      link: 'Inventory',
     },
     comingsoon: false,
   },

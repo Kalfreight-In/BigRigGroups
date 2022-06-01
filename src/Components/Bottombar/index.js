@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import React, { useEffect, useState } from 'react';
+import { FaBars } from 'react-icons/fa';
 // import logo from "../../images/logo.png";
 // import logo1 from "../../images/vanguard.png";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 import {
   Nav,
@@ -13,7 +13,7 @@ import {
   MobileIcon,
   NavItem,
   NavLinks,
-} from "./BottomBarElements";
+} from './BottomBarElements';
 
 const BottomBar = ({ toggle }) => {
   const [scrollNav] = useState(false);
@@ -67,7 +67,7 @@ const BottomBar = ({ toggle }) => {
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm lg:text-xs"
             >
-              <a to="/About">Partz</a>
+              <a to="/About">Sitemap</a>
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -76,7 +76,7 @@ const BottomBar = ({ toggle }) => {
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm lg:text-xs"
             >
-              <a to="/About">Tires & Services</a>
+              <a to="/About">Terms of Use</a>
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -117,7 +117,7 @@ const BottomBar = ({ toggle }) => {
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm lg:text-xs"
             >
-              <a to="/Contact">USA</a>
+              <a to="/Contact">Privacy Policy</a>
             </NavLinks>
           </NavItem>
           {/* <NavItem>
@@ -134,7 +134,7 @@ const BottomBar = ({ toggle }) => {
         </NavMenu>
         <NavBtn>
           <h3 className="2xl:text-desc text-navsmall md:text-sm lg:text-xs text-white">
-            @ Copyright Big Rig Group
+            Copyright © BigRig Group, 2022. All Rights Reserved
           </h3>
         </NavBtn>
         {/* <MobileIcon onClick={toggle}>
@@ -145,4 +145,4 @@ const BottomBar = ({ toggle }) => {
   );
 };
 
-export default BottomBar; 
+export default BottomBar;

@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
   };
   // useEffect(() => {
   //   window.addEventListener('scroll', changeNav);
-  // }, []); 
+  // }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
     <>
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
-          <div className="flex flex-row ml-16">
+          <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
             </NavLogo>
 
             <NavMenu>
-              <NavItem> 
+              <NavItem>
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
@@ -121,7 +121,7 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
           </div>
 
-          <NavBtn className="mr-16">
+          <NavBtn className="mr-8">
             <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-64 lg:w-48 md:32 2xl:h-16 h-12 2xl:text-xl xl:text-lg lg:text-md md:text-md">
               <div>
                 <img
@@ -134,7 +134,7 @@ const Navbar = ({ toggle }) => {
             </button>
           </NavBtn>
         </Nav>
-      </IconContext.Provider> 
+      </IconContext.Provider>
     </>
   );
 };

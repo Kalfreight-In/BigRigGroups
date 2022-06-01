@@ -462,14 +462,14 @@ cursor: pointer;
 export const Samosa = Styled.div`
 
 
-margin-bottom:25rem !important; 
+margin-bottom:25rem ;
 // margin-top: 2rem;
 font-family: sans-serif;
 font-style:300;
 font-weight: normal;
 font-size: 1.5rem;
-width:62% !important;
-
+width:62% ;
+line-height: 1.5;
 
 text-align:center;
 align-items: center;

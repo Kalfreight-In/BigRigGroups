@@ -71,7 +71,7 @@ const Contactform = () => {
               class="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
-              placeholder="Your Name"
+              placeholder="Name"
               value={name}
               required
             />
@@ -93,7 +93,7 @@ const Contactform = () => {
                 value={email}
                 class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
-                placeholder="Your Email"
+                placeholder="Email Address"
                 type="email"
                 required
               />
@@ -142,7 +142,7 @@ const Contactform = () => {
                 value={phoneno}
                 class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
-                placeholder="Phone Number"
+                placeholder="Mobile No"
                 type="Phone"
                 required
               />
@@ -186,7 +186,7 @@ const Contactform = () => {
               value={message}
               class=" no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-18 resize-none"
               id="message"
-              placeholder="Message US"
+              placeholder="What can we do for you?"
             ></textarea>
             {/* <p class="text-gray-600 text-xs italic">
               Re-size can be disabled by set by resize-none / resize-y /
