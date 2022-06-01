@@ -53,7 +53,10 @@ const Contactform = () => {
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
           <h1 className="text-Heading text-heading font-bold">Contact</h1>
-          <p className="text-neautralform font-Poppins text-desc font-normal leading-7 mt-2"></p>
+          <p className="text-neautralform font-Poppins text-sm font-normal  my-2">
+            Hey! How can we help you today?
+            <br></br> Fill in this form for an on-point solution in no time.
+          </p>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

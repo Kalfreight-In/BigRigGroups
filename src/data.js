@@ -39,17 +39,17 @@ export const GroupWebsiteComponentdata = [
       {
         id: 1,
         // head: `Trucks`,
-        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from brands like Thermo King, Carrier, and more.  `,
+        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from Thermo King and Carrier brands.`,
       },
       {
         id: 2,
         // head: `Trailers`,
-        desc: `To cater to your trailer financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.`,
+        desc: `We have quality used trailers for sale with various makes from Utility, Wabash, Stoughton, and Great Dane. In addition, we have used trucks from Peterbilt and Kenworth. `,
       },
       {
         id: 3,
         // head: `Trailers`,
-        desc: `We have quality used trailers for sale, which vary from 2008 to 2023, with various makes from Utility, Wabash, Stoughton, and Great Dane. In addition, we have used trucks from Volvo, Peterbilt, Freightliner, and Kenworth from the year anywhere from 2015 to 2023.`,
+        desc: `To cater to your trailer financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.  `,
       },
       {
         id: 4,
@@ -68,11 +68,6 @@ export const GroupWebsiteComponentdata = [
                 // head: `Trailers`,
                 desc: `Email: trailers@bigrigcanada.com `,
               },
-              {
-                id: 3,
-                // head: `Trailers`,
-                desc: `For Financial solutions:`,
-              },
             ],
           },
         ],
@@ -86,7 +81,7 @@ export const GroupWebsiteComponentdata = [
       },
     ],
     cta: {
-      heading: 'Inventory',
+      heading: 'Request a quote',
       link: 'Inventory',
     },
   },
@@ -153,12 +148,12 @@ export const GroupWebsiteComponentdata = [
       {
         id: 1,
         // head: `Commercial Tires`,
-        desc: `BigRig Tires & Services is the fastest growing distributor of commercial vehicles, industrial, and agricultural tires. BKT, Apollo, Prinx Tires, Pirelli, Continental, and Cooper are notable brands offered.  `,
+        desc: `BigRig Tires & Services is the fastest growing distributor of commercial vehicles, industrial, and agricultural tires. BKT, Prinx Tires, Pirelli, and Cooper are notable brands offered.`,
       },
       {
         id: 2,
         // head: `24/7  Road service`,
-        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, heavy-duty wheel alignments and maintenance in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc`,
+        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, heavy-duty wheel alignments and maintenance in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc.`,
       },
       // {
       //   id: 3,
@@ -425,7 +420,7 @@ export const AboutusSec = [
   {
     id: '0',
     headingmain: 'About Us',
-    desc: `Established in 2021, BigRig Group has a unique business portfolio that fulfills all trucking needs under one roof, making it one of its own kind in the industry. BigRig Group is an end-to-end transportation solution provider in Canada. We have designed distinctive business models in coherence with our customer's preferences for every type of trucking solution.`,
+    desc: `Established in 2021, BigRig Group has a unique business portfolio that fulfills all trucking needs under one roof, making it one of its own kind in the industry. BigRig Group is an end-to-end transportation solution provider in Western Canada. We have designed distinctive business models to cater to every type of trucking requirement. `,
     aboutimg: [
       {
         id: '1',
