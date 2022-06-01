@@ -131,8 +131,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   display: block;
-  height: 80px;
-  padding: 0 1rem;
+  height: 45px;
+  padding: 0 1rem; 
+  
+  
+  
 
   color: #000;
   // &:hover {

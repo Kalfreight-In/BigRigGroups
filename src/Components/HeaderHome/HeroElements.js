@@ -31,6 +31,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align:center;
+line-height:1rem !important;
 h1{
     font-size: 1.2rem;
     @media (min-width: 1024px) {

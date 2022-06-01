@@ -11,7 +11,7 @@ const Contactform = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [buttonText, setButtonText] = useState('Send');
+  const [buttonText, setButtonText] = useState('Contact Us');
   const resetForm = (e) => {
     setName('');
     setEmail('');
@@ -19,7 +19,7 @@ const Contactform = () => {
     setSuccess(false);
     setError(false);
     setErrorMessage('');
-    setButtonText('Send');
+    setButtonText('Contact Us');
   };
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
             </NavLogo>
 
             <NavMenu>
-              <NavItem>
+              <NavItem> 
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
@@ -127,14 +127,14 @@ const Navbar = ({ toggle }) => {
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                   alt=""
-                  className="text-white mr-2"
+                  className="text-white mr-4"
                 />
               </div>
               (800) 977 0010
             </button>
           </NavBtn>
         </Nav>
-      </IconContext.Provider>
+      </IconContext.Provider> 
     </>
   );
 };

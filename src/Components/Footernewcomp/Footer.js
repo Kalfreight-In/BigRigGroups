@@ -98,7 +98,7 @@ export default function Footer() {
                 <a href="" className="block md:text-16px text-navsmall">
                   Used Trailers for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall">
+                <a href="" className="block md:text-16px text-navsmall"> 
                   Used Trucks for sale
                 </a>
               </div>
