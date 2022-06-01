@@ -17,7 +17,7 @@ export const MapConatiner = () => {
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew">
-              Visit our nearest yard...
+              Visit our nearest yard. For assistance in the US, click here.
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 ">
