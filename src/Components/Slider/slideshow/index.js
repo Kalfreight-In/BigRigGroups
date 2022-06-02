@@ -1,6 +1,7 @@
-import React from 'react';
+import { React, useEffect, useState, useRef } from 'react';
 import { useHover } from '../../../Hooks/Hover';
 import { BrandCompnentBrands } from '../../../data';
+// import { TabComponent } from '../../TabComponent';
 import { isMobile, browserName } from 'react-device-detect';
 // const colors = [
 //   '#0088FE',
@@ -16,8 +17,9 @@ import { isMobile, browserName } from 'react-device-detect';
 const delay = 1500;
 
 export function Slideshow() {
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
+  const [index, setIndex] = useState(0);
+
+  const timeoutRef = useRef(null);
   const [hoverRef, isHovered] = useHover();
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -25,7 +27,7 @@ export function Slideshow() {
     }
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     resetTimeout();
     if (!isHovered) {
       timeoutRef.current = setTimeout(
@@ -47,7 +49,7 @@ export function Slideshow() {
       <div className="text-36px font-semibold text-Heading flex justify-center items-center pb-16 mt-16 mb-4">
         <h1>Our Brands</h1>
       </div>
-
+      {/* <TabComponent></TabComponent> */}
       <div
         className=" slideshow    snap-x flex space-x-5 overflow-x-auto"
         ref={hoverRef}
