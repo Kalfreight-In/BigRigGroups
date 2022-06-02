@@ -44,10 +44,7 @@ export function Slideshow() {
 
   return (
     <>
-      <div
-       
-        className="text-36px font-semibold text-Heading flex justify-center items-center pb-16 mt-16 mb-4"
-      >
+      <div className="text-36px font-semibold text-Heading flex justify-center items-center pb-16 mt-16 mb-4">
         <h1>Our Brands</h1>
       </div>
 

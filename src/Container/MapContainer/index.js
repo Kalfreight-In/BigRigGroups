@@ -6,12 +6,12 @@ export const MapConatiner = () => {
   const [hoverRef, isHovered] = useHover();
   return (
     <div className="bg-Lightblue flex flex-col justify-between lg:flex-row">
-      <div className="flex-1 p-16">
+      <div className="flex-1 2xl:p-16 xl:p-12 lg:p-8">
         <Map></Map>
       </div>
 
       <div className=" md:6/12 flex-col flex content-center  flex-1">
-        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-48 mt-2 ">
+        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-12 mt-2 ">
           <div>
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl ">
               National Footprint:
