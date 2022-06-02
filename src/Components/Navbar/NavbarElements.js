@@ -157,7 +157,7 @@ export const NavItem = styled.li`
   // }
 `;
 export const NavLinks = styled(LinkR)`
-  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)}; 
   display: flex;
   align-items: center;
   text-decoration: none;

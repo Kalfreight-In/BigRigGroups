@@ -7,7 +7,7 @@ export const CommmingSoonComponentindex = (data) => {
   if (data.data === 'tires') {
     var data1 = BigTireBrands;
   }
-
+ 
   return (
     <>
       <div className="mt-28">
@@ -47,3 +47,4 @@ export const CommmingSoonComponentindex = (data) => {
     </>
   );
 };
+
