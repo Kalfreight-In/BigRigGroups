@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll, Link } from 'react-scroll';
+import ErrorBoundary from '../ErrorBoundary';
 
 import {
   Nav,
@@ -34,7 +35,7 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
@@ -67,24 +68,19 @@ const Navbar = ({ toggle }) => {
                   TRAILER & LEASING
                 </NavLinks>
               </NavItem>
-
-              <NavItem>
-                {disabeled() === 'true' ? (
-                  <NavLinks className="2xl:text-desc text-navsmall :text-xs md:text-xs">
-                    <Link to="/Products" duration={500} offset={-80}>
-                      Products
-                    </Link>
-                  </NavLinks>
-                ) : (
-                  <NavLinks  
-                    to="/tires"
-                    onClick={toggleHome}
-                    className="2xl:text-desc text-navsmall lg:text-xs md:text-xs" 
-                  >
-                    TIRES & SERVICES
-                  </NavLinks>
-                )}
-              </NavItem>
+              <ErrorBoundary>
+                <NavItem>
+                 
+                    <NavLinks
+                      to="/tires"
+                      onClick={toggleHome}
+                      className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                    >
+                      TIRES & SERVICES
+                    </NavLinks>
+             
+                </NavItem>
+              </ErrorBoundary>
 
               <NavItem>
                 <NavLinks

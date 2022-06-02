@@ -3,6 +3,7 @@ import './App.css';
 import './simplefunction.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import ErrorBoundary from './Components/ErrorBoundary'
 import FooterSection from './Components/FooterSection'; 
 import Navbar from './Components/Navbar';
 import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
@@ -20,7 +21,10 @@ function App() {
   return (
     <Router>
       <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
-      <Navbar toggle={toggle}></Navbar>
+      <ErrorBoundary>
+        <Navbar toggle={toggle}></Navbar>
+      </ErrorBoundary>
+
       <Routes>
         <Route path="/BigRigGroups" element={<Home />} />
         <Route
