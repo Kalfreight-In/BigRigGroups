@@ -37,7 +37,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <ContainerMain>
-          <HeroP>Transforming The Trucking Dynamics </HeroP>
+          <HeroP>Transforming Trucking Dynamics </HeroP>
 
           <Samosa>
             Offering New & Used Dry Vans, Trucks & Reefers
