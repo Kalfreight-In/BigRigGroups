@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from './media/bgvideo2.mp4';
-
+import { isMobile, browserName } from "react-device-detect";
 import {
   HeroContainer,
   HeroP,
@@ -36,14 +36,15 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <ContainerMain>
+        <ContainerMain>  
           <HeroP>Transforming Trucking Dynamics </HeroP>
 
-          <Samosa>
+          <Samosa> 
             Offering New & Used Dry Vans, Trucks & Reefers
-            <br></br> Aftermarket Parts, Tires, and Services
+            {!isMobile ? <br></br> : null}
+             Aftermarket Parts, Tires, and Services
           </Samosa>
-        </ContainerMain>
+        </ContainerMain>  
 
         {/* <PCENTER class="text-gray-600 p-8">
           Work with a trusted global third-party logistics provider that has

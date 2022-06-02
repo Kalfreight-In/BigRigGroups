@@ -14,7 +14,7 @@ import './Home.scss';
 import Business from '../../Components/BusinessComponent/Business';
 function Home() {
   return (
-    <>
+    <>  
       <HeroSection></HeroSection>
       <Business />
       {/* <OurBusinessVerticles></OurBusinessVerticles> */}
