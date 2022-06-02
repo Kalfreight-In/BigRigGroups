@@ -26,7 +26,6 @@ export function Slideshow() {
   }
 
   React.useEffect(() => {
-    console.log('useEffect');
     resetTimeout();
     if (!isHovered) {
       timeoutRef.current = setTimeout(

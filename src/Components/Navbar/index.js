@@ -14,17 +14,18 @@ import {
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+  console.log(window.scrollY);
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY > 100) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
     }
   };
-  // useEffect(() => {
-  //   window.addEventListener('scroll', changeNav);
-  // }, []);
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };

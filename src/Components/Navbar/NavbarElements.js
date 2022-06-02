@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background-color: ${({ scrollNav }) => (scrollNav ? '#fff' : '#ffffffad')};
+  background-color: ${({ scrollNav }) => (scrollNav ? '#ffff' : '#fff0')};
 
   height: 100px;
   //  margin-top:-80px
@@ -132,10 +132,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   display: block;
   height: 45px;
-  padding: 0 1rem; 
-  
-  
-  
+  padding: 0 1rem;
 
   color: #000;
   // &:hover {

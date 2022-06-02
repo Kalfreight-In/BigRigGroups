@@ -15,11 +15,7 @@ import {
 import styled from 'styled-components';
 
 const Gradients = styled.div`
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.49) 20%,
-    rgba(0, 64, 255, 0.23) 100%
-  );
+  // background-image: linear-gradient( 180deg, rgba(0, 0, 0, 0.49) 20%, rgba(0, 64, 255, 0.23) 100% );
   width: 100%;
   height: 100%;
   transform: rotate(-180deg);
@@ -32,7 +28,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id="Home">
       <Gradients></Gradients>
-      <HeroBg className="lg:mt-24 mt-0">
+      <HeroBg className=" mt-0">
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
