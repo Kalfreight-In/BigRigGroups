@@ -1,10 +1,11 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { isMobile, browserName } from 'react-device-detect';
 import { useHover } from '../../Hooks/Hover';
 
-function Map() {
+function Map({ Af, Ca }) {
   const [hoverRef, isHovered] = useHover();
   const [hoverRef1, isHovered1] = useHover();
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +135,7 @@ function Map() {
         d="M208.37 572.61a9.37 9.37 0 10-18.74 0c0 7 9.37 17.18 9.37 17.18s9.37-10.15 9.37-17.18zm-12.49 0a3.12 3.12 0 113.12 3.12 3.12 3.12 0 01-3.12-3.12zm-7.81 18.74v3.13h21.86v-3.13z"
         className="cls-2 Marker"
       ></path>
-      {isHovered ? (
+      {isHovered || Ca ? (
         <g id="Text-BC">
           <rect
             id="bc-2"
@@ -152,7 +153,7 @@ function Map() {
           </text>
         </g>
       ) : null}
-      {isHovered1 ? (
+      {isHovered1 || Af ? (
         <g id="Text-alberta">
           <rect
             id="alberta-2"

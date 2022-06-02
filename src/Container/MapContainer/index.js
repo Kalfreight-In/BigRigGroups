@@ -3,22 +3,23 @@ import Map from '../../assets/Map';
 import { motion } from 'framer-motion';
 import { useHover } from '../../Hooks/Hover';
 export const MapConatiner = () => {
-  const [hoverRef, isHovered] = useHover();
+  const [AfhoverRef, AfisHovered] = useHover();
+  const [CahoverRef, CaisHovered] = useHover();
   return (
     <div className="bg-Lightblue flex flex-col justify-between lg:flex-row">
-      <div className="flex-1 p-16">
-        <Map></Map>
+      <div className="flex-1 2xl:p-16 xl:p-12 lg:p-8">
+        <Map Af={AfisHovered} Ca={CaisHovered}></Map>
       </div>
 
       <div className=" md:6/12 flex-col flex content-center  flex-1">
-        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-48 mt-2 ">
+        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-12 mt-2 ">
           <div>
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl ">
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew">
               Visit our nearest yard. For assistance in the US,{' '}
-              <a href="#" className="hover:text-slate-400 transition ">
+              <a href="#" className="hover:text-yellow-shadowhover transition ">
                 click here
               </a>
               .
@@ -35,7 +36,10 @@ export const MapConatiner = () => {
               className="pr-8"
             ></motion.img>
             <div>
-              <h4 className="mt-4 text-1xl text-white font-bold md:text-subheading ">
+              <h4
+                className="mt-4 text-1xl text-white font-bold md:text-subheading "
+                ref={AfhoverRef}
+              >
                 Abbotsford
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
@@ -54,7 +58,10 @@ export const MapConatiner = () => {
               className="pr-8"
             ></motion.img>
             <div>
-              <h4 className="mt-4 text-1xl text-white font-bold md:text-subheading ">
+              <h4
+                className="mt-4 text-1xl text-white font-bold md:text-subheading "
+                ref={CahoverRef}
+              >
                 Calagry
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">

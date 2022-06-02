@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Video from './media/bgvideo2.mp4';
-import { isMobile, browserName } from "react-device-detect";
+import Video from './media/bgvideo2(1).mp4';
+
 import {
   HeroContainer,
   HeroP,
@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <Gradients></Gradients>
-      <HeroBg className="lg:mt-24 mt-0">
+      <HeroBg className=" mt-0">
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>

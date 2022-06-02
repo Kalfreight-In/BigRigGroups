@@ -33,13 +33,13 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasing.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/TrailersLeasingLogo.png',
-    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/TruckAndTrailers-icon.svg',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/TruckAndTrailers-icon.png',
     heading: 'Trailers & Leasing',
     desc: [
       {
         id: 1,
         // head: `Trucks`,
-        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from Thermo King and Carrier brands.`,
+        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers,  heated dry vans and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from Thermo King and Carrier brands.`,
       },
       {
         id: 2,
@@ -148,12 +148,12 @@ export const GroupWebsiteComponentdata = [
       {
         id: 1,
         // head: `Commercial Tires`,
-        desc: `BigRig Tires & Services is the fastest growing distributor of commercial vehicles, industrial, and agricultural tires. BKT, Prinx Tires, Pirelli, and Cooper are notable brands offered.`,
+        desc: `BigRig Tires & Services is the fastest growing distributor of commercial, industrial, and agricultural tires. BKT, Prinx Tires, Pirelli, and Cooper are notable brands offered.`,
       },
       {
         id: 2,
         // head: `24/7  Road service`,
-        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, heavy-duty wheel alignments and maintenance in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc.`,
+        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, and heavy-duty wheel alignments and in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc.`,
       },
       // {
       //   id: 3,
