@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between">
           <div
             className="flex-1 lg:w-1/2  lg:block "
-            // className="flex-1 lg:block hidden" 
+            // className="flex-1 lg:block hidden"
             style={{
               backgroundImage:
                 'url(' +
@@ -31,7 +31,7 @@ export default function Footer() {
                   href="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div  className="text-white flex  lg:mt-12 mt-4">
+              <div className="text-white flex  lg:mt-12 mt-4">
                 <div>
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div  className="text-white flex mt-4">
+              <div className="text-white flex mt-4">
                 <div>
                   <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
@@ -74,10 +74,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex  flex-row mb-8 lg:mb-2">
-            <div
-              
-              className="lg:flex-2 pr-4 flex-1  lg:w-2/12 lg:pl-0 pl-4"
-            >
+            <div className="lg:flex-2 pr-4 flex-1  lg:w-2/12 lg:pl-0 pl-4">
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
                   Inventory
@@ -85,29 +82,41 @@ export default function Footer() {
               </div>
               <br />
 
-              <div  className="text-white 2xl:leading-8 leading-6 ">
-                <a href="" className="block md:text-16px text-sm">
+              <div className="text-white 2xl:leading-8 leading-6 ">
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
                   Dry van for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall">
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
                   Reefer trailer for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall">
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
                   Flatbed for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall">
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
                   Used Trailers for sale
                 </a>
-                <a href="" className="block md:text-16px text-navsmall">
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
                   Used Trucks for sale
                 </a>
               </div>
             </div>
 
-            <div
-             
-              className="lg:flex-2 pr-4 flex-1 lg:w-2/12 "
-            >
+            <div className="lg:flex-2 pr-4 flex-1 lg:w-2/12 ">
               <div className="text-white">
                 <h1 className="2xl:text-footerheading text-desc font-bold  ">
                   Quick Links
@@ -115,39 +124,51 @@ export default function Footer() {
               </div>
               <br />
 
-              <div
-                
-                className="text-white  2xl:leading-8 leading-6"
-              >
+              <div className="text-white  2xl:leading-8 leading-6">
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Financing Options
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     24*7 Roadside Assistance{' '}
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Scheduled Maintenance
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Careers
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     News & Events
                   </a>
                 </div>
               </div>
             </div>
 
-            <div  className="lg:flex-2 flex-1 lg:w-1/6 leading-8">
+            <div className="lg:flex-2 flex-1 lg:w-1/6 ">
               <div className="text-white">
                 <h1 className=" font-bold  2xl:text-footerheading text-desc">
                   Contact Us
@@ -155,32 +176,44 @@ export default function Footer() {
               </div>
               <br />
 
-              <div
-               
-                className="text-white 2xl:leading-8 leading-6 "
-              >
+              <div className="text-white 2xl:leading-8 leading-6 ">
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Trailers / Trucks & Leasing - trailers@bigrigcanada.com
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Tires – tires@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Partz – partz@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     Careers- hr@bigrigcanada.com{' '}
                   </a>
                 </div>
                 <div>
-                  <a href="" className="block md:text-16px text-navsmall">
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
                     For all other enquires reach us at – info@bigrigcanada.com{' '}
                   </a>
                 </div>
