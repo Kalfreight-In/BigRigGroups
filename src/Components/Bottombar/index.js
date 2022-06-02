@@ -42,7 +42,7 @@ const BottomBar = ({ toggle }) => {
 
         {/* <Bars onClick={toggle}/> */}
         <NavMenu>
-          <NavItem>
+          {/* <NavItem>
             <NavLinks
               to="/"
               onClick={toggleHome}
@@ -50,9 +50,9 @@ const BottomBar = ({ toggle }) => {
             >
               <a to="/">Home</a>
             </NavLinks>
-          </NavItem>
+          </NavItem> */}
 
-          <NavItem>
+          {/* <NavItem>
             <NavLinks
               to="/About"
               onClick={toggleHome}
@@ -60,7 +60,7 @@ const BottomBar = ({ toggle }) => {
             >
               <a to="/About">Trailer & Leasing</a>
             </NavLinks>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLinks
               to="/About"
@@ -79,7 +79,7 @@ const BottomBar = ({ toggle }) => {
               <a to="/About">Terms of Use</a>
             </NavLinks>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLinks
               to="/About"
               onClick={toggleHome}
@@ -87,7 +87,7 @@ const BottomBar = ({ toggle }) => {
             >
               <a to="/About">Contact</a>
             </NavLinks>
-          </NavItem>
+          </NavItem> */}
           {/* <NavItem>
             <NavLinks to="/products" onClick={toggleHome}>
               <a
@@ -102,7 +102,7 @@ const BottomBar = ({ toggle }) => {
               </a>
             </NavLinks>
           </NavItem> */}
-          <NavItem>
+          {/* <NavItem>
             <NavLinks
               to="/Contact"
               onClick={toggleHome}
@@ -110,7 +110,7 @@ const BottomBar = ({ toggle }) => {
             >
               <a to="/Contact">News & Events</a>
             </NavLinks>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLinks
               to="/Contact"

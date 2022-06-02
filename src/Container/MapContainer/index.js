@@ -6,7 +6,7 @@ export const MapConatiner = () => {
   const [hoverRef, isHovered] = useHover();
   return (
     <div className="bg-Lightblue flex flex-col justify-between lg:flex-row">
-      <div className="flex-1">
+      <div className="flex-1 p-16">
         <Map></Map>
       </div>
 
@@ -17,7 +17,11 @@ export const MapConatiner = () => {
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew">
-              Visit our nearest yard. For assistance in the US, click here.
+              Visit our nearest yard. For assistance in the US,{' '}
+              <a href="#" className="hover:text-slate-400 transition ">
+                click here
+              </a>
+              .
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 ">
@@ -58,7 +62,7 @@ export const MapConatiner = () => {
               </div>
             </div>
           </div>
-          <div className="my-4">
+          <div className="my-6">
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl ">
               Upcoming Locations
             </h3>
