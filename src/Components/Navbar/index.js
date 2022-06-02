@@ -76,10 +76,10 @@ const Navbar = ({ toggle }) => {
                     </Link>
                   </NavLinks>
                 ) : (
-                  <NavLinks
+                  <NavLinks  
                     to="/tires"
                     onClick={toggleHome}
-                    className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                    className="2xl:text-desc text-navsmall lg:text-xs md:text-xs" 
                   >
                     TIRES & SERVICES
                   </NavLinks>

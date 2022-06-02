@@ -26,7 +26,7 @@ const Gradients = styled.div`
 
 const HeroSection = () => {
   return (
-    <HeroContainer id="Home">
+    <HeroContainer>
       <Gradients></Gradients>
       <HeroBg className=" mt-0">
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />

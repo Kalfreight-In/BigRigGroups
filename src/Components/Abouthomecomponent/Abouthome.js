@@ -5,9 +5,8 @@ export default function Abouthome() {
   const aboutdata = AboutusSec[0];
   return (
     <>
-      <div id="mainheight">
+      <div>
         <div
-          id="abouthomeimg"
           className="h-medium-height"
           style={{
             backgroundImage:
@@ -19,10 +18,10 @@ export default function Abouthome() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div id="maincontainer ">
-            <div id="innermaincontainer" className="">
-              <div id="backimage">
-                <div id="firstmain">
+          <div >
+            <div  className="">
+              <div >
+                <div >
                   <div className="flex justify-center items-center ">
                     <h1 className="text-5xl text-Heading  w-fit 2xl:mt-18 xl:mt-16 lg:mt-12 mb-6 text-center   p-2 font-bold  link link-underline link-underline-black">
                       {aboutdata.headingmain}
@@ -37,7 +36,6 @@ export default function Abouthome() {
                   </div>
 
                   <div
-                    id="btn"
                     className="flex justify-center itesm-center mt-16"
                   >
                     <button className="  text-white bg-Lightblue  font-bold  rounded-md shadow-sm hover:shadow-md shadow-blue-shadow hover:shadow-blue-shadowhover  p-5 lg:4/5 lg:w-1/6 md:mb-6  2xl:text-2xl lg:text-md ">

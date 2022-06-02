@@ -22,10 +22,10 @@ export default function Business() {
   return (
     <>
       {/* <div class="social"></div> */}
-      <div id="maincontainer" className="bg-businessbackground">
-        <div id="innermain" className="lg:p-12 p-2 drop-shadow-2xl">
+      <div className="bg-businessbackground">
+        <div  className="lg:p-12 p-2 drop-shadow-2xl">
           <div
-            id="firstmain"
+           
             className="flex justify-center items-center font-semibold"
           >
             <h1 className="text-5xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
@@ -33,7 +33,7 @@ export default function Business() {
             </h1>
           </div>
 
-          <div id="secondmain" className={`flex w-full lg:flex-row flex-col`}>
+          <div className={`flex w-full lg:flex-row flex-col`}>
             <div class=" flex w-full">
               <div class="gallery-wrap flex lg:flex-row flex-col w-fill">
                 {mydata.thebox.map((element) => (
@@ -51,7 +51,7 @@ export default function Business() {
                     <div
                       ref={hoverRef}
                       key={element.id}
-                      id="secondmaintwo "
+                  
                       // className={`z-${element.id} ${
                       //   !isHovered ? 'w-30rem relative' : '80rem'
                       // }`}

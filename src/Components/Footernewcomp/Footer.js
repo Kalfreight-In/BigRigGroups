@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between">
           <div
             className="flex-1 lg:w-1/2  lg:block "
-            // className="flex-1 lg:block hidden"
+            // className="flex-1 lg:block hidden" 
             style={{
               backgroundImage:
                 'url(' +
@@ -23,7 +23,7 @@ export default function Footer() {
             }}
           >
             <div className="lg:ml-36 ml-4 lg:mt-0 mt-8">
-              <div id="logo">
+              <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
@@ -31,7 +31,7 @@ export default function Footer() {
                   href="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div id="email" className="text-white flex  lg:mt-12 mt-4">
+              <div  className="text-white flex  lg:mt-12 mt-4">
                 <div>
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div id="phone" className="text-white flex mt-4">
+              <div  className="text-white flex mt-4">
                 <div>
                   <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
@@ -66,7 +66,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div id="language" className="text-white flex mb-8 lg:mb-2  pt-5">
+              <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
                   <span>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</span>
                 </div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
           <div className="flex  flex-row mb-8 lg:mb-2">
             <div
-              id="two"
+              
               className="lg:flex-2 pr-4 flex-1  lg:w-2/12 lg:pl-0 pl-4"
             >
               <div className="text-white ">
@@ -85,7 +85,7 @@ export default function Footer() {
               </div>
               <br />
 
-              <div id="ancrtrl" className="text-white 2xl:leading-8 leading-6 ">
+              <div  className="text-white 2xl:leading-8 leading-6 ">
                 <a href="" className="block md:text-16px text-sm">
                   Dry van for sale
                 </a>
@@ -105,9 +105,8 @@ export default function Footer() {
             </div>
 
             <div
-              id="three"
+             
               className="lg:flex-2 pr-4 flex-1 lg:w-2/12 "
-              // className="flex-2 pr-4 lg:w-2/12 w-full"
             >
               <div className="text-white">
                 <h1 className="2xl:text-footerheading text-desc font-bold  ">
@@ -117,7 +116,7 @@ export default function Footer() {
               <br />
 
               <div
-                id="ancrpart"
+                
                 className="text-white  2xl:leading-8 leading-6"
               >
                 <div>
@@ -148,7 +147,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div id="four" className="lg:flex-2 flex-1 lg:w-1/6 leading-8">
+            <div  className="lg:flex-2 flex-1 lg:w-1/6 leading-8">
               <div className="text-white">
                 <h1 className=" font-bold  2xl:text-footerheading text-desc">
                   Contact Us
@@ -157,7 +156,7 @@ export default function Footer() {
               <br />
 
               <div
-                id="ancrtire"
+               
                 className="text-white 2xl:leading-8 leading-6 "
               >
                 <div>
