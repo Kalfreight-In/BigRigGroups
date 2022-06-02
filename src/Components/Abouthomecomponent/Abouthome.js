@@ -28,7 +28,7 @@ export default function Abouthome() {
                     </h1>
                   </div>
                   <div className="flex justify-center items-center">
-                    <p className="text-2xl lg:text-Description  2xl:w-3/5 xl:w-3/5 lg:w-4/5 w-fit tracking-wide font-semibold leading-10  flex justify-center items-center text-justify  ">
+                    <p className="text-2xl lg:text-Description  2xl:w-3/5 xl:w-3/5 lg:w-4/5 w-fit tracking-wide font-semibold leading-10 text-center flex justify-center items-center   ">
                       {aboutdata.desc}
                       {/* <br /> <br />
                   {aboutdata.descOne} */}

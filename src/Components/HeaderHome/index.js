@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Video from './media/Bgvideo.mp4';
+import Video from './media/bgvideo2.mp4';
 
 import {
   HeroContainer,
@@ -17,8 +17,8 @@ import styled from 'styled-components';
 const Gradients = styled.div`
   background-image: linear-gradient(
     180deg,
-    rgb(0 0 0 / 78%) 20%,
-    rgb(95 209 237 / 26%) 100%
+    rgba(0, 0, 0, 0.49) 20%,
+    rgba(0, 64, 255, 0.23) 100%
   );
   width: 100%;
   height: 100%;
