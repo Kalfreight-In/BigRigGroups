@@ -6,23 +6,25 @@ export default function Footer() {
   return (
     <>
       <div className="bg-Lightblue">
-        <div className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between">
+        <div
+          className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between"
+          style={{
+            backgroundImage:
+              'url(' +
+              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
+              ')',
+            backgroundPosition: 'left',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            width: 'full',
+            marginRight: '5rem',
+          }}
+        >
           <div
-            className="flex-1 lg:w-1/2  lg:block "
+            className="flex-1 w-7/12  lg:block "
             // className="flex-1 lg:block hidden"
-            style={{
-              backgroundImage:
-                'url(' +
-                'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
-                ')',
-              backgroundPosition: 'center',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-              width: 'full',
-              marginRight: '5rem',
-            }}
           >
-            <div className="lg:ml-36 ml-4 lg:mt-0 mt-8">
+            <div className="lg:ml-16 w-max ml-4 lg:mt-0 mt-8">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
@@ -41,11 +43,11 @@ export default function Footer() {
                   <AiOutlineClockCircle className="h-12 w-10" />
                 </div>
                 <div className="block ml-4">
-                  <span className="block">Working hours</span>
-                  <span className="text-2xl font-bold">
+                  <div className="block">Working hours</div>
+                  <div className="text-2xl font-bold">
                     8 AM to 5 PM <br />
                     (Monday to Friday) 
-                  </span>
+                  </div>
                 </div>
               </div>
 
@@ -58,23 +60,24 @@ export default function Footer() {
                   />
                 </div>
                 <div className="ml-4">
-                  <span className="block">
-                    Why speak to robots when we have subject matter experts just
-                    a call away.
-                  </span>
-                  <span className="text-2xl font-bold">800-977-0010</span>
+                  <div className="block">
+                    Why speak to robots when
+                    <br></br>
+                    we have subject matter experts just a call away.
+                  </div>
+                  <div className="text-2xl font-bold">800-977-0010</div>
                 </div>
               </div>
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <span>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</span>
+                  <div>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex  flex-row mb-8 lg:mb-2">
-            <div className="lg:flex-2 pr-4 flex-1  lg:w-2/12 lg:pl-0 pl-4">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2">
+            <div className="lg:flex-1  flex-1  lg:w-2/12  ">
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
                   Inventory
@@ -116,7 +119,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="lg:flex-2 pr-4 flex-1 lg:w-2/12 ">
+            <div className="lg:flex-1 flex-1 lg:w-2/12 ">
               <div className="text-white">
                 <h1 className="2xl:text-footerheading text-desc font-bold  ">
                   Quick Links
@@ -167,8 +170,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-
-            <div className="lg:flex-2 flex-1 lg:w-1/6 ">
+          </div>
+          <div className="flex flex-auto flex-row justify-end  mb-8 lg:mb-2">
+            <div className="lg:flex-1 flex-1 lg:w-1/6 ">
               <div className="text-white">
                 <h1 className=" font-bold  2xl:text-footerheading text-desc">
                   Contact Us
@@ -177,44 +181,49 @@ export default function Footer() {
               <br />
 
               <div className="text-white 2xl:leading-8 leading-6 ">
-                <div>
+                <div className="flex flex-row">
+                  <div>Trailers / Trucks & Leasing </div>
                   <a
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Trailers / Trucks & Leasing - trailers@bigrigcanada.com
+                    trailers@bigrigcanada.com
                   </a>
                 </div>
-                <div>
+                <div className="flex flex-row">
+                  <div>Tires</div>
                   <a
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Tires – tires@bigrigcanada.com{' '}
+                    tires@bigrigcanada.com
                   </a>
                 </div>
-                <div>
+                <div className="flex flex-row">
+                  <div> Partz </div>
                   <a
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Partz – partz@bigrigcanada.com{' '}
+                    partz@bigrigcanada.com{' '}
                   </a>
                 </div>
-                <div>
+                <div className="flex flex-row">
+                  <div>Careers</div>
                   <a
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Careers- hr@bigrigcanada.com{' '}
+                    hr@bigrigcanada.com{' '}
                   </a>
                 </div>
-                <div>
+                <div className="flex flex-row">
+                  <div>For all other enquires reach us at</div>
                   <a
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    For all other enquires reach us at – info@bigrigcanada.com{' '}
+                    info@bigrigcanada.com{' '}
                   </a>
                 </div>
               </div>

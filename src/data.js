@@ -364,7 +364,7 @@ export const BigTireBrands = [
       {
         id: '2',
         imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/CT_Horiz-Logo.png',
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
         heading: 'CT_Horiz',
       },
 

@@ -7,7 +7,7 @@ export const CommmingSoonComponentindex = (data) => {
   if (data.data === 'tires') {
     var data1 = BigTireBrands;
   }
- 
+
   return (
     <>
       <div className="mt-28">
@@ -20,9 +20,9 @@ export const CommmingSoonComponentindex = (data) => {
               <img src={item.logo} className="w-2/6"></img>
             </div>
           ))}
-          {/* <div className="flex flex-row align-center justify-center text-2xl text-Heading font-bold md:text-2xl pb-8">
+          <div className="flex flex-row align-center justify-center text-2xl text-Heading font-bold md:text-2xl pb-8">
             Coming soon!
-          </div> */}
+          </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc text-center">
             Over 50,000 Truck and Trailer parts. Our parts professionals are{' '}
             <br />
@@ -47,4 +47,3 @@ export const CommmingSoonComponentindex = (data) => {
     </>
   );
 };
-
