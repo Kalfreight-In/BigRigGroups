@@ -5,8 +5,16 @@ export default function Roadservice() {
     <>
       <div className="flex flex-col-reverse lg:flex-row pt-12 ">
         <div className="bg-Darkblue flex lg:flex-row flex-col ">
+<<<<<<< HEAD
           <div className="2xl:ml-42 lg:ml-10 mr-10 xl:ml-28 md:ml-5   mb-10 mt-10 2xl:pt-12 pt-0 flex-1">
             <h1 className="text-white text-heading font-heading lg:text-2xl  px-0">
+=======
+          <div 
+          // className="2xl:ml-42 xl:ml-28 md:ml-5  lg:ml-10 mb-10 mt-10 2xl:pt-12 pt-0 flex-1"
+          className="2xl:ml-42 xl:ml-28 md:ml-5  lg:ml-10 mb-10 mt-10 2xl:pt-12 pt-0 mx-6 flex-1" 
+          >
+            <h1 className="text-white text-3xl sm:text-2xl 2xl:text-5xl font-heading lg:text-2xl  px-0 mb-4">
+>>>>>>> e4c85f658685fba7009ca7ccadf0ad73b5b4091e
               24/7 Road Service
             </h1>
             <p
@@ -31,7 +39,7 @@ export default function Roadservice() {
               alt="truck"
               className="w-full "
             />
-          </div>
+          </div>  
         </div>
       </div>
     </>

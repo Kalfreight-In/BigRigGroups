@@ -31,7 +31,7 @@ const Lol = () => {
     if (path === "/") {
       return true;
     }
-    return false;
+    return false; 
   }
   const toggle = () => {
     setIsOpen(!isOpen);

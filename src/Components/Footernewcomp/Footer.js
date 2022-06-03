@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-16 ml-16">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 ml-8">
             <div className="lg:flex-1  flex-1  lg:w-2/12 ">
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
@@ -230,7 +230,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      info@bigrigcanada.com{' '}
+                      info@bigrigcanada.com{" "}
                     </a>
                   </div> */}
                 </div>
