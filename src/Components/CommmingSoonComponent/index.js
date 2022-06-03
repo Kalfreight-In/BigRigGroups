@@ -24,9 +24,9 @@ export const CommmingSoonComponentindex = (data) => {
             Coming soon!
           </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc text-center">
-            Over 50,000 Truck and Trailer parts. Our parts professionals are{' '}
+            Over 50,000 Truck and Trailer parts. Our parts professionals
             <br />
-            available 24/7 to help keep you moving.
+            to help keep you moving.
           </div>
           <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (

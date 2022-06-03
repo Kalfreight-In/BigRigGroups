@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <div className="bg-Lightblue">
         <div
-          className="flex lg:flex-row flex-col 2xl:pt-16 lg:pt-4 lg:flex lg:justify-between"
+          className="flex lg:flex-row flex-col 2xl:pb-8 lg:ptb-4 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
               'url(' +
@@ -24,7 +24,7 @@ export default function Footer() {
             className="flex-1 w-7/12  lg:block "
             // className="flex-1 lg:block hidden"
           >
-            <div className="lg:ml-16 w-max ml-4 lg:mt-0 mt-8">
+            <div className="lg:ml-16 w-max ml-4 lg:mt-0 ">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
@@ -34,17 +34,17 @@ export default function Footer() {
                 />
               </div>
               <div className="text-white flex  lg:mt-12 mt-4">
-                <div>
+                <div className="mt-3">
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
                     alt=""
                     className="text-white mt-2 "
                   /> */}
-                  <AiOutlineClockCircle className="h-12 w-10" />
+                  <AiOutlineClockCircle className="h-8 w-8 " />
                 </div>
-                <div className="block ml-4">
-                  <div className="block">Working hours</div>
-                  <div className="text-2xl font-bold">
+                <div className="block ml-3">
+                  {/* <div className="block">Working hours</div> */}
+                  <div className="text-xl font-bold">
                     8 AM to 5 PM <br />
                     (Monday to Friday) 
                   </div>
@@ -52,20 +52,21 @@ export default function Footer() {
               </div>
 
               <div className="text-white flex mt-4">
-                <div>
+                <div className="mt-2">
                   <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                     alt=""
-                    className="text-white mt-2"
+                    className="text-white"
+                    width={20}
                   />
                 </div>
                 <div className="ml-4">
-                  <div className="block">
+                  {/* <div className="block">
                     Why speak to robots when
                     <br></br>
                     we have subject matter experts just a call away.
-                  </div>
-                  <div className="text-2xl font-bold">800-977-0010</div>
+                  </div> */}
+                  <div className="text-xl font-bold">800-977-0010</div>
                 </div>
               </div>
 
@@ -76,8 +77,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2">
-            <div className="lg:flex-1  flex-1  lg:w-2/12  ">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-16 ml-8">
+            <div className="lg:flex-1  flex-1  lg:w-2/12 ">
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
                   Inventory
@@ -171,60 +172,67 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row justify-end  mb-8 lg:mb-2">
-            <div className="lg:flex-1 flex-1 lg:w-1/6 ">
-              <div className="text-white">
-                <h1 className=" font-bold  2xl:text-footerheading text-desc">
-                  Contact Us
-                </h1>
-              </div>
-              <br />
+          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 mt-16 ">
+            <div className="lg:flex-1 flex-1 flex justify-end lg:w-1/6 ">
+              <div>
+                <div className="text-white">
+                  <h1 className=" font-bold  2xl:text-footerheading text-desc">
+                    Contact Us
+                  </h1>
+                </div>
+                <br />
 
-              <div className="text-white 2xl:leading-8 leading-6 ">
-                <div className="flex flex-row">
-                  <div>Trailers / Trucks & Leasing </div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    trailers@bigrigcanada.com
-                  </a>
-                </div>
-                <div className="flex flex-row">
-                  <div>Tires</div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    tires@bigrigcanada.com
-                  </a>
-                </div>
-                <div className="flex flex-row">
-                  <div> Partz </div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    partz@bigrigcanada.com{' '}
-                  </a>
-                </div>
-                <div className="flex flex-row">
-                  <div>Careers</div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    hr@bigrigcanada.com{' '}
-                  </a>
-                </div>
-                <div className="flex flex-row">
-                  <div>For all other enquires reach us at</div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    info@bigrigcanada.com{' '}
-                  </a>
+                <div className="text-white 2xl:leading-8 leading-6 ">
+                  <div className="flex flex-row space-x-2">
+                    <div>Trailers / Trucks & Leasing </div>
+                    <span> </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      trailers@bigrigcanada.com
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <div>Tires</div>
+                    <span> </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      tires@bigrigcanada.com
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <div> Partz </div>
+                    <span> </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      partz@bigrigcanada.com{' '}
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <div>Careers</div>
+                    <span> </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      hr@bigrigcanada.com{' '}
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <div>For all other enquires reach us at</div>
+                    <span> </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      info@bigrigcanada.com{' '}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
