@@ -169,7 +169,8 @@ export const Bars = styled(FaBars)`
 export const NavBtn = styled.nav`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:right;
+  
 
   padding: 25px;
 
