@@ -70,15 +70,13 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <ErrorBoundary>
                 <NavItem>
-                 
-                    <NavLinks
-                      to="/tires"
-                      onClick={toggleHome}
-                      className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
-                    >
-                      TIRES & SERVICES
-                    </NavLinks>
-             
+                  <NavLinks
+                    to="/tires"
+                    onClick={toggleHome}
+                    className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  >
+                    TIRES & SERVICES
+                  </NavLinks>
                 </NavItem>
               </ErrorBoundary>
 
@@ -94,7 +92,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/Contact"
+                  href="ContactSection"
                   onClick={toggleHome}
                   className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
                 >

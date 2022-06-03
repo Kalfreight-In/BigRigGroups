@@ -131,8 +131,8 @@ const BottomBar = ({ toggle }) => {
 
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-        </NavMenu>
-        <NavBtn>
+        </NavMenu> 
+        <NavBtn> 
           <h3 className="2xl:text-desc text-navsmall md:text-sm lg:text-xs text-white">
             Copyright © BigRig Group, 2022. All Rights Reserved
           </h3>
