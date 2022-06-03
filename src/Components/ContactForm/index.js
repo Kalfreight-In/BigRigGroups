@@ -53,10 +53,10 @@ const Contactform = () => {
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
           <h1 className="text-Heading text-heading font-bold">Contact</h1>
-          <p className="text-neautralform  font-Poppins text-sm font-bold  my-2">
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-2">
             Hey! How can we help you today?
           </p>
-          <p className="text-neautralform  font-Poppins text-sm font-bold  my-2">
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3">
             Fill in this form for an on-point solution in no time.
           </p>
         </div>
