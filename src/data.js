@@ -412,6 +412,12 @@ export const BigTireBrands = [
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/prinx.png',
         heading: 'Havco',
       },
+      {
+        id: '16',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/marangoni.png',
+        heading: 'Havco',
+      },
     ],
   },
 ];
