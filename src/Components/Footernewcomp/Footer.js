@@ -172,8 +172,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 lg:mt-8 ">
-            <div className="lg:flex-1 flex-1 flex lg:justify-end lg:w-1/6 ml-8">
+          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 lg:mt-8 lg:mr-12">
+            <div className="lg:flex-1 flex-1 flex lg:justify-end lg:w-1/6 ml-8 ">
               <div>
                 <div className="text-white">
                   <h1 className=" font-bold  2xl:text-footerheading text-desc">

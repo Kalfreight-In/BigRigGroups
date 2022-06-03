@@ -29,7 +29,7 @@ export const CommmingSoonComponentindex = (data) => {
             <br />
             to help keep you moving.
           </div>
-          <Slideshow data={data1[0].Brands}></Slideshow>
+          <Slideshow data={data1[0].Brands} smallSlider={true}></Slideshow>
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div
