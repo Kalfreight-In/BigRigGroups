@@ -16,7 +16,7 @@ import { isMobile, browserName } from 'react-device-detect';
 // ];
 const delay = 1500;
 
-export function Slideshow({ data }) {
+export function Slideshow({ data, smallSlider = false }) {
   const [index, setIndex] = useState(0);
 
   const timeoutRef = useRef(null);
@@ -26,7 +26,7 @@ export function Slideshow({ data }) {
       clearTimeout(timeoutRef.current);
     }
   }
-
+  console.log(`small slider ${smallSlider}`);
   useEffect(() => {
     resetTimeout();
     if (!isHovered) {
@@ -46,8 +46,12 @@ export function Slideshow({ data }) {
 
   return (
     <>
-      <div className="text-36px font-semibold text-Heading flex justify-center items-center pb-16 mt-16 mb-4">
-        <h1>Brands We Offer</h1>
+      <div
+        className={`text-36px font-semibold text-Heading flex justify-center items-center ${
+          smallSlider ? 'pb-4' : 'pb-16 mt-16 '
+        }  `}
+      >
+        {smallSlider ? null : <h1>Brands We Offer</h1>}
       </div>
       {/* <TabComponent></TabComponent> */}
       <div
@@ -55,7 +59,7 @@ export function Slideshow({ data }) {
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider 2xl:ml-40 lg:ml-32 transition ease-in-out delay-100 mb-20"
+          className="slideshowSlider 2xl:ml-40 lg:ml-32 transition ease-in delay-100 mb-20"
           style={{
             transform: `translate3d(${
               -index * (isMobile ? 100 : 33.33333333333333333)
@@ -64,13 +68,19 @@ export function Slideshow({ data }) {
         >
           {data.map((brand, index) => (
             <div
-              className="slide  w-1/3  bg-fit bg-no-repeat bg-center lg:grayscale hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center lg:p-8"
+              className={`${
+                smallSlider
+                  ? 'slide_small lg:grayscale-1 '
+                  : 'slide lg:grayscale'
+              }    w-1/3  bg-fit bg-no-repeat bg-center  hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
               <img
                 src={brand.imageurl}
-                className="self-center slide justify-self-center justify-items-center"
+                className={`${
+                  smallSlider ? 'p-20' : ''
+                }    self-center slide justify-self-center justify-items-center`}
               ></img>
             </div>
           ))}

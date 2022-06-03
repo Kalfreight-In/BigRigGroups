@@ -37,7 +37,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 text-1xl text-white font-bold md:text-subheading "
+                className="mt-4 text-md text-white font-bold md:text-subheading "
                 ref={AfhoverRef}
               >
                 Abbotsford
@@ -59,7 +59,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 text-1xl text-white font-bold md:text-subheading "
+                className="mt-4 text-md text-white font-bold md:text-subheading "
                 ref={CahoverRef}
               >
                 Calagry
