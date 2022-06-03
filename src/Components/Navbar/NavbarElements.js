@@ -135,6 +135,8 @@ export const NavItem = styled.li`
   padding: 0 1rem;
 
   color: #000;
+
+
   // &:hover {
   //   animation: pulse 1s ease-in-out;
   // }

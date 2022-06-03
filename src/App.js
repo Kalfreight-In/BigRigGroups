@@ -10,6 +10,7 @@ import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
 import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
+import Trailer_and_Leasing from './pages/TrailerandLeasing';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +21,19 @@ function App() {
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
+      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar> 
       <ErrorBoundary>
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
 
       <Routes>
+
         <Route path="/BigRigGroups" element={<Home />} />
+        <Route path="/trailerandleasing" element={<Trailer_and_Leasing/>}></Route> 
         <Route
           path="/partz"
           element={
-            <CommmingSoonComponentindex data="partz"></CommmingSoonComponentindex>
+            <CommmingSoonComponentindex data="partz"></CommmingSoonComponentindex> 
           }
         />
         <Route
@@ -39,6 +42,8 @@ function App() {
             <CommmingSoonComponentindex data="tires"></CommmingSoonComponentindex>
           }
         />
+
+        <Route path='/Bigrigcananda' element={<></>}/> 
       </Routes>
       <Footer />
       {/* <FooterSection></FooterSection> */}
