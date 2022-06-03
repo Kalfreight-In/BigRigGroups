@@ -29,7 +29,7 @@ function App() {
       <Routes>
 
         <Route path="/BigRigGroups" element={<Home />} />
-        <Route path="/trailerandleasing" element={<Trailer_and_Leasing/>}></Route>
+        <Route path="/trailerandleasing" element={<Trailer_and_Leasing/>}></Route> 
         <Route
           path="/partz"
           element={

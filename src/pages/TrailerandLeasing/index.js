@@ -4,6 +4,7 @@ import DAboutSection from "../../Components/DAboutSection";
 // import HeroSection from "../../Components/HeroSection";
 import Navbar from "../../Components/Navbar";
 import QuoteAtEnd from "../../Components/QuoteAtEnd";
+import HeroSection from "../../Components/HeroSection/index"
 
 import ProvideExpertService from "../../Components/ProvideExpertService";
 import MapSection from "../../Components/MapSection";
@@ -11,7 +12,7 @@ import TrailerList from "../../Components/TrailersList";
 import HeaderHome from "../../Components/HeaderHome";
 
 const SLIDE_COUNT = 5;
-const slides = Array.from(Array(SLIDE_COUNT).keys());
+const slides = Array.from(Array(SLIDE_COUNT).keys()); 
 
 const Lol = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +37,9 @@ const Lol = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
+  return ( 
     <>
-      {/* <EmblaCarousel slides={slides} /> */}
+      {/* <EmblaCarousel slides={slides} /> */} 
       {/* <Herosection></Herosection> */}
       {/* <HeroSection></HeroSection> */}
       {/* <HeaderHome /> */}
