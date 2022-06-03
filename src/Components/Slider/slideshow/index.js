@@ -1,6 +1,6 @@
 import { React, useEffect, useState, useRef } from 'react';
 import { useHover } from '../../../Hooks/Hover';
-import { BrandCompnentBrands } from '../../../data';
+
 // import { TabComponent } from '../../TabComponent';
 import { isMobile, browserName } from 'react-device-detect';
 // const colors = [
@@ -16,7 +16,7 @@ import { isMobile, browserName } from 'react-device-detect';
 // ];
 const delay = 1500;
 
-export function Slideshow() {
+export function Slideshow({ data }) {
   const [index, setIndex] = useState(0);
 
   const timeoutRef = useRef(null);
@@ -33,7 +33,7 @@ export function Slideshow() {
       timeoutRef.current = setTimeout(
         () =>
           setIndex((prevIndex) =>
-            prevIndex === BrandCompnentBrands.length - 1 ? 0 : prevIndex + 1
+            prevIndex === data.length - 1 ? 0 : prevIndex + 1
           ),
         delay
       );
@@ -62,7 +62,7 @@ export function Slideshow() {
             }%, 0, 0)`,
           }}
         >
-          {BrandCompnentBrands.map((brand, index) => (
+          {data.map((brand, index) => (
             <div
               className="slide  w-1/3  bg-fit bg-no-repeat bg-center lg:grayscale hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center lg:p-8"
               key={index}

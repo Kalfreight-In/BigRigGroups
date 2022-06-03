@@ -1,5 +1,6 @@
 import React from 'react';
 import { BigPArtzBrands, BigTireBrands } from '../../data.js';
+import { Slideshow } from '../Slider/slideshow/index.js';
 export const CommmingSoonComponentindex = (data) => {
   if (data.data === 'partz') {
     var data1 = BigPArtzBrands;
@@ -28,7 +29,8 @@ export const CommmingSoonComponentindex = (data) => {
             <br />
             to help keep you moving.
           </div>
-          <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
+          <Slideshow data={data1[0].Brands}></Slideshow>
+          {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div
                 className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
@@ -41,7 +43,7 @@ export const CommmingSoonComponentindex = (data) => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

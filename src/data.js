@@ -91,7 +91,7 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
-    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/partz-icon.svg ',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/partz-icon.png',
     heading: 'Partz ',
     desc: [
       {
@@ -142,7 +142,7 @@ export const GroupWebsiteComponentdata = [
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtire.png',
     Logourl:
       'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigtirelogo.png',
-    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Images/icons/tire-icon.svg',
+    icon: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tire-icon.png',
     heading: 'Tires & Services',
     desc: [
       {
