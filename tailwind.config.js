@@ -85,6 +85,7 @@ module.exports = {
         '65vh': '67vh',
         '55vh': '55vh',
         'medium-height': '90vh',
+        'mobileMainImageHeight':'50vh'
       },
       lineHeight: {
         '44px': '44px',

@@ -27,9 +27,9 @@ export const ContactFormContainer = () => {
       </div> */}
       <div className="flex-1 ">
         <div
-          className={'h-screen w-full bg-cover bg-no-repeat bg-center'}
+          className={'md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center '}  
           style={{
-            backgroundImage: `url(https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png)`,
+            backgroundImage: `url(https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png)`, 
           }}
         >
           {/* <img

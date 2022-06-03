@@ -10,14 +10,14 @@ export default function Footer() {
           className="flex lg:flex-row flex-col 2xl:pb-8 lg:ptb-4 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
-              ')',
-            backgroundPosition: 'left',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            width: 'full',
-            marginRight: '5rem',
+              "url(" +
+              "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg" +
+              ")",
+            backgroundPosition: "left",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            width: "full",
+            marginRight: "5rem",
           }}
         >
           <div
@@ -77,8 +77,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-16 ml-8">
-            <div className="lg:flex-1  flex-1  lg:w-2/12 ">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 ml-8">
+            <div className="lg:flex-1  flex-1  lg:w-2/12 "> 
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
                   Inventory
@@ -142,7 +142,7 @@ export default function Footer() {
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    24*7 Roadside Assistance{' '}
+                    24*7 Roadside Assistance{" "}
                   </a>
                 </div>
                 <div>
@@ -172,7 +172,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 mt-16 ">
+          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 mt-4 ml-8"> 
             <div className="lg:flex-1 flex-1 flex justify-end lg:w-1/6 ">
               <div>
                 <div className="text-white">
@@ -210,7 +210,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      partz@bigrigcanada.com{' '}
+                      partz@bigrigcanada.com{" "}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -220,7 +220,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      hr@bigrigcanada.com{' '}
+                      hr@bigrigcanada.com{" "}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -230,7 +230,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      info@bigrigcanada.com{' '}
+                      info@bigrigcanada.com{" "}
                     </a>
                   </div>
                 </div>
