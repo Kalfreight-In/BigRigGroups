@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import bgimage from '../../assets/TrailerAndLeasing/Images/QuoteAtEnd.png';
 import Mbgimage from '../../assets/TrailerAndLeasing/Images/mobilequote.png';
 export const WWOCArd = styled.div`
-  // background: transparent url(${bgimage}) no-repeat center center;
+  background: transparent url(${bgimage}) no-repeat center center;
   display: flex;
   padding: 0px 0px 0px 50px;
   flex-direction: column;

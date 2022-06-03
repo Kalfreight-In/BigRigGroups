@@ -36,13 +36,13 @@ class TrailerList extends React.Component {
                   pathname: '/Product',
                   state: { id: trailer.id }, // your data array of objects
                 }}
-                className=" flex-1 "
+                className="flex-1"
                 key={trailer.id}
                 id={trailer.id}
               >
                 {/* <Fade bottom key={trailer.id}> */}
                 <div
-                  className="bg-white rounded-xl  m-9 hover:shadow-2xl flex-1 "
+                  className="bg-white rounded-xl  m-9 hover:shadow-2xl flex-1 transition ease-in duration-500 "
                   key={trailer.id}
                   id={trailer.id}
                 >

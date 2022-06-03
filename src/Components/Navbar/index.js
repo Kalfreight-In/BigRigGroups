@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
@@ -115,6 +115,15 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
                 >
                   NEWS & EVENTS
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="/Contact"
+                  onClick={toggleHome}
+                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                >
+                  LOCATIONS
                 </NavLinks>
               </NavItem>
 

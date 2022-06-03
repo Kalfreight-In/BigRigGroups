@@ -7,17 +7,17 @@ export default function Footer() {
     <>
       <div className="bg-Lightblue">
         <div
-          className="flex lg:flex-row flex-col 2xl:pb-8 lg:ptb-4 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
+          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
               'url(' +
-              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/backmapfooter.svg' +
+              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
               ')',
-            backgroundPosition: 'left',
-            backgroundSize: 'contain',
+
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             width: 'full',
-            marginRight: '5rem',
           }}
         >
           <div
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-16 ml-8">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-16 ml-16">
             <div className="lg:flex-1  flex-1  lg:w-2/12 ">
               <div className="text-white ">
                 <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
@@ -91,7 +91,13 @@ export default function Footer() {
                   href=""
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
-                  Dry van for sale
+                  Flatbed for sale
+                </a>
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
+                  Used Dry van for sale
                 </a>
                 <a
                   href=""
@@ -103,13 +109,7 @@ export default function Footer() {
                   href=""
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
-                  Flatbed for sale
-                </a>
-                <a
-                  href=""
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                >
-                  Used Trailers for sale
+                  New Trailers for sale
                 </a>
                 <a
                   href=""
@@ -134,30 +134,6 @@ export default function Footer() {
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Financing Options
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    24*7 Roadside Assistance{' '}
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
-                    Scheduled Maintenance
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href=""
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                  >
                     Careers
                   </a>
                 </div>
@@ -169,10 +145,34 @@ export default function Footer() {
                     News & Events
                   </a>
                 </div>
+                <div>
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
+                    Parts Inventory
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
+                    Financing Options
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  >
+                    24*7 Roadside Assistance
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 mt-16 ">
+          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 mt-16 mr-12">
             <div className="lg:flex-1 flex-1 flex justify-end lg:w-1/6 ">
               <div>
                 <div className="text-white">
@@ -185,7 +185,7 @@ export default function Footer() {
                 <div className="text-white 2xl:leading-8 leading-6 ">
                   <div className="flex flex-row space-x-2">
                     <div>Trailers / Trucks & Leasing </div>
-                    <span> </span>
+                    <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -195,7 +195,7 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div>Tires</div>
-                    <span> </span>
+                    <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -205,7 +205,7 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div> Partz </div>
-                    <span> </span>
+                    <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -215,7 +215,7 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div>Careers</div>
-                    <span> </span>
+                    <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -223,16 +223,16 @@ export default function Footer() {
                       hr@bigrigcanada.com{' '}
                     </a>
                   </div>
-                  <div className="flex flex-row space-x-2">
+                  {/* <div className="flex flex-row space-x-2">
                     <div>For all other enquires reach us at</div>
-                    <span> </span>
+                    <span> »  </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       info@bigrigcanada.com{' '}
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

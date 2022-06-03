@@ -5,7 +5,7 @@ export default function Roadservice() {
     <>
       <div className="flex flex-col-reverse lg:flex-row pt-12 ">
         <div className="bg-Darkblue flex lg:flex-row flex-col ">
-          <div className="2xl:ml-42 xl:ml-28 md:ml-5  lg:ml-10 mb-10 mt-10 2xl:pt-12 pt-0 flex-1">
+          <div className="2xl:ml-42 lg:ml-10 mr-10 xl:ml-28 md:ml-5   mb-10 mt-10 2xl:pt-12 pt-0 flex-1">
             <h1 className="text-white text-heading font-heading lg:text-2xl  px-0">
               24/7 Road Service
             </h1>

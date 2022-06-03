@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
-import { PrevButton, NextButton } from "./EmblaCarouselButtons";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { Trailers } from "../../trailer.js";
-import "./embla.css";
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { PrevButton, NextButton } from './EmblaCarouselButtons';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { Trailers } from '../../trailer.js';
+import './embla.css';
 
 const EmblaCarousel = ({ slides, options = { loop: true }, id }) => {
   const data = Trailers[id];
@@ -51,7 +51,7 @@ const EmblaCarousel = ({ slides, options = { loop: true }, id }) => {
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
-    emblaApi.on("select", onSelect);
+    emblaApi.on('select', onSelect);
   }, [emblaApi, onSelect]);
 
   return (
