@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Video from "./media/Bgvideo2.mp4";
+import React, { useState } from 'react';
+import Video from './media/Bgvideo2.mp4';
 import {
   HeroContainer,
   WWOCCButtonM,
@@ -16,24 +16,24 @@ import {
   NavLinks,
   VideoBg,
   Callinfo,
-} from "./HeroElements";
-import { FiPhoneCall } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
-import { GoLocation } from "react-icons/go";
-import { animateScroll as scroll, Link } from "react-scroll";
+} from './HeroElements';
+import { FiPhoneCall } from 'react-icons/fi';
+import { AiOutlineMail } from 'react-icons/ai';
+import { GoLocation } from 'react-icons/go';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 // import EmblaCarousel from "./EmblaCarousel";
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { mobile } from "./media/responsive";
+import { mobile } from './media/responsive';
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   overflow: hidden;
   position: relative;
-  ${mobile({ display: "none" })}
+  ${mobile({ display: 'none' })}
 `;
 const Gradients = styled.div`
   background-image: linear-gradient(
@@ -63,8 +63,8 @@ const Arrow = styled.div`
   bottom: 0;
 
   margin: auto;
-  left: ${(props) => props.direction === "left" && "10px"};
-  right: ${(props) => props.direction === "right" && "10px"};
+  left: ${(props) => props.direction === 'left' && '10px'};
+  right: ${(props) => props.direction === 'right' && '10px'};
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
@@ -279,18 +279,11 @@ const HeroSection = () => {
           established retailer of pre-owned trucks and trailers as well.
         </PCENTER>
 
-        <WWOCCButtonM className="p-8">
-          <Link
-            to="Footertag"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-            offset={-80}
-          >
+        {/* <WWOCCButtonM className="p-8">
+         
             Contact Us
-          </Link>
-        </WWOCCButtonM>
+        
+        </WWOCCButtonM> */}
 
         <div class="pl-4 w-90  md:max-w-9  ">
           <div class="p-8 bg-white  rounded shadow-md bg-opacity-75 ">
@@ -330,7 +323,7 @@ const HeroSection = () => {
           </HomeContactContent>
         </HeroPromo>
         <HeroPromo>
-          <NavLinks>
+          {/* <NavLinks>
             <Link
               to="Map"
               smooth={true}
@@ -343,7 +336,7 @@ const HeroSection = () => {
                 <GoLocation></GoLocation>
               </SocialMediaActions>
             </Link>
-          </NavLinks>
+          </NavLinks> */}
 
           <HomeContactContent>
             <Info>Canada</Info>
