@@ -1,18 +1,34 @@
 {
   "files": {
-    "main.css": "/BigRigGroups/static/css/main.f1e2dde6.css",
-    "main.js": "/BigRigGroups/static/js/main.0e456636.js",
+    "main.css": "/BigRigGroups/static/css/main.2a52013c.css",
+    "main.js": "/BigRigGroups/static/js/main.597865e7.js",
     "static/js/787.d2d676fc.chunk.js": "/BigRigGroups/static/js/787.d2d676fc.chunk.js",
+    "static/media/Bgvideo2.mp4": "/BigRigGroups/static/media/Bgvideo2.0d3ea1da7922fa0d5fbf.mp4",
+    "static/media/dv.jpg": "/BigRigGroups/static/media/dv.2ca7553a7d6d2a434af0.jpg",
+    "static/media/dv0.jpg": "/BigRigGroups/static/media/dv0.c7ed51c3bfbb90d58561.jpg",
+    "static/media/dv1.jpg": "/BigRigGroups/static/media/dv1.20820234729261633aab.jpg",
     "static/media/bgvideo2(1).mp4": "/BigRigGroups/static/media/bgvideo2(1).b66372831b3297915c1a.mp4",
+    "static/media/Ut3.jpeg": "/BigRigGroups/static/media/Ut3.c195d9647277175a4a86.jpeg",
+    "static/media/Rt3.jpeg": "/BigRigGroups/static/media/Rt3.14abf7b94ccedf937a9d.jpeg",
+    "static/media/Rt1.jpeg": "/BigRigGroups/static/media/Rt1.3e9dc810ea9987fe247b.jpeg",
+    "static/media/Ut1.jpeg": "/BigRigGroups/static/media/Ut1.7d274ef986dc81516879.jpeg",
+    "static/media/Ut2.jpeg": "/BigRigGroups/static/media/Ut2.b669eb39e7e87811c3ce.jpeg",
+    "static/media/QuoteAtEnd.png": "/BigRigGroups/static/media/QuoteAtEnd.56fdd3db3e591e70fd18.png",
+    "static/media/whitetruck.png": "/BigRigGroups/static/media/whitetruck.0fe4c730a76f9881f592.png",
+    "static/media/PES.png": "/BigRigGroups/static/media/PES.489d8cf5c7259fe4ddd0.png",
+    "static/media/ContactTire.png": "/BigRigGroups/static/media/ContactTire.2255f5aaebf0caa2a759.png",
     "static/media/GroupWebsitesBackground.png": "/BigRigGroups/static/media/GroupWebsitesBackground.3ccb87f16ae5f4d0c348.png",
+    "static/media/Rt2.jpeg": "/BigRigGroups/static/media/Rt2.889689dd93da86cb0083.jpeg",
+    "static/media/mobilequote.png": "/BigRigGroups/static/media/mobilequote.d7dcf862727da0bd2d64.png",
+    "static/media/mapBackground.png": "/BigRigGroups/static/media/mapBackground.913e57198d7051966050.png",
     "index.html": "/BigRigGroups/index.html",
     "static/media/arrow.svg": "/BigRigGroups/static/media/arrow.40ca6620c1e5dfb4dcfb7546972ef2e1.svg",
-    "main.f1e2dde6.css.map": "/BigRigGroups/static/css/main.f1e2dde6.css.map",
-    "main.0e456636.js.map": "/BigRigGroups/static/js/main.0e456636.js.map",
+    "main.2a52013c.css.map": "/BigRigGroups/static/css/main.2a52013c.css.map",
+    "main.597865e7.js.map": "/BigRigGroups/static/js/main.597865e7.js.map",
     "787.d2d676fc.chunk.js.map": "/BigRigGroups/static/js/787.d2d676fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1e2dde6.css",
-    "static/js/main.0e456636.js"
+    "static/css/main.2a52013c.css",
+    "static/js/main.597865e7.js"
   ]
 }
