@@ -731,12 +731,12 @@ export const BigTireBrands = [
         heading: 'CT_Horiz',
       },
 
-      {
-        id: '4',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/TBCB-Logo.png',
-        heading: 'TBCB',
-      },
+      // {
+      //   id: '4',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/TBCB-Logo.png',
+      //   heading: 'TBCB',
+      // },
       {
         id: '9',
         imageurl:

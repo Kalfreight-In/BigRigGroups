@@ -35,14 +35,14 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-6"
-                src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"  
+                src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"
                 alt="logo"
                 width="80%"
               />
@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall  max-w-screen-lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall  max-w-screen-lg:text-xs md:text-xs"
                 >
                   HOME
                 </NavLinks>
@@ -63,7 +63,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/trailerandleasing"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   TRAILER & LEASING
                 </NavLinks>
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/tires"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   TIRES & SERVICES
                 </NavLinks>
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   PARTZ
                 </NavLinks>
@@ -93,7 +93,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="ContactSection"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   <Link
                     to="ContactSection"
@@ -112,7 +112,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/Contact"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   NEWS & EVENTS
                 </NavLinks>
@@ -121,7 +121,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/Contact"
                   onClick={toggleHome}
-                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   LOCATIONS
                 </NavLinks>

@@ -33,7 +33,7 @@ module.exports = {
         descnew: '1rem',
         footerheading: '34px',
         '36px': '36px',
-        '16px': '16px',
+        '16px': '18px',
         // '8px':'10px'
       },
       fontWeight: {

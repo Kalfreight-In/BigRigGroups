@@ -14,8 +14,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  position: fixed;
-
+  position: fixed; 
   top: 0;
   z-index: 29;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -123,7 +122,7 @@ export const NavMenu = styled.ul`
   align-items: center; 
   // width:110%;
   list-style: none;
-  text-align: center;
+  text-align:center;
   margin-right: -1px;
   @media screen and (max-width: 768px) {
     dispaly: none;

@@ -72,7 +72,7 @@ export function Slideshow({ data, smallSlider = false }) {
                 smallSlider
                   ? 'slide_small lg:grayscale-1 '
                   : 'slide lg:grayscale'
-              }    w-1/3  bg-fit bg-no-repeat bg-center  hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
+              }    w-1/4  bg-fit bg-no-repeat bg-center  hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
