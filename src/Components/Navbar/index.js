@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-6"
-                src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"
+                src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"  
                 alt="logo"
                 width="80%"
               />
@@ -139,7 +139,7 @@ const Navbar = ({ toggle }) => {
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                   alt=""
-                  className="text-white mr-4 w-1/2"
+                  className="text-white  w-3/5 pt-2"
                 />
               </div>
               (800) 977 0010
