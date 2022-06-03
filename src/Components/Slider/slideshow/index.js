@@ -42,7 +42,7 @@ export function Slideshow({ data, smallSlider = false }) {
         resetTimeout();
       };
     }
-  }, [index, isHovered]);
+  }, [index, isHovered, data, smallSlider]);
 
   return (
     <>
@@ -62,7 +62,8 @@ export function Slideshow({ data, smallSlider = false }) {
           className="slideshowSlider  transition ease-in delay-100 mb-20"
           style={{
             transform: `translate3d(${
-              -index * (isMobile ? 100 : 33.33333333333333333)
+              -index *
+              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)
             }%, 0, 0)`,
           }}
         >
@@ -70,16 +71,16 @@ export function Slideshow({ data, smallSlider = false }) {
             <div
               className={`${
                 smallSlider
-                  ? 'slide_small lg:grayscale-1 '
-                  : 'slide lg:grayscale'
-              }    w-1/3    hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
+                  ? 'slide_small lg:grayscale-1  w-1/4'
+                  : 'slide lg:grayscale w-1/3'
+              }       hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
               <img
                 src={brand.imageurl}
                 className={`${
-                  smallSlider ? 'p-2' : 'p-0'
+                  smallSlider ? 'p-0' : 'p-0'
                 }    self-center slide justify-self-center justify-items-center`}
               ></img>
             </div>
