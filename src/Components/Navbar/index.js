@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
@@ -68,17 +68,16 @@ const Navbar = ({ toggle }) => {
                   TRAILER & LEASING
                 </NavLinks>
               </NavItem>
-              <ErrorBoundary>
-                <NavItem>
-                  <NavLinks
-                    to="/tires"
-                    onClick={toggleHome}
-                    className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
-                  >
-                    TIRES & SERVICES
-                  </NavLinks>
-                </NavItem>
-              </ErrorBoundary>
+
+              <NavItem>
+                <NavLinks
+                  to="/tires"
+                  onClick={toggleHome}
+                  className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
+                >
+                  TIRES & SERVICES
+                </NavLinks>
+              </NavItem>
 
               <NavItem>
                 <NavLinks
@@ -92,11 +91,20 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  href="ContactSection"
+                  to="ContactSection"
                   onClick={toggleHome}
                   className="2xl:text-desc text-navsmall lg:text-xs md:text-xs"
                 >
-                  CONTACT
+                  <Link
+                    to="ContactSection"
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    CONTACT
+                  </Link>
                 </NavLinks>
               </NavItem>
 
@@ -134,4 +142,4 @@ const Navbar = ({ toggle }) => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
