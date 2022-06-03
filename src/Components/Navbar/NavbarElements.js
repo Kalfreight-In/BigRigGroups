@@ -120,7 +120,8 @@ export const MobileIcon = styled.div`
 `;
 export const NavMenu = styled.ul`
   display: flex;
-  align-items: center;
+  align-items: center; 
+  width:110%;
   list-style: none;
   text-align: center;
   margin-right: -1px;

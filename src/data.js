@@ -238,12 +238,12 @@ export const BrandCompnentBrands = [
       "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/bendix-logo.png",
     heading: "Bendix",
   },
-  {
-    id: "7",
-    imageurl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Volvo-logo.png",
-    heading: "Volvo",
-  },
+  // {
+  //   id: "7",
+  //   imageurl:
+  //     "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Volvo-logo.png",
+  //   heading: "Volvo",
+  // },
   {
     id: "8",
     imageurl:
@@ -290,7 +290,7 @@ export const BrandCompnentBrands = [
   {
     id: "15",
     imageurl:
-      "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Atro-es.png",
+      "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/Atro-es.png",
     heading: "Atro-es",
   },
   {

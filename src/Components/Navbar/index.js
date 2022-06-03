@@ -139,7 +139,7 @@ const Navbar = ({ toggle }) => {
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                   alt=""
-                  className="text-white mr-4"
+                  className="text-white mr-4 w-1/2"
                 />
               </div>
               (800) 977 0010
