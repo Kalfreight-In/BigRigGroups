@@ -55,11 +55,11 @@ export function Slideshow({ data, smallSlider = false }) {
       </div>
       {/* <TabComponent></TabComponent> */}
       <div
-        className=" slideshow    snap-x flex space-x-5 overflow-x-auto"
+        className=" slideshow    snap-x flex  overflow-x-auto"
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider 2xl:ml-40 lg:ml-32 transition ease-in delay-100 mb-20"
+          className="slideshowSlider  transition ease-in delay-100 mb-20"
           style={{
             transform: `translate3d(${
               -index * (isMobile ? 100 : 33.33333333333333333)
@@ -72,14 +72,14 @@ export function Slideshow({ data, smallSlider = false }) {
                 smallSlider
                   ? 'slide_small lg:grayscale-1 '
                   : 'slide lg:grayscale'
-              }    w-1/3  bg-fit bg-no-repeat bg-center  hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
+              }    w-1/3    hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
               <img
                 src={brand.imageurl}
                 className={`${
-                  smallSlider ? 'p-20' : ''
+                  smallSlider ? 'p-2' : 'p-0'
                 }    self-center slide justify-self-center justify-items-center`}
               ></img>
             </div>
