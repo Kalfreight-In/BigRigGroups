@@ -244,12 +244,7 @@ export const BrandCompnentBrands = [
   //     "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Volvo-logo.png",
   //   heading: "Volvo",
   // },
-  {
-    id: '8',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/fleetguard-logo.png',
-    heading: 'Fleetguard',
-  },
+
   {
     id: '9',
     imageurl:
@@ -489,12 +484,7 @@ export const BigPArtzBrands = [
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/firstlogo.svg',
         heading: 'Armor-logo',
       },
-      {
-        id: '2',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigpartzSponsers/new-holland-logo.png',
-        heading: 'Kenworth',
-      },
+
       {
         id: '3',
         imageurl:
