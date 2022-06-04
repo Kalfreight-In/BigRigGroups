@@ -63,7 +63,7 @@ export function Slideshow({ data, smallSlider = false }) {
           style={{
             transform: `translate3d(${
               -index *
-              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)  
+              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)
             }%, 0, 0)`,
           }}
         >
@@ -71,8 +71,8 @@ export function Slideshow({ data, smallSlider = false }) {
             <div
               className={`${
                 smallSlider
-                  ? 'slide_small lg:grayscale-1  w-1/4 hover:scale-75'
-                  : 'slide lg:grayscale w-1/3 hover:scale-110'
+                  ? 'slide_small lg:grayscale-1 hover:scale-75'
+                  : 'slide lg:grayscale hover:scale-110'
               }       hover:grayscale-0  transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}

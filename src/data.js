@@ -478,48 +478,43 @@ export const BigPArtzBrands = [
     name: 'Kalpartz',
 
     Brands: [
-      {
-        id: '1',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/firstlogo.svg',
-        heading: 'Armor-logo',
-      },
+      // {
+      //   id: '1',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/firstlogo.svg',
+      //   heading: 'Armor-logo',
+      // },
       // {
       //   id: "2",
       //   imageurl:
       //     "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigpartzSponsers/new-holland-logo.png",
       //   heading: "Kenworth",
       // },
-      {
-        id: '3',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/thirdlogo.svg',
-        heading: 'Peterbilt',
-      },
-      {
-        id: '4',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/fourthlogo.svg',
-        heading: 'Vanguard',
-      },
-      {
-        id: '5',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/fifthlogo.svg',
-        heading: 'Wix Filters',
-      },
-      {
-        id: '6',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/sixthlogo.svg',
-        heading: 'Bendix',
-      },
-      {
-        id: '7',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/seventhlogo.svg',
-        heading: 'Volvo',
-      },
+      // {
+      //   id: '3',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/thirdlogo.svg',
+      //   heading: 'Peterbilt',
+      // },
+      // {
+      //   id: '4',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/fourthlogo.svg',
+      //   heading: 'Vanguard',
+      // },
+
+      // {
+      //   id: '6',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/sixthlogo.svg',
+      //   heading: 'Bendix',
+      // },
+      // {
+      //   id: '7',
+      //   imageurl:
+      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/seventhlogo.svg',
+      //   heading: 'Volvo',
+      // },
       {
         id: '8',
         imageurl:
