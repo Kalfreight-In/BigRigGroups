@@ -71,9 +71,9 @@ export function Slideshow({ data, smallSlider = false }) {
             <div
               className={`${
                 smallSlider
-                  ? 'slide_small lg:grayscale-1  w-1/4'
-                  : 'slide lg:grayscale w-1/3'
-              }       hover:grayscale-0 hover:scale-125 transition-all flex items-center content-center justify-center `}
+                  ? 'slide_small lg:grayscale-1  w-1/4 hover:scale-75'
+                  : 'slide lg:grayscale w-1/3 hover:scale-110'
+              }       hover:grayscale-0  transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
