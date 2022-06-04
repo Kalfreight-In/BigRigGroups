@@ -489,12 +489,12 @@ export const BigPArtzBrands = [
           "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/firstlogo.svg",
         heading: "Armor-logo",
       },
-      {
-        id: "2",
-        imageurl:
-          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigpartzSponsers/new-holland-logo.png",
-        heading: "Kenworth",
-      },
+      // {
+      //   id: "2",
+      //   imageurl:
+      //     "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigpartzSponsers/new-holland-logo.png",
+      //   heading: "Kenworth",
+      // },
       {
         id: "3",
         imageurl:

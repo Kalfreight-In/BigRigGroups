@@ -63,7 +63,7 @@ export function Slideshow({ data, smallSlider = false }) {
           style={{
             transform: `translate3d(${
               -index *
-              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)
+              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)  
             }%, 0, 0)`,
           }}
         >
