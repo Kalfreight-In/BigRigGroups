@@ -384,12 +384,12 @@ export const BrandCompnentBrands = [
       'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/eaton.png',
     heading: 'eaton',
   },
-  {
-    id: '31',
-    imageurl:
-      'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png',
-    heading: 'fleetguard',
-  },
+  // {
+  //   id: '31',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png',
+  //   heading: 'fleetguard',
+  // },
   {
     id: '32',
     imageurl:
@@ -625,9 +625,9 @@ export const BigPArtzBrands = [
       {
         id: '25',
         imageurl:
-          'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png',
-        heading: 'fleetguard',
-      },
+          'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png', 
+        heading: 'fleetguard', 
+      },   
       {
         id: '26',
         imageurl:
