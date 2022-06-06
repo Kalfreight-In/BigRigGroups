@@ -30,16 +30,7 @@ class TrailerList extends React.Component {
         <CardListRow>
           <div className="xl:px-14 xl:py-10 md:py-0 md:px-0 bg-white flex flex-row flex-wrap justify-center items-center space-y-5 ">
             {Trailers.map((trailer) => (
-              <LinkRo
-                key={trailer.id}
-                to={{
-                  pathname: '/Product',
-                  state: { id: trailer.id }, // your data array of objects
-                }}
-                className="flex-1"
-                key={trailer.id}
-                id={trailer.id}
-              >
+              <div className="flex-1" key={trailer.id} id={trailer.id}>
                 {/* <Fade bottom key={trailer.id}> */}
                 <div
                   className="bg-white rounded-xl  m-9 hover:shadow-2xl flex-1 transition ease-in duration-500 "
@@ -65,7 +56,7 @@ class TrailerList extends React.Component {
                   </div>
                 </div>
                 {/* </Fade> */}
-              </LinkRo>
+              </div>
             ))}
 
             {/* <Fade bottom>

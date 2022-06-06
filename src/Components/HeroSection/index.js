@@ -309,7 +309,7 @@ const HeroSection = () => {
             <FiPhoneCall></FiPhoneCall>
           </SocialMediaActions>
           <HomeContactContent>
-            <Info>(604)&nbsp;864&nbsp;3100</Info>
+            <Info>(800)&nbsp;977&nbsp;3100</Info>
             <Callinfo>Call Us</Callinfo>
           </HomeContactContent>
         </HeroPromo>
@@ -318,7 +318,7 @@ const HeroSection = () => {
             <AiOutlineMail></AiOutlineMail>
           </SocialMediaActions>
           <HomeContactContent>
-            <Info>trailers@bigrigcanada</Info>
+            <Info>trailers@bigrigcanada.com</Info>
             <Callinfo>Email</Callinfo>
           </HomeContactContent>
         </HeroPromo>

@@ -1,7 +1,7 @@
-import { FaBars } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import styled from "styled-components";
+import { FaBars } from 'react-icons/fa';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
   background-color: #1e1b1b;
@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   width: 100%;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   font-size: 1rem;
 
@@ -104,6 +104,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   display: block;
+  padding-left: 3rem;
+
   height: 80px;
   &:hover {
     color: #101010;
@@ -115,6 +117,7 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkR)`
   color: #fff;
   display: flex;
+  width: max-content;
   align-items: center;
   text-decoration: none;
   padding: 0 2rem;
@@ -166,12 +169,11 @@ export const Bars = styled(FaBars)`
 //   }
 // `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items:right;
-  
-
+  flex-direction: row;
+  align-items: right;
+  justify-content: end;
   padding: 25px;
 
   @media screen and (max-width: 768px) {

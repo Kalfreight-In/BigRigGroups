@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  position: fixed; 
+  position: fixed;
   top: 0;
   z-index: 29;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -119,10 +119,10 @@ export const MobileIcon = styled.div`
 `;
 export const NavMenu = styled.ul`
   display: flex;
-  align-items: center; 
+  align-items: center;
   // width:110%;
   list-style: none;
-  text-align:center;
+  text-align: center;
   margin-right: -1px;
   @media screen and (max-width: 768px) {
     dispaly: none;
@@ -135,7 +135,6 @@ export const NavItem = styled.li`
   padding: 0 1rem;
 
   color: #000;
-
 
   // &:hover {
   //   animation: pulse 1s ease-in-out;
@@ -156,7 +155,28 @@ export const NavItem = styled.li`
   // }
 `;
 export const NavLinks = styled(LinkR)`
-  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)}; 
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  height: 100%;
+  cursor: pointer;
+  // font-size:18px;
+
+  &.active {
+    color: #101010;
+  }
+  &:hover {
+    font-weight: 500;
+    border-bottom: 2px solid #ffab53 !important;
+  }
+  &.active {
+    border-bottom: 2px solid #ffab53 !important;
+  }
+`;
+export const NavLinksA = styled.a`
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
   display: flex;
   align-items: center;
   text-decoration: none;

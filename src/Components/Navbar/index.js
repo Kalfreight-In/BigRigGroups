@@ -11,6 +11,7 @@ import {
   NavLogo,
   MobileIcon,
   NavItem,
+  NavLinksA,
   NavLinks,
 } from './NavbarElements';
 
@@ -18,12 +19,24 @@ const Navbar = ({ toggle }) => {
   console.log(window.scrollY);
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
+    if (window.location.pathname == '/trailerandleasing') {
+      console.log(`it is inside the ${window.location.pathname}`);
+      setScrollNav(true);
+      return;
+    }
     if (window.scrollY > 100) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
     }
   };
+  useEffect(() => {
+    if (window.location.pathname == '/trailerandleasing') {
+      console.log(`it is inside the ${window.location.pathname}`);
+      setScrollNav(true);
+      return;
+    }
+  }, [window.location.pathname]);
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
@@ -33,9 +46,10 @@ const Navbar = ({ toggle }) => {
   function disabeled() {
     return window.localStorage.getItem('product');
   }
+
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
@@ -70,23 +84,25 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                <NavLinks
-                  to="/tires"
-                  onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
-                >
-                  TIRES & SERVICES
-                </NavLinks>
+                <a href="/tires">
+                  <NavLinksA
+                    href="/tires"
+                    onClick={toggleHome}
+                    className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
+                  >
+                    TIRES & SERVICES
+                  </NavLinksA>
+                </a>
               </NavItem>
 
               <NavItem>
-                <NavLinks
-                  to="/partz"
+                <NavLinksA
+                  href="/partz"
                   onClick={toggleHome}
                   className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   PARTZ
-                </NavLinks>
+                </NavLinksA>
               </NavItem>
 
               <NavItem>

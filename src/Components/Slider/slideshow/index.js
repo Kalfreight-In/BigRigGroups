@@ -17,8 +17,9 @@ import { isMobile, browserName } from 'react-device-detect';
 const delay = 1500;
 
 export function Slideshow({ data, smallSlider = false }) {
+  const [slides, setStateSlides] = useState(data);
   const [index, setIndex] = useState(0);
-
+  const [ended, setended] = useState(false);
   const timeoutRef = useRef(null);
   const [hoverRef, isHovered] = useHover();
   function resetTimeout() {
@@ -26,14 +27,18 @@ export function Slideshow({ data, smallSlider = false }) {
       clearTimeout(timeoutRef.current);
     }
   }
+
   console.log(`small slider ${smallSlider}`);
   useEffect(() => {
     resetTimeout();
+    // if (index === slides.length) {
+    //   setended = true;
+    // }
     if (!isHovered) {
       timeoutRef.current = setTimeout(
         () =>
           setIndex((prevIndex) =>
-            prevIndex === data.length - 1 ? 0 : prevIndex + 1
+            prevIndex === slides.length - 1 ? 0 : prevIndex + 1
           ),
         delay
       );
@@ -42,7 +47,13 @@ export function Slideshow({ data, smallSlider = false }) {
         resetTimeout();
       };
     }
-  }, [index, isHovered, data, smallSlider]);
+  }, [index, isHovered, slides, smallSlider]);
+  // useEffect(() => {
+  //   const slidesWithClones = [...slides];
+  //   slidesWithClones.unshift(slidesWithClones[slidesWithClones.length - 1]);
+  //   slidesWithClones.push(slidesWithClones[1]);
+  //   setStateSlides(slidesWithClones);
+  // }, [ended]);
 
   return (
     <>
@@ -59,7 +70,7 @@ export function Slideshow({ data, smallSlider = false }) {
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider  transition ease-in delay-100 mb-20"
+          className="slideshowSlider  transition ease-linear delay-100 mb-20"
           style={{
             transform: `translate3d(${
               -index *
@@ -67,7 +78,7 @@ export function Slideshow({ data, smallSlider = false }) {
             }%, 0, 0)`,
           }}
         >
-          {data.map((brand, index) => (
+          {slides.map((brand, index) => (
             <div
               className={`${
                 smallSlider

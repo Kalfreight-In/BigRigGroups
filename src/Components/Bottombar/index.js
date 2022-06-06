@@ -131,12 +131,18 @@ const BottomBar = ({ toggle }) => {
 
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-        </NavMenu> 
-        <NavBtn> 
-          <h3 className="2xl:text-desc text-navsmall md:text-sm lg:text-xs text-white">
+        </NavMenu>
+        <div className="flex flex-col justify-end w-full">
+          <NavBtn>
+            {/* <h3 className="2xl:text-desc text-navsmall md:text-sm lg:text-xs text-white">
             Copyright © BigRig Group, 2022. All Rights Reserved
-          </h3>
-        </NavBtn>
+          </h3> */}
+            <h3 className="2xl:text-desc mr-4 text-navsmall md:text-sm lg:text-xs text-white">
+              Copyright © BigRig Group, 2022. All Rights Reserved
+            </h3>
+          </NavBtn>
+        </div>
+
         {/* <MobileIcon onClick={toggle}>
           <FaBars/>
         </MobileIcon> */}
