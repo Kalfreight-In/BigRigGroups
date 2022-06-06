@@ -16,7 +16,7 @@ export default function Abouthome() {
               ")",
             backgroundPosition: "center",
             backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "no-repeat",  
           }}
         >
           <div>
