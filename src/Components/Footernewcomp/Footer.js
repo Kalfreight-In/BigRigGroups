@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
-import { AiOutlineClockCircle } from 'react-icons/ai';
+import { AiOutlineClockCircle } from 'react-icons/ai'; 
 
 export default function Footer() {
   return (
     <>
       <div className="bg-Lightblue">
         <div
-          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
+          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"    
           style={{
             backgroundImage:
               'url(' +
@@ -16,9 +16,10 @@ export default function Footer() {
 
             backgroundPosition: 'center',
             backgroundSize: 'cover',
+
             backgroundRepeat: 'no-repeat',
             width: 'full',
-          }}
+          }} 
         >
           <div
             className="flex-1 w-7/12  lg:block "
@@ -86,7 +87,7 @@ export default function Footer() {
               </div>
               <br />
 
-              <div className="text-white 2xl:leading-8 leading-6 ">
+              <div className="text-white 2xl:leading-8 leading-6 "> 
                 <a
                   href=""
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -172,7 +173,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row  mb-8 lg:mb-2 lg:mt-8 lg:mr-12">
+          <div className="flex flex-1 flex-row  mb-8 lg:mb-2 lg:mt-8 lg:mr-12">
             <div className="lg:flex-1 flex-1 flex lg:justify-end lg:w-1/6 ml-8 ">
               <div>
                 <div className="text-white">
@@ -184,7 +185,7 @@ export default function Footer() {
 
                 <div className="text-white 2xl:leading-8 leading-6 ">
                   <div className="flex flex-row space-x-2">
-                    <div>Trailers / Trucks & Leasing </div>
+                    <div>Trailers / Trucks & Leasing </div> 
                     <span> » </span>
                     <a
                       href=""
@@ -232,17 +233,17 @@ export default function Footer() {
                     >
                       info@bigrigcanada.com{" "}
                     </a>
-                  </div> */}
+                  </div> */}  
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>  
+      </div> 
 
       {/* <div id="secondmain">
         <Navbar />
       </div> */}
     </>
   );
-}
+} 
