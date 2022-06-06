@@ -78,10 +78,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 ml-28">
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 "> 
             <div className="lg:flex-1  flex-1  lg:w-2/12 ">
               <div className="text-white ">
-                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5">
+                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 "> 
                   Inventory
                 </h1>
               </div>
