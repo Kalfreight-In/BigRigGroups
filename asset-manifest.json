@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BigRigGroups/static/css/main.0d76810f.css",
-    "main.js": "/BigRigGroups/static/js/main.aa922dad.js",
+    "main.js": "/BigRigGroups/static/js/main.71ea698b.js",
     "static/js/787.d2d676fc.chunk.js": "/BigRigGroups/static/js/787.d2d676fc.chunk.js",
     "static/media/Bgvideo2.mp4": "/BigRigGroups/static/media/Bgvideo2.0d3ea1da7922fa0d5fbf.mp4",
     "static/media/dv.jpg": "/BigRigGroups/static/media/dv.2ca7553a7d6d2a434af0.jpg",
@@ -24,11 +24,11 @@
     "index.html": "/BigRigGroups/index.html",
     "static/media/arrow.svg": "/BigRigGroups/static/media/arrow.40ca6620c1e5dfb4dcfb7546972ef2e1.svg",
     "main.0d76810f.css.map": "/BigRigGroups/static/css/main.0d76810f.css.map",
-    "main.aa922dad.js.map": "/BigRigGroups/static/js/main.aa922dad.js.map",
+    "main.71ea698b.js.map": "/BigRigGroups/static/js/main.71ea698b.js.map",
     "787.d2d676fc.chunk.js.map": "/BigRigGroups/static/js/787.d2d676fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d76810f.css",
-    "static/js/main.aa922dad.js"
+    "static/js/main.71ea698b.js"
   ]
 }
