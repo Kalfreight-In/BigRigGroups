@@ -85,24 +85,24 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <a href="/BigRigGroups/tires">
-                  <NavLinksA
-                    href="/BigRigGroups/tires"
+                  <NavLinks
+                    to="/tires"
                     onClick={toggleHome}
                     className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                   >
                     TIRES & SERVICES
-                  </NavLinksA>
+                  </NavLinks>
                 </a>
               </NavItem>
 
               <NavItem>
-                <NavLinksA
-                  href="/BigRigGroups/partz"
+                <NavLinks
+                  to="/partz"
                   onClick={toggleHome}
                   className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   PARTZ
-                </NavLinksA>
+                </NavLinks>
               </NavItem>
 
               <NavItem>

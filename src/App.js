@@ -33,13 +33,13 @@ function App() {
           element={<Trailer_and_Leasing />}
         ></Route>
         <Route
-          path="BigRigGroups/partz"
+          path="/partz"
           element={
             <CommmingSoonComponentindex data="partz"></CommmingSoonComponentindex>
           }
         />
         <Route
-          path="BigRigGroups/tires"
+          path="/tires"
           element={
             <CommmingSoonComponentindex data="tires"></CommmingSoonComponentindex>
           }
