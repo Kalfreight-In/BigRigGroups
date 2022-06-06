@@ -24,10 +24,10 @@ export const CommmingSoonComponentindex = (data) => {
           <div className="flex flex-row align-center justify-center text-2xl text-Heading font-bold md:text-2xl pb-8">
             Coming soon!
           </div>
-          <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc text-center">
-            Over 50,000 Truck and Trailer {data.data}. Our parts professionals
+          <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
+            <div className="justify-self-center w-1/3 ">{data1[0].desc}</div>
+
             <br />
-            to help keep you moving.
           </div>
           <Slideshow data={data1[0].Brands} smallSlider={true}></Slideshow>
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">

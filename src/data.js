@@ -476,7 +476,7 @@ export const BigPArtzBrands = [
     id: '0',
     logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
     name: 'Kalpartz',
-
+    desc: 'Top-notch quality and best-in-class services are just a click away. Meet our specialist for quality tires & 24*7 roadside assistance. ',
     Brands: [
       // {
       //   id: '1',
@@ -615,9 +615,9 @@ export const BigPArtzBrands = [
       {
         id: '25',
         imageurl:
-          'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png', 
-        heading: 'fleetguard', 
-      },   
+          'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRigpartzSponsers/fleetguard.png',
+        heading: 'fleetguard',
+      },
       {
         id: '26',
         imageurl:
@@ -711,7 +711,7 @@ export const BigTireBrands = [
     id: '0',
     logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/tirered.svg',
     name: 'Kaltire',
-
+    desc: 'Top-notch quality and best-in-class services are just a click away. Meet our specialist for quality tires & 24*7 roadside assistance. ',
     Brands: [
       {
         id: '2',
