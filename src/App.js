@@ -21,29 +21,31 @@ function App() {
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar> 
+      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
       <ErrorBoundary>
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
 
       <Routes>
-
         <Route path="/BigRigGroups" element={<Home />} />
-        <Route path="/trailerandleasing" element={<Trailer_and_Leasing/>}></Route> 
         <Route
-          path="/partz"
+          path="/trailerandleasing"
+          element={<Trailer_and_Leasing />}
+        ></Route>
+        <Route
+          path="BigRigGroups/partz"
           element={
-            <CommmingSoonComponentindex data="partz"></CommmingSoonComponentindex> 
+            <CommmingSoonComponentindex data="partz"></CommmingSoonComponentindex>
           }
         />
         <Route
-          path="/tires"
+          path="BigRigGroups/tires"
           element={
             <CommmingSoonComponentindex data="tires"></CommmingSoonComponentindex>
           }
         />
 
-        <Route path='/Bigrigcananda' element={<></>}/> 
+        <Route path="/Bigrigcananda" element={<></>} />
       </Routes>
       <Footer />
       {/* <FooterSection></FooterSection> */}

@@ -54,12 +54,15 @@
 .slideshowSlider {
   white-space: nowrap;
   transition: ease 1000ms;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
 }
 
 .slide {
   display: inline-block;
   margin: 0px 0rem;
-  height: 300px;
+  height: 210px;
 }
 .slide_small {
   display: inline-block;

@@ -26,7 +26,7 @@ module.exports = {
       },
       fontSize: {
         heading: '3rem',
-        subheading: '2rem',
+        subheading: '1.6rem',
         desc: '1.3rem',
         navsmall: '14px',
         navsmallne: '10px;',
@@ -85,7 +85,7 @@ module.exports = {
         '65vh': '67vh',
         '55vh': '55vh',
         'medium-height': '90vh',
-        'mobileMainImageHeight':'50vh'
+        mobileMainImageHeight: '50vh',
       },
       lineHeight: {
         '44px': '44px',

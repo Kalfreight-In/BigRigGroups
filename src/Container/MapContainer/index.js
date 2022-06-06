@@ -37,7 +37,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 text-md text-white font-bold md:text-subheading "
+                className="mt-4 text-sm text-white font-bold md:text-subheading "
                 ref={AfhoverRef}
               >
                 Abbotsford
@@ -59,10 +59,10 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 text-md text-white font-bold md:text-subheading "
+                className="mt-4 text-sm text-white font-bold md:text-subheading "
                 ref={CahoverRef}
               >
-                Calagry
+                Calgary
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
                 9115 52 St.SE,AB T2C 2R4
@@ -71,7 +71,7 @@ export const MapConatiner = () => {
           </div>
           <div className="my-6">
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl ">
-              Upcoming Locations
+              Upcoming Locations:
             </h3>
           </div>
           <div className="flex flex-row items-center content-start mt-2">

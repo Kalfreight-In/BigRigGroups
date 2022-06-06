@@ -31,9 +31,9 @@ export function Slideshow({ data, smallSlider = false }) {
   console.log(`small slider ${smallSlider}`);
   useEffect(() => {
     resetTimeout();
-    // if (index === slides.length) {
-    //   setended = true;
-    // }
+    if (index === slides.length) {
+      setended = true;
+    }
     if (!isHovered) {
       timeoutRef.current = setTimeout(
         () =>
@@ -48,12 +48,12 @@ export function Slideshow({ data, smallSlider = false }) {
       };
     }
   }, [index, isHovered, slides, smallSlider]);
-  // useEffect(() => {
-  //   const slidesWithClones = [...slides];
-  //   slidesWithClones.unshift(slidesWithClones[slidesWithClones.length - 1]);
-  //   slidesWithClones.push(slidesWithClones[1]);
-  //   setStateSlides(slidesWithClones);
-  // }, [ended]);
+  useEffect(() => {
+    const slidesWithClones = [...slides];
+    slidesWithClones.unshift(slidesWithClones[slidesWithClones.length - 1]);
+    slidesWithClones.push(slidesWithClones[1]);
+    setStateSlides(slidesWithClones);
+  }, [ended]);
 
   return (
     <>
@@ -66,15 +66,14 @@ export function Slideshow({ data, smallSlider = false }) {
       </div>
       {/* <TabComponent></TabComponent> */}
       <div
-        className=" slideshow    snap-x flex  overflow-x-auto"
+        className=" slideshow    snap-x flex justify-center items-center overflow-auto"
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider  transition ease-linear delay-100 mb-20"
+          className="slideshowSlider  transition ease-linear delay-100 mb-20 "
           style={{
             transform: `translate3d(${
-              -index *
-              (isMobile ? 100 : smallSlider ? 25 : 33.33333333333333333)
+              -index * (isMobile ? 100 : smallSlider ? 25 : 33.333333)
             }%, 0, 0)`,
           }}
         >
@@ -82,17 +81,21 @@ export function Slideshow({ data, smallSlider = false }) {
             <div
               className={`${
                 smallSlider
-                  ? 'slide_small lg:grayscale-1 hover:scale-75'
-                  : 'slide lg:grayscale hover:scale-110'
+                  ? 'slide_small  w-4/3  lg:grayscale-1 hover:scale-75 `'
+                  : 'slide  w-1/3  lg:grayscale hover:scale-110 '
               }       hover:grayscale-0  transition-all flex items-center content-center justify-center `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
               <img
                 src={brand.imageurl}
+                style={{
+                  border: '1px solid #ddd',
+                  margin: '0rem 1rem',
+                }}
                 className={`${
                   smallSlider ? 'p-0' : 'p-0'
-                }    self-center slide justify-self-center justify-items-center`}
+                }    self-center slide justify-self-center justify-items-center `}
               ></img>
             </div>
           ))}

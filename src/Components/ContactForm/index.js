@@ -11,7 +11,7 @@ const Contactform = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [buttonText, setButtonText] = useState('Contact Us');
+  const [buttonText, setButtonText] = useState('Submit');
   const resetForm = (e) => {
     setName('');
     setEmail('');
@@ -19,7 +19,7 @@ const Contactform = () => {
     setSuccess(false);
     setError(false);
     setErrorMessage('');
-    setButtonText('Contact Us');
+    setButtonText('Submit');
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -52,7 +52,7 @@ const Contactform = () => {
     <div id="shadow" className="p-8 rounded-3xl shadow-2xl ">
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
-          <h1 className="text-Heading text-heading font-bold">Contact</h1>
+          <h1 className="text-Heading text-heading font-bold">Contact Us</h1>
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2">
             Hey! How can we help you today?
           </p>
