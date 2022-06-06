@@ -476,7 +476,7 @@ export const BigPArtzBrands = [
     id: '0',
     logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
     name: 'Kalpartz',
-    desc: 'Top-notch quality and best-in-class services are just a click away. Meet our specialist for quality tires & 24*7 roadside assistance. ',
+    desc: 'With an extensive inventory of 50000+ parts, our experts always keep you on the move.',
     Brands: [
       // {
       //   id: '1',
