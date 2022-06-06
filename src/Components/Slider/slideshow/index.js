@@ -11,11 +11,11 @@ import { isMobile, browserName } from 'react-device-detect';
 //   '#00C49F',
 //   '#FFBB28',
 //   '#0088FE',
-//   '#00C49F',
+//   '#00C49F', 
 //   '#FFBB28',
-// ];
-const delay = 1500;
+// ]; 
 
+const delay = 1500; 
 export function Slideshow({ data, smallSlider = false }) {
   const [slides, setStateSlides] = useState(data);
   const [index, setIndex] = useState(0);
@@ -45,7 +45,7 @@ export function Slideshow({ data, smallSlider = false }) {
       return () => {
         resetTimeout();
       };
-    }
+    } 
   }, [index, isHovered, slides, smallSlider]);
   useEffect(() => {
     setStateSlides(data);

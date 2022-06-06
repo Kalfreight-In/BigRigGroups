@@ -16,6 +16,7 @@ export default function Footer() {
 
             backgroundPosition: 'center',
             backgroundSize: 'cover',
+
             backgroundRepeat: 'no-repeat',
             width: 'full',
           }}
