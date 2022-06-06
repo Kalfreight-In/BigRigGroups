@@ -62,12 +62,12 @@
 .slide {
   display: inline-block;
   margin: 0px 0rem;
-  height: 210px;
+  height: 150px;
 }
 .slide_small {
   display: inline-block;
   margin: 0px 0rem;
-  height: 300px;
+  height: 150px;
 }
 /* Buttons */
 
