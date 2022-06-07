@@ -169,7 +169,7 @@ export const NavLinks = styled(LinkR)`
   }
   &:hover {
     font-weight: 500;
-    border-bottom: 2px solid #ffab53 !important;
+    border-bottom: 2px solid #ffab53 !important; 
   }
   &.active {
     border-bottom: 2px solid #ffab53 !important;
