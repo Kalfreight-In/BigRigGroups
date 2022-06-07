@@ -1,7 +1,7 @@
 import React from 'react';
 import { BigPArtzBrands, BigTireBrands } from '../../data.js';
 import { Slideshow } from '../Slider/slideshow/index.js';
-export const CommmingSoonComponentindex = (data) => {
+export const  CommmingSoonComponentindex = (data) => {
   if (data.data === 'partz') {
     var data1 = BigPArtzBrands;
   }
@@ -24,8 +24,8 @@ export const CommmingSoonComponentindex = (data) => {
           <div className="flex flex-row align-center justify-center text-2xl text-Heading font-bold md:text-2xl pb-8">
             Coming soon!
           </div>
-          <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
-            <div className="justify-self-center w-1/3 ">{data1[0].desc}</div>
+          <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc md:text-desc text-sm w-full text-center content-center">   
+            <div className="justify-self-center w-1/3 ">{data1[0].desc}</div>       
 
             <br />
           </div>

@@ -11,12 +11,12 @@ function GroupWebsiteComponent() {
         // style={{ backgroundImage: `url(${BgImage})` }}
       >
         {GroupWebsiteComponentdata.map((data) => (
-          <div className="container   w-screen   text-gray-600" key={data.id}>
+          <div className="container   w-screen   text-gray-600" key={data.id}>  
             <div
               className={
                 data.id % 2 !== 0
-                  ? "md:flex lg:w-screen w-fit"
-                  : "md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit"
+                  ? 'md:flex lg:w-screen w-fit'
+                  : 'md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit'
               }
             >
               <motion.div
@@ -24,11 +24,11 @@ function GroupWebsiteComponent() {
                 transition={{ duration: 1 }}
                 className="app__header-info flex-1"
               >
-                <div className={data.id % 2 !== 0 ? "md:5/12 " : "md:5/12 "}>
+                <div className={data.id % 2 !== 0 ? 'md:5/12 ' : 'md:5/12 '}>
                   <div className="relative">
                     <div
-                      className={
-                        "md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center" 
+                      className={ 
+                        'md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center'
                       }
                       style={{ backgroundImage: `url(${data.imageurl})` }}
                       // src={data.imageurl}
@@ -46,7 +46,7 @@ function GroupWebsiteComponent() {
                   <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
-                      transition={{ duration: 0.2, ease: "easeInOut" }}
+                      transition={{ duration: 0.2, ease: 'easeInOut' }}
                       alt="profile_circle"
                       //  className="overlay_circle"
                       src={data.icon}
