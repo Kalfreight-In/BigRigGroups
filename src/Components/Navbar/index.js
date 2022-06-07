@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll, Link } from 'react-scroll';
 // import ErrorBoundary from '../ErrorBoundary';
-
+import { useNavigate } from 'react-router-dom';
 import {
   Nav,
   NavMenu,
@@ -16,9 +16,24 @@ import {
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+  const history = useNavigate();
   console.log(window.scrollY);
+  // function loadLogo(path) {
+  //   if (path == '/BigRigGroups') {
+  //     return 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg';
+  //   }
+  //   if (path == '/partz') {
+  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png';
+  //   }
+  //   if (path == '/tires') {
+  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png';
+  //   } else {
+  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
+  //   }
+  // }
+  // const initialState = loadLogo(window.location.pathname);
   const [logo, setlogo] = useState(
-    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+    'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
   );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -38,23 +53,26 @@ const Navbar = ({ toggle }) => {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
       );
+      console.log(`${window.location.pathname} and then there is ${logo}`);
       setScrollNav(true);
     }
-
     if (window.location.pathname == '/BigRigGroups') {
       setlogo(
         'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
       );
+      console.log(`${window.location.pathname} and then there is ${logo}`);
     }
     if (window.location.pathname == '/partz') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
       );
+      console.log(`${window.location.pathname} and then there is ${logo}`);
     }
     if (window.location.pathname == '/tires') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
       );
+      console.log(`${window.location.pathname} and then there is ${logo}`);
     }
   }, [window.location.pathname]);
   useEffect(() => {

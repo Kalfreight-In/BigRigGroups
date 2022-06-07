@@ -15,8 +15,8 @@ function GroupWebsiteComponent() {
             <div
               className={
                 data.id % 2 !== 0
-                  ? "md:flex lg:w-screen w-fit"
-                  : "md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit"
+                  ? 'md:flex lg:w-screen w-fit'
+                  : 'md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit'
               }
             >
               <motion.div
@@ -24,11 +24,11 @@ function GroupWebsiteComponent() {
                 transition={{ duration: 1 }}
                 className="app__header-info flex-1"
               >
-                <div className={data.id % 2 !== 0 ? "md:5/12 " : "md:5/12 "}>
+                <div className={data.id % 2 !== 0 ? 'md:5/12 ' : 'md:5/12 '}>
                   <div className="relative">
                     <div
                       className={
-                        "md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center" 
+                        'md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center'
                       }
                       style={{ backgroundImage: `url(${data.imageurl})` }}
                       // src={data.imageurl}
@@ -46,7 +46,7 @@ function GroupWebsiteComponent() {
                   <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
-                      transition={{ duration: 0.2, ease: "easeInOut" }}
+                      transition={{ duration: 0.2, ease: 'easeInOut' }}
                       alt="profile_circle"
                       //  className="overlay_circle"
                       src={data.icon}
@@ -65,16 +65,16 @@ function GroupWebsiteComponent() {
                       {/* <h2 className="2xl:mt-4  lg:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
                         {data.head}
                       </h2> */}
-                      <p className="mt-2  text-Description font-desc text-descnew ">
+                      <p className="mt-2  text-Description font-desc text-descnew text-justify">
                         {data.desc}
                       </p>
                       {data.desc1 ? (
                         <div className="lg:mt-2 ">
-                          <p className="text-Description font-desc text-descnew ">
+                          <p className="text-Description font-desc text-descnew text-justify">
                             {data.desc1[0].head}
                           </p>
                           {data.desc1[0].desc.map((info) => (
-                            <p className=" laptop:mt-2 text-Description font-desc text-descnew ">
+                            <p className=" laptop:mt-2 text-Description font-desc text-descnew text-justify">
                               * {info.desc}
                             </p>
                           ))}

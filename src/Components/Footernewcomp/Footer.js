@@ -216,9 +216,7 @@ export default function Footer() {
                   </div>
 
                   <div className="flex flex-row space-x-2">
-                    <div className="antialiased w-max">
-                      Trailers / Trucks & Leasing
-                    </div>
+                    <div className="antialiased w-max">Trailers & Leasing</div>
                     <span> » </span>
                     <a
                       href=""

@@ -39,12 +39,12 @@ export const GroupWebsiteComponentdata = [
       {
         id: 1,
         // head: `Trucks`,
-        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers,  heated dry vans and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from Thermo King and Carrier brands.`,
+        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, heated dry vans and used trucks. The dry vans are available in 24" and 48" logistic posts. Our reefer's inventory includes top-grade units from Thermo King and Carrier brands.  `,
       },
       {
         id: 2,
         // head: `Trailers`,
-        desc: `We have quality used trailers for sale with various makes from Utility, Wabash, Stoughton, and Great Dane. In addition, we have used trucks from Peterbilt and Kenworth. `,
+        desc: `We have quality used trailers for sale with various makes from Utility, Wabash, Stoughton, and Great Dane. We have all brands in used trucks. `,
       },
       {
         id: 3,

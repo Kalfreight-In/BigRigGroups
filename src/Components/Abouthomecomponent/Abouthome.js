@@ -1,8 +1,8 @@
 import React from 'react';
-import { AboutusSec } from '../../data'; 
+import { AboutusSec } from '../../data';
 
 export default function Abouthome() {
-  const aboutdata = AboutusSec[0]; 
+  const aboutdata = AboutusSec[0];
   return (
     <>
       <div>
@@ -11,12 +11,12 @@ export default function Abouthome() {
           className="md:h-medium-height h-mobileSecondImage"
           style={{
             backgroundImage:
-              "url(" +
-              "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png" +
-              ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",  
+              'url(' +
+              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png' +
+              ')',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <div>
@@ -29,7 +29,7 @@ export default function Abouthome() {
                     </h1>
                   </div>
                   <div className="flex justify-center items-center">
-                    <p className=" leading-6 sm:leading-10 text-base mx-8 sm:mx-0  md:text-2xl  lg:text-Description  2xl:w-3/5 xl:w-3/5 lg:w-4/5 w-fit tracking-wide font-semibold text-center flex justify-center items-center">
+                    <p className=" leading-6 sm:leading-10 text-base mx-8 sm:mx-0  md:text-2xl  lg:text-Description  2xl:w-3/5 xl:w-3/5 lg:w-4/5 w-fit tracking-wide font-semibold  flex justify-center items-center text-justify">
                       {aboutdata.desc}
                       {/* <br /> <br />
                   {aboutdata.descOne} */}
@@ -64,5 +64,4 @@ export default function Abouthome() {
       </div>
     </>
   );
-} 
-
+}
