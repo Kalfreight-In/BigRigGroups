@@ -253,8 +253,8 @@ export default function Footer() {
       </div>
 
       {/* <div id="secondmain">
-        <Navbar />
-      </div> */}
-    </>
+        <Navbar /> 
+      </div> */}  
+    </> 
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BigPArtzBrands, BigTireBrands } from '../../data.js';
 import { Slideshow } from '../Slider/slideshow/index.js';
-export const CommmingSoonComponentindex = (data) => {
+export const  CommmingSoonComponentindex = (data) => {
   if (data.data === 'partz') {
     var data1 = BigPArtzBrands;
   }

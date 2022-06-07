@@ -10,7 +10,7 @@ import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
 import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
-import Trailer_and_Leasing from './pages/TrailerandLeasing';
+import Trailer_and_Leasing from './pages/TrailerandLeasing'; 
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,3 +55,4 @@ function App() {
 }
 
 export default App;
+

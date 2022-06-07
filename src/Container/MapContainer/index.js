@@ -6,19 +6,22 @@ export const MapConatiner = () => {
   const [AfhoverRef, AfisHovered] = useHover();
   const [CahoverRef, CaisHovered] = useHover();
   return (
-    <div className="bg-Lightblue flex flex-col justify-between lg:flex-row">
-      <div className="flex-1 2xl:p-16 xl:p-12 lg:p-8">
-        <Map Af={AfisHovered} Ca={CaisHovered}></Map>
+    <div className="bg-Lightblue flex flex-col justify-between lg:flex-row"> 
+      <div className="flex-1 2xl:p-16 xl:p-12 lg:p-8  ">  
+        <Map
+          Af={AfisHovered}
+          Ca={CaisHovered}  
+        ></Map>
       </div>
 
-      <div className=" md:6/12 flex-col flex content-center  flex-1">
-        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-12 mt-2 ">
+      <div className=" md:6/12 flex-col flex content-center  flex-1 ">   
+        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 lg:ml-12 mt-2 "> 
           <div>
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl ">
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew">
-              Visit our nearest yard. For assistance in the US,{' '}
+              Visit our nearest yard. For assistance in the US,{" "}
               <a href="#" className="hover:text-yellow-shadowhover transition ">
                 click here
               </a>
@@ -28,7 +31,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -50,10 +53,10 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
-              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
+              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg" 
               width="60"
               className="pr-8"
             ></motion.img>
@@ -77,7 +80,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -91,7 +94,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -105,7 +108,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
