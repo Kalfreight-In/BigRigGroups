@@ -122,6 +122,16 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
+                <NavLinks
+                  to="/partz"
+                  onClick={toggleHome}
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
+                >
+                  PARTZ
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
                 <a href="/BigRigGroups/tires">
                   <NavLinks
                     to="/tires"
@@ -171,6 +181,7 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
+
               <NavItem>
                 <NavLinks
                   to="/Contact"
@@ -178,6 +189,15 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
                 >
                   LOCATIONS
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="/Contact"
+                  onClick={toggleHome}
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
+                >
+                  CREDIT APPLICATION
                 </NavLinks>
               </NavItem>
 
