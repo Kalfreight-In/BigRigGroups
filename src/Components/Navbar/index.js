@@ -17,7 +17,7 @@ import {
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
-  console.log(window.scrollY); 
+  console.log(window.scrollY);
   // function loadLogo(path) {
   //   if (path == '/BigRigGroups') {
   //     return 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg';
@@ -51,20 +51,20 @@ const Navbar = ({ toggle }) => {
   useEffect(() => {
     if (window.location.pathname == '/trailerandleasing') {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png' 
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
       setScrollNav(true);
     }
     if (window.location.pathname == '/BigRigGroups') {
       setlogo(
-        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg' 
+        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
     }
-    if (window.location.pathname == "/partz") {
+    if (window.location.pathname == '/partz') {
       setlogo(
-        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png"
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
     }
@@ -78,7 +78,7 @@ const Navbar = ({ toggle }) => {
       setlogo(
         "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"
       );
-    }   
+    }
   }, [window.location.pathname]);
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
@@ -123,7 +123,7 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-16px text-navsmall lg:text-xs md:text-xs"
                 >
                   TRAILER & LEASING
-                </NavLinks>  
+                </NavLinks>
               </NavItem>
 
               <NavItem>
