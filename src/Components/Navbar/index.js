@@ -93,7 +93,7 @@ const Navbar = ({ toggle }) => {
             <NavLogo to="/BigRigGroups" onClick={toggleHome}>
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 w-max"
+                className="pt-6"
                 src={logo}
                 alt="logo"
                 width=" 70%"
@@ -121,7 +121,7 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
@@ -129,7 +129,7 @@ const Navbar = ({ toggle }) => {
                 >
                   PARTZ
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem>
                 <a href="/BigRigGroups/tires">
