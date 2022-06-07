@@ -33,7 +33,7 @@ const Navbar = ({ toggle }) => {
   // }
   // const initialState = loadLogo(window.location.pathname);
   const [logo, setlogo] = useState(
-    'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
+    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
   );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -55,24 +55,25 @@ const Navbar = ({ toggle }) => {
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
       setScrollNav(true);
-    }
-    if (window.location.pathname == '/BigRigGroups') {
+    } else if (window.location.pathname == '/BigRigGroups') {
       setlogo(
         'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
-    }
-    if (window.location.pathname == '/partz') {
+    } else if (window.location.pathname == '/partz') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
-    }
-    if (window.location.pathname == '/tires') {
+    } else if (window.location.pathname == '/tires') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
       );
       console.log(`${window.location.pathname} and then there is ${logo}`);
+    } else {
+      setlogo(
+        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+      );
     }
   }, [window.location.pathname]);
   useEffect(() => {
@@ -90,10 +91,10 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
-            <NavLogo to="/BigRigGroups" onClick={toggleHome}>
+            <NavLogo to="/BigRigGroups" onClick={toggleHome} className="w-max">
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6"
+                className="pt-6 "
                 src={logo}
                 alt="logo"
                 width=" 70%"
@@ -105,7 +106,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall  max-w-screen-lg:text-xs md:text-xs w-max"
+                  className="2xl:text-16px text-navsmall  max-w-screen-lg:text-xs md:text-xs "
                 >
                   HOME
                 </NavLinks>
@@ -147,7 +148,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs "
                 >
                   PARTZ
                 </NavLinks>
@@ -157,7 +158,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="ContactSection"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs "
                 >
                   <Link
                     to="ContactSection"
@@ -186,7 +187,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/Contact"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs "
                 >
                   LOCATIONS
                 </NavLinks>
@@ -195,7 +196,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/Contact"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs "
                 >
                   CREDIT APPLICATION
                 </NavLinks>
