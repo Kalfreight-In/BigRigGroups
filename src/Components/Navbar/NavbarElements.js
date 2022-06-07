@@ -11,13 +11,14 @@ export const Nav = styled.nav`
   width: 100%;
   margin-top: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.2rem;
   position: fixed;
   top: 0;
   z-index: 29;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
+
   @media screen and (max-width: 768px) {
     transition: 0.8s all ease;
     margin-top: 0px;
@@ -44,38 +45,7 @@ export const NavbarContainer = styled.div`
     justify-content: start;
   }
 `;
-export const NavLogo = styled(LinkR)`
-  color: #000;
-  justify-self: flex-start;
-  cursor: pointer;
-
-  justify-content: start;
-  font-size: 1.5\rem;
-  display: flex;
-  align-items: flex-start;
-  margin-left: 2px;
-  font-weight: bold;
-  text-decoration: none;
-  @media screen and (max-width: 480px) {
-  }
-  @media screen and (max-width: 768px) {
-  }
-  img {
-    height: '92px';
-    @media screen and (max-width: 480px) {
-      height: '42px';
-      justify-content: center;
-      align-items: center;
-    }
-    @media screen and (max-width: 768px) {
-      height: '20px';
-      width: '10px';
-    }
-  }
-  &.active {
-    color: #ffff;
-  }
-`;
+export const NavLogo = styled(LinkR)``;
 export const NavLink = styled(LinkR)`
   color: #000;
   display: flex;
@@ -169,7 +139,7 @@ export const NavLinks = styled(LinkR)`
   }
   &:hover {
     font-weight: 500;
-    border-bottom: 2px solid #ffab53 !important; 
+    border-bottom: 2px solid #ffab53 !important;
   }
   &.active {
     border-bottom: 2px solid #ffab53 !important;

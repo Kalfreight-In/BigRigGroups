@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
     <>
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
-          <div className="flex flex-row ml-8 xl:mx">
+          <div className="flex flex-row ml-8">
             <NavLogo to="/BigRigGroups" onClick={toggleHome} className="w-max">
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
@@ -196,7 +196,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/Contact"
                   onClick={toggleHome}
-                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs "
+                  className="2xl:text-16px text-navsmall lg:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinks>
@@ -209,7 +209,7 @@ const Navbar = ({ toggle }) => {
           </div>
 
           <NavBtn className="mr-8">
-            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-56 lg:w-48 md:32 2xl:h-16 h-12 2xl:text-xl xl:text-lg lg:text-md md:text-md">
+            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-48   lg:w-32 md:32 2xl:h-16 h-12 2xl:text-md xl:text-md lg:text-sm md:text-md">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
