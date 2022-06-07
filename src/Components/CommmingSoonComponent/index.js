@@ -25,7 +25,9 @@ export const CommmingSoonComponentindex = (data) => {
             Coming soon!
           </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
-            <div className="justify-self-center w-1/3 ">{data1[0].desc}</div>
+            <div className="justify-self-center md:w-1/3 w-max">
+              {data1[0].desc}
+            </div>
 
             <br />
           </div>

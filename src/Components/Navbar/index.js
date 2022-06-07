@@ -35,11 +35,10 @@ const Navbar = ({ toggle }) => {
   };
   useEffect(() => {
     if (window.location.pathname == '/trailerandleasing') {
-      setScrollNav(true);
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
       );
-      return;
+      setScrollNav(true);
     }
 
     if (window.location.pathname == '/BigRigGroups') {

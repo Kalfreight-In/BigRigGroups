@@ -72,11 +72,9 @@ export function Slideshow({ data, smallSlider = false }) {
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider  transition ease-linear delay-100 mb-20 "
+          className="slideshowSlider  transition ease-linear delay-100 mb-16 "
           style={{
-            transform: `translate3d(${
-              -index * (isMobile ? 100 : smallSlider ? 25 : 25)
-            }%, 0, 0)`,
+            transform: `translate3d(${-index * (isMobile ? 100 : 25)}%, 0, 0)`,
           }}
         >
           {slides.map((brand, index) => (
