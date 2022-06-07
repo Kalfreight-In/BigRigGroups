@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
-import { AiOutlineClockCircle } from 'react-icons/ai'; 
+import { AiOutlineClockCircle } from 'react-icons/ai';
 
 export default function Footer() {
   return (
     <>
       <div className="bg-Lightblue">
         <div
-          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"    
+          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
               'url(' +
@@ -19,7 +19,7 @@ export default function Footer() {
 
             backgroundRepeat: 'no-repeat',
             width: 'full',
-          }} 
+          }}
         >
           <div
             className="flex-1 w-7/12  lg:block "
@@ -78,21 +78,33 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 "> 
+          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 ">
             <div className="lg:flex-1  flex-1  lg:w-2/12 ">
               <div className="text-white ">
-                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 "> 
+                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 ">
                   Inventory
                 </h1>
               </div>
               <br />
 
-              <div className="text-white 2xl:leading-8 leading-6 "> 
+              <div className="text-white 2xl:leading-8 leading-6 ">
                 <a
                   href=""
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Flatbed for sale
+                </a>
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
+                  Used Trucks for sale
+                </a>
+                <a
+                  href=""
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                >
+                  New Trailers for sale
                 </a>
                 <a
                   href=""
@@ -105,18 +117,6 @@ export default function Footer() {
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Reefer trailer for sale
-                </a>
-                <a
-                  href=""
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                >
-                  New Trailers for sale
-                </a>
-                <a
-                  href=""
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                >
-                  Used Trucks for sale
                 </a>
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Footer() {
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    Careers
+                    About us
                   </a>
                 </div>
                 <div>
@@ -173,7 +173,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-row  mb-8 lg:mb-2 lg:mt-8 lg:mr-12">  
+          <div className="flex flex-1 flex-row  mb-8 lg:mb-2 mt-6 lg:mr-12">
             <div className="lg:flex-1 flex-1 flex lg:justify-end lg:w-1/6 ml-8 ">
               <div>
                 <div className="text-white">
@@ -185,13 +185,13 @@ export default function Footer() {
 
                 <div className="text-white 2xl:leading-8 leading-6 ">
                   <div className="flex flex-row space-x-2">
-                    <div>Trailers / Trucks & Leasing </div> 
+                    <div>Careers</div>
                     <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      trailers@bigrigcanada.com
+                      hr@bigrigcanada.com{' '}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -214,14 +214,27 @@ export default function Footer() {
                       partz@bigrigcanada.com{' '}
                     </a>
                   </div>
+
                   <div className="flex flex-row space-x-2">
-                    <div>Careers</div>
+                    <div className="antialiased w-max">
+                      Trailers / Trucks & Leasing
+                    </div>
                     <span> » </span>
                     <a
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      hr@bigrigcanada.com{' '}
+                      trailers@bigrigcanada.com
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <div className="w-max">For any other inquiry</div>
+                    <span> » </span>
+                    <a
+                      href=""
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      info@bigrigcanada.com
                     </a>
                   </div>
                   {/* <div className="flex flex-row space-x-2">
@@ -233,17 +246,17 @@ export default function Footer() {
                     >
                       info@bigrigcanada.com{" "}
                     </a>
-                  </div> */}  
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-        </div>  
-      </div> 
+        </div>
+      </div>
 
       {/* <div id="secondmain">
         <Navbar /> 
       </div> */}  
     </> 
   );
-} 
+}

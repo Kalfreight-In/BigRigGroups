@@ -8,7 +8,7 @@ export const ServiceComponentdata = [
         id: 1,
         Logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/b14fcada80e930a65933829f228e72d2de3bc620/src/assets/Images/icons/TruckAndTrailers-icon.svg',
         Heading: 'Trailers & Leasing',
-        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, and used trucks. The dry vans are available in 24" and 48" logistic posts and reefers. Our reefer's inventory includes top-grade units from brands like Thermo King, Carrier, and more.`,
+        desc: `BigRig Trailers & Leasing Inc is a licensed distributor for Vanguard trailers. We have a diverse inventory of dry vans, reefers, flatbeds, heated dry vans and used trucks. The dry vans are available in 24" and 48"  logistic posts.   Our reefer's inventory includes top-grade units from brands like Thermo King, Carrier, and more.`,
       },
       {
         id: 2,
@@ -49,7 +49,7 @@ export const GroupWebsiteComponentdata = [
       {
         id: 3,
         // head: `Trailers`,
-        desc: `To cater to your trailer financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.  `,
+        desc: `To cater to your trailer & truck financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.  `,
       },
       {
         id: 4,
@@ -153,7 +153,7 @@ export const GroupWebsiteComponentdata = [
       {
         id: 2,
         // head: `24/7  Road service`,
-        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, and heavy-duty wheel alignments and in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc.`,
+        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, and heavy-duty wheel alignments in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc. `,
       },
       // {
       //   id: 3,
@@ -194,7 +194,7 @@ export const GroupWebsiteComponentdata = [
       },
     ],
     cta: {
-      heading: 'Book a Service',
+      heading: 'Inquire Now',
       link: 'Inventory',
     },
     comingsoon: false,
@@ -476,7 +476,7 @@ export const BigPArtzBrands = [
     id: '0',
     logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigpartzlogo.png',
     name: 'Kalpartz',
-    desc: 'With an extensive inventory of 50000+ parts, our experts always keep you on the move.',
+    desc: 'With an extensive inventory of 50000+ parts, our experts always keep you on the move. ',
     Brands: [
       // {
       //   id: '1',
@@ -711,7 +711,7 @@ export const BigTireBrands = [
     id: '0',
     logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/tirered.svg',
     name: 'Kaltire',
-    desc: 'Top-notch quality and best-in-class services are just a click away. Meet our specialist for quality tires & 24*7 roadside assistance. ',
+    desc: 'Top-notch quality tires and best-in-class services are just a call away.  ',
     Brands: [
       {
         id: '2',
@@ -720,12 +720,6 @@ export const BigTireBrands = [
         heading: 'CT_Horiz',
       },
 
-      // {
-      //   id: '4',
-      //   imageurl:
-      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/TBCB-Logo.png',
-      //   heading: 'TBCB',
-      // },
       {
         id: '9',
         imageurl:
@@ -733,25 +727,102 @@ export const BigTireBrands = [
         heading: 'Havco',
       },
 
-      // {
-      //   id: '10',
-      //   imageurl:
-      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/apollo.png',
-      //   heading: 'Havco',
-      // },
-      // {
-      //   id: '11',
-      //   imageurl:
-      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/continental.png',
-      //   heading: 'Havco',
-      // },
+      {
+        id: '14',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/pirelli.png',
+        heading: 'Havco',
+      },
+      {
+        id: '15',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/prinx.png',
+        heading: 'Havco',
+      },
+      {
+        id: '16',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/marangoni.png',
+        heading: 'Havco',
+      },
+      {
+        id: '2',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
+        heading: 'CT_Horiz',
+      },
 
-      // {
-      //   id: '13',
-      //   imageurl:
-      //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/good-year.png',
-      //   heading: 'Havco',
-      // },
+      {
+        id: '9',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/BKT-logo.png',
+        heading: 'Havco',
+      },
+
+      {
+        id: '14',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/pirelli.png',
+        heading: 'Havco',
+      },
+      {
+        id: '15',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/prinx.png',
+        heading: 'Havco',
+      },
+      {
+        id: '16',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/marangoni.png',
+        heading: 'Havco',
+      },
+      {
+        id: '2',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
+        heading: 'CT_Horiz',
+      },
+
+      {
+        id: '9',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/BKT-logo.png',
+        heading: 'Havco',
+      },
+
+      {
+        id: '14',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/pirelli.png',
+        heading: 'Havco',
+      },
+      {
+        id: '15',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/prinx.png',
+        heading: 'Havco',
+      },
+      {
+        id: '16',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/marangoni.png',
+        heading: 'Havco',
+      },
+      {
+        id: '2',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
+        heading: 'CT_Horiz',
+      },
+
+      {
+        id: '9',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/BKT-logo.png',
+        heading: 'Havco',
+      },
+
       {
         id: '14',
         imageurl:

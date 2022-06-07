@@ -11,7 +11,7 @@ import { isMobile, browserName } from 'react-device-detect';
 //   '#00C49F',
 //   '#FFBB28',
 //   '#0088FE',
-//   '#00C49F', 
+//   '#00C49F',
 //   '#FFBB28',
 // ]; 
  
@@ -31,32 +31,31 @@ export function Slideshow({ data, smallSlider = false }) {
   console.log(`small slider ${smallSlider}`);
   useEffect(() => {
     resetTimeout();
-    if (index === slides.length) {
-      setended = true;
-    }
+    // if (index === slides.length) {
+
+    // }
     if (!isHovered) {
       timeoutRef.current = setTimeout(
         () =>
           setIndex((prevIndex) =>
-            prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+            prevIndex === slides.length - 4 ? 0 : prevIndex + 1
           ),
         delay
       );
-
       return () => {
         resetTimeout();
       };
-    } 
+    }
   }, [index, isHovered, slides, smallSlider]);
   useEffect(() => {
     setStateSlides(data);
   }, [window.location.pathname]);
-  useEffect(() => {
-    const slidesWithClones = [...slides];
-    slidesWithClones.unshift(slidesWithClones[slidesWithClones.length - 1]);
-    slidesWithClones.push(slidesWithClones[1]);
-    setStateSlides(slidesWithClones);
-  }, [ended]);
+  // useEffect(() => {
+  //   const slidesWithClones = [...slides];
+  //   slidesWithClones.unshift(slidesWithClones[slidesWithClones.length - 1]);
+  //   slidesWithClones.push(slidesWithClones[1]);
+  //   setStateSlides(slidesWithClones);
+  // }, []);
 
   return (
     <>
@@ -73,11 +72,9 @@ export function Slideshow({ data, smallSlider = false }) {
         ref={hoverRef}
       >
         <div
-          className="slideshowSlider  transition ease-linear delay-100 mb-20 "
+          className="slideshowSlider  transition ease-linear delay-100 mb-16 "
           style={{
-            transform: `translate3d(${
-              -index * (isMobile ? 100 : smallSlider ? 25 : 25)
-            }%, 0, 0)`,
+            transform: `translate3d(${-index * (isMobile ? 100 : 25)}%, 0, 0)`,
           }}
         >
           {slides.map((brand, index) => (
@@ -105,16 +102,16 @@ export function Slideshow({ data, smallSlider = false }) {
         </div>
 
         {/* <div className="slideshowDots">
-        {colors.map((_, idx) => (
-          <div
-            key={idx / 3}
-            className={`slideshowDot${index === idx ? ' active' : ''}`}
-            onClick={() => {
-              setIndex(idx / 3);
-            }}
-          ></div>
-        ))}
-      </div> */}
+          {slides.map((_, idx) => (
+            <div
+              key={idx / 4}
+              className={`slideshowDot${index === idx ? ' active' : ''}`}
+              onClick={() => {
+                setIndex(idx / 4);
+              }}
+            ></div>
+          ))}
+        </div> */}
       </div>
     </>
   );

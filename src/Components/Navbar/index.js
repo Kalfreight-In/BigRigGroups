@@ -17,6 +17,9 @@ import {
 
 const Navbar = ({ toggle }) => {
   console.log(window.scrollY);
+  const [logo, setlogo] = useState(
+    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+  );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.location.pathname == '/trailerandleasing') {
@@ -32,9 +35,26 @@ const Navbar = ({ toggle }) => {
   };
   useEffect(() => {
     if (window.location.pathname == '/trailerandleasing') {
-      console.log(`it is inside the ${window.location.pathname}`);
+      setlogo(
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
+      );
       setScrollNav(true);
-      return;
+    }
+
+    if (window.location.pathname == '/BigRigGroups') {
+      setlogo(
+        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+      );
+    }
+    if (window.location.pathname == '/partz') {
+      setlogo(
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
+      );
+    }
+    if (window.location.pathname == '/tires') {
+      setlogo(
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
+      );
     }
   }, [window.location.pathname]);
   useEffect(() => {
@@ -56,9 +76,9 @@ const Navbar = ({ toggle }) => {
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-6"
-                src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg"
+                src={logo}
                 alt="logo"
-                width="80%"
+                width=" 70%"
               />
             </NavLogo>
 

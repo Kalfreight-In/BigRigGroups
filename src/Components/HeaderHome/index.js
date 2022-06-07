@@ -15,7 +15,6 @@ import {
 import styled from 'styled-components';
 
 const Gradients = styled.div`
-
   width: 100%;
   height: 100%;
   transform: rotate(-180deg);
@@ -32,15 +31,15 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <ContainerMain>  
+        <ContainerMain>
           <HeroP>Transforming Trucking Dynamics </HeroP>
 
-          <Samosa> 
+          <Samosa>
             Offering New & Used Dry Vans, Trucks & Reefers
             {!isMobile ? <br></br> : null}
-             Aftermarket Parts, Tires, and Services
+            OEM Parts, Tires, and Services
           </Samosa>
-        </ContainerMain>  
+        </ContainerMain>
 
         {/* <PCENTER class="text-gray-600 p-8">
           Work with a trusted global third-party logistics provider that has
