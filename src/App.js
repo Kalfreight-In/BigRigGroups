@@ -13,7 +13,7 @@ import BottomBar from './Components/Bottombar';
 import Trailer_and_Leasing from './pages/TrailerandLeasing'; 
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);  
 
   const toggle = () => {
     setIsOpen(!isOpen);

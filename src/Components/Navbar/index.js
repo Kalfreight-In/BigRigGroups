@@ -17,7 +17,7 @@ import {
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
-  console.log(window.scrollY);
+  console.log(window.scrollY); 
   // function loadLogo(path) {
   //   if (path == '/BigRigGroups') {
   //     return 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg';
@@ -33,7 +33,7 @@ const Navbar = ({ toggle }) => {
   // }
   // const initialState = loadLogo(window.location.pathname);
   const [logo, setlogo] = useState(
-    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg' 
   );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -209,12 +209,12 @@ const Navbar = ({ toggle }) => {
           </div>
 
           <NavBtn className="mr-8">
-            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-56 lg:w-48 md:32 2xl:h-16 h-12 2xl:text-xl xl:text-lg lg:text-md md:text-md">
+            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-44  lg:w-48 md:32 2xl:h-12 h-12 2xl:text-navsmall xl:text-lg lg:text-md md:text-md">
               <div>
                 <img
-                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
+                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"  
                   alt=""
-                  className="text-white  w-3/5 pt-2"
+                  className="text-white  w-2/5 "   
                 />
               </div>
               (800) 977 0010
@@ -224,6 +224,6 @@ const Navbar = ({ toggle }) => {
       </IconContext.Provider>
     </>
   );
-};
+}; 
 
 export default Navbar;
