@@ -10,9 +10,10 @@ function Map({ Af, Ca }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="Map"
-      width={isMobile ? '200' : '919.4'}
-      height={isMobile ? '200' : '824.31'}
-    > 
+      // width={isMobile ? '200' : '919.4'}
+      // height={isMobile ? '200' : '824.31'}
+      viewBox="0 0 919.5 824.3"
+    >
       <g id="Nunawat">
         <path
           d="M302.05 307.3l16.33-7.19v5.37L304 313zm39.84-139.61l-3.76 5.25h4.79l1.37-5.25zm21.69-93.6h2.17l.91 3.65z"
