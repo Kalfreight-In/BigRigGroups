@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 import { animateScroll as scroll, Link } from "react-scroll";
 
 import {
@@ -9,7 +10,7 @@ import {
   SidebarMenu,
   SidebarLinkR,
   SideBtnWrap,
-  SidebarRoute, 
+  SidebarRoute,  
 } from "./SlidebarElement";
 // import { animateScroll as scroll, Link } from 'react-scroll';
 const Sidebar = ({ isOpen, toggle }) => {
@@ -22,13 +23,13 @@ const Sidebar = ({ isOpen, toggle }) => {
     return false;
   }
   return (
-    <SlidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SlidebarContainer isOpen={isOpen} onClick={toggle} > 
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinkR to="/BigRigGroups">HOME</SidebarLinkR>
+          <SidebarLinkR to="/BigRigGroups">HOME</SidebarLinkR> 
 
           <SidebarLinkR to="/trailerandleasing">TRAILER & LEASING</SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
@@ -54,7 +55,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>
           <SidebarLinkR to="/Shipfreight">Shipfreight</SidebarLinkR>
           <SidebarLinkR to="/Industries">Industries</SidebarLinkR>
-          <SidebarLinkR to="/KalPower">KalPower</SidebarLinkR> */}
+          <SidebarLinkR to="/KalPower">KalPower</SidebarLinkR> */} 
         </SidebarMenu>
         {/* <SideBtnWrap className="mt-2">
           <SidebarRoute>
