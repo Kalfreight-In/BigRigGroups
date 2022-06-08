@@ -173,7 +173,7 @@ export const NavBtn = styled.div`
   display: flex;
   flex-direction: row;
   align-items: right;
-  justify-content: end;
+  justify-content:end;
   padding: 25px;
 
   @media screen and (max-width: 768px) {
