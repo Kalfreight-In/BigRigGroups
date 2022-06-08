@@ -34,7 +34,7 @@ module.exports = {
         footerheading: '34px',
         '36px': '36px',
         '16px': '18px',
-        '15px':'15px'
+        '15px': '15px',
         // '8px':'10px'
       },
       fontWeight: {
@@ -80,7 +80,6 @@ module.exports = {
         '25rem': '25%',
         '50rem': '30rem',
         '35wv': '35wv',
-       
       },
       height: {
         '40rem': '40rem',
@@ -88,7 +87,7 @@ module.exports = {
         '55vh': '55vh',
         'medium-height': '90vh',
         mobileMainImageHeight: '50vh',
-        mobileSecondImage:'54vh'
+        mobileSecondImage: '54vh',
       },
       lineHeight: {
         '44px': '44px',
