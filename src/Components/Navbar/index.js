@@ -17,7 +17,7 @@ import {
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
-  console.log(window.scrollY);
+  console.log(window.scrollY); 
   // function loadLogo(path) {
   //   if (path == '/BigRigGroups') {
   //     return 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg';
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
   function disabeled() {
-    return window.localStorage.getItem('product');
+    return window.localStorage.getItem('product'); 
   }
 
   return (
@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
             >
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-0 flex-1 w-40 " 
+                className="pt-0 flex-1 w-40 "
                 src={logo}
                 alt="logo"
               />
@@ -157,14 +157,14 @@ const Navbar = ({ toggle }) => {
                 </a>
               </NavItem>
 
-              <NavItem>
+              <NavItem> 
                 <NavLinks
-                  to="ContactSection"
+                  to="/BigRigGroups/kt"  
                   onClick={toggleHome}
                   className="2xl:text-15px xl:text-xs  lg:text-xs md:text-xs "
                 >
                   <Link
-                    to="ContactSection"
+                    to="ContactSection" 
                     smooth={true}
                     duration={1000}
                     spy={true}
@@ -208,13 +208,13 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups/ct"
                   onClick={toggleHome}
-                  className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max" 
+                  className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinks>
               </NavItem>
 
-              <MobileIcon onClick={toggle}> 
+              <MobileIcon onClick={toggle}>
                 <FaBars color="#111" />
               </MobileIcon>
             </NavMenu>
