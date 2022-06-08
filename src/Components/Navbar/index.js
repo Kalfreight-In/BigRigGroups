@@ -178,7 +178,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/contact"
+                  to="/BigRigGroups/nt"
                   onClick={toggleHome}
                   className="2xl:text-15px xl:text-xs lg:text-xs  md:text-xs w-max"
                 >
@@ -206,7 +206,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="/contact"
+                  to="/BigRigGroups/ct"
                   onClick={toggleHome}
                   className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max" 
                 >
