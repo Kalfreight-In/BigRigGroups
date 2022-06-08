@@ -16,12 +16,12 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen);  
   };
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
+      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar> 
       <ErrorBoundary>
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
@@ -30,6 +30,7 @@ function App() {
         <Route path="/BigRigGroups" element={<Home />} />
         <Route path="/BigRigGroups/ct" element={<Home />} />
         <Route path="/BigRigGroups/nt" element={<Home />} />
+
         <Route
           path="/trailerandleasing"
           element={<Trailer_and_Leasing />}

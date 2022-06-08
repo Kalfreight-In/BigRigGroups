@@ -121,7 +121,7 @@ function GroupWebsiteComponent() {
                     </section>
                   ) : (
                     <div>
-                      <button className=" px-2 py-2 lg:px-0 lg:py-0 text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-36 md:32 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
+                      <button className=" px-2 py-2 lg:px-0 lg:py-0 text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-44 md:32 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
                         {data.cta.heading}
                       </button>
                     </div>

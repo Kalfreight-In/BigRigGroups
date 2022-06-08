@@ -100,7 +100,7 @@ const Navbar = ({ toggle }) => {
             >
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 flex-1 w-40 "
+                className="pt-0 flex-1 w-40 "
                 src={logo}
                 alt="logo"
               />
@@ -111,7 +111,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
-                  className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs  "
+                  className="2xl:text-15px  xl:text-xs lg:text-xs md:text-xs  "
                 >
                   HOME
                 </NavLinks>
@@ -121,7 +121,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/trailerandleasing"
                   onClick={toggleHome}
-                  className="2xl:text-sm text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
+                  className="2xl:text-15px text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
                 >
                   TRAILER & LEASING
                 </NavLinks>
@@ -141,7 +141,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
-                  className="2xl:text-sm xl:text-xs lg:text-xs md:text-xs"
+                  className="2xl:text-15px xl:text-xs lg:text-xs md:text-xs"
                 >
                   PARTZ
                 </NavLinks>
@@ -152,7 +152,7 @@ const Navbar = ({ toggle }) => {
                   <NavLinks
                     to="/tires"
                     onClick={toggleHome}
-                    className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs w-max"
+                    className="2xl:text-15px  xl:text-xs lg:text-xs md:text-xs w-max"
                   >
                     TIRES & SERVICES
                   </NavLinks>
@@ -201,7 +201,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups/nt"
                   onClick={toggleHome}
-                  className="2xl:text-sm xl:text-xs lg:text-xs  md:text-xs w-max"
+                  className="2xl:text-15px xl:text-xs lg:text-xs  md:text-xs w-max"
                 >
                   NEWS & EVENTS
                 </NavLinks>
@@ -250,26 +250,26 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups/ct"
                   onClick={toggleHome}
-                  className="2xl:text-sm xl:text-xs lg:text-xs md:text-xs w-max"
+                  className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinks>
               </NavItem>
 
-              <MobileIcon onClick={toggle} className="">
+              <MobileIcon onClick={toggle}>
                 <FaBars color="#111" />
               </MobileIcon>
             </NavMenu>
           </div>
 
           <NavBtn className="mr-8">
-            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-36   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-md xl:text-md lg:text-sm md:text-md">
+            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-36   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-base xl:text-sm lg:text-sm md:text-md">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                   alt=""
-                  className="text-white pr-1"
-                  width="15px"
+                  className="text-white pr-1 pt-1"
+                  width="18px"
                 />
               </div>
               (800) 977 0010
