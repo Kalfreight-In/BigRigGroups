@@ -10,8 +10,9 @@ function Map({ Af, Ca }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="Map"
-      width={isMobile ? '200' : '919.4'}
-      height={isMobile ? '200' : '824.31'}
+      // width={isMobile ? '200' : '919.4'}
+      // height={isMobile ? '200' : '824.31'}
+      className="2xl:w-20"
     > 
       <g id="Nunawat">
         <path
@@ -148,7 +149,7 @@ function Map({ Af, Ca }) {
             rx="4.97"
           ></rect>
 
-          <text x="119.92" y="550.71" fill="black">
+          <text x="119.92" y="550.71" fill="black"> 
             1225 Riverside Rd, BC V2S 7P1
           </text>
         </g>
