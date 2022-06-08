@@ -178,7 +178,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/Contact"
+                  to="/BigRigGroups"
                   onClick={toggleHome}
                   className="2xl:text-sm xl:text-xs lg:text-xs  md:text-xs w-max"
                 >
@@ -188,16 +188,25 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/Contact"
+                  to="Location"
                   onClick={toggleHome}
                   className="2xl:text-sm  lg:text-xs md:text-xs "
                 >
-                  LOCATIONS
+                  <Link
+                    to="Location"
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    LOCATIONS
+                  </Link>
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="/Contact"
+                  to="/BigRigGroups"
                   onClick={toggleHome}
                   className="2xl:text-sm xl:text-xs lg:text-xs md:text-xs w-max"
                 >

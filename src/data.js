@@ -879,6 +879,7 @@ export const Businessdata = [
         logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstrllogo.png',
         heading: 'GET ON THE ROAD WITH POWERFUL ENGINE',
         desc: 'Contact Us for the best trucks and trailers',
+        url: '/trailerandleasing',
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
         btn: 'Trailer & Leasing',
@@ -888,6 +889,7 @@ export const Businessdata = [
         logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesspartzlogo.png',
         heading: 'LAST LONG WITH THE BEST PARTS ON THE MARKET',
         desc: 'We have the best brands to get your truck on the road',
+        url: '/partz',
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstools.png',
         btn: 'Parts & services',
@@ -897,6 +899,7 @@ export const Businessdata = [
         logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstirelogo.png',
         heading: 'LOOKING FOR TIRES IS NOT A PROBLEM NOW',
         desc: 'Contact Us for the best trucks and trailers',
+        url: '/tires',
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
         btn: 'Tires & Services',
