@@ -95,7 +95,7 @@ export function Slideshow({ data, smallSlider = false }) {
                 }}
                 className={`${
                   smallSlider ? 'p-0' : 'p-0'
-                }    self-center slide justify-self-center justify-items-center`}
+                }    self-center slide justify-self-center justify-items-center`} 
               ></img>
             </div>
           ))}
