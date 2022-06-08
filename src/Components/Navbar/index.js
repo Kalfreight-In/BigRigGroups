@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll, Link } from 'react-scroll'; 
-// import ErrorBoundary from '../ErrorBoundary'; 
+import { animateScroll as scroll, Link } from 'react-scroll';
+// import ErrorBoundary from '../ErrorBoundary';
 import { useNavigate } from 'react-router-dom';
 import {
   Nav,
@@ -13,7 +13,7 @@ import {
   NavItem,
   NavLinksA,
   NavLinks,
-} from './NavbarElements'; 
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
     } else {
       setScrollNav(false);
     }
-  }; 
+  };
   useEffect(() => {
     if (window.location.pathname == '/trailerandleasing') {
       setlogo(
@@ -88,7 +88,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo
@@ -98,10 +98,9 @@ const Navbar = ({ toggle }) => {
             >
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 "
+                className="pt-6 flex-1 w-40 2xl:w-max"
                 src={logo}
                 alt="logo"
-                width=" 70%"
               />
             </NavLogo>
 
@@ -123,7 +122,7 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-sm text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
                 >
                   TRAILER & LEASING
-                </NavLinks> 
+                </NavLinks>
               </NavItem>
 
               {/* <NavItem>
@@ -156,7 +155,7 @@ const Navbar = ({ toggle }) => {
                     TIRES & SERVICES
                   </NavLinks>
                 </a>
-              </NavItem>   
+              </NavItem>
 
               <NavItem>
                 <NavLinks
