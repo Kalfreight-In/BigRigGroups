@@ -82,8 +82,8 @@ export function Slideshow({ data, smallSlider = false }) {
               className={`${
                 smallSlider
                   ? 'slide_small  w-1/4  lg:grayscale-1 hover:scale-75 `'
-                  : 'slide  w-1/4  lg:grayscale hover:scale-110 '
-              }       hover:grayscale-0  transition-all flex items-center content-center justify-center `}
+                  : ' w-1/4  lg:grayscale hover:scale-110 '
+              }       hover:grayscale-0  transition-all items-center content-center justify-center inline-block 2xl:h-40 xl:h-32 lg:h-24 h-full`}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
@@ -91,11 +91,10 @@ export function Slideshow({ data, smallSlider = false }) {
                 src={brand.imageurl}
                 style={{
                   border: '1px solid #ddd',
-                  margin: '0rem 10rem',
                 }}
                 className={`${
                   smallSlider ? 'p-0' : 'p-0'
-                }    self-center slide justify-self-center justify-items-center`} 
+                }    self-center  justify-self-center justify-items-center mx-12 inline-block 2xl:h-40 xl:h-32 lg:h-24 h-full `}
               ></img>
             </div>
           ))}
