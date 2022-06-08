@@ -113,7 +113,7 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs  "
                 >
                   HOME
-                </NavLinks>
+                </NavLinks>  
               </NavItem>
 
               <NavItem>

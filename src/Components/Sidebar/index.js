@@ -28,21 +28,27 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarLinkR to="/BigRigGroups">Home</SidebarLinkR>
 
-          <SidebarLinkR to="/trailers">About</SidebarLinkR>
-          <SidebarLinkR to="/Products">Services</SidebarLinkR>
-          <SidebarLinkR to="/partz">Partz</SidebarLinkR>
-          <SidebarLinkR to="/tires">Tires</SidebarLinkR>
+          <SidebarLinkR to="/trailerandleasing"> TRAILER & LEASING</SidebarLinkR>
+          <SidebarLinkR to="/partz">PARTZ</SidebarLinkR> 
+          <SidebarLinkR to="">Partz</SidebarLinkR>
+          <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
+          <SidebarLinkR to="/ContactSection">Contact</SidebarLinkR>
+          <SidebarLinkR to="/Contact">NEWS & EVENTS</SidebarLinkR>
+          <SidebarLinkR to="/Contact">LOCATIONS</SidebarLinkR> 
+          <SidebarLinkR to="/Contact">CREDIT APPLICATIONS</SidebarLinkR> 
+        
+         
           {/* <SidebarLinkR to="/Ecommerce">Ecommerce</SidebarLinkR>
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>
           <SidebarLinkR to="/Shipfreight">Shipfreight</SidebarLinkR>
           <SidebarLinkR to="/Industries">Industries</SidebarLinkR>
           <SidebarLinkR to="/KalPower">KalPower</SidebarLinkR> */}
         </SidebarMenu>
-        <SideBtnWrap className="mt-2">
+        {/* <SideBtnWrap className="mt-2">
           <SidebarRoute>
             <a href="/Contact">Contact Us</a>
           </SidebarRoute>
-        </SideBtnWrap>
+        </SideBtnWrap> */} 
         {/* <SideBtnWrap className="mt-2">
           <SidebarRoute to="/WorkAtKalway">
             <a href="/WorkAtKalway">Work At KALWAY</a>
