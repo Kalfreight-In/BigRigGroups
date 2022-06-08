@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
             >
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 flex-1 w-40 "
+                className="pt-0 flex-1 w-40 " 
                 src={logo}
                 alt="logo"
               />
