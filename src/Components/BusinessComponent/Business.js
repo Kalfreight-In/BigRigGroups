@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { animateScroll as scroll, Link } from 'react-scroll';
 // import businesstrailernew from "../../assets/Images/businesstrailernew.png";
 // import businesstruck from "../../assets/Images/businesstruck.png";
 // import businesstrailernew from "../../assets/Images/businesstrailernew";
@@ -23,11 +24,8 @@ export default function Business() {
     <>
       {/* <div class="social"></div> */}
       <div className="bg-businessbackground">
-        <div  className="lg:p-12 p-2 drop-shadow-2xl">
-          <div
-           
-            className="flex justify-center items-center font-semibold"
-          >
+        <div className="lg:p-12 p-2 drop-shadow-2xl">
+          <div className="flex justify-center items-center font-semibold">
             <h1 className="text-5xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
               {mydata.heading}
             </h1>
@@ -37,21 +35,22 @@ export default function Business() {
             <div class=" flex w-full">
               <div class="gallery-wrap flex lg:flex-row flex-col w-fill">
                 {mydata.thebox.map((element) => (
-                  <motion.div
-                    ref={hoverRef}
+                  <a
+                    href={element.url}
                     className={`demo item item-${element.id}`}
-                    whileHover={{
-                      transition: {
-                        duration: 0.5,
-                        ease: 'easeInOut',
-                      },
-                    }}
+                    // whileHover={{
+                    //   transition: {
+                    //     duration: 0.5,
+                    //     ease: 'easeInOut',
+                    //   },
+                    // }}
                   >
                     {/* <Accordion title={element.heading} text={element.desc} /> */}
+
                     <div
                       ref={hoverRef}
-                      key={element.id} 
-                  
+                      key={element.id}
+
                       // className={`z-${element.id} ${
                       //   !isHovered ? 'w-30rem relative' : '80rem'
                       // }`}
@@ -100,12 +99,10 @@ export default function Business() {
                         <button className="bg-Lightblue w-50rem h-14 ml-4">
                           {element.btn}
                         </button>
-                      </div> */}  
-
+                      </div> */}
                     </div>
-                  </motion.div>
+                  </a>
                 ))}
-            
               </div>
             </div>
           </div>
