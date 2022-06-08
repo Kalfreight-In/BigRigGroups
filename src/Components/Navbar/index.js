@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+
 import { animateScroll as scroll, Link } from 'react-scroll';
 // import ErrorBoundary from '../ErrorBoundary';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Nav,
   NavMenu,
@@ -53,27 +54,28 @@ const Navbar = ({ toggle }) => {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
       );
-      console.log(`${window.location.pathname} and then there is ${logo}`);
+
       setScrollNav(true);
     } else if (window.location.pathname == '/BigRigGroups') {
       setlogo(
         'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
       );
-      console.log(`${window.location.pathname} and then there is ${logo}`);
     } else if (window.location.pathname == '/partz') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
       );
-      console.log(`${window.location.pathname} and then there is ${logo}`);
     } else if (window.location.pathname == '/tires') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
       );
-      console.log(`${window.location.pathname} and then there is ${logo}`);
+    } else if (window.location.pathname == '/BigRigGroups/') {
+      console.log(`lollll h hgaya${window.location.pathname}`);
+      scroll.scrollTo(7000);
     } else {
       setlogo(
         'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
       );
+      scroll.scrollToTop();
     }
   }, [window.location.pathname]);
   useEffect(() => {
@@ -158,22 +160,41 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                <NavLinks
-                  to="ContactSection"
-                  onClick={toggleHome}
-                  className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
-                >
-                  <Link
+                {window.location.pathname == '/BigRigGroups' ? (
+                  <NavLinks
                     to="ContactSection"
-                    smooth={true}
-                    duration={1000}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
+                    onClick={toggleHome}
+                    className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
                   >
-                    CONTACT
-                  </Link>
-                </NavLinks>
+                    <Link
+                      to="ContactSection"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      CONTACT
+                    </Link>
+                  </NavLinks>
+                ) : (
+                  <NavLinks
+                    to="/BigRigGroups/#ContactSection"
+                    onClick={toggleHome}
+                    className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
+                  >
+                    <Link
+                      to="/BigRigGroups/#ContactSection"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      CONTACT
+                    </Link>
+                  </NavLinks>
+                )}
               </NavItem>
 
               <NavItem>
@@ -185,25 +206,46 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-
-              <NavItem>
-                <NavLinks
-                  to="Location"
-                  onClick={toggleHome}
-                  className="2xl:text-sm  lg:text-xs md:text-xs "
-                >
-                  <Link
+              {window.location.pathname == '/BigRigGroups' ? (
+                <NavItem>
+                  <NavLinks
                     to="Location"
-                    smooth={true}
-                    duration={1000}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
+                    onClick={toggleHome}
+                    className="2xl:text-sm  lg:text-xs md:text-xs "
                   >
-                    LOCATIONS
-                  </Link>
-                </NavLinks>
-              </NavItem>
+                    <Link
+                      to="Location"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      LOCATIONS
+                    </Link>
+                  </NavLinks>
+                </NavItem>
+              ) : (
+                <NavItem>
+                  <NavLinks
+                    to="/BigRigGroups/#Location"
+                    onClick={toggleHome}
+                    className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
+                  >
+                    <Link
+                      to="Location"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      LOCATIONS
+                    </Link>
+                  </NavLinks>
+                </NavItem>
+              )}
+
               <NavItem>
                 <NavLinks
                   to="/BigRigGroups/ct"

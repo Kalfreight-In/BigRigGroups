@@ -4,12 +4,35 @@ import { animateScroll as scroll, Link } from 'react-scroll';
 // import businesstrailernew from "../../assets/Images/businesstrailernew.png";
 // import businesstruck from "../../assets/Images/businesstruck.png";
 // import businesstrailernew from "../../assets/Images/businesstrailernew";
+import styled from 'styled-components';
 import { Businessdata } from '../../data';
 import Accordion from '../Accordion';
 import { useSpring, animated } from 'react-spring';
 import { useHover } from '../../Hooks/Hover';
+import { NavLink as LinkR } from 'react-router-dom';
 var mydata = Businessdata[0];
+export const NavLinks = styled(LinkR)`
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
 
+  height: 100%;
+  cursor: pointer;
+  // font-size:15px;
+
+  &.active {
+    color: #101010;
+  }
+  &:hover {
+    font-weight: 600;
+    border-bottom: 2px solid #ffab53 !important;
+  }
+  &.active {
+    border-bottom: 2px solid #ffab53 !important;
+  }
+`;
 export default function Business() {
   const [hoverRef, isHovered] = useHover();
   const titleAnimation = useSpring({
@@ -35,8 +58,8 @@ export default function Business() {
             <div class=" flex w-full">
               <div class="gallery-wrap flex lg:flex-row flex-col w-fill">
                 {mydata.thebox.map((element) => (
-                  <a
-                    href={element.url}
+                  <NavLinks
+                    to={element.url}
                     className={`demo item item-${element.id}`}
                     // whileHover={{
                     //   transition: {
@@ -46,7 +69,7 @@ export default function Business() {
                     // }}
                   >
                     {/* <Accordion title={element.heading} text={element.desc} /> */}
-
+                    <img></img>
                     <div
                       ref={hoverRef}
                       key={element.id}
@@ -101,7 +124,7 @@ export default function Business() {
                         </button>
                       </div> */}
                     </div>
-                  </a>
+                  </NavLinks>
                 ))}
               </div>
             </div>
