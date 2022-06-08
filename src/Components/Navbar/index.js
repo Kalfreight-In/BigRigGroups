@@ -90,14 +90,13 @@ const Navbar = ({ toggle }) => {
     <>
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
-          <div className="flex flex-row ml-8">
-            <NavLogo to="/BigRigGroups" onClick={toggleHome} className="w-max">
+          <div className="flex flex-row 2xl:ml-8">
+            <NavLogo to="/BigRigGroups" onClick={toggleHome} className="">
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 "
+                className="pt-6 flex-1 w-40 2xl:w-max"
                 src={logo}
                 alt="logo"
-                width=" 70%"
               />
             </NavLogo>
 
@@ -208,7 +207,7 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
           </div>
 
-          <NavBtn className="mr-8">
+          <NavBtn className="2xl:mr-8">
             <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-40   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-md xl:text-md lg:text-sm md:text-md">
               <div>
                 <img
