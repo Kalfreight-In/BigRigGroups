@@ -125,3 +125,28 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
+
+.svg-container {
+display: inline-block;
+	position: relative;
+	width: 50%;
+	margin: 1%;
+	vertical-align: middle; 
+	overflow: hidden;
+}
+
+
+.svg-content { 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media only screen and (max-width:768px){
+  .VTwYg{
+    margin-left:12rem !important;
+  }
+}
+

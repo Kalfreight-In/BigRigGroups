@@ -51,7 +51,7 @@ function App() {
         <Route path="/Bigrigcananda" element={<></>} />
       </Routes>
       <Footer />
-      {/* <FooterSection></FooterSection> */}
+      {/* <FooterSection></FooterSection> */} 
       <BottomBar />
     </Router>
   );
