@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
             >
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-6 flex-1 w-40 2xl:w-max"
+                className="pt-6 flex-1 w-40 "
                 src={logo}
                 alt="logo"
               />
@@ -112,7 +112,7 @@ const Navbar = ({ toggle }) => {
                   className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs  "
                 >
                   HOME
-                </NavLinks>  
+                </NavLinks>
               </NavItem>
 
               <NavItem>
@@ -178,7 +178,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/BigRigGroups"
+                  to="/BigRigGroups/nt"
                   onClick={toggleHome}
                   className="2xl:text-sm xl:text-xs lg:text-xs  md:text-xs w-max"
                 >
@@ -206,7 +206,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="/BigRigGroups"
+                  to="/BigRigGroups/ct"
                   onClick={toggleHome}
                   className="2xl:text-sm xl:text-xs lg:text-xs md:text-xs w-max"
                 >

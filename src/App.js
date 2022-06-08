@@ -10,10 +10,10 @@ import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
 import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
-import Trailer_and_Leasing from './pages/TrailerandLeasing'; 
+import Trailer_and_Leasing from './pages/TrailerandLeasing';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);  
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -28,6 +28,8 @@ function App() {
 
       <Routes>
         <Route path="/BigRigGroups" element={<Home />} />
+        <Route path="/BigRigGroups/ct" element={<Home />} />
+        <Route path="/BigRigGroups/nt" element={<Home />} />
         <Route
           path="/trailerandleasing"
           element={<Trailer_and_Leasing />}
@@ -55,4 +57,3 @@ function App() {
 }
 
 export default App;
-
