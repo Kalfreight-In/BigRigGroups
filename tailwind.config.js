@@ -25,6 +25,7 @@ module.exports = {
         // => @media (min-width: 1280px) { ... }
       },
       fontSize: {
+<<<<<<< HEAD
         heading: "3rem",
         subheading: "1.6rem",
         desc: "1.3rem",
@@ -36,6 +37,18 @@ module.exports = {
         "16px": "18px",
         "15px": "15px",
         linkdenicon: "40px",
+=======
+        heading: '3rem',
+        subheading: '1.6rem',
+        desc: '1.3rem',
+        navsmall: '14px',
+        navsmallne: '10px;',
+        descnew: '1rem',
+        footerheading: '34px',
+        '36px': '36px',
+        '16px': '18px',
+        '15px': '15px',
+>>>>>>> dca519418fe44013c53d34b056a7c3a6a1c9a8e9
         // '8px':'10px'
       },
       fontWeight: {

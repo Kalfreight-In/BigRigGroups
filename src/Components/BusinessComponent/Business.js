@@ -13,25 +13,9 @@ import { NavLink as LinkR } from 'react-router-dom';
 var mydata = Businessdata[0];
 export const NavLinks = styled(LinkR)`
   color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 500;
 
-  height: 100%;
   cursor: pointer;
   // font-size:15px;
-
-  &.active {
-    color: #101010;
-  }
-  &:hover {
-    font-weight: 600;
-    border-bottom: 2px solid #ffab53 !important;
-  }
-  &.active {
-    border-bottom: 2px solid #ffab53 !important;
-  }
 `;
 export default function Business() {
   const [hoverRef, isHovered] = useHover();
