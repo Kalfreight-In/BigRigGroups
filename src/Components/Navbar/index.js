@@ -32,9 +32,9 @@ const Navbar = ({ toggle }) => {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
   //   }
   // }
-  // const initialState = loadLogo(window.location.pathname);
+  // const initialState = loadLogo(window.location.pathname);   
   const [logo, setlogo] = useState(
-    'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+    "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
   );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
       setScrollNav(true);
     } else if (window.location.pathname == '/BigRigGroups') {
       setlogo(
-        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
       );
     } else if (window.location.pathname == '/partz') {
       setlogo(
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
       scroll.scrollTo(7000);
     } else {
       setlogo(
-        'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/navlogo.svg'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
       );
       scroll.scrollToTop();
     }
