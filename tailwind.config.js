@@ -25,8 +25,7 @@ module.exports = {
         // => @media (min-width: 1280px) { ... }
       },
       fontSize: {
-<<<<<<< HEAD
-        heading: "3rem",
+ heading: "3rem",
         subheading: "1.6rem",
         desc: "1.3rem",
         navsmall: "14px",
@@ -37,7 +36,6 @@ module.exports = {
         "16px": "18px",
         "15px": "15px",
         linkdenicon: "40px",
-=======
         heading: '3rem',
         subheading: '1.6rem',
         desc: '1.3rem',
@@ -48,7 +46,6 @@ module.exports = {
         '36px': '36px',
         '16px': '18px',
         '15px': '15px',
->>>>>>> dca519418fe44013c53d34b056a7c3a6a1c9a8e9
         // '8px':'10px'
       },
       fontWeight: {
@@ -91,21 +88,21 @@ module.exports = {
         "10rem": "10rem",
       },
       width: {
-        "50wv": "50wv",
-        "70vh": "70vh",
-        "30rem": "30%",
-        "80rem": "80%",
-        "25rem": "25%",
-        "50rem": "30rem",
-        "35wv": "35wv",
+        '50wv': '50wv',
+        '70vh': '70vh',
+        '30rem': '30%',
+        '80rem': '80%',
+        '25rem': '25%',
+        '50rem': '30rem',
+        '35wv': '35wv',
       },
       height: {
-        "40rem": "40rem",
-        "65vh": "67vh",
-        "55vh": "55vh",
-        "medium-height": "90vh",
-        mobileMainImageHeight: "50vh",
-        mobileSecondImage: "54vh",
+        '40rem': '40rem',
+        '65vh': '67vh',
+        '55vh': '55vh',
+        'medium-height': '90vh',
+        mobileMainImageHeight: '50vh',
+        mobileSecondImage: '54vh',
       },
       lineHeight: {
         "44px": "44px",
