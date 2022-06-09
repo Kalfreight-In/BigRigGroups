@@ -1,6 +1,11 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
 import { AiOutlineClockCircle } from 'react-icons/ai';
+import {RiFacebookCircleLine} from 'react-icons/ri';
+// import {SiInstagram} from 'react-icons/si';
+import {AiOutlineInstagram} from 'react-icons/ai';
+import {TiSocialLinkedinCircular} from 'react-icons/ti';
+
 
 export default function Footer() {
   return (
@@ -10,15 +15,15 @@ export default function Footer() {
           className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
-              ')',
+              "url(" +
+              "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png" +
+              ")",
 
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
+            backgroundPosition: "center",
+            backgroundSize: "cover",
 
-            backgroundRepeat: 'no-repeat',
-            width: 'full',
+            backgroundRepeat: "no-repeat",
+            width: "full",
           }}
         >
           <div
@@ -191,7 +196,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      hr@bigrigcanada.com{' '}
+                      hr@bigrigcanada.com{" "}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -211,7 +216,7 @@ export default function Footer() {
                       href=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      partz@bigrigcanada.com{' '}
+                      partz@bigrigcanada.com{" "}
                     </a>
                   </div>
 
@@ -245,16 +250,30 @@ export default function Footer() {
                       info@bigrigcanada.com{" "}
                     </a>
                   </div> */}
+
+                  <div id="mainiconcontainer" className="flex justify-end mr-28 pt-4 pr-16">
+                  <div id="allicons" className='flex justify-between  '>   
+                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')}  className="text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
+                  <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300' /> 
+                  <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white  text-4xl  mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300 " />              
+                  </div>  
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* <div id="secondmain">
-        <Navbar /> 
-      </div> */}  
-    </> 
+        {/* <div id="mainiconcontainer">
+        <div id="allicons" className="flex justify-end mx-48 ">
+        <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')} className="text-white text-4xl mx-2 cursor-pointer" />
+        <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white text-4xl mx-2 cursor-pointer' />
+        <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white text-4xl mx-2 cursor-pointer " />    
+        </div> */}
+        {/* </div> */} 
+
+      </div>
+    </>
   );
 }
