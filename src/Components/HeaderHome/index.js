@@ -22,7 +22,7 @@ const Gradients = styled.div`
   position: absolute;
   z-index: 2;
 `;
-
+// ??
 const HeroSection = () => {
   return (
     <HeroContainer>
@@ -30,6 +30,7 @@ const HeroSection = () => {
       <HeroBg className=" mt-0">
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
+
       <HeroContent>
         <ContainerMain>
           <HeroP>Transforming Trucking Dynamics </HeroP>
