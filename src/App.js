@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import './App.css';
 import './simplefunction.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,11 +12,12 @@ import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
 import Trailer_and_Leasing from './pages/TrailerandLeasing';
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen);  
+    setIsOpen(!isOpen);   
   };
 
   return (
@@ -29,7 +30,7 @@ function App() {
       <Routes>
         <Route path="/BigRigGroups" element={<Home />} />
         <Route path="/BigRigGroups/ct" element={<Home />} />
-        <Route path="/BigRigGroups/nt" element={<Home />} />
+        <Route path="/BigRigGroups/nt" element={<Home />} /> 
 
         <Route
           path="/trailerandleasing"
