@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 import { animateScroll as scroll, Link } from 'react-scroll';
-// import ErrorBoundary from '../ErrorBoundary';
+// import ErrorBoundary from '../ErrorBoundary'; 
 import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Nav,
@@ -227,7 +227,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
               ) : (
                 <NavItem>
-                  <NavLinks
+                  <NavLinks 
                     to="/BigRigGroups/#Location"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "

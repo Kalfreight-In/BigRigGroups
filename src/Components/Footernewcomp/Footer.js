@@ -5,6 +5,8 @@ import {RiFacebookCircleLine} from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
+import { animateScroll as scroll, Link } from "react-scroll";
+
 
 
 export default function Footer() {
@@ -136,12 +138,24 @@ export default function Footer() {
 
               <div className="text-white  2xl:leading-8 leading-6">
                 <div>
-                  <a
+                  {/* <a
                     href="#aboutus "
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     About us
-                  </a>
+                  </a> */}
+
+                  <Link
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                    to="aboutus"
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    About us
+                  </Link>
                 </div>
                 <div>
                   <a
@@ -228,10 +242,7 @@ export default function Footer() {
                   </div>
 
                   <div className="flex flex-row space-x-2">
-                    <div
-                    
-                      className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover"
-                    >
+                    <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover">
                       Trailers & Leasing
                     </div>
                     <span> » </span>
