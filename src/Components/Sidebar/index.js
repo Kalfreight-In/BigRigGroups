@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinkR to="/BigRigGroups">HOME</SidebarLinkR>
+          <SidebarLinkR to="/">HOME</SidebarLinkR>
 
           <SidebarLinkR to="/trailerandleasing">TRAILER & LEASING</SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>

@@ -56,7 +56,7 @@ const Navbar = ({ toggle }) => {
       );
 
       setScrollNav(true);
-    } else if (window.location.pathname == '/BigRigGroups') {
+    } else if (window.location.pathname == '/') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
       );
@@ -94,7 +94,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo
-              to="/BigRigGroups"
+              to="/"
               onClick={toggleHome}
               className="max-w-max"
             >
@@ -109,7 +109,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="/BigRigGroups"
+                  to="/"
                   onClick={toggleHome}
                   className="2xl:text-sm   xl:text-xs lg:text-xs md:text-xs  "
                 >
@@ -148,7 +148,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                <a href="/BigRigGroups/tires">
+                <a href="/tires">
                   <NavLinks
                     to="/tires"
                     onClick={toggleHome}
@@ -160,7 +160,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {window.location.pathname == '/BigRigGroups' ? (
+                {window.location.pathname == '/' ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
@@ -179,12 +179,12 @@ const Navbar = ({ toggle }) => {
                   </NavLinks>
                 ) : (
                   <NavLinks
-                    to="/BigRigGroups/#ContactSection"
+                    to="/#ContactSection"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
                   >
                     <Link
-                      to="/BigRigGroups/#ContactSection"
+                      to="/#ContactSection"
                       smooth={true}
                       duration={1000}
                       spy={true}
@@ -206,7 +206,7 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-              {window.location.pathname == '/BigRigGroups' ? (
+              {window.location.pathname == '/' ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
@@ -228,7 +228,7 @@ const Navbar = ({ toggle }) => {
               ) : (
                 <NavItem>
                   <NavLinks 
-                    to="/BigRigGroups/#Location"
+                    to="/#Location"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
                   >

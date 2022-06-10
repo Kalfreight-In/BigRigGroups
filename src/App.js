@@ -28,7 +28,7 @@ function App() {
       </ErrorBoundary>
 
       <Routes>
-        <Route path="/BigRigGroups" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/newsevents" element={<UnderConstruction />} />
         <Route path="/creditapplication" element={<UnderConstruction />} />
 
