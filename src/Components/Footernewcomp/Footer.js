@@ -137,7 +137,7 @@ export default function Footer() {
               <div className="text-white  2xl:leading-8 leading-6">
                 <div>
                   <a
-                    href=""
+                    href="#aboutus "
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     About us
@@ -172,7 +172,7 @@ export default function Footer() {
                     href=""
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
-                    24*7 Roadside Assistance
+                    24X7 Roadside Assistance
                   </a>
                 </div>
               </div>
@@ -190,7 +190,9 @@ export default function Footer() {
 
                 <div className="text-white 2xl:leading-8 leading-6 ">
                   <div className="flex flex-row space-x-2">
-                    <div>Careers</div>
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                      Careers
+                    </div>
                     <span> » </span>
                     <a
                       href=""
@@ -200,7 +202,9 @@ export default function Footer() {
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <div>Tires</div>
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                      Tires
+                    </div>
                     <span> » </span>
                     <a
                       href=""
@@ -210,7 +214,10 @@ export default function Footer() {
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <div> Partz </div>
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                      {" "}
+                      Partz{" "}
+                    </div>
                     <span> » </span>
                     <a
                       href=""
@@ -221,7 +228,12 @@ export default function Footer() {
                   </div>
 
                   <div className="flex flex-row space-x-2">
-                    <div className="antialiased w-max">Trailers & Leasing</div>
+                    <div
+                    
+                      className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    >
+                      Trailers & Leasing
+                    </div>
                     <span> » </span>
                     <a
                       href=""
@@ -251,14 +263,40 @@ export default function Footer() {
                     </a>
                   </div> */}
 
-                  <div id="mainiconcontainer" className="flex justify-end mr-28 pt-4 pr-16"> 
-                  <div id="allicons" className='flex justify-between  '>   
-                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/BigRiggroups/','_blank')}  className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
-                  <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300' /> 
-                  <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300 " />              
-                  </div>  
+                  <div
+                    id="mainiconcontainer"
+                    className="flex justify-end mr-28 pt-4 pr-16"
+                  >
+                    <div id="allicons" className="flex justify-between  ">
+                      <RiFacebookCircleLine
+                        onClick={() =>
+                          window.open(
+                            "https://www.facebook.com/BigRiggroups/",
+                            "_blank"
+                          )
+                        }
+                        className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+                      />
+                      <AiOutlineInstagram
+                        onClick={() =>
+                          window.open(
+                            "https://www.instagram.com/bigriggroup/",
+                            "_blank"
+                          )
+                        }
+                        className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+                      />
+                      <TiSocialLinkedinCircular
+                        onClick={() =>
+                          window.open(
+                            "https://www.linkedin.com/company/bigriggroup",
+                            "_blank"
+                          )
+                        }
+                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                      />
+                    </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -272,7 +310,6 @@ export default function Footer() {
         <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white mx-2 cursor-pointer h-8 w-8" />    
         </div> */}
         {/* </div>   */}
-
       </div>
     </>
   );

@@ -5,18 +5,18 @@ export default function Abouthome() {
   const aboutdata = AboutusSec[0];
   return (
     <>
-      <div>
+      <div id="aboutus">
         <div
           // className="h-medium-height "
           className="md:h-medium-height h-mobileSecondImage"
           style={{
             backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png' +
-              ')',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
+              "url(" +
+              "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png" +
+              ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div>

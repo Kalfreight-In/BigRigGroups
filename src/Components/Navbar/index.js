@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
   //   }
   // }
-  // const initialState = loadLogo(window.location.pathname);   
+  // const initialState = loadLogo(window.location.pathname);    
   const [logo, setlogo] = useState(
     "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
   );
@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo
@@ -136,7 +136,6 @@ const Navbar = ({ toggle }) => {
                   PARTZ
                 </NavLinks>
               </NavItem> */}
-              
 
               <NavItem>
                 <NavLinks
@@ -161,11 +160,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {window.location.pathname == '/BigRigGroups' ? (
+                {window.location.pathname == "/BigRigGroups" ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
-                    className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
+                    className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs " 
                   >
                     <Link
                       to="ContactSection"
@@ -207,7 +206,7 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-              {window.location.pathname == '/BigRigGroups' ? (
+              {window.location.pathname == "/BigRigGroups" ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
@@ -251,7 +250,8 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups/ct"
                   onClick={toggleHome}
-                  className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max"
+                  className="2xl:text-15px  xl:text-xs lg:text-xs md:text-xs
+                  "
                 >
                   CREDIT APPLICATION
                 </NavLinks>
