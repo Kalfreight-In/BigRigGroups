@@ -253,7 +253,7 @@ export default function Footer() {
 
                   <div id="mainiconcontainer" className="flex justify-end mr-28 pt-4 pr-16">
                   <div id="allicons" className='flex justify-between  '>   
-                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')}  className="text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
+                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/BigRiggroups/','_blank')}  className="text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
                   <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300' /> 
                   <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white  text-4xl  mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300 " />              
                   </div>  

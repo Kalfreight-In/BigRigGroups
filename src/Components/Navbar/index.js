@@ -136,6 +136,7 @@ const Navbar = ({ toggle }) => {
                   PARTZ
                 </NavLinks>
               </NavItem> */}
+              
 
               <NavItem>
                 <NavLinks
@@ -282,3 +283,6 @@ const Navbar = ({ toggle }) => {
 };
 
 export default Navbar;
+
+
+// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs
