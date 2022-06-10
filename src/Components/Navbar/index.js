@@ -283,4 +283,4 @@ const Navbar = ({ toggle }) => {
 
 export default Navbar;
 
-// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs
+// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs  
