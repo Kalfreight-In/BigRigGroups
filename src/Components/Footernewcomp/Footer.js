@@ -4,7 +4,7 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import {RiFacebookCircleLine} from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
 import {AiOutlineInstagram} from 'react-icons/ai';
-import {TiSocialLinkedinCircular} from 'react-icons/ti';
+import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
 
 
 export default function Footer() {
