@@ -33,7 +33,7 @@ module.exports = {
         descnew: "1rem",
         footerheading: "34px",
         "36px": "36px",
-        "16px": "18px",
+      
         "15px": "15px",
         linkdenicon: "40px",
         heading: "3rem",
@@ -44,7 +44,7 @@ module.exports = {
         descnew: "1rem",
         footerheading: "34px",
         "36px": "36px",
-        "16px": "18px",
+        "16px": "16px",
         "15px": "15px",
         // '8px':'10px'
       },
@@ -81,7 +81,7 @@ module.exports = {
         facebook: "#4267B2",
         instagram: "#8a3ab9",
         linkden: "#0072b1",
-        socialicons: "#C35800",
+        // socialicons: "#4267B2",
       },
       spacing: {
         "30rem": "33rem",
@@ -104,13 +104,13 @@ module.exports = {
         "medium-height": "90vh",
         mobileMainImageHeight: "50vh",
         mobileSecondImage: "54vh",
-        "1.8rem": "1.8rem", 
+        "1.8rem": "1.8rem",
       },
       lineHeight: {
         "44px": "44px",
       },
       dropShadow: {
-        socialicons: "0 0 15px #ff9e4e",
+        socialicons: "0 0 15px #fff",
       },
     },
   },
