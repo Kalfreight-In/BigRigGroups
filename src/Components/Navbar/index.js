@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; 
+import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
@@ -32,9 +32,9 @@ const Navbar = ({ toggle }) => {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
   //   }
   // }
-  // const initialState = loadLogo(window.location.pathname);   
+  // const initialState = loadLogo(window.location.pathname);
   const [logo, setlogo] = useState(
-    "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
+    'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
   );
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
       setScrollNav(true);
     } else if (window.location.pathname == '/BigRigGroups') {
       setlogo(
-        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
       );
     } else if (window.location.pathname == '/partz') {
       setlogo(
@@ -68,12 +68,12 @@ const Navbar = ({ toggle }) => {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
       );
-    } else if (window.location.pathname == '/BigRigGroups/') {
+    } else if (window.location.pathname == '/BigRigGroup/') {
       console.log(`lollll h hgaya${window.location.pathname}`);
-      scroll.scrollTo(7000);
+      // scroll.scrollTo(7000);
     } else {
       setlogo(
-        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
       );
       scroll.scrollToTop();
     }
@@ -111,7 +111,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/BigRigGroups"
                   onClick={toggleHome}
-                  className="2xl:text-15px  xl:text-xs lg:text-xs md:text-xs  "
+                  className="2xl:text-sm   xl:text-xs lg:text-xs md:text-xs  "
                 >
                   HOME
                 </NavLinks>
@@ -121,7 +121,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/trailerandleasing"
                   onClick={toggleHome}
-                  className="2xl:text-15px text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
+                  className="2xl:text-sm  text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
                 >
                   TRAILER & LEASING
                 </NavLinks>
@@ -136,13 +136,12 @@ const Navbar = ({ toggle }) => {
                   PARTZ
                 </NavLinks>
               </NavItem> */}
-              
 
               <NavItem>
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
-                  className="2xl:text-15px xl:text-xs lg:text-xs md:text-xs"
+                  className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs"
                 >
                   PARTZ
                 </NavLinks>
@@ -153,7 +152,7 @@ const Navbar = ({ toggle }) => {
                   <NavLinks
                     to="/tires"
                     onClick={toggleHome}
-                    className="2xl:text-15px  xl:text-xs lg:text-xs md:text-xs w-max"
+                    className="2xl:text-sm  xl:text-xs lg:text-xs md:text-xs w-max"
                   >
                     TIRES & SERVICES
                   </NavLinks>
@@ -200,9 +199,9 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/BigRigGroups/nt"
+                  to="/newsevents"
                   onClick={toggleHome}
-                  className="2xl:text-15px xl:text-xs lg:text-xs  md:text-xs w-max"
+                  className="2xl:text-sm  xl:text-xs lg:text-xs  md:text-xs w-max"
                 >
                   NEWS & EVENTS
                 </NavLinks>
@@ -249,9 +248,9 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="/BigRigGroups/ct"
+                  to="/creditapplication"
                   onClick={toggleHome}
-                  className="2xl:text-15px xl:text-sm lg:text-xs md:text-xs w-max"
+                  className="2xl:text-sm  xl:text-sm lg:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinks>
@@ -283,6 +282,5 @@ const Navbar = ({ toggle }) => {
 };
 
 export default Navbar;
-
 
 // kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs

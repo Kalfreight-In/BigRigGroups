@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import './simplefunction.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -11,26 +11,26 @@ import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
 import Trailer_and_Leasing from './pages/TrailerandLeasing';
-
+import { UnderConstruction } from './Components/UnderConstruction';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen);   
+    setIsOpen(!isOpen);
   };
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar> 
+      <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
       <ErrorBoundary>
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
 
       <Routes>
         <Route path="/BigRigGroups" element={<Home />} />
-        <Route path="/BigRigGroups/ct" element={<Home />} />
-        <Route path="/BigRigGroups/nt" element={<Home />} /> 
+        <Route path="/newsevents" element={<UnderConstruction />} />
+        <Route path="/creditapplication" element={<UnderConstruction />} />
 
         <Route
           path="/trailerandleasing"
@@ -52,7 +52,7 @@ function App() {
         <Route path="/Bigrigcananda" element={<></>} />
       </Routes>
       <Footer />
-      {/* <FooterSection></FooterSection> */} 
+      {/* <FooterSection></FooterSection> */}
       <BottomBar />
     </Router>
   );
