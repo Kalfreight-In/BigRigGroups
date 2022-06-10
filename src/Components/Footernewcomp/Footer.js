@@ -64,12 +64,14 @@ export default function Footer() {
 
               <div className="text-white flex mt-4">
                 <div className="mt-2">
-                  <img
-                    src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
-                    alt=""
-                    className="text-white"
-                    width={20}
-                  />
+                  <a href="tel:8009770010" target="_blank">
+                    <img
+                      src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
+                      alt=""
+                      className="text-white"
+                      width={20}
+                    />
+                  </a>
                 </div>
                 <div className="ml-4">
                   {/* <div className="block">
@@ -77,7 +79,10 @@ export default function Footer() {
                     <br></br>
                     we have subject matter experts just a call away.
                   </div> */}
-                  <div className="text-xl font-bold">800-977-0010</div>
+                  <a href="tel:8009770010" target="_blank">
+                    {" "}
+                    <div className="text-xl font-bold">800-977-0010</div>{" "}
+                  </a>
                 </div>
               </div>
 
@@ -99,31 +104,31 @@ export default function Footer() {
 
               <div className="text-white 2xl:leading-8 leading-6 ">
                 <a
-                  href=""
+                  href="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Flatbed for sale
                 </a>
                 <a
-                  href=""
+                  href="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Used Trucks for sale
                 </a>
                 <a
-                  href=""
+                  href="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   New Trailers for sale
                 </a>
                 <a
-                  href=""
+                  href="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Used Dry van for sale
                 </a>
                 <a
-                  href=""
+                  href="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Reefer trailer for sale
@@ -175,7 +180,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href=""
+                    href="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     News & Events
@@ -183,7 +188,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href=""
+                    href="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     Parts Inventory
@@ -191,7 +196,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href=""
+                    href="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     Financing Options
@@ -199,7 +204,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href=""
+                    href="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     24X7 Roadside Assistance
@@ -225,7 +230,8 @@ export default function Footer() {
                     </div>
                     <span> » </span>
                     <a
-                      href=""
+                      href="mailto:hr@bigrigcanada.com"
+                      target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       hr@bigrigcanada.com{' '}
@@ -237,7 +243,8 @@ export default function Footer() {
                     </div>
                     <span> » </span>
                     <a
-                      href=""
+                      href="mailto:tires@bigrigcanada.com"
+                      target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       tires@bigrigcanada.com
@@ -250,7 +257,8 @@ export default function Footer() {
                     </div>
                     <span> » </span>
                     <a
-                      href=""
+                      href="mailto:partz@bigrigcanada.com"
+                      target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       partz@bigrigcanada.com{' '}
@@ -263,7 +271,8 @@ export default function Footer() {
                     </div>
                     <span> » </span>
                     <a
-                      href=""
+                      href="mailto:trailers@bigrigcanada.com"
+                      target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       trailers@bigrigcanada.com
@@ -273,7 +282,8 @@ export default function Footer() {
                     <div className="w-max">For any other inquiry</div>
                     <span> » </span>
                     <a
-                      href=""
+                      href="mailto:info@bigrigcanada.com"
+                      target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       info@bigrigcanada.com
