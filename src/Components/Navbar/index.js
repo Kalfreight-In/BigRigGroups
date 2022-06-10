@@ -49,6 +49,7 @@ const Navbar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
+  // comment made
   useEffect(() => {
     if (window.location.pathname == '/trailerandleasing') {
       setlogo(
