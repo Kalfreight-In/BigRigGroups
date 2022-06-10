@@ -251,11 +251,11 @@ export default function Footer() {
                     </a>
                   </div> */}
 
-                  <div id="mainiconcontainer" className="flex justify-end mr-28 pt-4 pr-16">
+                  <div id="mainiconcontainer" className="flex justify-end mr-28 pt-4 pr-16"> 
                   <div id="allicons" className='flex justify-between  '>   
-                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/BigRiggroups/','_blank')}  className="text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
-                  <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  text-4xl mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300' /> 
-                  <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white  text-4xl  mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300 " />              
+                  <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/BigRiggroups/','_blank')}  className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300"/> 
+                  <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300' /> 
+                  <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-socialicons ease-in duration-300 " />              
                   </div>  
                   </div>
 
@@ -267,11 +267,11 @@ export default function Footer() {
 
         {/* <div id="mainiconcontainer">
         <div id="allicons" className="flex justify-end mx-48 ">
-        <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')} className="text-white text-4xl mx-2 cursor-pointer" />
-        <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white text-4xl mx-2 cursor-pointer' />
-        <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white text-4xl mx-2 cursor-pointer " />    
+        <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')} className="text-white mx-2 cursor-pointer h-1.8rem w-1.8rem" />
+        <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  mx-2 cursor-pointer h-1.8rem w-1.8rem' />
+        <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white mx-2 cursor-pointer h-8 w-8" />    
         </div> */}
-        {/* </div> */} 
+        {/* </div>   */}
 
       </div>
     </>
