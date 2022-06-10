@@ -23,19 +23,20 @@ const Sidebar = ({ isOpen, toggle }) => {
     return false;
   }
   return (
-    <SlidebarContainer isOpen={isOpen} onClick={toggle} > 
+    <SlidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinkR to="/BigRigGroups">HOME</SidebarLinkR> 
+          <SidebarLinkR to="/BigRigGroups">HOME</SidebarLinkR>
 
           <SidebarLinkR to="/trailerandleasing">TRAILER & LEASING</SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
           <SidebarLinkR to="/ContactSection">CONTACT</SidebarLinkR>
-          <SidebarLinkR to="/BigRigGroups/ct">NEWS & EVENTS</SidebarLinkR>
+          <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
+          <SidebarLinkR to="/creditapplication">CREDIT APPLICATION</SidebarLinkR>
           <SidebarLinkR to="/Location">
             <Link
               to="Location"
@@ -55,7 +56,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>
           <SidebarLinkR to="/Shipfreight">Shipfreight</SidebarLinkR>
           <SidebarLinkR to="/Industries">Industries</SidebarLinkR>
-          <SidebarLinkR to="/KalPower">KalPower</SidebarLinkR> */} 
+          <SidebarLinkR to="/KalPower">KalPower</SidebarLinkR> */}
         </SidebarMenu>
         {/* <SideBtnWrap className="mt-2">
           <SidebarRoute>
