@@ -138,8 +138,9 @@ export const NavLinks = styled(LinkR)`
   &.active {
     color: #101010;
   }
+  font-weight: 600;
   &:hover {
-    font-weight: 600;
+
     border-bottom: 2px solid #ffab53 !important;
   }
   &.active {
