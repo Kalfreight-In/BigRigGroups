@@ -33,7 +33,7 @@ module.exports = {
         descnew: "1rem",
         footerheading: "34px",
         "36px": "36px",
-      
+
         "15px": "15px",
         linkdenicon: "40px",
         heading: "3rem",
@@ -78,9 +78,9 @@ module.exports = {
         inputborder: "#E0E3EB",
         neautralform: "#292E3D",
         businessbackground: "#f2f2f2",
-        facebook: "#4267B2",
-        instagram: "#8a3ab9",
-        linkden: "#0072b1",
+        facebook: "#262626",
+        instagram: "#262626",
+        linkden: "#262626",
         // socialicons: "#4267B2",
       },
       spacing: {

@@ -5,8 +5,8 @@ import {RiFacebookCircleLine} from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
-import { animateScroll as scroll, Link } from "react-scroll";
-
+import { animateScroll as scroll, Link as scrollLink } from "react-scroll";
+import {Link} from "react-router-dom";
 
 
 export default function Footer() {
@@ -38,7 +38,7 @@ export default function Footer() {
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
                   className="2xl:h-28 lg:h-24  h-20"
-                  href="mailto:umarkhurshid3@gmail.com"
+                  to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
               <div className="text-white flex  lg:mt-12 mt-4">
@@ -48,7 +48,7 @@ export default function Footer() {
                     alt=""
                     className="text-white mt-2 "
                   /> */}
-                  <AiOutlineClockCircle className="h-8 w-8 " />
+                  <AiOutlineClockCircle className="h-8 w-8 " /> 
                 </div>
                 <div className="block ml-3">
                   {/* <div className="block">Working hours</div> */}
@@ -61,14 +61,14 @@ export default function Footer() {
 
               <div className="text-white flex mt-4">
                 <div className="mt-2">
-                  <a href="tel:8009770010" target="_blank">
+                  <Link to="tel:8009770010" target="_blank">
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                       alt=""
                       className="text-white"
                       width={20}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="ml-4">
                   {/* <div className="block">
@@ -76,10 +76,10 @@ export default function Footer() {
                     <br></br>
                     we have subject matter experts just a call away.
                   </div> */}
-                  <a href="tel:8009770010" target="_blank">
+                  <Link to="tel:8009770010" target="_blank">
                     {" "}
                     <div className="text-xl font-bold">800-977-0010</div>{" "}
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -100,36 +100,36 @@ export default function Footer() {
               <br />
 
               <div className="text-white 2xl:leading-8 leading-6 ">
-                <a
-                  href="/newsevents"
+                <Link
+                  to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Flatbed for sale
-                </a>
-                <a
-                  href="/newsevents"
+                </Link>
+                <Link
+                  to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Used Trucks for sale
-                </a>
-                <a
-                  href="/newsevents"
+                </Link>
+                <Link
+                  to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   New Trailers for sale
-                </a>
-                <a
-                  href="/newsevents"
+                </Link>
+                <Link
+                  to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Used Dry van for sale
-                </a>
-                <a
-                  href="/newsevents"
+                </Link>
+                <Link
+                  to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
                   Reefer trailer for sale
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -143,12 +143,12 @@ export default function Footer() {
 
               <div className="text-white  2xl:leading-8 leading-6">
                 <div>
-                  {/* <a
-                    href="#aboutus "
+                  {/* <Link
+                    to="#aboutus "
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     About us
-                  </a> */}
+                  </Link> */}
 
                   <Link
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
@@ -163,36 +163,36 @@ export default function Footer() {
                   </Link>
                 </div>
                 <div>
-                  <a
-                    href="/newsevents"
+                  <Link
+                    to="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     News & Events
-                  </a>
-                </div>
+                  </Link>
+                </div> 
                 <div>
-                  <a
-                    href="/newsevents"
+                  <Link
+                    to="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     Parts Inventory
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a
-                    href="/newsevents"
+                  <Link
+                    to="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     Financing Options
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a
-                    href="/newsevents"
+                  <Link
+                    to="/newsevents"
                     className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                   >
                     24X7 Roadside Assistance
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -213,26 +213,26 @@ export default function Footer() {
                       Careers
                     </div>
                     <span> » </span>
-                    <a
-                      href="mailto:hr@bigrigcanada.com"
+                    <Link
+                      to="mailto:hr@bigrigcanada.com"
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       hr@bigrigcanada.com{" "}
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
                       Tires
                     </div>
                     <span> » </span>
-                    <a
-                      href="mailto:tires@bigrigcanada.com"
+                    <Link
+                      to="mailto:tires@bigrigcanada.com"
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       tires@bigrigcanada.com
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
@@ -240,13 +240,13 @@ export default function Footer() {
                       Partz{" "}
                     </div>
                     <span> » </span>
-                    <a
-                      href="mailto:partz@bigrigcanada.com"
+                    <Link
+                      to="mailto:partz@bigrigcanada.com"
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       partz@bigrigcanada.com{" "}
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="flex flex-row space-x-2">
@@ -254,34 +254,34 @@ export default function Footer() {
                       Trailers & Leasing
                     </div>
                     <span> » </span>
-                    <a
-                      href="mailto:trailers@bigrigcanada.com"
+                    <Link
+                      to="mailto:trailers@bigrigcanada.com"
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       trailers@bigrigcanada.com
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="w-max">For any other inquiry</div>
                     <span> » </span>
-                    <a
-                      href="mailto:info@bigrigcanada.com"
+                    <Link
+                      to="mailto:info@bigrigcanada.com"
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       info@bigrigcanada.com
-                    </a>
+                    </Link>
                   </div>
                   {/* <div className="flex flex-row space-x-2">
                     <div>For all other enquires reach us at</div>
                     <span> »  </span>
-                    <a
-                      href=""
+                    <Link
+                      to=""
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
                       info@bigrigcanada.com{" "}
-                    </a>
+                    </Link>
                   </div> */}
 
                   <div
@@ -314,7 +314,7 @@ export default function Footer() {
                             "_blank"
                           )
                         }
-                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 " 
                       />
                     </div>
                   </div>
@@ -327,7 +327,7 @@ export default function Footer() {
         {/* <div id="mainiconcontainer">
         <div id="allicons" className="flex justify-end mx-48 ">
         <RiFacebookCircleLine onClick={()=> window.open('https://www.facebook.com/kalgroupusa','_blank')} className="text-white mx-2 cursor-pointer h-1.8rem w-1.8rem" />
-        <AiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  mx-2 cursor-pointer h-1.8rem w-1.8rem' />
+        <LinkiOutlineInstagram onClick={()=> window.open('https://www.instagram.com/bigriggroup/', '_blank')} className='text-white  mx-2 cursor-pointer h-1.8rem w-1.8rem' />
         <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white mx-2 cursor-pointer h-8 w-8" />    
         </div> */}
         {/* </div>   */}
