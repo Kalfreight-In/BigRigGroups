@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
 import { AiOutlineClockCircle } from 'react-icons/ai';
-import {RiFacebookCircleLine} from 'react-icons/ri';
+import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
@@ -10,6 +10,11 @@ import {Link} from "react-router-dom";
 
 
 export default function Footer() {
+  {
+    window.location.pathname == '/'
+      ? console.log(`${window.location.pathname} yesssssssssssssssssss`)
+      : console.log(`${window.location.pathname} nooooooooooooooo`);
+  }
   return (
     <>
       <div className="bg-Lightblue">
@@ -17,15 +22,15 @@ export default function Footer() {
           className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              "url(" +
-              "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png" +
-              ")",
+              'url(' +
+              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
+              ')',
 
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
 
-            backgroundRepeat: "no-repeat",
-            width: "full",
+            backgroundRepeat: 'no-repeat',
+            width: 'full',
           }}
         >
           <div
@@ -236,8 +241,8 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
-                      {" "}
-                      Partz{" "}
+                      {' '}
+                      Partz{' '}
                     </div>
                     <span> » </span>
                     <Link
@@ -292,8 +297,8 @@ export default function Footer() {
                       <RiFacebookCircleLine
                         onClick={() =>
                           window.open(
-                            "https://www.facebook.com/BigRiggroups/",
-                            "_blank"
+                            'https://www.facebook.com/BigRiggroups/',
+                            '_blank'
                           )
                         }
                         className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
@@ -301,8 +306,8 @@ export default function Footer() {
                       <AiOutlineInstagram
                         onClick={() =>
                           window.open(
-                            "https://www.instagram.com/bigriggroup/",
-                            "_blank"
+                            'https://www.instagram.com/bigriggroup/',
+                            '_blank'
                           )
                         }
                         className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
@@ -310,8 +315,8 @@ export default function Footer() {
                       <TiSocialLinkedinCircular
                         onClick={() =>
                           window.open(
-                            "https://www.linkedin.com/company/bigriggroup",
-                            "_blank"
+                            'https://www.linkedin.com/company/bigriggroup',
+                            '_blank'
                           )
                         }
                         className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 " 

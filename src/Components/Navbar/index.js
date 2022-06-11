@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 import { animateScroll as scroll, Link } from 'react-scroll';
-// import ErrorBoundary from '../ErrorBoundary'; 
+// import ErrorBoundary from '../ErrorBoundary';
 import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Nav,
@@ -50,6 +50,7 @@ const Navbar = ({ toggle }) => {
     }
   };
   useEffect(() => {
+    console.log(window.location.pathname);
     if (window.location.pathname == '/trailerandleasing') {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
@@ -68,9 +69,9 @@ const Navbar = ({ toggle }) => {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
       );
-    } else if (window.location.pathname == '/BigRigGroup/') {
+    } else if (window.location.pathname == '//') {
       console.log(`lollll h hgaya${window.location.pathname}`);
-      // scroll.scrollTo(7000);
+      scroll.scrollTo(7000);
     } else {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
@@ -93,11 +94,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
-            <NavLogo
-              to="/"
-              onClick={toggleHome}
-              className="max-w-max"
-            >
+            <NavLogo to="/" onClick={toggleHome} className="max-w-max">
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-0 flex-1 w-40 "
@@ -227,7 +224,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
               ) : (
                 <NavItem>
-                  <NavLinks 
+                  <NavLinks
                     to="/#Location"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
@@ -250,7 +247,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/creditapplication"
                   onClick={toggleHome}
-                  className="2xl:text-sm  xl:text-sm lg:text-xs md:text-xs w-max"
+                  className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinks>
