@@ -49,14 +49,13 @@ const Contactform = () => {
   };
 
   return (
-    <div id="shadow" className="p-8 rounded-3xl shadow-2xl ">
+    <div id="shadow" className="p-8 rounded-3xl shadow-2xl flex justify-center items-center ">
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
-          <h1 className="text-Heading text-heading font-bold">Contact Us</h1>
-          <p className="text-neautralform  font-Poppins text-md font-bold  my-2">
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4">
             Hey! How can we help you today?
-          </p>
-          <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3">
+          </p> <br />
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
             Fill in this form for an on-point solution in no time.
           </p>
         </div>
@@ -198,7 +197,7 @@ const Contactform = () => {
         </div>
         <div class="md:flex md:items-center">
           <div>
-            <button className="text-white bg-Lightblue rounded p-4 w-28 mt-2">
+            <button className="text-white bg-Lightblue md:rounded rounded-lg p-4 md:px-0 px-40 w-28 mt-2 ml-4 flex justify-center items-center">
               {buttonText}
             </button>
           </div>
