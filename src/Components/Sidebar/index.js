@@ -15,7 +15,7 @@ import {
 // import { animateScroll as scroll, Link } from 'react-scroll';
 const Sidebar = ({ isOpen, toggle }) => {
   function disabel() {
-    const path = window.location.pathname;
+    const path = window.location.pathname; 
 
     if (path === "/") {
       return true;
@@ -34,9 +34,21 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkR to="/trailerandleasing">TRAILER & LEASING</SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
-          <SidebarLinkR to="/ContactSection">CONTACT</SidebarLinkR>
+          <SidebarLinkR to="/ContactSection">
+            <Link to="ContactSection"
+             onClick={toggle}
+             smooth={true}
+             duration={1000}
+             spy={true}
+             exact={true}
+             offset={-80}     
+             >
+            CONTACT</Link>
+          </SidebarLinkR>
           <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
-          <SidebarLinkR to="/creditapplication">CREDIT APPLICATION</SidebarLinkR>
+          <SidebarLinkR to="/creditapplication">
+            CREDIT APPLICATION
+          </SidebarLinkR>
           <SidebarLinkR to="/Location">
             <Link
               to="Location"
@@ -50,7 +62,6 @@ const Sidebar = ({ isOpen, toggle }) => {
               LOCATIONS
             </Link>
           </SidebarLinkR>
-          <SidebarLinkR to="/Contact">CREDIT APPLICATIONS</SidebarLinkR>
 
           {/* <SidebarLinkR to="/Ecommerce">Ecommerce</SidebarLinkR>
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>

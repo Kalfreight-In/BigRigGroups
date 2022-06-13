@@ -97,7 +97,7 @@ const Navbar = ({ toggle }) => {
           <div className="flex flex-row ml-8">
             <NavLogo to="/" onClick={toggleHome} className="max-w-max">
               <img
-                // className="2xl:w-56 w-44  2xl:h-44 h-32  "
+                // className="2xl:w-56 w-44  2xl:h-44 h-32  " 
                 className="pt-0 flex-1 w-40 "
                 src={logo}
                 alt="logo"
@@ -169,7 +169,7 @@ const Navbar = ({ toggle }) => {
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      exact={true}
+                      exact={true}  
                       offset={-80}
                     >
                       CONTACT

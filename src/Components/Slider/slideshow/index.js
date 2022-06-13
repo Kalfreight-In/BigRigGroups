@@ -2,7 +2,7 @@ import { React, useEffect, useState, useRef } from 'react';
 import { useHover } from '../../../Hooks/Hover';
 
 // import { TabComponent } from '../../TabComponent';
-import { isMobile, browserName } from 'react-device-detect';
+import { isMobile, browserName } from 'react-device-detect'; 
 // const colors = [
 //   '#0088FE',
 //   '#00C49F',

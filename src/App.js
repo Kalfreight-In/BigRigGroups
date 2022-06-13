@@ -14,7 +14,7 @@ import Trailer_and_Leasing from './pages/TrailerandLeasing';
 import { UnderConstruction } from './Components/UnderConstruction';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -27,7 +27,7 @@ function App() {
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
 
-      <Routes>
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/newsevents" element={<UnderConstruction />} />
         <Route path="/creditapplication" element={<UnderConstruction />} />
