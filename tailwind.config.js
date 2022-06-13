@@ -46,7 +46,7 @@ module.exports = {
         "36px": "36px",
         "16px": "16px",
         "15px": "15px",
-        // '8px':'10px'
+        // '8px':'10px',
       },
       fontWeight: {
         heading: "600",
@@ -96,6 +96,7 @@ module.exports = {
         "50rem": "30rem",
         "35wv": "35wv",
         "1.8rem": "1.8rem",
+        texarea: "31rem",
       },
       height: {
         "40rem": "40rem",
@@ -112,6 +113,9 @@ module.exports = {
       dropShadow: {
         socialicons: "0 0 15px #fff",
       },
+      margin:{
+        Input:'1.01rem'
+      }
     },
   },
 };
