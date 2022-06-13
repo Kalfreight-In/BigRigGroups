@@ -67,15 +67,15 @@ const Contactform = () => {
               for="grid-first-name"
             >
               Name
-            </label> */}
+            </label> */} 
             <input
               onChange={(e) => setName(e.target.value)}
-              class="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              className="appearance-none block  bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white md:w-56 w-80 md:ml-0 ml-Input"
               id="grid-first-name"
               type="text"
               placeholder="Name"
               value={name}
-              required
+              required 
             />
             {/* <p class="text-red-500 text-xs italic">
               Please fill out this field.
@@ -93,7 +93,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="Email Address"
                 type="email"
@@ -119,7 +119,7 @@ const Contactform = () => {
               onChange={(e) => setROC(e.target.value)}
               value={ROC}
               placeholder=" &nbsp; Reason for contacting"
-              className="border block w-full bg-white text-gray-700  border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="border block bg-white text-gray-700  border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-4"
               required
             />
             <datalist id="cars">
@@ -142,7 +142,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => setphoneno(e.target.value)}
                 value={phoneno}
-                class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="Mobile No"
                 type="Phone"
@@ -186,7 +186,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-18 resize-none"
+              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-18 resize-none md:w-texarea w-80 md:ml-0 ml-4"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>

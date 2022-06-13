@@ -6,9 +6,9 @@ import { RiFacebookCircleLine } from 'react-icons/ri';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
 import { Link as Slink } from "react-scroll";
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"; 
 
-
+  
 export default function Footer() {
   {
     window.location.pathname == '/'
