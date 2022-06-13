@@ -3,11 +3,10 @@ import Navbar from '../../Components/Navbar';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
-import {AiOutlineInstagram} from 'react-icons/ai';
-import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
-import { animateScroll as scroll, Link as scrollLink } from "react-scroll";
-import {Link} from "react-router-dom";
-
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+import { animateScroll as scroll, Link as scrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   {
@@ -53,7 +52,7 @@ export default function Footer() {
                     alt=""
                     className="text-white mt-2 "
                   /> */}
-                  <AiOutlineClockCircle className="h-8 w-8 " /> 
+                  <AiOutlineClockCircle className="h-8 w-8 " />
                 </div>
                 <div className="block ml-3">
                   {/* <div className="block">Working hours</div> */}
@@ -82,8 +81,8 @@ export default function Footer() {
                     we have subject matter experts just a call away.
                   </div> */}
                   <Link to="tel:8009770010" target="_blank">
-                    {" "}
-                    <div className="text-xl font-bold">800-977-0010</div>{" "}
+                    {' '}
+                    <div className="text-xl font-bold">800-977-0010</div>{' '}
                   </Link>
                 </div>
               </div>
@@ -174,7 +173,7 @@ export default function Footer() {
                   >
                     News & Events
                   </Link>
-                </div> 
+                </div>
                 <div>
                   <Link
                     to="/newsevents"
@@ -223,7 +222,7 @@ export default function Footer() {
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      hr@bigrigcanada.com{" "}
+                      hr@bigrigcanada.com{' '}
                     </Link>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -250,7 +249,7 @@ export default function Footer() {
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      partz@bigrigcanada.com{" "}
+                      partz@bigrigcanada.com{' '}
                     </Link>
                   </div>
 
@@ -319,7 +318,7 @@ export default function Footer() {
                             '_blank'
                           )
                         }
-                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 " 
+                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
                       />
                     </div>
                   </div>
