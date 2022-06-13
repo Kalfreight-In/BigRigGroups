@@ -29,10 +29,11 @@ const Navbar = ({ toggle }) => {
   //   if (path == '/tires') {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png';
   //   } else {
-  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
+  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'; 
   //   }
   // }
   // const initialState = loadLogo(window.location.pathname);
+
   const [logo, setlogo] = useState(
     'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
   );
@@ -91,7 +92,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/" onClick={toggleHome} className="max-w-max">
@@ -157,7 +158,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {window.location.pathname == '/' ? (
+                {window.location.pathname == "/" ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
@@ -203,7 +204,7 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-              {window.location.pathname == '/' ? (
+              {window.location.pathname == "/" ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
@@ -260,17 +261,19 @@ const Navbar = ({ toggle }) => {
           </div>
 
           <NavBtn className="mr-8">
-            <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-36   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-base xl:text-sm lg:text-sm md:text-md">
-              <div>
-                <img
-                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
-                  alt=""
-                  className="text-white pr-1 pt-1"
-                  width="18px"
-                />
-              </div>
-              (800) 977 0010
-            </button>
+            <a href="tel:8009770010" target="_blank">  
+              <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-36   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-base xl:text-sm lg:text-sm md:text-md">
+                <div>
+                  <img
+                    src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
+                    alt=""
+                    className="text-white pr-1 pt-1"
+                    width="18px"
+                  />
+                </div>
+                (800) 977 0010
+              </button>
+            </a>
           </NavBtn>
         </Nav>
       </IconContext.Provider>
@@ -281,3 +284,4 @@ const Navbar = ({ toggle }) => {
 export default Navbar;
 
 // kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs
+
