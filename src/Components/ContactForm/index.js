@@ -11,7 +11,7 @@ const Contactform = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [buttonText, setButtonText] = useState('Submit');
+  const [buttonText, setButtonText] = useState('Submit'); 
   const resetForm = (e) => {
     setName('');
     setEmail('');
