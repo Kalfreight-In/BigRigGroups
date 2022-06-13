@@ -20,7 +20,7 @@ const DAboutSection = ({ isOpen, toggle }) => {
       <AboutContainerImageContent>
         <img
           src={whitetruck}
-          alt="Our services Truck (White Truck with Trailer running on black road)"
+          alt="Our services Truck (White Truck with Trailers running on black road)"
         />
       </AboutContainerImageContent>
 

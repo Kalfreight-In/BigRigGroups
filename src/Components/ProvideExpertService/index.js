@@ -42,10 +42,10 @@ const ProvideExpertService = ({ isOpen, toggle }) => {
             </StepNoContainer>
             <StepNoContentContainer>
               <SteapHeadingContainer>
-                <StepHeading>Premium Performance</StepHeading> 
+                <StepHeading>Premium Performance</StepHeading>
                 <StepSubheading>
                   {' '}
-                  Every Vanguard trailer is designed and built to include
+                  Every Vanguard trailers is designed and built to include
                   premium performance features that provide valuable operational
                   savings and years of trouble-free service.{' '}
                 </StepSubheading>
@@ -61,7 +61,7 @@ const ProvideExpertService = ({ isOpen, toggle }) => {
                 <StepHeading>Safety first</StepHeading>
                 <StepSubheading>
                   Advanced safety components as standard features on every
-                  trailer.
+                  trailers.
                 </StepSubheading>
               </SteapHeadingContainer>
             </StepNoContentContainer>

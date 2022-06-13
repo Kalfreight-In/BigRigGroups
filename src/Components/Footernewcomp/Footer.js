@@ -3,17 +3,16 @@ import Navbar from '../../Components/Navbar';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
-import {AiOutlineInstagram} from 'react-icons/ai';
-import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
-import { Link as Slink } from "react-scroll";
-import {Link} from "react-router-dom"; 
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+import { Link as Slink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
-  
 export default function Footer() {
   {
     window.location.pathname == '/'
       ? console.log(`${window.location.pathname} yesssssssssssssssssss`)
-      : console.log(`${window.location.pathname} nooooooooooooooo`); 
+      : console.log(`${window.location.pathname} nooooooooooooooo`);
   }
   return (
     <>
@@ -22,15 +21,15 @@ export default function Footer() {
           className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              "url(" +
-              "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png" +
-              ")",
+              'url(' +
+              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
+              ')',
 
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
 
-            backgroundRepeat: "no-repeat",
-            width: "full",
+            backgroundRepeat: 'no-repeat',
+            width: 'full',
           }}
         >
           <div
@@ -133,7 +132,7 @@ export default function Footer() {
                   to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                 >
-                  Reefer trailer for sale
+                  Reefer trailers for sale
                 </Link>
               </div>
             </div>
@@ -155,17 +154,31 @@ export default function Footer() {
                     About us
                   </Link> */}
 
-                  <Slink
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
-                    to="aboutus" 
-                    smooth={true}
-                    duration={1000}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    About Us
-                  </Slink>
+                  {window.location.pathname == '/' ? (
+                    <Slink
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                      to="aboutus"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      About Us
+                    </Slink>
+                  ) : (
+                    <a
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                      href="/#aboutus"
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      exact={true}
+                      offset={-80}
+                    >
+                      About Us
+                    </a>
+                  )}
                 </div>
                 <div>
                   <Link
@@ -223,7 +236,7 @@ export default function Footer() {
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      hr@bigrigcanada.com{" "}
+                      hr@bigrigcanada.com{' '}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -241,8 +254,8 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
-                      {" "}
-                      Partz{" "}
+                      {' '}
+                      Partz{' '}
                     </div>
                     <span> » </span>
                     <a
@@ -250,7 +263,7 @@ export default function Footer() {
                       target="_blank"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
                     >
-                      partz@bigrigcanada.com{" "}
+                      partz@bigrigcanada.com{' '}
                     </a>
                   </div>
 
@@ -297,8 +310,8 @@ export default function Footer() {
                       <RiFacebookCircleLine
                         onClick={() =>
                           window.open(
-                            "https://www.facebook.com/BigRiggroups/",
-                            "_blank"
+                            'https://www.facebook.com/BigRiggroups/',
+                            '_blank'
                           )
                         }
                         className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
@@ -306,8 +319,8 @@ export default function Footer() {
                       <AiOutlineInstagram
                         onClick={() =>
                           window.open(
-                            "https://www.instagram.com/bigriggroup/",
-                            "_blank"
+                            'https://www.instagram.com/bigriggroup/',
+                            '_blank'
                           )
                         }
                         className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
@@ -315,8 +328,8 @@ export default function Footer() {
                       <TiSocialLinkedinCircular
                         onClick={() =>
                           window.open(
-                            "https://www.linkedin.com/company/bigriggroup",
-                            "_blank"
+                            'https://www.linkedin.com/company/bigriggroup',
+                            '_blank'
                           )
                         }
                         className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "

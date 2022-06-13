@@ -49,7 +49,7 @@ export const GroupWebsiteComponentdata = [
       {
         id: 3,
         // head: `Trailers`,
-        desc: `To cater to your trailer & truck financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.  `,
+        desc: `To cater to your trailers & truck financing needs, we have a marvellous team of professionals by our side to ensure a hassle-free process. We endeavour to offer a smooth customer experience and guaranteed satisfaction.  `,
       },
       {
         id: 4,
@@ -854,7 +854,7 @@ export const AboutusSec = [
       {
         id: '1',
         logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigtrailerlogo.svg',
-        heading: 'trailer',
+        heading: 'trailers',
       },
       {
         id: '2',
@@ -882,7 +882,7 @@ export const Businessdata = [
         url: '/trailerandleasing',
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
-        btn: 'Trailer & Leasing',
+        btn: 'Trailers & Leasing',
         imageurl:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/trailers.png',
       },

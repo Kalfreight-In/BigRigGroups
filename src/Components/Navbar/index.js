@@ -120,7 +120,7 @@ const Navbar = ({ toggle }) => {
                   onClick={toggleHome}
                   className="2xl:text-sm  text-navsmall xl:text-xs lg:text-xs md:text-xs w-max"
                 >
-                  TRAILER & LEASING
+                  TRAILERS & LEASING
                 </NavLinks>
               </NavItem>
 
@@ -175,13 +175,13 @@ const Navbar = ({ toggle }) => {
                     </Link>
                   </NavLinks>
                 ) : (
-                  <NavLinks
-                    to="/#ContactSection"
+                  <NavLinksA
+                    href="/#ContactSection"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
                   >
-                    <Link
-                      to="/#ContactSection"
+                    <a
+                      href="/#ContactSection"
                       smooth={true}
                       duration={1000}
                       spy={true}
@@ -189,8 +189,8 @@ const Navbar = ({ toggle }) => {
                       offset={-80}
                     >
                       CONTACT
-                    </Link>
-                  </NavLinks>
+                    </a>
+                  </NavLinksA>
                 )}
               </NavItem>
 
@@ -224,13 +224,13 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
               ) : (
                 <NavItem>
-                  <NavLinks
-                    to="/#Location"
+                  <NavLinksA
+                    href="/#Location"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  lg:text-xs md:text-xs "
                   >
-                    <Link
-                      to="Location"
+                    <a
+                      href="/#Location"
                       smooth={true}
                       duration={1000}
                       spy={true}
@@ -238,8 +238,8 @@ const Navbar = ({ toggle }) => {
                       offset={-80}
                     >
                       LOCATIONS
-                    </Link>
-                  </NavLinks>
+                    </a>
+                  </NavLinksA>
                 </NavItem>
               )}
 

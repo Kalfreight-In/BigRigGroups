@@ -1,6 +1,6 @@
-import React from "react";
-import { isMobile } from "react-device-detect";
-import { animateScroll as scroll, Link } from "react-scroll";
+import React from 'react';
+import { isMobile } from 'react-device-detect';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 import {
   CloseIcon,
@@ -10,14 +10,14 @@ import {
   SidebarMenu,
   SidebarLinkR,
   SideBtnWrap,
-  SidebarRoute,  
-} from "./SlidebarElement";
+  SidebarRoute,
+} from './SlidebarElement';
 // import { animateScroll as scroll, Link } from 'react-scroll';
 const Sidebar = ({ isOpen, toggle }) => {
   function disabel() {
     const path = window.location.pathname;
 
-    if (path === "/") {
+    if (path === '/') {
       return true;
     }
     return false;
@@ -31,12 +31,16 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarLinkR to="/">HOME</SidebarLinkR>
 
-          <SidebarLinkR to="/trailerandleasing">TRAILER & LEASING</SidebarLinkR>
+          <SidebarLinkR to="/trailerandleasing">
+            TRAILERS & LEASING
+          </SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
           <SidebarLinkR to="/ContactSection">CONTACT</SidebarLinkR>
           <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
-          <SidebarLinkR to="/creditapplication">CREDIT APPLICATION</SidebarLinkR>
+          <SidebarLinkR to="/creditapplication">
+            CREDIT APPLICATION
+          </SidebarLinkR>
           <SidebarLinkR to="/Location">
             <Link
               to="Location"
