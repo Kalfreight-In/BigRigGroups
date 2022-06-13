@@ -11,20 +11,7 @@ export default function Footer() {
   const [Hinventery, setHinventery] = useState(false);
   const [Hquicklinks, setHquicklinks] = useState(false);
   const [Hcontactus, setHcontactus] = useState(false);
-  console.log(
-    `Hinventery ${Hinventery}Hquicklinks ${Hquicklinks}Hcontactus${Hcontactus}`
-  );
-  // {
-  //   window.location.pathname == '/'
-  //     ? console.log(`${window.location.pathname} yesssssssssssssssssss`)
-  //     : console.log(`${window.location.pathname} nooooooooooooooo`);
-  // }
-  function ToggleHiddenLinks(linkname) {}
-  // useEffect(() => {
-  //   setHinventery(false);
-  //   setHquicklinks(false);
-  //   setHcontactus(false);
-  // }, []);
+
   return (
     <>
       <div className="bg-Lightblue">
@@ -53,7 +40,7 @@ export default function Footer() {
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
                   className="2xl:h-28 lg:h-24  h-20"
-                  to="mailto:umarkhurshid3@gmail.com" 
+                  to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
               <div className="text-white flex  lg:mt-12 mt-4">
@@ -70,7 +57,7 @@ export default function Footer() {
                   <div className="text-xl font-bold">
                     8 AM to 5 PM <br />
                     (Monday to Friday) 
-                  </div> 
+                  </div>
                 </div>
               </div>
 
