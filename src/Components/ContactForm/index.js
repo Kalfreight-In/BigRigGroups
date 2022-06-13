@@ -74,7 +74,7 @@ const Contactform = () => {
               id="grid-first-name"
               type="text"
               placeholder="Name"
-              value={name}
+              value={name} 
               required 
             />
             {/* <p class="text-red-500 text-xs italic">
