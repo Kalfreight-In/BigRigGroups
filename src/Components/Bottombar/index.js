@@ -33,7 +33,7 @@ const BottomBar = ({ toggle }) => {
   };
   return (
     <>
-      <Nav scrollNav={scrollNav} >
+      <Nav scrollNav={scrollNav}>
         {/* <NavLogo to="/" onClick={toggleHome}>
           <h3 className="text-left text-gray-200 font-bold lg:text-2xl md:text-3xl">
             BIG-RIG
@@ -137,15 +137,15 @@ const BottomBar = ({ toggle }) => {
             {/* <h3 className="2xl:text-desc text-navsmall md:text-sm lg:text-xs text-white">
             Copyright © BigRig Group, 2022. All Rights Reserved
           </h3> */}
-            <h3 className="2xl:text-desc mr-4 text-navsmall md:text-sm lg:text-xs text-white lg:justify">
+            <h3 className="2xl:text-desc lg:mr-4 text-navsmall md:text-sm lg:text-xs text-white lg:justify">
               Copyright © BigRig Group, 2022. All Rights Reserved
             </h3>
-          </NavBtn> 
+          </NavBtn>
         </div>
 
         {/* <MobileIcon onClick={toggle}> 
           <FaBars/>
-        </MobileIcon> */} 
+        </MobileIcon> */}
       </Nav>
     </>
   );
