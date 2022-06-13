@@ -5,18 +5,15 @@ export default function Abouthome() {
   const aboutdata = AboutusSec[0];
   return (
     <>
-      <div id="aboutus">
+      <div id="aboutus" className="h-medium-height md:h-mobileSecondImage">
         <div
           // className="h-medium-height "
-          className="md:h-medium-height h-mobileSecondImage"
+          className="h-medium-height md:h-mobileSecondImage lg:bg-cover bg-contain bg-no-repeat lg:bg-center bg-bottom "
           style={{
             backgroundImage:
-              "url(" +
-              "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png" +
-              ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+              'url(' +
+              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png' +
+              ')',
           }}
         >
           <div>
@@ -36,8 +33,8 @@ export default function Abouthome() {
                     </p>
                   </div>
 
-                  <div className="flex justify-center itesm-center mt-16">
-                    <button className="  text-white bg-Lightblue  font-bold  rounded-md shadow-sm hover:shadow-md shadow-blue-shadow hover:shadow-blue-shadowhover  md:p-5 p-3 lg:4/5 lg:w-1/6 md:mb-6  2xl:text-2xl lg:text-md ">
+                  <div className="flex justify-center itesm-center lg:mt-16 mt-8">
+                    <button className="  text-white bg-Lightblue  font-bold  rounded-md shadow-sm hover:shadow-md shadow-blue-shadow hover:shadow-blue-shadowhover  md:p-5 p-3 lg:4/5 lg:w-1/6 w-1/2 md:mb-6  2xl:text-2xl lg:text-md ">
                       See more
                     </button>
                   </div>

@@ -10,6 +10,7 @@ import Accordion from '../Accordion';
 import { useSpring, animated } from 'react-spring';
 import { useHover } from '../../Hooks/Hover';
 import { NavLink as LinkR } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
 var mydata = Businessdata[0];
 export const NavLinks = styled(LinkR)`
   color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
@@ -33,36 +34,47 @@ export default function Business() {
       <div className="bg-businessbackground">
         <div className="lg:p-12 p-2 drop-shadow-2xl">
           <div className="flex justify-center items-center font-semibold">
-            <h1 className="text-5xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
+            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
               {mydata.heading}
             </h1>
           </div>
 
           <div className={`flex w-full lg:flex-row flex-col`}>
             <div class=" flex w-full">
-              <div class="gallery-wrap flex lg:flex-row flex-col w-fill">
-                {mydata.thebox.map((element) => (
-                  <NavLinks
-                    to={element.url}
-                    className={`demo item `}
-                    style={{ backgroundImage: `url(${element.imageurl})` }}
-                    // whileHover={{
-                    //   transition: {
-                    //     duration: 0.5,
-                    //     ease: 'easeInOut',
-                    //   },
-                    // }}
-                  >
-                    {/* <Accordion title={element.heading} text={element.desc} /> */}
-                    <img></img>
-                    <div
-                      ref={hoverRef}
-                      key={element.id}
-
-                      // className={`z-${element.id} ${
-                      //   !isHovered ? 'w-30rem relative' : '80rem'
-                      // }`}
+              <div class={`gallery-wrap flex lg:flex-row flex-col w-fill`}>
+                {mydata.thebox.map((element) =>
+                  isMobile ? (
+                    <NavLinks
+                      to={element.url}
+                      className="h-businessImage lg:bg-cover  bg-contain bg-no-repeat bg-center"
+                      style={{
+                        backgroundImage: `url(${element.Mimageurl})`,
+                      }}
+                      // whileHover={{
+                      //   transition: {
+                      //     duration: 0.5,
+                      //     ease: 'easeInOut',
+                      //   },
+                      // }}
                     >
+                      {' '}
+                    </NavLinks>
+                  ) : (
+                    <NavLinks
+                      to={element.url}
+                      className={`demo item `}
+                      style={{
+                        backgroundImage: `url(${element.imageurl})`,
+                      }}
+                      // whileHover={{
+                      //   transition: {
+                      //     duration: 0.5,
+                      //     ease: 'easeInOut',
+                      //   },
+                      // }}
+                    >
+                      {/* <Accordion title={element.heading} text={element.desc} /> */}
+
                       {/* <div
                         id="backgroundd"
                         className="h-65vh  mx-2 mt-8 "
@@ -108,9 +120,9 @@ export default function Business() {
                           {element.btn}
                         </button>
                       </div> */}
-                    </div>
-                  </NavLinks>
-                ))}
+                    </NavLinks>
+                  )
+                )}
               </div>
             </div>
           </div>

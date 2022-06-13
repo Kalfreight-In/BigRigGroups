@@ -60,11 +60,13 @@ export function Slideshow({ data, smallSlider = false }) {
   return (
     <>
       <div
-        className={`text-36px font-semibold text-Heading flex justify-center items-center ${
+        className={`  lg:font-semibold font-bold text-Heading flex justify-center items-center ${
           smallSlider ? 'pb-4' : 'pb-16 mt-16 '
         }  `}
       >
-        {smallSlider ? null : <h1>Brands We Offer</h1>}
+        {smallSlider ? null : (
+          <h1 className="text-4xl lg:text-1xl">Brands We Offer</h1>
+        )}
       </div>
       {/* <TabComponent></TabComponent> */}
       <div

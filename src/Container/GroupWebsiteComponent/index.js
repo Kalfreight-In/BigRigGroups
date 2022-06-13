@@ -6,7 +6,6 @@ import { GroupWebsiteComponentdata } from '../../data.js';
 import ContactSection from '../../Components/ContactSection1';
 import Link from 'react-scroll/modules/components/Link';
 
-
 function GroupWebsiteComponent() {
   return (
     <>
@@ -19,8 +18,8 @@ function GroupWebsiteComponent() {
             <div
               className={
                 data.id % 2 !== 0
-                  ? "md:flex lg:w-screen w-fit"
-                  : "md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit"
+                  ? 'md:flex lg:w-screen w-fit'
+                  : 'md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit '
               }
             >
               <motion.div
@@ -28,11 +27,11 @@ function GroupWebsiteComponent() {
                 transition={{ duration: 1 }}
                 className="app__header-info flex-1"
               >
-                <div className={data.id % 2 !== 0 ? "md:5/12 " : "md:5/12 "}>
+                <div className={data.id % 2 !== 0 ? 'md:5/12 ' : 'md:5/12 '}>
                   <div className="relative">
                     <div
                       className={
-                        "md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center"
+                        'md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center'
                       }
                       style={{ backgroundImage: `url(${data.imageurl})` }}
                       // src={data.imageurl}
@@ -50,7 +49,7 @@ function GroupWebsiteComponent() {
                   <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
-                      transition={{ duration: 0.2, ease: "easeInOut" }}
+                      transition={{ duration: 0.2, ease: 'easeInOut' }}
                       alt="profile_circle"
                       //  className="overlay_circle"
                       src={data.icon}
@@ -59,16 +58,19 @@ function GroupWebsiteComponent() {
                     ></motion.img>
 
                     <div className="font-display  text-2xl font-bold leading-tight">
-                      <h2 className="xl:text-5xl self-start text-Heading font-bold md:text-2xl link link-underline link-underline-black 2xl:pb-8 pb-2 2xl::mb-4 mb-2">
+                      <h2 className="xl:text-5xl self-start text-Heading font-bold md:text-2xl link link-underline link-underline-black 2xl:pb-8 pb-2 2xl::mb-4 mb-2 ">
                         {data.heading}
                       </h2>
                     </div>
                   </div>
                   {data.desc.map((data) => (
-                    <div className="2xl:w-3/4 2xl:mt-4 lg:mt-2  " key={data.id}>
+                    <div
+                      className="2xl:w-3/4 2xl:mt-4 lg:mt-2 lg:mx-0 mx-6 "
+                      key={data.id}
+                    >
                       {/* <h2 className="2xl:mt-4  lg:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
                         {data.head}
-                      </h2> */} 
+                      </h2> */}
                       <p className="mt-2  text-Description font-desc text-descnew text-justify lg:mr-6 2xl:mr-0">
                         {data.desc}
                       </p>
@@ -133,7 +135,7 @@ function GroupWebsiteComponent() {
                         exact={true}
                         offset={-80}
                       >
-                        <button className=" px-2 py-2 lg:px-0 lg:py-0 text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-44 md:32 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
+                        <button className="ml-6 lg:ml-0 px-8 py-2 lg:px-0 lg:py-0 text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-44 md:w-72 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
                           {data.cta.heading}
                         </button>
                       </Link>
@@ -146,7 +148,7 @@ function GroupWebsiteComponent() {
         ))}
       </div>
 
-      {/* <InformationComponent></InformationComponent> */} 
+      {/* <InformationComponent></InformationComponent> */}
     </>
   );
 }
