@@ -8,7 +8,7 @@ export const SlidebarContainer = styled.aside`
   z-index: 999;
   width: 99.5%;
   height: 100%;
-  background: #0d0d0d;
+  background: #fff;
   display: flex;
   overflow-y: auto;
   flex-direction: column;
@@ -24,7 +24,7 @@ export const SlidebarContainer = styled.aside`
   }
 `;
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #00000;
 `;
 export const Icon = styled.div`
   position: absolute;
@@ -74,10 +74,10 @@ export const SidebarLinkR = styled(LinkR)`
   padding-right: 3rem;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   &:hover {
-    color: #ffffff;
+    color: #000000;
     transition: 0.2s ease-in-out;
   }
 `;
