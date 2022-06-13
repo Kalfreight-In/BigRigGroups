@@ -1,5 +1,6 @@
 import React from 'react';
 import Contactform from '../../Components/ContactForm/';
+import { isMobile } from 'react-device-detect';
 
 export const ContactFormContainer = () => {
   return (
@@ -24,27 +25,15 @@ export const ContactFormContainer = () => {
 
       {/* <div className="flex ">
         <img
-          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png"
+          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Partz.png"  
           width="300"
         />
       </div> */}
       <div className="flex-1 ">
-        <div
-          className={
-            "md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center "
-          }
-          style={{
-            backgroundImage: `url(https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png)`,
-          }}
-        >
-          <h1 className="text-Heading text-3xl font-bold ml-4 flex justify-center items-center">
+        <div className="md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center contactimg">
+          <h1 className="text-Heading text-3xl font-bold ml-4 flex justify-center items-center md:hidden pt-40">
             Contact Us
-          </h1>
-          {/* <img
-          className="w-full"
-          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/e6c3841952235a1866804c85e994f1d5c540c214/src/assets/Images/rednewtruck.svg"
-          alt=""
-        /> */}
+          </h1>    
         </div>
       </div>
     </div>
