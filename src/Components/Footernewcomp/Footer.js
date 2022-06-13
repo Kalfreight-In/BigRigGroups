@@ -3,18 +3,11 @@ import Navbar from '../../Components/Navbar';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
-<<<<<<< HEAD
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {TiSocialLinkedinCircular} from 'react-icons/ti'; 
 import { Link as Slink } from "react-scroll";
 import {Link} from "react-router-dom";
 
-=======
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { TiSocialLinkedinCircular } from 'react-icons/ti';
-import { animateScroll as scroll, Link as scrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
->>>>>>> b40482799c307cc23a4b8d51a3bd0ad7a984846c
 
 export default function Footer() {
   {
