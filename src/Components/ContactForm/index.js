@@ -49,7 +49,7 @@ const Contactform = () => {
   };
 
   return (
-    <div id="shadow" className="p-8 rounded-3xl shadow-2xl flex justify-center items-center ">
+    <div id="shadow" className="p-8 rounded-3xl shadow-2xl flex justify-center items-center md:-mt-0 -mt-24  ">
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
           <h1 className="text-Heading text-heading font-bold ml-4 md:block hidden">Contact Us</h1> 
