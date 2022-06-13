@@ -13,10 +13,12 @@ import { NavLink as LinkR } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 var mydata = Businessdata[0];
 export const NavLinks = styled(LinkR)`
-  color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
+  // background: ${(props) => `url(${props.Mimage})`};
 
-  cursor: pointer;
-  // font-size:15px;
+  // @media (max-width: 768px) {
+  //   background: ${(props) => `url(${props.Mimage})`};
+  // }
+  // cursor: pointer;
 `;
 export default function Business() {
   const [hoverRef, isHovered] = useHover();
@@ -43,7 +45,7 @@ export default function Business() {
             <div class=" flex w-full">
               <div class={`gallery-wrap flex lg:flex-row flex-col w-fill`}>
                 {mydata.thebox.map((element) =>
-                  isMobile ? (
+                  isMobile || ism ? (
                     <NavLinks
                       to={element.url}
                       className="h-businessImage lg:bg-cover  bg-contain bg-no-repeat bg-center"
@@ -62,7 +64,7 @@ export default function Business() {
                   ) : (
                     <NavLinks
                       to={element.url}
-                      className={`demo item `}
+                      className={`item `}
                       style={{
                         backgroundImage: `url(${element.imageurl})`,
                       }}

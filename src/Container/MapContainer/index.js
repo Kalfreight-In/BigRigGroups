@@ -8,9 +8,9 @@ export const MapConatiner = () => {
   return (
     <div
       id="Location"
-      className="bg-Lightblue flex flex-col-reverse  lg:flex-row "
+      className="bg-Lightblue flex flex-col-reverse  lg:flex-row p-8"
     >
-      <div className=" svg-container ">
+      <div className=" svg-container">
         <Map Af={AfisHovered} Ca={CaisHovered}></Map>
       </div>
 

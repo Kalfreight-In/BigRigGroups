@@ -149,7 +149,7 @@ function Map({ Af, Ca }) {
             rx="4.97"
           ></rect>
 
-          <text x="119.92" y="550.71" fill="black"> 
+          <text x="119.92" y="550.71" fill="black">
             1225 Riverside Rd, BC V2S 7P1
           </text>
         </g>
