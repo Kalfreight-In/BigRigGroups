@@ -44,7 +44,8 @@ export default function Business() {
                 {mydata.thebox.map((element) => (
                   <NavLinks
                     to={element.url}
-                    className={`demo item item-${element.id}`}
+                    className={`demo item `}
+                    style={{ backgroundImage: `url(${element.imageurl})` }}
                     // whileHover={{
                     //   transition: {
                     //     duration: 0.5,

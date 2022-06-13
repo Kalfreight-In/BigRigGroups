@@ -75,6 +75,11 @@
   &:hover {
     flex: 7;
   }
+  @media (min-width: 768px) {
+    height: 100%;
+
+    background-size: contain;
+  }
 }
 
 .item-1 {

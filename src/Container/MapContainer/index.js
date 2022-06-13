@@ -2,7 +2,7 @@ import React from 'react';
 import Map from '../../assets/Map';
 import { motion } from 'framer-motion';
 import { useHover } from '../../Hooks/Hover';
-export const MapConatiner = () => { 
+export const MapConatiner = () => {
   const [AfhoverRef, AfisHovered] = useHover();
   const [CahoverRef, CaisHovered] = useHover();
   return (
@@ -18,17 +18,16 @@ export const MapConatiner = () => {
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew">
-              Visit our nearest yard. For assistance in the US,{" "}
+              Visit our nearest yard. For assistance in the US,{' '}
               <a href="#" className="hover:text-yellow-shadowhover transition ">
                 click here
               </a>
-              
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -38,7 +37,7 @@ export const MapConatiner = () => {
             <div>
               <h4
                 className="mt-4 text-sm text-white font-bold md:text-subheading cursor-pointer"
-                ref={AfhoverRef}
+                ref={CahoverRef}
               >
                 Abbotsford
               </h4>
@@ -50,7 +49,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -60,7 +59,7 @@ export const MapConatiner = () => {
             <div>
               <h4
                 className="mt-4 text-sm text-white font-bold md:text-subheading cursor-pointer"
-                ref={CahoverRef}
+                ref={AfhoverRef}
               >
                 Calgary
               </h4>
@@ -77,7 +76,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -91,7 +90,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -105,7 +104,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -132,4 +131,4 @@ export const MapConatiner = () => {
               <div className="mt-4 text-white font-desc text-descnew"> 
                 Edmonton
               </div> */
-} 
+}
