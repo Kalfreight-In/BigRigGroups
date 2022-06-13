@@ -883,6 +883,8 @@ export const Businessdata = [
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
         btn: 'Trailer & Leasing',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/trailers.png',
       },
       {
         id: '2',
@@ -893,6 +895,8 @@ export const Businessdata = [
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstools.png',
         btn: 'Parts & services',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Parts.png',
       },
       {
         id: '3',
@@ -903,6 +907,8 @@ export const Businessdata = [
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
         btn: 'Tires & Services',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/tires.png',
       },
     ],
   },

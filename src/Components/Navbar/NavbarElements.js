@@ -74,9 +74,9 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
 
-    postion: absolute;
+    position: absolute;
     right: 0;
-    top: 0;
+    top: 15;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -102,7 +102,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   display: block;
   height: 45px;
-  padding: 0 1rem;  
+  padding: 0 1rem;
 
   color: #000;
 
@@ -129,7 +129,7 @@ export const NavLinks = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-weight:500;
+  font-weight: 500;
 
   height: 100%;
   cursor: pointer;
@@ -140,7 +140,6 @@ export const NavLinks = styled(LinkR)`
   }
   font-weight: 600;
   &:hover {
-
     border-bottom: 2px solid #ffab53 !important;
   }
   &.active {

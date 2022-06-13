@@ -21,7 +21,11 @@ position: relative;
 height: 100vh;
 
 z-index: 1;
-
+@media screen and (max-width: 768px) {
+    display: block;
+    height: 50vh;
+    
+}
 `;
 export const ContainerMain = Styled.div`
 
@@ -44,6 +48,7 @@ h1{
 dev{
     text-align: center;
 } 
+
 `;
 export const HeroBg = Styled.div`
 
@@ -113,7 +118,8 @@ background: #232a34;
 background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 @media screen and (max-width: 768px) {
     display: blick;
-    
+    height: 60%;
+    object-fit: cover;
 }
 `;
 export const HeroContent = Styled.div`
@@ -134,6 +140,7 @@ div{
    
    
     @media screen and (max-width: 768px) {
+      
          font-size:1.5rem;
         //  line-height:15rem;
     h2{
@@ -170,6 +177,7 @@ div{
 
 
 @media screen and (max-width: 768px) {
+  height:  150%;
         flex-direction: column;
         padding: 0px 0px 0px 0px;
         margin:0px;
@@ -494,7 +502,7 @@ color: #FFFFFF;
 @media screen and (max-width: 768px) {
     font-size: 50px;
 
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
     text-align: center; 
 }
 
