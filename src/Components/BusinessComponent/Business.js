@@ -10,7 +10,7 @@ import Accordion from '../Accordion';
 import { useSpring, animated } from 'react-spring';
 import { useHover } from '../../Hooks/Hover';
 import { NavLink as LinkR } from 'react-router-dom';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isTablet } from 'react-device-detect';
 var mydata = Businessdata[0];
 export const NavLinks = styled(LinkR)`
   // background: ${(props) => `url(${props.Mimage})`};
@@ -45,7 +45,7 @@ export default function Business() {
             <div class=" flex w-full">
               <div class={`gallery-wrap flex lg:flex-row flex-col w-fill`}>
                 {mydata.thebox.map((element) =>
-                  isMobile || ism ? (
+                  isMobile ? (
                     <NavLinks
                       to={element.url}
                       className="h-businessImage lg:bg-cover  bg-contain bg-no-repeat bg-center"
