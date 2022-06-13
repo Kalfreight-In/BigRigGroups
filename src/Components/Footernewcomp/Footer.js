@@ -84,12 +84,12 @@ export default function Footer() {
                     <br></br>
                     we have subject matter experts just a call away.
                   </div> */}
-                  <Link to="tel:8009770010" target="_blank">
+                  <a href="tel:8009770010" target="_blank">
                     {' '}
                     <div className="md:text-xl text-16px md:font-bold font-semibold  ">
                       800-977-0010
                     </div>{' '}
-                  </Link>
+                  </a>
                 </div>
               </div>
 
