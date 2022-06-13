@@ -11,64 +11,70 @@ export default function Footer() {
   const [Hinventery, setHinventery] = useState(false);
   const [Hquicklinks, setHquicklinks] = useState(false);
   const [Hcontactus, setHcontactus] = useState(false);
-
+  
   return (
     <>
       <div className="bg-Lightblue">
+        <img
+          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
+          alt="logo"
+          className="2xl:h-28 lg:h-24  h-20 md:hidden block md:ml-0 ml-32 "
+          to="mailto:umarkhurshid3@gmail.com"
+        />
         <div
-          className="flex lg:flex-row flex-col 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
+          className="flex lg:flex-row flex-col-reverse 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
-              ')',
+              "url(" +
+              "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png" +
+              ")",
 
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
+            backgroundPosition: "center",
+            backgroundSize: "cover",
 
-            backgroundRepeat: 'no-repeat',
-            width: 'full',
+            backgroundRepeat: "no-repeat",
+            width: "full",
           }}
         >
           <div
             className="flex-1 w-7/12  lg:block "
             // className="flex-1 lg:block hidden"
           >
-            <div className="lg:ml-16 w-max ml-4 lg:mt-0 ">
+            <div className="lg:ml-16 w-max ml-4 lg:mt-0">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
-                  className="2xl:h-28 lg:h-24  h-20"
+                  className="2xl:h-28 lg:h-24  h-20 md:block hidden"
                   to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div className="text-white flex  lg:mt-12 mt-4">
+              <div className="text-white flex  lg:mt-12 mt-4 md:ml-0 ml-20">
                 <div className="mt-3">
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
                     alt=""
                     className="text-white mt-2 "
                   /> */}
-                  <AiOutlineClockCircle className="h-8 w-8 " />
+                  <AiOutlineClockCircle className="md:h-8 h-6 md:w-8 w-6 " />
                 </div>
                 <div className="block ml-3">
                   {/* <div className="block">Working hours</div> */}
-                  <div className="text-xl font-bold">
+                  <div className="md:text-xl text-16px md:font-bold font-semibold ">
                     8 AM to 5 PM <br />
                     (Monday to Friday) 
                   </div>
                 </div>
               </div>
 
-              <div className="text-white flex mt-4">
+              <div className="text-white flex mt-4 md:ml-0 ml-20">
                 <div className="mt-2">
                   <Link to="tel:8009770010" target="_blank">
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                       alt=""
                       className="text-white"
-                      width={20}
+                      width={15}
                     />
                   </Link>
                 </div>
@@ -79,28 +85,32 @@ export default function Footer() {
                     we have subject matter experts just a call away.
                   </div> */}
                   <Link to="tel:8009770010" target="_blank">
-                    {' '}
-                    <div className="text-xl font-bold">800-977-0010</div>{' '}
+                    {" "}
+                    <div className="md:text-xl text-16px md:font-bold font-semibold  ">
+                      800-977-0010
+                    </div>{" "}
                   </Link>
                 </div>
               </div>
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <div>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</div>
+                  <div className="md:w-full w-2/3 md:ml-0 ml-12 md:text-left text-center">
+                    English, Punjabi, Español, Français, हिन्दी, 中国人, Somali
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex flex-auto lg:flex-row flex-col  mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 ">
-            <div className="lg:flex-1  flex-1  lg:w-2/12 md:block ">
+            <div className="lg:flex-1  flex-1  lg:w-2/12 md:block -mt-20">
               <div
                 className="text-white "
                 onClick={() => {
                   setHinventery(!Hinventery);
                 }}
               >
-                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 ">
+                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal  w-4/5 md:ml-0 ml-24 md:pt-16 pt-8">
                   Inventory
                 </h1>
               </div>
@@ -108,50 +118,50 @@ export default function Footer() {
 
               <div
                 className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                  Hinventery ? '' : 'hidden'
+                  Hinventery ? "" : "hidden"
                 }`}
               >
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                 >
                   Flatbed for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                 >
                   Used Trucks for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                 >
                   New Trailers for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                 >
                   Used Dry van for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                 >
                   Reefer trailers for sale
                 </Link>
               </div>
             </div>
 
-            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block ">
+            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block -mt-6  ">
               <div
                 className="text-white"
                 onClick={() => {
                   setHquicklinks(!Hquicklinks);
                 }}
               >
-                <h1 className="2xl:text-footerheading text-desc font-bold  ">
+                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal   md:ml-0 ml-24 md:pt-4 pt-8">
                   Quick Links
                 </h1>
               </div>
@@ -159,7 +169,7 @@ export default function Footer() {
 
               <div
                 className={`text-white  2xl:leading-8 leading-6 lg:block  ${
-                  Hquicklinks ? '' : 'hidden'
+                  Hquicklinks ? "" : "hidden"
                 }`}
               >
                 <div>
@@ -170,9 +180,9 @@ export default function Footer() {
                     About us
                   </Link> */}
 
-                  {window.location.pathname == '/' ? (
+                  {window.location.pathname == "/" ? (
                     <Slink
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
                       to="aboutus"
                       smooth={true}
                       duration={1000}
@@ -184,7 +194,7 @@ export default function Footer() {
                     </Slink>
                   ) : (
                     <a
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
                       href="/#aboutus"
                       smooth={true}
                       duration={1000}
@@ -199,7 +209,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                   >
                     News & Events
                   </Link>
@@ -207,7 +217,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24 "
                   >
                     Parts Inventory
                   </Link>
@@ -215,7 +225,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                   >
                     Financing Options
                   </Link>
@@ -223,7 +233,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
                   >
                     24X7 Roadside Assistance
                   </Link>
@@ -240,7 +250,7 @@ export default function Footer() {
                     setHcontactus(!Hcontactus);
                   }}
                 >
-                  <h1 className=" font-bold  2xl:text-footerheading text-desc">
+                  <h1 className=" md:font-bold font-normal  2xl:text-footerheading text-desc md:ml-0 ml-24">
                     Contact Us
                   </h1>
                 </div>
@@ -248,70 +258,70 @@ export default function Footer() {
 
                 <div
                   className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                    Hcontactus ? '' : 'hidden'
+                    Hcontactus ? "" : "hidden"
                   }`}
                 >
                   <div className="flex flex-row space-x-2">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8 ">
                       Careers
                     </div>
                     <span> » </span>
                     <a
                       href="mailto:hr@bigrigcanada.com"
                       target="_blank"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
-                      hr@bigrigcanada.com{' '}
+                      hr@bigrigcanada.com{" "}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8">
                       Tires
                     </div>
                     <span> » </span>
                     <a
                       href="mailto:tires@bigrigcanada.com"
                       target="_blank"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       tires@bigrigcanada.com
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
-                      {' '}
-                      Partz{' '}
+                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8">
+                      {" "}
+                      Partz{" "}
                     </div>
                     <span> » </span>
                     <a
                       href="mailto:partz@bigrigcanada.com"
                       target="_blank"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
-                      partz@bigrigcanada.com{' '}
+                      partz@bigrigcanada.com{" "}
                     </a>
                   </div>
 
                   <div className="flex flex-row space-x-2">
-                    <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover">
+                    <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8">
                       Trailers & Leasing
                     </div>
                     <span> » </span>
                     <a
                       href="mailto:trailers@bigrigcanada.com"
                       target="_blank"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       trailers@bigrigcanada.com
                     </a>
                   </div>
-                  <div className="flex flex-row space-x-2">
+                  <div className="flex flex-row space-x-2 md:ml-0 ml-8">
                     <div className="w-max">For any other inquiry</div>
                     <span> » </span>
                     <a
                       href="mailto:info@bigrigcanada.com"
                       target="_blank"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-8"
                     >
                       info@bigrigcanada.com
                     </a>
@@ -329,14 +339,14 @@ export default function Footer() {
 
                   <div
                     id="mainiconcontainer"
-                    className="flex justify-end mr-28 pt-4 pr-16"
+                    className=" justify-end mr-28 pt-4 pr-16 md:flex hidden "
                   >
                     <div id="allicons" className="flex justify-between  ">
                       <RiFacebookCircleLine
                         onClick={() =>
                           window.open(
-                            'https://www.facebook.com/BigRiggroups/',
-                            '_blank'
+                            "https://www.facebook.com/BigRiggroups/",
+                            "_blank"
                           )
                         }
                         className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
@@ -344,8 +354,8 @@ export default function Footer() {
                       <AiOutlineInstagram
                         onClick={() =>
                           window.open(
-                            'https://www.instagram.com/bigriggroup/',
-                            '_blank'
+                            "https://www.instagram.com/bigriggroup/",
+                            "_blank"
                           )
                         }
                         className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
@@ -353,8 +363,8 @@ export default function Footer() {
                       <TiSocialLinkedinCircular
                         onClick={() =>
                           window.open(
-                            'https://www.linkedin.com/company/bigriggroup',
-                            '_blank'
+                            "https://www.linkedin.com/company/bigriggroup",
+                            "_blank"
                           )
                         }
                         className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "

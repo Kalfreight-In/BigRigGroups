@@ -11,7 +11,7 @@ const Contactform = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [buttonText, setButtonText] = useState('Submit');
+  const [buttonText, setButtonText] = useState('Submit'); 
   const resetForm = (e) => {
     setName('');
     setEmail('');
@@ -49,9 +49,10 @@ const Contactform = () => {
   };
 
   return (
-    <div id="shadow" className="p-8 rounded-3xl shadow-2xl flex justify-center items-center ">
+    <div id="shadow" className="p-8 rounded-3xl shadow-2xl flex justify-center items-center md:-mt-0 -mt-24  ">
       <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
+          <h1 className="text-Heading text-heading font-bold ml-4 md:block hidden">Contact Us</h1> 
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4">
             Hey! How can we help you today?
           </p> <br />
@@ -124,7 +125,7 @@ const Contactform = () => {
             <datalist id="cars">
               <option>buy truck</option>
               <option>buy trailers</option>
-            </datalist>
+            </datalist>  
             {/* <p class="text-red-500 text-xs italic">
               Please fill out this field.
             </p> */}
@@ -210,3 +211,5 @@ const Contactform = () => {
 };
 
 export default Contactform;
+
+
