@@ -151,21 +151,22 @@ export const NavLinksA = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-weight: 500;
 
   height: 100%;
   cursor: pointer;
-  // font-size:18px;
+  // font-size:15px;
 
   &.active {
     color: #101010;
   }
+  font-weight: 600;
   &:hover {
-    font-weight: 500;
     border-bottom: 2px solid #ffab53 !important;
   }
   &.active {
     border-bottom: 2px solid #ffab53 !important;
-  }
+  } 
 `;
 export const Bars = styled(FaBars)`
   display: none;

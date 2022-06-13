@@ -20,7 +20,7 @@ export const UnderConstruction = () => {
             ></img> */}
           </div>
 
-          <div className="flex flex-row align-center justify-center text-5xl text-Heading font-bold md:text-2xl pb-8 pr-16">
+          <div className="flex flex-row align-center justify-center lg:text-5xl text-2xl text-Heading font-bold  pb-8 lg:pr-16">
             Page Under Contruction
           </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
