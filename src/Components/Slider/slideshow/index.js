@@ -94,7 +94,7 @@ export function Slideshow({ data, smallSlider = false }) {
                 }}
                 className={`${
                   smallSlider ? 'p-0' : 'p-0'
-                }    self-center  justify-self-center justify-items-center mx-12 inline-block 2xl:h-40 xl:h-32 lg:h-24  `} 
+                }    self-center  justify-self-center justify-items-center lg:mx-12 inline-block 2xl:h-40 xl:h-32 lg:h-24  `}
               ></img>
             </div>
           ))}
