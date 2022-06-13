@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
@@ -6,13 +6,25 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { Link as Slink } from 'react-scroll';
 import { Link } from 'react-router-dom';
-
+import { isMobile } from 'react-device-detect';
 export default function Footer() {
-  {
-    window.location.pathname == '/'
-      ? console.log(`${window.location.pathname} yesssssssssssssssssss`)
-      : console.log(`${window.location.pathname} nooooooooooooooo`);
-  }
+  const [Hinventery, setHinventery] = useState(false);
+  const [Hquicklinks, setHquicklinks] = useState(false);
+  const [Hcontactus, setHcontactus] = useState(false);
+  console.log(
+    `Hinventery ${Hinventery}Hquicklinks ${Hquicklinks}Hcontactus${Hcontactus}`
+  );
+  // {
+  //   window.location.pathname == '/'
+  //     ? console.log(`${window.location.pathname} yesssssssssssssssssss`)
+  //     : console.log(`${window.location.pathname} nooooooooooooooo`);
+  // }
+  function ToggleHiddenLinks(linkname) {}
+  // useEffect(() => {
+  //   setHinventery(false);
+  //   setHquicklinks(false);
+  //   setHcontactus(false);
+  // }, []);
   return (
     <>
       <div className="bg-Lightblue">
@@ -80,31 +92,38 @@ export default function Footer() {
                     we have subject matter experts just a call away.
                   </div> */}
                   <Link to="tel:8009770010" target="_blank">
-                    {" "}
-                    <div className="text-xl font-bold">800-977-0010</div>{" "}
+                    {' '}
+                    <div className="text-xl font-bold">800-977-0010</div>{' '}
                   </Link>
                 </div>
               </div>
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <div>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</div> 
+                  <div>English, ਪੰਜਾਬੀ, Español, Français, हिन्दी</div>
                 </div>
               </div>
             </div>
-
-
           </div>
-          <div className="flex flex-auto flex-row mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 ">
-            <div className="lg:flex-1  flex-1  lg:w-2/12 md:block hidden">
-              <div className="text-white ">
-                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 "> 
+          <div className="flex flex-auto lg:flex-row flex-col  mb-8 lg:mb-2 mt-6 md:ml-28 ml-8 ">
+            <div className="lg:flex-1  flex-1  lg:w-2/12 md:block ">
+              <div
+                className="text-white "
+                onClick={() => {
+                  setHinventery(!Hinventery);
+                }}
+              >
+                <h1 className="2xl:text-footerheading text-desc font-bold w-4/5 ">
                   Inventory
                 </h1>
               </div>
               <br />
 
-              <div className="text-white 2xl:leading-8 leading-6 ">
+              <div
+                className={`text-white 2xl:leading-8 leading-6 lg:block ${
+                  Hinventery ? '' : 'hidden'
+                }`}
+              >
                 <Link
                   to="/newsevents"
                   className="block md:text-16px text-navsmall hover:text-yellow-shadowhover"
@@ -138,15 +157,24 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block hidden ">
-              <div className="text-white">
+            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block ">
+              <div
+                className="text-white"
+                onClick={() => {
+                  setHquicklinks(!Hquicklinks);
+                }}
+              >
                 <h1 className="2xl:text-footerheading text-desc font-bold  ">
                   Quick Links
                 </h1>
               </div>
               <br />
 
-              <div className="text-white  2xl:leading-8 leading-6">
+              <div
+                className={`text-white  2xl:leading-8 leading-6 lg:block  ${
+                  Hquicklinks ? '' : 'hidden'
+                }`}
+              >
                 <div>
                   {/* <Link
                     to="#aboutus "
@@ -218,15 +246,24 @@ export default function Footer() {
           </div>
           <div className="flex flex-1 flex-row  mb-8 lg:mb-2 mt-6 lg:mr-12">
             <div className="lg:flex-1 flex-1 flex lg:justify-end lg:w-1/6 ml-8 ">
-              <div className="md:block hidden">
-                <div className="text-white">
+              <div className="md:block ">
+                <div
+                  className="text-white"
+                  onClick={() => {
+                    setHcontactus(!Hcontactus);
+                  }}
+                >
                   <h1 className=" font-bold  2xl:text-footerheading text-desc">
                     Contact Us
                   </h1>
                 </div>
                 <br />
 
-                <div className="text-white 2xl:leading-8 leading-6 ">
+                <div
+                  className={`text-white 2xl:leading-8 leading-6 lg:block ${
+                    Hcontactus ? '' : 'hidden'
+                  }`}
+                >
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover">
                       Careers
@@ -342,7 +379,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
 
         {/* <div id="mainiconcontainer">
         <div id="allicons" className="flex justify-end mx-48 ">
@@ -351,7 +387,6 @@ export default function Footer() {
         <TiSocialLinkedinCircular onClick={()=> window.open('https://www.linkedin.com/company/bigriggroup','_blank')} className="text-white mx-2 cursor-pointer h-8 w-8" />    
         </div> */}
         {/* </div>   */}
-
       </div>
     </>
   );
