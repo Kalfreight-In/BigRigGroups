@@ -394,7 +394,7 @@ export default function Footer() {
                         }
                         className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
                       />
-                      <AiOutlineInstagram
+                      <AiOutlineInstagram 
                         onClick={() =>
                           window.open(
                             'https://www.instagram.com/bigriggroup/',

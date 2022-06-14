@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
     return false;
   }
   return (
-    <SlidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SlidebarContainer isOpen={isOpen} onClick={toggle}>   
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             >
               LOCATIONS
             </Link>
-          </SidebarLinkR>
+          </SidebarLinkR> 
 
           {/* <SidebarLinkR to="/Ecommerce">Ecommerce</SidebarLinkR>
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>

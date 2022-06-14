@@ -97,7 +97,7 @@ function GroupWebsiteComponent() {
                             {data.desc1[0].head}
                           </p>
                           {data.desc1[0].desc.map((info) => (
-                            <p className=" laptop:mt-2 text-Description font-desc text-descnew text-justify">
+                            <p className=" laptop:mt-2 text-Description font-desc text-descnew text-justify md:mt-2 mt-4">
                               * {info.desc}
                             </p>
                           ))}
