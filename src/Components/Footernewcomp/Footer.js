@@ -297,7 +297,7 @@ export default function Footer() {
                     Hcontactus ? '' : 'hidden'
                   }`}
                 >
-                  <div className="flex flex-row space-x-2  align-center justify-center">
+                  <div className="flex flex-row space-x-2  align-center justify-center lg:justify-start">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8 ">
                       Careers
                     </div>
@@ -311,7 +311,7 @@ export default function Footer() {
                       hr@bigrigcanada.com{' '}
                     </a>
                   </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center">
+                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
                       Tires
                     </div>
@@ -325,7 +325,7 @@ export default function Footer() {
                       tires@bigrigcanada.com
                     </a>
                   </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center">
+                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
                       {' '}
                       Partz{' '}
@@ -341,7 +341,7 @@ export default function Footer() {
                     </a>
                   </div>
 
-                  <div className="flex flex-row space-x-2 align-center justify-center">
+                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
                       Trailers & Leasing
                     </div>
@@ -355,7 +355,7 @@ export default function Footer() {
                       trailers@bigrigcanada.com
                     </a>
                   </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center">
+                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
                       For any other inquiry
                     </div>
@@ -369,7 +369,7 @@ export default function Footer() {
                       info@bigrigcanada.com
                     </a>
                   </div>
-                  {/* <div className="flex flex-row space-x-2 align-center justify-center">
+                  {/* <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div>For all other enquires reach us at</div>
                     <span> »  </span>
                     <Link
