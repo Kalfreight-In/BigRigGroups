@@ -53,7 +53,7 @@ const Contactform = () => {
       id="shadow"
       className="p-8 rounded-3xl shadow-2xl flex justify-center items-center md:-mt-0 -mt-24  "
     >
-      <form class="w-full max-w-lg" onSubmit={(e) => handleSubmit(e)}>
+      <form class="w-full max-w-md" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
           <h1 className="text-Heading text-heading font-bold ml-4 md:block hidden">
             Contact Us
@@ -64,7 +64,7 @@ const Contactform = () => {
           <br />
           {/* <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
             Fill in this form for an on-point solution in no time.
-          </p> */} 
+          </p> */}
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 input-group">
@@ -184,7 +184,7 @@ const Contactform = () => {
         </div>
         <div class="md:flex md:items-center">
           <div>
-            <button className="text-white bg-Lightblue md:rounded rounded-lg p-4 md:px-0 px-40 w-28 mt-2 ml-4 flex justify-center items-center">
+            <button className="text-white bg-Lightblue md:rounded rounded-md p-4 md:px-0 px-40 w-28 mt-2 ml-4 flex justify-center items-center">
               {buttonText}
             </button>
           </div>

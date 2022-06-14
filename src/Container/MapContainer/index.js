@@ -8,16 +8,16 @@ export const MapConatiner = () => {
   return (
     <div
       id="Location"
-      className="bg-Lightblue flex flex-col-reverse  lg:flex-row p-8"
+      className="bg-Lightblue flex flex-col-reverse  md:flex-row p-8"
     >
       <div className=" svg-container">
         <Map Af={AfisHovered} Ca={CaisHovered}></Map>
       </div>
 
-      <div className=" md:6/12 flex-col flex content-center  flex-1 lg:ml-8 ml-0">
-        <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 2xl:ml-12 xl:ml-8 mt-2 ">
+      <div className=" md:6/12 flex-col flex content-center  flex-1 md:ml-8 ml-0">
+        <div className=" flex-col flex content-center justify-center md:w-4/3 flex-1 self-start items-start m-4 2xl:ml-12 xl:ml-8 mt-2 ">
           <div>
-            <h3 className="xl:text-4xl lg:self-start text-white font-bold md:text-2xl text-3xl lg:w-max text-center">
+            <h3 className="xl:text-4xl md:self-start text-white font-bold md:text-2xl text-3xl md:w-max text-center">
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew text-center">
@@ -33,7 +33,7 @@ export const MapConatiner = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-row items-center content-start mt-2 lg:ml-0 ">
+          <div className="flex flex-row items-center content-start mt-2 md:ml-0 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
               transition={{ duration: 0.2, ease: 'easeInOut' }}
@@ -45,7 +45,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 lg:text-sm text-lg text-white font-bold md:text-subheading cursor-pointer"
+                className="mt-4 md:text-sm text-md text-white font-bold md:text-subheading cursor-pointer"
                 ref={CahoverRef}
               >
                 Abbotsford
@@ -67,7 +67,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 lg:text-sm text-lg  text-white font-bold md:text-subheading cursor-pointer"
+                className="mt-4 md:text-sm text-md  text-white font-bold md:text-subheading cursor-pointer"
                 ref={AfhoverRef}
               >
                 Calgary

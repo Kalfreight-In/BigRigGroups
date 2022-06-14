@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+
 import { animateScroll as scroll, Link } from 'react-scroll';
 
 import {
@@ -15,7 +15,7 @@ import {
 // import { animateScroll as scroll, Link } from 'react-scroll';
 const Sidebar = ({ isOpen, toggle }) => {
   function disabel() {
-    const path = window.location.pathname; 
+    const path = window.location.pathname;
 
     if (path === '/') {
       return true;
@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
     return false;
   }
   return (
-    <SlidebarContainer isOpen={isOpen} onClick={toggle}>   
+    <SlidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -37,15 +37,17 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
           <SidebarLinkR to="/ContactSection">
-            <Link to="ContactSection"
-             onClick={toggle}
-             smooth={true}
-             duration={1000}
-             spy={true}
-             exact={true}
-             offset={-80}     
-             >
-            CONTACT</Link>
+            <Link
+              to="ContactSection"
+              onClick={toggle}
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact={true}
+              offset={-80}
+            >
+              CONTACT
+            </Link>
           </SidebarLinkR>
           <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
           <SidebarLinkR to="/creditapplication">
@@ -63,7 +65,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             >
               LOCATIONS
             </Link>
-          </SidebarLinkR> 
+          </SidebarLinkR>
 
           {/* <SidebarLinkR to="/Ecommerce">Ecommerce</SidebarLinkR>
           <SidebarLinkR to="/Careers">Careers</SidebarLinkR>

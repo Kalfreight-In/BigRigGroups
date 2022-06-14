@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from './media/bgvideo2(1).mp4';
-import { isMobile } from 'react-device-detect';
+
 import {
   HeroContainer,
   HeroP,
@@ -13,6 +13,7 @@ import {
 } from './HeroElements';
 
 import styled from 'styled-components';
+import useMediaQuery from '../../Hooks/CustomMediaQuery';
 
 const Gradients = styled.div`
   width: 100%;
@@ -24,6 +25,7 @@ const Gradients = styled.div`
 `;
 // ??
 const HeroSection = () => {
+  const isDesktop = useMediaQuery('(min-width: 1024)');
   return (
     <HeroContainer>
       <Gradients></Gradients>
@@ -39,7 +41,7 @@ const HeroSection = () => {
 
           <div className="text-center">
             Offering New & Used Dry Vans, Trucks & Reefers
-            {isMobile ? <br></br> : null}
+            {!isDesktop ? <br></br> : null}
             OEM Parts, Tires, and Services
           </div>
         </div>
@@ -50,7 +52,7 @@ const HeroSection = () => {
           marketplace connects you to the people, technology, data and capacity
         </PCENTER> */}
 
-        {/* <button className="btn block lg:hidden">
+        {/* <button className="btn block md:hidden">
           <span className="btn-text">Contact us</span>
         </button> */}
       </HeroContent>

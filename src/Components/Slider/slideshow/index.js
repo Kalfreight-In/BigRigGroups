@@ -1,8 +1,9 @@
 import { React, useEffect, useState, useRef } from 'react';
+import useMediaQuery from '../../../Hooks/CustomMediaQuery';
 import { useHover } from '../../../Hooks/Hover';
 
 // import { TabComponent } from '../../TabComponent';
-import { isMobile, browserName } from 'react-device-detect'; 
+
 // const colors = [
 //   '#0088FE',
 //   '#00C49F',
@@ -17,6 +18,7 @@ import { isMobile, browserName } from 'react-device-detect';
 
 const delay = 1500;
 export function Slideshow({ data, smallSlider = false }) {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   const [slides, setStateSlides] = useState(data);
   const [index, setIndex] = useState(0);
   const [ended, setended] = useState(false);
@@ -60,12 +62,12 @@ export function Slideshow({ data, smallSlider = false }) {
   return (
     <>
       <div
-        className={`  lg:font-semibold font-bold text-Heading flex justify-center items-center ${
+        className={`  md:font-semibold font-bold text-Heading flex justify-center items-center ${
           smallSlider ? 'pb-4' : 'pb-16 mt-16 '
         }  `}
       >
         {smallSlider ? null : (
-          <h1 className="text-4xl lg:text-1xl">Brands We Offer</h1>
+          <h1 className="text-4xl md:text-1xl">Brands We Offer</h1>
         )}
       </div>
       {/* <TabComponent></TabComponent> */}
@@ -76,16 +78,18 @@ export function Slideshow({ data, smallSlider = false }) {
         <div
           className="slideshowSlider  transition ease-linear delay-100 mb-16 "
           style={{
-            transform: `translate3d(${-index * (isMobile ? 100 : 25)}%, 0, 0)`,
+            transform: `translate3d(${
+              -index * (!isDesktop ? 100 : 25)
+            }%, 0, 0)`,
           }}
         >
           {slides.map((brand, index) => (
             <div
               className={`${
                 smallSlider
-                  ? 'slide_small  w-1/4  lg:grayscale-1 hover:scale-75 `'
-                  : ' w-1/4  lg:grayscale hover:scale-110 '
-              }       hover:grayscale-0 slide  transition-all items-center content-center justify-center inline-block 2xl:h-40 xl:h-32 lg:h-24  `}
+                  ? 'slide_small  w-1/4  md:grayscale-1 hover:scale-75 `'
+                  : ' w-1/4  md:grayscale hover:scale-110 '
+              }       hover:grayscale-0 slide  transition-all items-center content-center justify-center inline-block 2xl:h-40 xl:h-32 md:h-24  `}
               key={index}
               // style={{ backgroundImage: `url(${brand.imageurl})` }}
             >
@@ -96,7 +100,7 @@ export function Slideshow({ data, smallSlider = false }) {
                 }}
                 className={`${
                   smallSlider ? 'p-0' : 'p-0'
-                }    self-center  justify-self-center justify-items-center lg:mx-12 inline-block 2xl:h-40 xl:h-32 lg:h-24  `}
+                }    self-center  justify-self-center justify-items-center md:mx-12 inline-block 2xl:h-40 xl:h-32 md:h-24  `}
               ></img>
             </div>
           ))}

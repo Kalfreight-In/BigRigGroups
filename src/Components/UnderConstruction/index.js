@@ -20,7 +20,7 @@ export const UnderConstruction = () => {
             ></img> */}
           </div>
 
-          <div className="flex flex-row align-center justify-center lg:text-5xl text-2xl text-Heading font-bold  pb-8 lg:pr-16">
+          <div className="flex flex-row align-center justify-center md:text-5xl text-2xl text-Heading font-bold  pb-8 md:pr-16">
             Page Under Contruction
           </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
@@ -34,7 +34,7 @@ export const UnderConstruction = () => {
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div
-                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
+                className="w-full sm:w-1/2 md:w-1/3 md:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
                 key={brand.id}
               >
                 <img

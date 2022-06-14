@@ -18,7 +18,7 @@ export default function ServicesSection() {
             <p className="text-desc font-desc text-white w-2/3  ">
               {dataservice.Desc}
             </p>
-            <button className="text-white bg-yellow-bg  font-semibold  mt-8 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-36 md:32 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md ">
+            <button className="text-white bg-yellow-bg  font-semibold  mt-8 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-md  flex items-center justify-center 2xl:w-80 md:w-36 md:32 2xl:h-16 h-12 2xl:text-2xl md:text-md md:text-md ">
               {dataservice.CTA.heading}
             </button>
           </div>

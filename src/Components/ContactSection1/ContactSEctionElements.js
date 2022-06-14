@@ -15,7 +15,7 @@ export const ContactContainer = styled.div`
   justify-content: flex-end;
   height: 90vh;
   overflow: hidden;
-  // @media screen and (max-width: 768px) {
+  // @media screen and (max-width: 1024) {
   //     transition: 0.8s all ease;
   //     padding-top: 0px;
   //     margin-bottom: 20px;
@@ -33,12 +33,12 @@ flex-direction: column;
 align-items: flex-start; */
 
   width: 50%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     width: 100%;
     height: 100%;
   }
   div {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024) {
       width: 100%;
       height: 40%;
     }
@@ -47,7 +47,7 @@ align-items: flex-start; */
 export const ContactImage = styled.div`
   display: flex;
   width: 40%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
   }
 `;
@@ -59,7 +59,7 @@ export const AboutContainerHeading = styled.div`
 
   color: #ed1c24;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -74,7 +74,7 @@ export const AboutContainerSubHeading = styled.h2`
 
   color: #010101;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -89,7 +89,7 @@ export const footerMobileContainer = styled.div`
   width: 100%;
   padding-bottom: 20px;
   justify-content: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     flex-wrap: wrap;
     align-items: flex-start;
   }
@@ -105,7 +105,7 @@ export const FotterNav = styled.div`
   padding-bottom: 10px;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     flex: 0 0 200px;
     flex-direction: column;
   }
@@ -121,7 +121,7 @@ export const FotterNavH = styled.div`
   padding-left: 50px;
   color: #fff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -135,7 +135,7 @@ export const FotterContact = styled.div`
   padding: 0px 70px 0px 70px;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     flex: 0 0 200px;
     flex-direction: column;
   }
@@ -171,7 +171,7 @@ export const FotterContactName = styled.div`
 
   color: #1e1b1b;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -193,7 +193,7 @@ export const Heading = styled.div`
 
   color: #000;
 
-  @media screen and (max-width: 768px) and (max-width: 1024px) {
+  @media screen and (max-width: 1024) and (max-width: 1024px) {
     font-size: 10px;
   }
   @media screen and (min-width: 1024px) and (max-width: 1380px) {
@@ -228,7 +228,7 @@ export const FotterHName = styled.div`
 
   color: #1e1b1b;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -256,7 +256,7 @@ export const FotterContactNo = styled.div`
   padding: 20px 0px 0px 0px;
   color: #1e1b1b;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -273,7 +273,7 @@ export const FotterContactN = styled.div`
   padding: 60px 0px 0px 0px;
   color: #fff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -314,7 +314,7 @@ export const WWOCCButton = styled(LinkR)`
     background: #1773bb;
     color: #fff;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: block;
   }
 `;

@@ -30,7 +30,7 @@ export const FooterContainer = styled.div`
     transition: 0.8s all ease;
     display: none;
   }
-@media screen and (max-width: 768px) and (max-width:1024px) {
+@media screen and (max-width: 1024) and (max-width:1024px) {
   
   padding: 10px;
 } */
@@ -44,7 +44,7 @@ export const SocialMediaActionsContainer = styled.div`
   margin-right: -20px;
   width: 50%;
   justify-content: start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     flex-wrap: wrap;
     align-items: flex-start;
   }
@@ -56,7 +56,7 @@ export const SocialMediaActionsContainer = styled.div`
 //   align-items: center;
 //   width: 100%;
 //   justify-content: center;
-//   @media screen and (max-width: 768px) {
+//   @media screen and (max-width: 1024) {
 //     flex-wrap: wrap;
 //     align-items: flex-start;
 //   }
@@ -77,7 +77,7 @@ export const FotterNav = styled.div`
   padding: 25px;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
@@ -95,7 +95,7 @@ export const FotterNavH = styled.div`
   padding-left: 50px;
   color: #fff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -119,7 +119,7 @@ export const FotterContactlist = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     align-items: center;
     padding: 0px;
     width: 100%;
@@ -152,7 +152,7 @@ export const FotterContactName = styled.div`
   ${laptop({
     'font-size': '10px',
     padding: '10px 0px 0px 0px',
-  })} /* @media screen and (max-width: 768px) {
+  })} /* @media screen and (max-width: 1024) {
     font-size: 20px;
 }
 @media screen and (max-width: 480px) {
@@ -174,7 +174,7 @@ export const FotterHName = styled.div`
 
   color: #ffff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
     font-size: 20px;
   }
@@ -205,7 +205,7 @@ export const FotterContactNo = styled.div`
   padding: 5px 0px 0px 0px;
   color: #fff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     padding: 0px 0px 0px 0px;
     font-size: 20px;
   }
@@ -225,7 +225,7 @@ export const FotterContactN = styled.div`
   padding: 60px 0px 0px 0px;
   color: #fff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
