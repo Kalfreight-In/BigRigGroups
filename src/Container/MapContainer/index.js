@@ -21,8 +21,14 @@ export const MapConatiner = () => {
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew text-center">
-              Visit our nearest yard. For assistance in the US,{' '}
-              <a href="#" className="hover:text-yellow-shadowhover transition ">
+              <span>Visit our nearest yard.</span>
+              <br></br>
+              <span>For assistance in the USA. </span>
+
+              <a
+                href="#"
+                className="hover:text-yellow-shadowhover transition  text-yellow-shadowhover"
+              >
                 click here
               </a>
             </div>

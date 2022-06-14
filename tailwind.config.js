@@ -103,7 +103,7 @@ module.exports = {
         '65vh': '67vh',
         '55vh': '55vh',
         'medium-height': '65vh',
-        mobileMainImageHeight: '50vh',
+        mobileMainImageHeight: '40vh',
         mobileSecondImage: '90vh',
         businessImage: '65vh',
         '1.8rem': '1.8rem',

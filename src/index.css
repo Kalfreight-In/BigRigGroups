@@ -126,36 +126,28 @@ body {
   animation-fill-mode: forwards;
 }
 
-
 .svg-container {
-display: inline-block;
-	position: relative;
-	width: 50%;
-	margin: 1%;
-	vertical-align: middle; 
-	overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin: 1%;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-
-.svg-content { 
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-
-
-.contactimg{
-  background-image: url("https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png");  
+.contactimg {
+  background-image: url('https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png');
 }
 
-@media only screen and (max-width:768px){
-  .contactimg{
-    background-image: url("https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/contactmobiletruck.png");
-    object-fit: contain;
-    background-size: contain;
-    margin-top: -27%;
-    
+@media only screen and (max-width: 768px) {
+  .contactimg {
+    background-image: url('https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/redtruckConTact.png');
   }
 }

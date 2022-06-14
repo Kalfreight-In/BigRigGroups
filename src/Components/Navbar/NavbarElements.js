@@ -76,7 +76,7 @@ export const MobileIcon = styled.div`
 
     position: absolute;
     right: 0;
-    top: 15;
+    margin-bottom: 2rem;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -104,14 +104,14 @@ export const NavItem = styled.li`
   height: 45px;
   padding: 0 1rem;
 
-  @media only screen and (max-width:1200px) and (min-width:1000px){
+  @media only screen and (max-width: 1200px) and (min-width: 1000px) {
     //  *{
     //   background:#000;
     //   color:green;
     //   outline:red;
     //  }
 
-    padding:0 0.5rem;
+    padding: 0 0.5rem;
   }
 
   color: #000;
@@ -176,7 +176,7 @@ export const NavLinksA = styled.a`
   }
   &.active {
     border-bottom: 2px solid #ffab53 !important;
-  } 
+  }
 `;
 export const Bars = styled(FaBars)`
   display: none;

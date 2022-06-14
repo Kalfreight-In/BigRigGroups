@@ -13,11 +13,16 @@ import { MapConatiner } from '../../Container/MapContainer';
 import './Home.scss';
 import { BrandCompnentBrands } from '../../data';
 import Business from '../../Components/BusinessComponent/Business';
+import useMediaQuery from '../../Hooks/CustomMediaQuery';
 function Home() {
+  const isDesktop = useMediaQuery('(min-width: 960px)');
+
   return (
     <>
       <HeroSection> </HeroSection>
-      <Business />
+      <Business></Business>
+      {/* {isDesktop ? <Business /> : null} */}
+
       {/* <OurBusinessVerticles></OurBusinessVerticles> */}
       <Abouthome />
       <GroupWebsitesSection />

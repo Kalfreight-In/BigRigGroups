@@ -135,7 +135,7 @@ align-items: center;
 
 
 div{
-    width: 90%;
+    width: 98%;
    
    
    
@@ -489,7 +489,7 @@ font-family: sans-serif;
 font-style:300;
 font-weight: normal;
 font-size: 1.5rem;
-width:62% ;
+width:70% ;
 line-height: 1.5;
 
 text-align:center;

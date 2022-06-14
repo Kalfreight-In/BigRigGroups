@@ -31,9 +31,9 @@ export const ContactFormContainer = () => {
       </div> */}
       <div className="flex-1 ">
         <div className="md:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center contactimg">
-          <h1 className="text-Heading text-3xl font-bold ml-4 flex justify-center items-center md:hidden pt-40">
+          <h4 className="text-Heading text-3xl font-bold  flex justify-center items-center md:hidden pt-20">
             Contact Us
-          </h1>    
+          </h4>
         </div>
       </div>
     </div>

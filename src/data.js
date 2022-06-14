@@ -709,7 +709,7 @@ export const BigPArtzBrands = [
 export const BigTireBrands = [
   {
     id: '0',
-    logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/tirered.svg',
+    logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/tirered.png',
     name: 'Kaltire',
     desc: 'Top-notch quality tires and best-in-class services are just a call away.  ',
     Brands: [

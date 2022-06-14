@@ -37,7 +37,7 @@ const HeroSection = () => {
 
           <Samosa>
             Offering New & Used Dry Vans, Trucks & Reefers
-            {!isMobile ? <br></br> : null}
+            {isMobile ? <br></br> : null}
             OEM Parts, Tires, and Services
           </Samosa>
         </ContainerMain>

@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons/lib';
 
 import { animateScroll as scroll, Link } from 'react-scroll';
 // import ErrorBoundary from '../ErrorBoundary';
-import { useNavigate, useLocation } from 'react-router-dom';   
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Nav,
   NavMenu,
@@ -14,7 +14,7 @@ import {
   NavItem,
   NavLinksA,
   NavLinks,
-} from './NavbarElements'; 
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
@@ -29,10 +29,10 @@ const Navbar = ({ toggle }) => {
   //   if (path == '/tires') {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png';
   //   } else {
-  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'; 
+  //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png';
   //   }
   // }
-  // const initialState = loadLogo(window.location.pathname); 
+  // const initialState = loadLogo(window.location.pathname);
 
   const [logo, setlogo] = useState(
     'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.location.pathname == '/trailerandleasing') {
-      console.log(`it is inside the ${window.location.pathname}`); 
+      console.log(`it is inside the ${window.location.pathname}`);
       setScrollNav(true);
       return;
     }
@@ -75,11 +75,11 @@ const Navbar = ({ toggle }) => {
       scroll.scrollTo(7000);
     } else {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png' 
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
       );
       scroll.scrollToTop();
     }
-  }, [window.location.pathname]); 
+  }, [window.location.pathname]);
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
@@ -92,12 +92,12 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
-            <NavLogo to="/" onClick={toggleHome} className="max-w-max">    
+            <NavLogo to="/" onClick={toggleHome} className="max-w-max">
               <img
-                // className="2xl:w-56 w-44  2xl:h-44 h-32  " 
+                // className="2xl:w-56 w-44  2xl:h-44 h-32  "
                 className="pt-0 flex-1 w-40 "
                 src={logo}
                 alt="logo"
@@ -158,7 +158,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {window.location.pathname == "/" ? (
+                {window.location.pathname == '/' ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
@@ -169,7 +169,7 @@ const Navbar = ({ toggle }) => {
                       smooth={true}
                       duration={1000}
                       spy={true}
-                      exact={true}  
+                      exact={true}
                       offset={-80}
                     >
                       CONTACT
@@ -204,7 +204,7 @@ const Navbar = ({ toggle }) => {
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-              {window.location.pathname == "/" ? (
+              {window.location.pathname == '/' ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
@@ -261,7 +261,7 @@ const Navbar = ({ toggle }) => {
           </div>
 
           <NavBtn className="mr-8">
-            <a href="tel:8009770010" target="_blank">  
+            <a href="tel:8009770010" target="_blank">
               <button className="text-white bg-yellow-bg  font-semibold  rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-36   lg:w-36 md:32 2xl:h-12 h-10 2xl:text-base xl:text-sm lg:text-sm md:text-md">
                 <div>
                   <img
@@ -283,5 +283,4 @@ const Navbar = ({ toggle }) => {
 
 export default Navbar;
 
-// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs 
-
+// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs
