@@ -65,7 +65,7 @@
 }
 .svg-container {
   width: 50%;
-  @media (max-width: 768px) {
+  @media (max-width: 1024) {
     width: 100%;
   }
 }
@@ -81,7 +81,7 @@
   &:hover {
     flex: 7;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024) {
     // flex: 7;
     // height: 200%;
   }

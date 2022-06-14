@@ -11,13 +11,13 @@ export const Conatainer = styled.div`
   width: 100%;
   height: 90vh;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     height: 100vh;
     flex-direction: column;
   }
 `;
 export const ImageContainer = styled.div`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
   }
 `;
@@ -26,13 +26,13 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     width: 100%;
   }
 `;
 export const ContentHeadingContainer = styled.div`
   padding: 0px 50px 30px 0px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     padding: 20px;
     margin: 0;
   }
@@ -49,7 +49,7 @@ export const Heading = styled.div`
   width: 35rem;
   color: #010101;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 30px;
     width: 100%;
     padding-bottom: 10px;
@@ -69,7 +69,7 @@ export const SubHeading = styled.div`
   width: 35rem;
   color: #232536;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 20px;
   }
   @media screen and (max-width: 480px) {
@@ -99,7 +99,7 @@ export const NoContainer = styled.div`
   color: #ffffff;
   background: #101010;
   z-index: 5;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     margin: 5px;
     padding-top: 10px;
     width: 45px;
@@ -134,7 +134,7 @@ export const StarightLine = styled.div`
   width: 0%;
 
   z-index: 5;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     margin: 0;
     padding: 0;
   }
@@ -143,7 +143,7 @@ export const StepNoContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     margin-top: 30px;
     padding: 0;
   }
@@ -153,7 +153,7 @@ export const SteapHeadingContainer = styled.div`
   margin: 25px;
   flex-direction: column;
   justify-content: start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     margin: 5px;
     width: 100%;
   }
@@ -174,7 +174,7 @@ font-size: 26px;
 width: 35rem;
 color: #010101;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 20px;
     width: 90%;
     color: #1E1B1B;
@@ -199,7 +199,7 @@ font-size: 12px;
 width: 35rem;
 color: #938D8D;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 20px;
     width: 90%;
     color: #938D8D;

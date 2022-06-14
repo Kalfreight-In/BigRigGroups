@@ -14,7 +14,7 @@ export const WWOCArd = styled.div`
   width: 100%;
   height: 50vh;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     height: 80vh;
     background: #1e1b1b url(${Mbgimage}) no-repeat center center;
   }
@@ -41,7 +41,7 @@ export const WWOCCHeading = styled.h2`
   width: 100%;
   color: #ffff;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     font-size: 39px;
     padding: 0px 0px 120px 0px;
   }
@@ -71,7 +71,7 @@ export const WWOCCParagraph = styled(LinkR)`
   color: #fff;
 
   max-width: 60rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
   }
   @media screen and (max-width: 480px) {
@@ -103,6 +103,6 @@ export const WWOCCButton = styled(LinkR)`
     background: #fff;
     color: #010606;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
   }
 `;

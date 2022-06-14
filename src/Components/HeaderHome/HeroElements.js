@@ -116,7 +116,7 @@ object-fit: cover;
 
 background: #232a34;
 background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     display: blick;
     height: 60%;
     object-fit: cover;
@@ -143,11 +143,10 @@ align-items: center;
     
 
 
-
 `;
 export const PCENTER = Styled.h1`
 display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024) {
     display: block;
     font-size: 1.5rem;
     font-weight: blod;
@@ -168,7 +167,7 @@ text-align: center;
 z-index: 2;
 color: #ED1C24;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 40px;
 }
 @media screen and (max-width: 480px) {
@@ -207,7 +206,7 @@ color: #FFFFFF;
    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 54px;
     // padding: 0px 0px 50px 0px;
     text-align: center; 
@@ -236,7 +235,7 @@ text-align: start;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -254,7 +253,7 @@ text-align: center;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -328,7 +327,7 @@ text-align: left;
 
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -345,7 +344,7 @@ text-align: center;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -360,7 +359,7 @@ display: none;
     background: #01e600;
     color: #010606;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
    padding: 25px;
 display: block;
   display: flex;
@@ -408,7 +407,7 @@ padding: 25px;
     background: #01e600;
     color: #010606;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
 }
 `;
@@ -451,7 +450,7 @@ align-items: center;
 
 z-index: 2;
 color: #FFFFFF; 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 50px;
 
     padding: 0px 0px 0px 0px;

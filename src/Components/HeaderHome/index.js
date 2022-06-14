@@ -52,7 +52,7 @@ const HeroSection = () => {
           marketplace connects you to the people, technology, data and capacity
         </PCENTER> */}
 
-        {/* <button className="btn block lg:hidden">
+        {/* <button className="btn block md:hidden">
           <span className="btn-text">Contact us</span>
         </button> */}
       </HeroContent>

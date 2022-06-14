@@ -37,21 +37,21 @@ export default function Business() {
     <>
       {/* <div class="social"></div> */}
       <div className="bg-businessbackground">
-        <div className="lg:p-12 md:p-2 p-0 drop-shadow-2xl">
+        <div className="md:p-12  p-0 drop-shadow-2xl">
           <div className="flex justify-center items-center font-semibold pt-2">
-            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
+            <h1 className="md:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
               {mydata.heading}
             </h1>
           </div>
 
-          <div className={`flex w-full lg:flex-row flex-col`}>
+          <div className={`flex w-full md:flex-row flex-col`}>
             <div class=" flex w-full">
               <div class={`gallery-wrap flex md:flex-row flex-col w-fill`}>
                 {mydata.thebox.map((element) =>
                   !isDesktop ? (
                     <NavLinks
                       to={element.url}
-                      className="h-businessImage lg:bg-cover my-4  bg-contain bg-no-repeat bg-center"
+                      className="h-businessImage md:bg-cover my-4  bg-contain bg-no-repeat bg-center"
                       style={{
                         backgroundImage: `url(${element.Mimageurl})`,
                       }}

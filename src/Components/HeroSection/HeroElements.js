@@ -1,6 +1,6 @@
-import Styled from "styled-components";
+import Styled from 'styled-components';
 // import bgimage from "../../assets/TrailerAndLeasing/images/Bg.png";
-import { Link as LinkR } from "react-router-dom";
+import { Link as LinkR } from 'react-router-dom';
 export const HeroContainer = Styled.div`
 
 overflow: hidden;
@@ -115,7 +115,7 @@ height: 100%;
 object-fit: cover;
 
 background: #232a34;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     display: none;
     
 }
@@ -140,7 +140,7 @@ div{
    
    
    
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024) {
     display: none;
     
     
@@ -162,7 +162,7 @@ div{
     
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
         flex-direction: column;
         padding: 0px 0px 0px 0px;
         margin:0px;
@@ -180,7 +180,7 @@ div{
 `;
 export const PCENTER = Styled.p`
 display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024) {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -201,7 +201,7 @@ text-align: center;
 z-index: 2;
 color: #ED1C24;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 40px;
 }
 @media screen and (max-width: 480px) {
@@ -221,7 +221,7 @@ width: 25%;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 54px;
     width: 65%;
     padding: 0px 0px 50px 0px;
@@ -251,7 +251,7 @@ text-align: start;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -269,7 +269,7 @@ text-align: center;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -293,7 +293,7 @@ justify-content: center;
 flex-direction: row;
 align-items: center;
 padding: 0px 0px 40px 0px;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     display: none;
 }
 `;
@@ -343,7 +343,7 @@ text-align: left;
 
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -360,7 +360,7 @@ text-align: center;
 z-index: 2;
 color: #FFFFFF;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024) {
     font-size: 24px;
 }
 @media screen and (max-width: 480px) {
@@ -375,7 +375,7 @@ display: none;
     background: #1773bb;
     color: #fff;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
    padding: 25px;
 display: block;
   display: flex;
@@ -423,12 +423,12 @@ display: block;
     background: #1773bb;
     color: #fff;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     display: none;
 }
 `;
 export const NavLinks = Styled(LinkR)`
-color: ${({ scrollNav }) => (scrollNav ? "#fff" : `#000`)};
+color: ${({ scrollNav }) => (scrollNav ? '#fff' : `#000`)};
 display: flex;
 align-items: center;
 text-decoration: none;

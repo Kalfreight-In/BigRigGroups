@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export const mobile = (props) => {
   return css`
@@ -9,9 +9,8 @@ export const mobile = (props) => {
 };
 export const laptop = (props) => {
   return css`
-    @media screen and (max-width: 768px) and (max-width:1024px) {
+    @media screen and (max-width: 1024) and (max-width: 1024px) {
       ${props}
-  
-}
+    }
   `;
 };

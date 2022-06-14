@@ -18,8 +18,8 @@ function GroupWebsiteComponent() {
             <div
               className={
                 data.id % 2 !== 0
-                  ? 'md:flex lg:w-screen w-fit'
-                  : 'md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit '
+                  ? 'md:flex md:w-screen w-fit'
+                  : 'md:flex md:flex-row-reverse md:w-screen flex-col-reverse w-fit '
               }
             >
               <div className="flex flex-row items-center justify-center m-2 mt-4  md:hidden ">
@@ -55,15 +55,15 @@ function GroupWebsiteComponent() {
 
                       loading="lazy"
                     />
-                    {/* <div className="cursor-pointer absolute top-0 right-0  hover:shadow-outline drop-shadow-lg bg-white">
+                    {/* <div className="cursor-pointer absolute top-0 right-0  hover:shadow-outline drop-shadow-md bg-white">
                       <img src={data.Logourl} width="200" />
                     </div> */}
                   </div>
                 </div>
               </motion.div>
-              <div className="md:6/12 flex-col flex content-center  flex-1 lg:mt-0 mt-8">
-                <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 laptop:ml-28  mt-2">
-                  <div className="md:flex hidden flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
+              <div className="md:6/12 flex-col flex content-center  flex-1 md:mt-0 mt-8">
+                <div className="md:6/12 flex-col flex content-center justify-center md:w-4/3 flex-1 self-start items-start m-4 laptop:ml-28  mt-2">
+                  <div className="md:flex hidden flex-row items-center content-start mt-2 md:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
                       transition={{ duration: 0.2, ease: 'easeInOut' }}
@@ -82,17 +82,17 @@ function GroupWebsiteComponent() {
                   </div>
                   {data.desc.map((data) => (
                     <div
-                      className="2xl:w-3/4 2xl:mt-4 lg:mt-2 lg:mx-0 mx-6 "
+                      className="2xl:w-3/4 2xl:mt-4 md:mt-2 md:mx-0 mx-6 "
                       key={data.id}
                     >
-                      {/* <h2 className="2xl:mt-4  lg:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
+                      {/* <h2 className="2xl:mt-4  md:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
                         {data.head}
                       </h2> */}
-                      <p className="mt-2  text-Description font-desc text-descnew text-justify lg:mr-6 2xl:mr-0">
+                      <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
                         {data.desc}
                       </p>
                       {data.desc1 ? (
-                        <div className="lg:mt-2 ">
+                        <div className="md:mt-2 ">
                           <p className="text-Description font-desc text-descnew text-justify">
                             {data.desc1[0].head}
                           </p>
@@ -109,7 +109,7 @@ function GroupWebsiteComponent() {
                     <section className="centered-container">
                       <a className="link link--arrowed " href="#">
                         <div className="flex flex-row align-center justify-center pt-2">
-                          <h2 className="text-lg text-Lightblue font-semibold md:text-md text-center pr-4">
+                          <h2 className="text-md text-Lightblue font-semibold md:text-md text-center pr-4">
                             Coming soon
                           </h2>
 
@@ -152,7 +152,7 @@ function GroupWebsiteComponent() {
                         exact={true}
                         offset={-80}
                       >
-                        <button className="lg:ml-0 md:mr-0 mr-4  text-white bg-yellow-bg lg:px-4   lg:p-2 p-4  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center  w-full  2xl:text-xl lg:text-md text-2xl ">
+                        <button className="md:ml-0 md:mr-0 mr-4  text-white bg-yellow-bg md:px-4   md:p-2 p-4  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-md  flex items-center justify-center  w-full  2xl:text-xl md:text-md text-2xl ">
                           {data.cta.heading}
                         </button>
                       </Link>

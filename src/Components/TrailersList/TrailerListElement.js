@@ -10,7 +10,7 @@ export const TextContaner = styled.div`
   justify-content: flex-start;
 
   align-items: flex-start;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     padding: 0px 0px 0px 0px;
     margin: 0px;
   }
@@ -34,7 +34,7 @@ export const NavLink = styled(LinkR)`
   &.active {
     color: #15cdfc;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     dispaly: none;
   }
 `;
@@ -52,7 +52,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
   min-height: 100vh;
   height: auto;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     padding: 40px 0px 0px 0px;
 
     margin: 0px;
@@ -63,7 +63,7 @@ export const CardListRow = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024) {
     padding: 0px 0px 0px 0px;
 
     margin: 0px;

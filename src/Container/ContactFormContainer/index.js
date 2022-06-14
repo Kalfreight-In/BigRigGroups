@@ -1,6 +1,5 @@
 import React from 'react';
 import Contactform from '../../Components/ContactForm/';
-import { isMobile } from 'react-device-detect';
 
 export const ContactFormContainer = () => {
   return (

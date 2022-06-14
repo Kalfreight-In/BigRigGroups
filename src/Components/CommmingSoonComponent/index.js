@@ -1,7 +1,7 @@
 import React from 'react';
 import { BigPArtzBrands, BigTireBrands } from '../../data.js';
 import { Slideshow } from '../Slider/slideshow/index.js';
-export const  CommmingSoonComponentindex = (data) => {
+export const CommmingSoonComponentindex = (data) => {
   if (data.data === 'partz') {
     var data1 = BigPArtzBrands;
   }
@@ -35,7 +35,7 @@ export const  CommmingSoonComponentindex = (data) => {
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div
-                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
+                className="w-full sm:w-1/2 md:w-1/3 md:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
                 key={brand.id}
               >
                 <img
