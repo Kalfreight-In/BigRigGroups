@@ -38,9 +38,40 @@ export default function Footer() {
           }}
         >
           <div
-            className="flex-1 lg:w-7/12  lg:block w-full flex justify-center items-center"
-            // className="flex-1 lg:block hidden"
+            id="mainiconcontainer"
+            className=" justify-center items-center pt-4  flex lg:hidden "
           >
+            <div id="allicons" className="flex  ">
+              <RiFacebookCircleLine
+                onClick={() =>
+                  window.open(
+                    'https://www.facebook.com/BigRiggroups/',
+                    '_blank'
+                  )
+                }
+                className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+              />
+              <AiOutlineInstagram
+                onClick={() =>
+                  window.open(
+                    'https://www.instagram.com/bigriggroup/',
+                    '_blank'
+                  )
+                }
+                className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+              />
+              <TiSocialLinkedinCircular
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/company/bigriggroup',
+                    '_blank'
+                  )
+                }
+                className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+              />
+            </div>
+          </div>
+          <div className="flex-1 lg:w-7/12  lg:block w-full flex justify-center items-center">
             <div className="lg:ml-16 w-max justify-center ml-4 lg:mt-0">
               <div>
                 <img
@@ -61,14 +92,14 @@ export default function Footer() {
                 </div>
                 <div className="block lg:ml-3 ml-0">
                   {/* <div className="block">Working hours</div> */}
-                  <div className="md:text-xl text-16px text-xl md:font-bold font-semibold ">
+                  <div className="md:text-xl text-16px ml-2 lg:ml-0 text-xl md:font-bold font-semibold ">
                     8 AM to 5 PM <br />
                     (Monday to Friday) 
                   </div>
                 </div>
               </div>
 
-              <div className="text-white flex justify-center mt-4 md:ml-0 ml-0 ">
+              <div className="text-white flex lg:justify-center justify-start mt-4 md:ml-0 ml-0 ">
                 <div className="mt-2">
                   <a href="tel:8009770010" target="_blank" rel="noreferrer">
                     <img
@@ -276,100 +307,97 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-1 flex-row items-center justify-center mb-0 lg:mb-2 mt-4 lg:mr-12">
-            <div className="lg:flex-1  flex lg:justify-end lg:w-1/6 lg:ml-8 ml-0 ">
-              <div>
-                <div
-                  className="text-white cursor-pointer"
-                  onClick={() => {
-                    setHcontactus(!Hcontactus);
-                  }}
-                >
-                  <h1 className=" md:font-bold font-normal lg:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
-                    Contact Us
-                  </h1>
+            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block">
+              <div
+                className="text-white cursor-pointer"
+                onClick={() => {
+                  setHcontactus(!Hcontactus);
+                }}
+              >
+                <h1 className=" md:font-bold font-normal lg:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
+                  Contact Us
+                </h1>
+              </div>
+              <br className="hidden lg:block" />
+
+              <div
+                className={`text-white 2xl:leading-8 leading-6 lg:block ${
+                  Hcontactus ? '' : 'hidden'
+                }`}
+              >
+                <div className="flex flex-row space-x-2  align-center justify-center lg:justify-start">
+                  <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8 ">
+                    Careers
+                  </div>
+                  <span> » </span>
+                  <a
+                    href="mailto:hr@bigrigcanada.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
+                  >
+                    hr@bigrigcanada.com{' '}
+                  </a>
                 </div>
-                <br className="hidden lg:block" />
+                <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
+                  <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
+                    Tires
+                  </div>
+                  <span> » </span>
+                  <a
+                    href="mailto:tires@bigrigcanada.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
+                  >
+                    tires@bigrigcanada.com
+                  </a>
+                </div>
+                <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
+                  <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
+                    {' '}
+                    Partz{' '}
+                  </div>
+                  <span> » </span>
+                  <a
+                    href="mailto:partz@bigrigcanada.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
+                  >
+                    partz@bigrigcanada.com{' '}
+                  </a>
+                </div>
 
-                <div
-                  className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                    Hcontactus ? '' : 'hidden'
-                  }`}
-                >
-                  <div className="flex flex-row space-x-2  align-center justify-center lg:justify-start">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8 ">
-                      Careers
-                    </div>
-                    <span> » </span>
-                    <a
-                      href="mailto:hr@bigrigcanada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
-                    >
-                      hr@bigrigcanada.com{' '}
-                    </a>
+                <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
+                  <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
+                    Trailers & Leasing
                   </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
-                      Tires
-                    </div>
-                    <span> » </span>
-                    <a
-                      href="mailto:tires@bigrigcanada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
-                    >
-                      tires@bigrigcanada.com
-                    </a>
+                  <span> » </span>
+                  <a
+                    href="mailto:trailers@bigrigcanada.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
+                  >
+                    trailers@bigrigcanada.com
+                  </a>
+                </div>
+                <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
+                  <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
+                    For any other inquiry
                   </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
-                    <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
-                      {' '}
-                      Partz{' '}
-                    </div>
-                    <span> » </span>
-                    <a
-                      href="mailto:partz@bigrigcanada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
-                    >
-                      partz@bigrigcanada.com{' '}
-                    </a>
-                  </div>
-
-                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
-                    <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
-                      Trailers & Leasing
-                    </div>
-                    <span> » </span>
-                    <a
-                      href="mailto:trailers@bigrigcanada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8"
-                    >
-                      trailers@bigrigcanada.com
-                    </a>
-                  </div>
-                  <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
-                    <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center md:ml-0 ml-8">
-                      For any other inquiry
-                    </div>
-                    <span> » </span>
-                    <a
-                      href="mailto:info@bigrigcanada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center cursor-pointer md:ml-0 ml-8"
-                    >
-                      info@bigrigcanada.com
-                    </a>
-                  </div>
-                  {/* <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
+                  <span> » </span>
+                  <a
+                    href="mailto:info@bigrigcanada.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover lg:text-left text-center cursor-pointer md:ml-0 ml-8"
+                  >
+                    info@bigrigcanada.com
+                  </a>
+                </div>
+                {/* <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start">
                     <div>For all other enquires reach us at</div>
                     <span> »  </span>
                     <Link
@@ -380,44 +408,48 @@ export default function Footer() {
                     </Link>
                   </div> */}
 
-                  <div
-                    id="mainiconcontainer"
-                    className=" justify-end mr-28 pt-4 pr-16 md:flex hidden "
-                  >
-                    <div id="allicons" className="flex justify-between  ">
-                      <RiFacebookCircleLine
-                        onClick={() =>
-                          window.open(
-                            'https://www.facebook.com/BigRiggroups/',
-                            '_blank'
-                          )
-                        }
-                        className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
-                      />
-                      <AiOutlineInstagram 
-                        onClick={() =>
-                          window.open(
-                            'https://www.instagram.com/bigriggroup/',
-                            '_blank'
-                          )
-                        }
-                        className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
-                      />
-                      <TiSocialLinkedinCircular
-                        onClick={() =>
-                          window.open(
-                            'https://www.linkedin.com/company/bigriggroup',
-                            '_blank'
-                          )
-                        }
-                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
-                      />
-                    </div>
+                <div
+                  id="mainiconcontainer"
+                  className=" justify-end mr-28 pt-4 pr-16 md:flex hidden "
+                >
+                  <div id="allicons" className="flex justify-between  ">
+                    <RiFacebookCircleLine
+                      onClick={() =>
+                        window.open(
+                          'https://www.facebook.com/BigRiggroups/',
+                          '_blank'
+                        )
+                      }
+                      className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+                    />
+                    <AiOutlineInstagram
+                      onClick={() =>
+                        window.open(
+                          'https://www.instagram.com/bigriggroup/',
+                          '_blank'
+                        )
+                      }
+                      className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+                    />
+                    <TiSocialLinkedinCircular
+                      onClick={() =>
+                        window.open(
+                          'https://www.linkedin.com/company/bigriggroup',
+                          '_blank'
+                        )
+                      }
+                      className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* <div className="flex flex-1 flex-row items-center justify-center mb-0 lg:mb-2 mt-4 lg:mr-12">
+            <div className="lg:flex-1  flex lg:justify-end lg:w-1/6 lg:ml-8 ml-0 ">
+             
+            </div>
+          </div> */}
         </div>
 
         {/* <div id="mainiconcontainer">

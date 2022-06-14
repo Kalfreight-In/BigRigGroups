@@ -32,15 +32,17 @@ const HeroSection = () => {
       </HeroBg>
 
       <HeroContent>
-        <ContainerMain>
-          <HeroP>Transforming Trucking Dynamics </HeroP>
+        <div className="">
+          <div className="text-center text-5xl font-bold text-white">
+            Transforming Trucking Dynamics{' '}
+          </div>
 
-          <Samosa>
+          <div className="text-center">
             Offering New & Used Dry Vans, Trucks & Reefers
             {isMobile ? <br></br> : null}
             OEM Parts, Tires, and Services
-          </Samosa>
-        </ContainerMain>
+          </div>
+        </div>
 
         {/* <PCENTER class="text-gray-600 p-8">
           Work with a trusted global third-party logistics provider that has

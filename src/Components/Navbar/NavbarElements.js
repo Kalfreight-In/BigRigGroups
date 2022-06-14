@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   z-index: 29;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     transition: 0.8s all ease;
     margin-top: 0px;
     justify-content: start;
@@ -38,7 +38,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     transition: 0.8s all ease;
     margin-top: 0px;
     width: 20%;
@@ -64,14 +64,14 @@ export const NavLink = styled(LinkR)`
   &.active {
     color: #15cdfc;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     dispaly: none;
   }
 `;
 export const MobileIcon = styled.div`
   display: none;
   color: #000;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: block;
 
     position: absolute;
@@ -94,7 +94,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -1px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     dispaly: none;
   }
 `;
@@ -119,7 +119,7 @@ export const NavItem = styled.li`
   // &:hover {
   //   animation: pulse 1s ease-in-out;
   // }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
   // &:hover {
@@ -182,7 +182,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #000;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     position: absolute;
     top: 0;
@@ -208,7 +208,7 @@ export const Bars = styled(FaBars)`
 //   /* width: 100vw;
 //   white-space: nowrap; */
 
-//   @media screen and (max-width: 768px) {
+//   @media screen and (max-width: 1024px) {
 //     display: none;
 //   }
 // `;
@@ -220,7 +220,7 @@ export const NavBtn = styled.nav`
 
   padding: 25px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
