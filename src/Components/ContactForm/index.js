@@ -7,6 +7,7 @@ const Contactform = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phoneno, setphoneno] = useState('');
+    const [location, setlocation] = useState("");
   const [ROC, setROC] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -60,7 +61,7 @@ const Contactform = () => {
           </h1>
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4 md:mt-0 mt-20">
             Hey! How can we help you today?
-          </p>{' '}
+          </p>{" "}
           <br />
           {/* <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
             Fill in this form for an on-point solution in no time.
@@ -112,30 +113,26 @@ const Contactform = () => {
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
-          {/* <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-first-name"
             >
               Name
-            </label>
+            </label> */}
             <input
+              onChange={(e) => setlocation(e.target.value)}
+              value={location}
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              id="email"
+              placeholder="location"
               type="text"
-              list="cars"
-              onChange={(e) => setROC(e.target.value)}
-              value={ROC}
-              placeholder=" &nbsp; Reason for contacting"
-              className="border block bg-white text-gray-700  border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-4"
               required
             />
-            <datalist id="cars">
-              <option>buy truck</option>
-              <option>buy trailers</option>
-            </datalist>  
-            <p class="text-red-500 text-xs italic">
+            {/* <p class="text-red-500 text-xs italic">
               Please fill out this field.
-            </p>
-          </div> */}
+            </p> */}
+          </div>
 
           <div class="w-full md:w-1/2 px-3">
             <div class="w-full px-3">
@@ -172,7 +169,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-texarea w-80 md:ml-0 ml-4"
+              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-5xl md:ml-0 ml-4"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>

@@ -33,16 +33,16 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
 
-      <HeroContent> 
+      <HeroContent>
         <div className="">
-          <div className="text-center text-5xl font-bold text-white">
-            Transforming Trucking Dynamics{' '}
+          <div className="text-center text-3xl md:4xl lg:text-5xl  font-bold text-white">
+            Transforming Trucking Dynamics
           </div>
 
           <div className="text-center text-2xl text-white font-normal mt-4">
             Offering New & Used Dry Vans, Trucks & Reefers
-            {isMobile ? <br></br> : null}
-            OEM Parts, Tires, and Services   
+            {isMobile ? <br/> : null}
+            OEM Parts, Tires, and Services
           </div>
         </div>
 
