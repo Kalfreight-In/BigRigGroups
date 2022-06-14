@@ -11,14 +11,15 @@ export default function Footer() {
   const [Hquicklinks, setHquicklinks] = useState(false);
   const [Hcontactus, setHcontactus] = useState(false);
 
+
+  
   return (
     <>
       <div className="bg-Lightblue">
         <img
           src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
           alt="logo"
-          className="2xl:h-28 lg:h-24  h-20 md:hidden block md:ml-0 ml-32 "
-          to="mailto:umarkhurshid3@gmail.com"
+          className="2xl:h-28 lg:h-24  h-20 md:hidden flex md:ml-0 ml-36 "
         />
         <div
           className="flex lg:flex-row flex-col-reverse 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
@@ -48,7 +49,7 @@ export default function Footer() {
                   to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div className="text-white flex  lg:mt-12 mt-4 md:ml-0 ml-20">
+              <div className="text-white flex  lg:mt-12 mt-4 md:ml-0 ml-32">
                 <div className="mt-3">
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
@@ -66,7 +67,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="text-white flex mt-4 md:ml-0 ml-20">
+              <div className="text-white flex mt-4 md:ml-0 ml-32">
                 <div className="mt-2">
                   <a href="tel:8009770010" target="_blank" rel="noreferrer">
                     <img
@@ -108,21 +109,22 @@ export default function Footer() {
                 onClick={() => {
                   setHinventery(!Hinventery);
                 }}
+              
               >
-                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal   md:ml-0 ml-24 md:pt-4 pt-0 ">
-                  Inventory
+                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal   md:ml-0 ml-24 ">
+                  Inventory 
                 </h1>
               </div>
               <br />
 
               <div
                 className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                  Hinventery ? "" : "hidden"
-                }`}
+                  Hinventery ? "" : "hidden" 
+                }`}   
               >
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24 md:-mt-0 -mt-6 "
                 >
                   Flatbed for sale
                 </Link>
@@ -181,7 +183,7 @@ export default function Footer() {
 
                   {window.location.pathname == "/" ? (
                     <Slink
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24 md:-mt-0 -mt-6"
                       to="aboutus"
                       smooth={true}
                       duration={1000}
@@ -190,7 +192,7 @@ export default function Footer() {
                       offset={-80}
                     >
                       About Us
-                    </Slink>
+                    </Slink> 
                   ) : (
                     <a
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
@@ -249,7 +251,7 @@ export default function Footer() {
                     setHcontactus(!Hcontactus);
                   }}
                 >
-                  <h1 className=" md:font-bold font-normal  2xl:text-footerheading text-desc md:ml-0 ml-24 text-center">
+                  <h1 className=" md:font-bold font-normal  2xl:text-footerheading text-desc md:ml-0 pl-24 text-left">
                     Contact Us
                   </h1>
                 </div>
