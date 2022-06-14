@@ -13,12 +13,15 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-Lightblue">
-        <img
-          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
-          alt="logo"
-          className="2xl:h-28 lg:h-24  h-20 md:hidden flex md:ml-0 ml-36 "
-        />
+      <div className="bg-Lightblue ">
+        <div className="p-8  lg:p-0 lg:block flex justify-center ">
+          <img
+            src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
+            alt="logo"
+            className="2xl:h-28 lg:h-24  h-20 md:hidden flex md:ml-0 lg:ml-36 "
+          />
+        </div>
+
         <div
           className="flex lg:flex-row flex-col-reverse 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
@@ -35,10 +38,10 @@ export default function Footer() {
           }}
         >
           <div
-            className="flex-1 w-7/12  lg:block "
+            className="flex-1 lg:w-7/12  lg:block w-full flex justify-center items-center"
             // className="flex-1 lg:block hidden"
           >
-            <div className="lg:ml-16 w-max ml-4 lg:mt-0">
+            <div className="lg:ml-16 w-max justify-center ml-4 lg:mt-0">
               <div>
                 <img
                   src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
@@ -47,7 +50,7 @@ export default function Footer() {
                   to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div className="text-white flex  lg:mt-12 mt-4 md:ml-0 ml-32">
+              <div className="text-white flex justify-center  lg:mt-12 mt-4 ml-0 lg:ml-32">
                 <div className="mt-3">
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
@@ -65,7 +68,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="text-white flex mt-4 md:ml-0 ml-32">
+              <div className="text-white flex justify-center mt-4 md:ml-0 ml-0 lg:ml-32">
                 <div className="mt-2">
                   <a href="tel:8009770010" target="_blank" rel="noreferrer">
                     <img
@@ -98,68 +101,103 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
+              <div
+                id="mainiconcontainer"
+                className=" justify-end mr-28 pt-4 pr-16 md:flex lg:hidden block "
+              >
+                <div id="allicons" className="flex justify-between  ">
+                  <RiFacebookCircleLine
+                    onClick={() =>
+                      window.open(
+                        'https://www.facebook.com/BigRiggroups/',
+                        '_blank'
+                      )
+                    }
+                    className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+                  />
+                  <AiOutlineInstagram
+                    onClick={() =>
+                      window.open(
+                        'https://www.instagram.com/bigriggroup/',
+                        '_blank'
+                      )
+                    }
+                    className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+                  />
+                  <TiSocialLinkedinCircular
+                    onClick={() =>
+                      window.open(
+                        'https://www.linkedin.com/company/bigriggroup',
+                        '_blank'
+                      )
+                    }
+                    className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-auto lg:flex-row flex-col  mb-0 lg:mb-2 mt-6 md:ml-28 ml-8 ">
-            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block lg:-mt-6">
+
+          <div className="flex flex-auto lg:flex-row flex-col  mb-0 lg:mb-2 mt-6 md:ml-28 lg:ml-8 ml-0 lg:items-start items-center">
+            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block ">
               <div
                 className="text-white cursor-pointer"
                 onClick={() => {
                   setHinventery(!Hinventery);
                 }}
               >
-                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal   md:ml-0 ml-24 ">
+                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal lg:text-left text-center  ml:0 lg:ml-24  ">
                   Inventory
                 </h1>
               </div>
               <br />
 
               <div
-                className={`text-white 2xl:leading-8 leading-6 lg:block ${
+                className={`text-white 2xl:leading-8 leading-6 lg:block   ${
                   Hinventery ? '' : 'hidden'
                 }`}
               >
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24 md:-mt-0 -mt-6 "
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24 md:-mt-0 -mt-6 "
                 >
                   Flatbed for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                 >
                   Used Trucks for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                 >
                   New Trailers for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                 >
                   Used Dry van for sale
                 </Link>
                 <Link
                   to="/newsevents"
-                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                  className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                 >
                   Reefer trailers for sale
                 </Link>
               </div>
             </div>
 
-            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block lg:-mt-6  ">
+            <div className="lg:flex-1 flex-1 lg:w-2/12 md:block   ">
               <div
                 className="text-white cursor-pointer"
                 onClick={() => {
                   setHquicklinks(!Hquicklinks);
                 }}
               >
-                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal   md:ml-0 ml-24 md:pt-4 pt-0">
+                <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal lg:text-left  text-center  ml-0   lg:ml-24  pt-0">
                   Quick Links
                 </h1>
               </div>
@@ -180,7 +218,7 @@ export default function Footer() {
 
                   {window.location.pathname == '/' ? (
                     <Slink
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24 md:-mt-0 -mt-6"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-0  lg:ml-24 md:-mt-0 -mt-6"
                       to="aboutus"
                       smooth={true}
                       duration={1000}
@@ -192,7 +230,7 @@ export default function Footer() {
                     </Slink>
                   ) : (
                     <a
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
+                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-0  lg:ml-24"
                       href="/#aboutus"
                       smooth={true}
                       duration={1000}
@@ -207,7 +245,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                   >
                     News & Events
                   </Link>
@@ -215,7 +253,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24 "
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24 "
                   >
                     Parts Inventory
                   </Link>
@@ -223,7 +261,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                   >
                     Financing Options
                   </Link>
@@ -231,7 +269,7 @@ export default function Footer() {
                 <div>
                   <Link
                     to="/newsevents"
-                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-24"
+                    className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-0  lg:ml-24"
                   >
                     24X7 Roadside Assistance
                   </Link>
@@ -239,8 +277,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-row  mb-0 lg:mb-2 mt-4 lg:mr-12">
-            <div className="lg:flex-1  flex lg:justify-end lg:w-1/6 ml-8 ">
+          <div className="flex flex-1 flex-row items-center justify-center mb-0 lg:mb-2 mt-4 lg:mr-12">
+            <div className="lg:flex-1  flex lg:justify-end lg:w-1/6 lg:ml-8 ml-0 ">
               <div>
                 <div
                   className="text-white cursor-pointer"
@@ -248,7 +286,7 @@ export default function Footer() {
                     setHcontactus(!Hcontactus);
                   }}
                 >
-                  <h1 className=" md:font-bold font-normal  2xl:text-footerheading text-desc md:ml-0 pl-24 text-left">
+                  <h1 className=" md:font-bold font-normal lg:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
                     Contact Us
                   </h1>
                 </div>
