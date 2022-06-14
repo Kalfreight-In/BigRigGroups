@@ -95,7 +95,7 @@ export default function Footer() {
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <div className="md:w-full w-2/3 md:ml-0 ml-12 md:text-left text-center">
+                  <div className="md:w-full w-2/3 md:ml-0 lg:ml-12 ml-0 md:text-left text-center">
                     English, Punjabi, Español, Français, हिन्दी, 中国人, Somali
                   </div>
                 </div>
