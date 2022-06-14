@@ -11,6 +11,7 @@ import { useSpring, animated } from 'react-spring';
 import { useHover } from '../../Hooks/Hover';
 import { NavLink as LinkR } from 'react-router-dom';
 import { isMobile, isTablet } from 'react-device-detect';
+import useMediaQuery from '../../Hooks/CustomMediaQuery';
 var mydata = Businessdata[0];
 export const NavLinks = styled(LinkR)`
   // background: ${(props) => `url(${props.Mimage})`};
@@ -21,6 +22,8 @@ export const NavLinks = styled(LinkR)`
   // cursor: pointer;
 `;
 export default function Business() {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
+
   const [hoverRef, isHovered] = useHover();
   const titleAnimation = useSpring({
     from: {
@@ -36,16 +39,16 @@ export default function Business() {
       <div className="bg-businessbackground">
         <div className="lg:p-12 p-2 drop-shadow-2xl">
           <div className="flex justify-center items-center font-semibold">
-            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2"> 
+            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
               {mydata.heading}
             </h1>
           </div>
 
           <div className={`flex w-full lg:flex-row flex-col`}>
             <div class=" flex w-full">
-              <div class={`gallery-wrap flex lg:flex-row flex-col w-fill`}>
+              <div class={`gallery-wrap flex md:flex-row flex-col w-fill`}>
                 {mydata.thebox.map((element) =>
-                  isMobile ? (
+                  !isDesktop ? (
                     <NavLinks
                       to={element.url}
                       className="h-businessImage lg:bg-cover  bg-contain bg-no-repeat bg-center"

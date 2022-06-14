@@ -50,7 +50,7 @@ export default function Footer() {
                   to="mailto:umarkhurshid3@gmail.com"
                 />
               </div>
-              <div className="text-white flex justify-center  lg:mt-12 mt-4 ml-0 lg:ml-32">
+              <div className="text-white flex justify-center  lg:mt-12 mt-4 ml-0 ">
                 <div className="mt-3">
                   {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
@@ -59,7 +59,7 @@ export default function Footer() {
                   /> */}
                   <AiOutlineClockCircle className="md:h-8 h-6 md:w-8 w-6 " />
                 </div>
-                <div className="block ml-3">
+                <div className="block lg:ml-3 ml-0">
                   {/* <div className="block">Working hours</div> */}
                   <div className="md:text-xl text-16px text-xl md:font-bold font-semibold ">
                     8 AM to 5 PM <br />
@@ -68,7 +68,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="text-white flex justify-center mt-4 md:ml-0 ml-0 lg:ml-32">
+              <div className="text-white flex justify-center mt-4 md:ml-0 ml-0 ">
                 <div className="mt-2">
                   <a href="tel:8009770010" target="_blank" rel="noreferrer">
                     <img
@@ -87,7 +87,7 @@ export default function Footer() {
                   </div> */}
                   <a href="tel:8009770010" target="_blank">
                     {' '}
-                    <div className="md:text-xl lg:text-16px text-xl font-bold lg:font-semibold  ">
+                    <div className="md:text-xl lg:text-2xl text-xl font-bold lg:font-semibold  ">
                       800-977-0010
                     </div>{' '}
                   </a>
