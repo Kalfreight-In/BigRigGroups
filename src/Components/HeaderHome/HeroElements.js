@@ -22,7 +22,7 @@ height: 100vh;
 
 z-index: 1;
 @media screen and (max-width: 768px) {
-    display: block;
+
     height: 50vh;
     
 }
@@ -124,74 +124,26 @@ background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf
 `;
 export const HeroContent = Styled.div`
 
-z-index: 2;
+z-index: 10;
 width: 100%;
 height: 100%;
-
 display: flex;
 justify-content: center;
-
 align-items: center;
 
-
-div{
-    width: 98%;
    
    
    
-    @media screen and (max-width: 768px) {
-      
-         font-size:1.5rem;
-        //  line-height:15rem;
-    h2{
-        // color:red;
-        font-size:2.3rem;
-        
-    }
-    
-    
-    
-    }
-    @media screen and (min-width: 1024px) {
-
   
-    font-size: 1.5rem;
-    
-    }
-    @media screen and (max-width: 480px) {
-        font-size:1rem;
-    h2{
- 
-        font-size:2rem;
-        line-height:2rem;
-     
-    }
-    
-    
-    }
+  
  
     
-}
+
 
     
 
 
-@media screen and (max-width: 768px) {
-  height:  150%;
-        flex-direction: column;
-        padding: 0px 0px 0px 0px;
-        margin:0px;
-        justify-content: center;
-    }
-@media screen and (max-width: 480px) {
-    padding: 100px 0px 0px 0px;
-    
-    flex-direction: column;
-    font-size: 32px;
-    align-items: center;
-    justify-content: center;
-    margin:0px;
-}
+
 `;
 export const PCENTER = Styled.h1`
 display: none;
@@ -327,7 +279,7 @@ flex-direction: row;
 align-items: center;
 padding: 0px 0px 40px 0px;
 @media screen and (max-width: 768px) {
-    display: none;
+    // display: none;
 }
 `;
 export const HeroPromo = Styled.div`

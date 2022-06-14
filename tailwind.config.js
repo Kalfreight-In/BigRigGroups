@@ -46,7 +46,7 @@ module.exports = {
         '36px': '36px',
         '16px': '16px',
         '15px': '15px',
-        // '8px':'10px',
+        headerheading:'3.5rem'
       },
       fontWeight: {
         heading: '600',
