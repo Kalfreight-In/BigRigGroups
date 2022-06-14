@@ -36,7 +36,7 @@ export default function Business() {
       <div className="bg-businessbackground">
         <div className="lg:p-12 p-2 drop-shadow-2xl">
           <div className="flex justify-center items-center font-semibold">
-            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
+            <h1 className="lg:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2"> 
               {mydata.heading}
             </h1>
           </div>
