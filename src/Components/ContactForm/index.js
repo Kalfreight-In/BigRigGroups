@@ -58,13 +58,13 @@ const Contactform = () => {
           <h1 className="text-Heading text-heading font-bold ml-4 md:block hidden">
             Contact Us
           </h1>
-          <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4">
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4 md:mt-0 mt-20">
             Hey! How can we help you today?
           </p>{' '}
           <br />
-          <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
+          {/* <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
             Fill in this form for an on-point solution in no time.
-          </p>
+          </p> */} 
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

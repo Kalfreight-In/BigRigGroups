@@ -29,9 +29,9 @@ export default function Roadservice() {
                 onClick={() => {
                   setCTA('800-977-0010');
                 }}
-                className="text-white bg-yellow-bg  font-semibold  mt-4 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-44 w-full md:32 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md   2xl:p-0 p-4"
+                className="text-white bg-yellow-bg  font-semibold  mt-4 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg   2xl:w-80 lg:w-44 w-full md:32 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md   2xl:p-0 p-2 flex justify-center items-center"
               >
-                <p>{CTA}</p>
+                <p>{CTA}</p> 
               </button>
             </div>
           </div>

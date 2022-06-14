@@ -254,7 +254,7 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
 
-              <MobileIcon onClick={toggle}>
+              <MobileIcon onClick={toggle}>  
                 <FaBars color="#111" />
               </MobileIcon>
             </NavMenu>
