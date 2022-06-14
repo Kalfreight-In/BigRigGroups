@@ -14,7 +14,7 @@ export const MapConatiner = () => {
         <Map Af={AfisHovered} Ca={CaisHovered}></Map>
       </div>
 
-      <div className=" md:6/12 flex-col flex content-center  flex-1 ml-8">
+      <div className=" md:6/12 flex-col flex content-center  flex-1 lg:ml-8 ml-0">
         <div className=" flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 2xl:ml-12 xl:ml-8 mt-2 ">
           <div>
             <h3 className="xl:text-4xl lg:self-start text-white font-bold md:text-2xl text-3xl lg:w-max text-center">
