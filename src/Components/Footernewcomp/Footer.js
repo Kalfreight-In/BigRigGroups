@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 // import {SiInstagram} from 'react-icons/si';
@@ -6,7 +6,6 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { Link as Slink } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import { isMobile } from 'react-device-detect';
 export default function Footer() {
   const [Hinventery, setHinventery] = useState(false);
   const [Hquicklinks, setHquicklinks] = useState(false);
@@ -69,14 +68,14 @@ export default function Footer() {
 
               <div className="text-white flex mt-4 md:ml-0 ml-20">
                 <div className="mt-2">
-                  <Link to="tel:8009770010" target="_blank">
+                  <a href="tel:8009770010" target="_blank" rel="noreferrer">
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                       alt=""
                       className="text-white"
                       width={15}
                     />
-                  </Link>
+                  </a>
                 </div>
                 <div className="ml-4">
                   {/* <div className="block">
@@ -84,19 +83,19 @@ export default function Footer() {
                     <br></br>
                     we have subject matter experts just a call away.
                   </div> */}
-                  <Link to="tel:8009770010" target="_blank">
+                  <a href="tel:8009770010" target="_blank">
                     {' '}
                     <div className="md:text-xl text-16px md:font-bold font-semibold  ">
                       800-977-0010
                     </div>{' '}
-                  </Link>
+                  </a>
                 </div>
               </div>
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <div className="md:w-full w-2/3 md:ml-0 lg:ml-12 ml-0 md:text-left text-center">
-                    English, Punjabi, Español, Français, हिन्दी, 中国人, Somali
+                  <div className="w-full  md:ml-0 ml-12 ">
+                    English, ਪੰਜਾਬੀ, Español, हिन्दी,
                   </div>
                 </div>
               </div>
@@ -269,6 +268,7 @@ export default function Footer() {
                     <a
                       href="mailto:hr@bigrigcanada.com"
                       target="_blank"
+                      rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       hr@bigrigcanada.com{' '}
@@ -282,6 +282,7 @@ export default function Footer() {
                     <a
                       href="mailto:tires@bigrigcanada.com"
                       target="_blank"
+                      rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       tires@bigrigcanada.com
@@ -296,6 +297,7 @@ export default function Footer() {
                     <a
                       href="mailto:partz@bigrigcanada.com"
                       target="_blank"
+                      rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       partz@bigrigcanada.com{' '}
@@ -310,6 +312,7 @@ export default function Footer() {
                     <a
                       href="mailto:trailers@bigrigcanada.com"
                       target="_blank"
+                      rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
                       trailers@bigrigcanada.com
@@ -321,6 +324,7 @@ export default function Footer() {
                     <a
                       href="mailto:info@bigrigcanada.com"
                       target="_blank"
+                      rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-8"
                     >
                       info@bigrigcanada.com
