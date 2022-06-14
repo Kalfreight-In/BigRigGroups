@@ -24,15 +24,15 @@ export default function Footer() {
           className="flex lg:flex-row flex-col-reverse 2xl:pb-8 xl:pt-8 lg:pt-4 lg:flex lg:justify-between"
           style={{
             backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
-              ')',
+              "url(" +
+              "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png" +
+              ")",
 
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
+            backgroundPosition: "center",
+            backgroundSize: "cover",
 
-            backgroundRepeat: 'no-repeat',
-            width: 'full',
+            backgroundRepeat: "no-repeat",
+            width: "full",
           }}
         >
           <div
@@ -75,8 +75,7 @@ export default function Footer() {
                       className="text-white"
                       width={15}
                     />
-                  </a> 
-                  
+                  </a>
                 </div>
                 <div className="ml-4">
                   {/* <div className="block">
@@ -85,18 +84,18 @@ export default function Footer() {
                     we have subject matter experts just a call away.
                   </div> */}
                   <a href="tel:8009770010" target="_blank">
-                    {' '}
+                    {" "}
                     <div className="md:text-xl text-16px md:font-bold font-semibold  ">
                       800-977-0010
-                    </div>{' '}
+                    </div>{" "}
                   </a>
                 </div>
               </div>
 
               <div className="text-white flex mb-8 lg:mb-2  pt-5">
                 <div className="ml-4">
-                  <div className="md:w-full w-2/3 md:ml-0 ml-12 md:text-left text-center">
-                    English, Punjabi, Español, Français, हिन्दी, 中国人, Somali
+                  <div className="w-full  md:ml-0 ml-12 ">
+                    English, ਪੰਜਾਬੀ, Español, हिन्दी,
                   </div>
                 </div>
               </div>
@@ -118,7 +117,7 @@ export default function Footer() {
 
               <div
                 className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                  Hinventery ? '' : 'hidden'
+                  Hinventery ? "" : "hidden"
                 }`}
               >
                 <Link
@@ -169,7 +168,7 @@ export default function Footer() {
 
               <div
                 className={`text-white  2xl:leading-8 leading-6 lg:block  ${
-                  Hquicklinks ? '' : 'hidden'
+                  Hquicklinks ? "" : "hidden"
                 }`}
               >
                 <div>
@@ -180,7 +179,7 @@ export default function Footer() {
                     About us
                   </Link> */}
 
-                  {window.location.pathname == '/' ? (
+                  {window.location.pathname == "/" ? (
                     <Slink
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
                       to="aboutus"
@@ -258,7 +257,7 @@ export default function Footer() {
 
                 <div
                   className={`text-white 2xl:leading-8 leading-6 lg:block ${
-                    Hcontactus ? '' : 'hidden'
+                    Hcontactus ? "" : "hidden"
                   }`}
                 >
                   <div className="flex flex-row space-x-2">
@@ -272,7 +271,7 @@ export default function Footer() {
                       rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
-                      hr@bigrigcanada.com{' '}
+                      hr@bigrigcanada.com{" "}
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
@@ -291,8 +290,8 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row space-x-2">
                     <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8">
-                      {' '}
-                      Partz{' '}
+                      {" "}
+                      Partz{" "}
                     </div>
                     <span> » </span>
                     <a
@@ -301,7 +300,7 @@ export default function Footer() {
                       rel="noreferrer"
                       className="block md:text-16px text-navsmall hover:text-yellow-shadowhover md:ml-0 ml-8"
                     >
-                      partz@bigrigcanada.com{' '}
+                      partz@bigrigcanada.com{" "}
                     </a>
                   </div>
 
@@ -350,8 +349,8 @@ export default function Footer() {
                       <RiFacebookCircleLine
                         onClick={() =>
                           window.open(
-                            'https://www.facebook.com/BigRiggroups/',
-                            '_blank'
+                            "https://www.facebook.com/BigRiggroups/",
+                            "_blank"
                           )
                         }
                         className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
@@ -359,8 +358,8 @@ export default function Footer() {
                       <AiOutlineInstagram
                         onClick={() =>
                           window.open(
-                            'https://www.instagram.com/bigriggroup/',
-                            '_blank'
+                            "https://www.instagram.com/bigriggroup/",
+                            "_blank"
                           )
                         }
                         className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
@@ -368,8 +367,8 @@ export default function Footer() {
                       <TiSocialLinkedinCircular
                         onClick={() =>
                           window.open(
-                            'https://www.linkedin.com/company/bigriggroup',
-                            '_blank'
+                            "https://www.linkedin.com/company/bigriggroup",
+                            "_blank"
                           )
                         }
                         className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
