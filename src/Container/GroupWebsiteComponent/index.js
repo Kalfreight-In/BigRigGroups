@@ -22,6 +22,23 @@ function GroupWebsiteComponent() {
                   : 'md:flex md:flex-row-reverse lg:w-screen flex-col-reverse w-fit '
               }
             >
+              <div className="flex flex-row items-center justify-center m-2 mt-4  md:hidden ">
+                <motion.img
+                  whileInView={{ scale: [0.5, 1] }}
+                  transition={{ duration: 0.2, ease: 'easeInOut' }}
+                  alt="profile_circle"
+                  //  className="overlay_circle"
+                  src={data.icon}
+                  width="100"
+                  className="pr-4"
+                ></motion.img>
+
+                <div className="font-display  text-2xl font-bold leading-tight mb-4">
+                  <h2 className="text-2xl self-center text-Heading font-bold link link-underline link-underline-black 2xl:pb-8 pb-2 2xl::mb-4 mb-2 ">
+                    {data.heading}
+                  </h2>
+                </div>
+              </div>
               <motion.div
                 whileInView={{ x: [-50, 0], opacity: [0, 1] }}
                 transition={{ duration: 1 }}
@@ -44,9 +61,9 @@ function GroupWebsiteComponent() {
                   </div>
                 </div>
               </motion.div>
-              <div className="md:6/12 flex-col flex content-center  flex-1">
+              <div className="md:6/12 flex-col flex content-center  flex-1 lg:mt-0 mt-8">
                 <div className="md:6/12 flex-col flex content-center justify-center lg:w-4/3 flex-1 self-start items-start m-4 laptop:ml-28  mt-2">
-                  <div className="flex flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
+                  <div className="md:flex hidden flex-row items-center content-start mt-2 lg:-ml-32 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
                       transition={{ duration: 0.2, ease: 'easeInOut' }}
@@ -126,7 +143,7 @@ function GroupWebsiteComponent() {
                       </a>
                     </section>
                   ) : (
-                    <div>
+                    <div className="md:w-fit w-full ">
                       <Link
                         to="ContactSection"
                         smooth={true}
@@ -135,7 +152,7 @@ function GroupWebsiteComponent() {
                         exact={true}
                         offset={-80}
                       >
-                        <button className="ml-6 lg:ml-0 px-8 py-2 lg:px-0 lg:py-0 text-white bg-yellow-bg  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center 2xl:w-80 lg:w-44 md:w-72 2xl:h-12 xl:h-10 lg:h-8 2xl:text-2xl lg:text-md md:text-md ">
+                        <button className="lg:ml-0 md:mr-0 mr-4  text-white bg-yellow-bg lg:px-4   lg:p-2 p-4  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-lg  flex items-center justify-center  w-full  2xl:text-xl lg:text-md text-2xl ">
                           {data.cta.heading}
                         </button>
                       </Link>

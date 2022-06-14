@@ -17,11 +17,11 @@ export default function Abouthome() {
           }}
         >
           <div>
-            <div className="">
+            <div className="mt-20">
               <div>
                 <div>
                   <div className="flex justify-center items-center ">
-                    <h1 className="text-5xl md:text-Heading  w-fit 2xl:mt-18 xl:mt-16 lg:mt-12 mb-6 text-center   p-2 font-bold  link link-underline link-underline-black">
+                    <h1 className="lg:text-5xl md:text-Heading  w-fit 2xl:mt-18 xl:mt-16 lg:mt-12 mb-6 text-center   p-2 font-bold  link link-underline link-underline-black text-2xl">
                       {aboutdata.headingmain}
                     </h1>
                   </div>

@@ -181,7 +181,7 @@ export default function Footer() {
 
                   {window.location.pathname == '/' ? (
                     <Slink
-                      className="block md:text-16px text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
+                      className="block md:text-16px  text-navsmall hover:text-yellow-shadowhover cursor-pointer md:ml-0 ml-24"
                       to="aboutus"
                       smooth={true}
                       duration={1000}
