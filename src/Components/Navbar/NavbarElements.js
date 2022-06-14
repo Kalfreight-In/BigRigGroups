@@ -104,6 +104,16 @@ export const NavItem = styled.li`
   height: 45px;
   padding: 0 1rem;
 
+  @media only screen and (max-width:1200px) and (min-width:1000px){
+    //  *{
+    //   background:#000;
+    //   color:green;
+    //   outline:red;
+    //  }
+
+    padding:0 0.5rem;
+  }
+
   color: #000;
 
   // &:hover {

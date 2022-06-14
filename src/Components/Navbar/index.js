@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons/lib';
 
 import { animateScroll as scroll, Link } from 'react-scroll';
 // import ErrorBoundary from '../ErrorBoundary';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';   
 import {
   Nav,
   NavMenu,
@@ -14,7 +14,7 @@ import {
   NavItem,
   NavLinksA,
   NavLinks,
-} from './NavbarElements';
+} from './NavbarElements'; 
 
 const Navbar = ({ toggle }) => {
   const history = useNavigate();
@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
   //     return 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'; 
   //   }
   // }
-  // const initialState = loadLogo(window.location.pathname);
+  // const initialState = loadLogo(window.location.pathname); 
 
   const [logo, setlogo] = useState(
     'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.location.pathname == '/trailerandleasing') {
-      console.log(`it is inside the ${window.location.pathname}`);
+      console.log(`it is inside the ${window.location.pathname}`); 
       setScrollNav(true);
       return;
     }
@@ -75,11 +75,11 @@ const Navbar = ({ toggle }) => {
       scroll.scrollTo(7000);
     } else {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
+        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png' 
       );
       scroll.scrollToTop();
     }
-  }, [window.location.pathname]);
+  }, [window.location.pathname]); 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
@@ -95,7 +95,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
-            <NavLogo to="/" onClick={toggleHome} className="max-w-max">
+            <NavLogo to="/" onClick={toggleHome} className="max-w-max">    
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  " 
                 className="pt-0 flex-1 w-40 "
@@ -283,5 +283,5 @@ const Navbar = ({ toggle }) => {
 
 export default Navbar;
 
-// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs
+// kal-trailers-leasing-inc-is-californias-one-stop-shop-for-all-your-trucking-needs 
 
