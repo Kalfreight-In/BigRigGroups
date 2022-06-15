@@ -119,13 +119,14 @@ const Contactform = () => {
             >
               Name
             </label> */}
+           
             <input
-              onChange={(e) => setlocation(e.target.value)}
-              value={location}
-              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              onChange={(e) => setphoneno(e.target.value)}
+              value={phoneno}
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-4"
               id="email"
-              placeholder="location"
-              type="text"
+              placeholder="Mobile No"
+              type="Phone"
               required
             />
             {/* <p class="text-red-500 text-xs italic">
@@ -141,15 +142,15 @@ const Contactform = () => {
               >
                 E-mail
               </label> */}
-              <input
-                onChange={(e) => setphoneno(e.target.value)}
-                value={phoneno}
-                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
-                id="email"
-                placeholder="Mobile No"
-                type="Phone"
-                required
-              />
+               <input
+              onChange={(e) => setlocation(e.target.value)}
+              value={location}
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              id="email"
+              placeholder="location"
+              type="text"
+              required
+            />
               {/* <p class="text-gray-600 text-xs italic">
                 Some tips - as long as needed
               </p> */}

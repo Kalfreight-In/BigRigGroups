@@ -39,22 +39,22 @@ const HeroSection = () => {
             Transforming Trucking Dynamics
           </div>
 
-          <div className="text-center text-2xl text-white font-normal mt-4">
+          <div className="text-center md:text-2xl text-descnew text-white md:font-normal font-semibold mt-4">
             Offering New & Used Dry Vans, Trucks & Reefers
-            {isMobile ? <br/> : null}
+            <br/> 
             OEM Parts, Tires, and Services
           </div>
         </div>
-
+         
         {/* <PCENTER class="text-gray-600 p-8">
-          Work with a trusted global third-party logistics provider that has
+          Work with a trusted global third-party logistics provider that has 
           been empowering business growth for over 15 years. Our centralized
           marketplace connects you to the people, technology, data and capacity
         </PCENTER> */}
 
         {/* <button className="btn block md:hidden">
           <span className="btn-text">Contact us</span>
-        </button> */}
+        </button> */} 
       </HeroContent>
       {/* <HeroPromoContainer></HeroPromoContainer> */}
     </HeroContainer>

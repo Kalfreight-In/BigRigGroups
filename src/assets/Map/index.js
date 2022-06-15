@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { isMobile, browserName } from 'react-device-detect';
-import { useHover } from '../../Hooks/Hover';
+import { useHover } from '../../Hooks/Hover'; 
 
 function Map({ Af, Ca }) {
   const [hoverRef, isHovered] = useHover();
@@ -12,7 +12,7 @@ function Map({ Af, Ca }) {
       id="Map"
       // width={isMobile ? '200' : '919.4'}
       // height={isMobile ? '200' : '824.31'}
-      viewBox="0 0 919.5 824.3"
+      viewBox="0 0 919.5 824.3" 
     >
       <g id="Nunawat">
         <path
