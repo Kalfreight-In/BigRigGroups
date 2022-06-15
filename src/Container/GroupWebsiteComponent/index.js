@@ -48,7 +48,7 @@ function GroupWebsiteComponent() {
                   <div className="relative">
                     <div
                       className={
-                        'md:h-60vh xl:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center'
+                        'md:h-groupmainimage lg:h-60vh xl:h-screen h-mobileMainImageHeight w-full bg-cover bg-no-repeat bg-center'
                       }
                       style={{ backgroundImage: `url(${data.imageurl})` }}
                       // src={data.imageurl}
