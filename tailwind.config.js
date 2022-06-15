@@ -108,7 +108,7 @@ module.exports = {
         mobileSecondImage: '90vh',
         businessImage: '65vh',
         '1.8rem': '1.8rem',
-        linkdenheight:'1.9rem'
+        linkdenheight:'1.8rem'
       },
       lineHeight: {
         '44px': '44px',
