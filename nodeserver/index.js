@@ -27,14 +27,14 @@ app.post('/api/v1', (req, res) => {
     service: 'gmail',
 
     auth: {
-      user: 'kalfreightgroup@gmail.com',
-      pass: 'Kal#@09876',
+      user: 'noreply@kalgroup.com',
+      pass: 'Xoc00360',
     },
   });
 
   var mailOptions = {
     from: data.email,
-    to: 'kalfreightgroup@gmail.com',
+    to: 'noreply@kalgroup.com',
     subject: 'Contact Form Submission"',
     html: `<p>${data.name}</p>
           <p>${data.email}</p>
