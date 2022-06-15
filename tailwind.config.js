@@ -46,7 +46,7 @@ module.exports = {
         '36px': '36px',
         '16px': '16px',
         '15px': '15px',
-        headerheading:'3.5rem'
+        headerheading: '3.5rem',
       },
       fontWeight: {
         heading: '600',
@@ -101,6 +101,7 @@ module.exports = {
       height: {
         '40rem': '40rem',
         '65vh': '67vh',
+        '60vh': '60vh',
         '55vh': '55vh',
         'medium-height': '65vh',
         mobileMainImageHeight: '40vh',

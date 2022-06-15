@@ -5,10 +5,10 @@ export default function Abouthome() {
   const aboutdata = AboutusSec[0];
   return (
     <>
-      <div id="aboutus" className="h-medium-height md:h-mobileSecondImage">
+      <div id="aboutus" className="h-medium-height lg:h-mobileSecondImage">
         <div
           // className="h-medium-height "
-          className="h-medium-height md:h-mobileSecondImage md:bg-cover bg-contain bg-no-repeat md:bg-center bg-bottom "
+          className="h-medium-height lg:h-mobileSecondImage md:bg-cover bg-contain bg-no-repeat md:bg-center bg-bottom "
           style={{
             backgroundImage:
               'url(' +
