@@ -26,6 +26,11 @@ z-index: 1;
     height: 50vh;
     
 }
+@media screen and (max-width: 1024px) {
+
+    height: 50vh;
+    
+}
 `;
 export const ContainerMain = Styled.div`
 
@@ -62,7 +67,16 @@ overflow: hidden;
 width: 100vw;
 height: 100vh;
 
+@media screen and (max-width: 768px) {
 
+    height: 50vh;
+    
+}
+@media screen and (max-width: 1024px) {
+
+    height: 50vh;
+    
+}
 `;
 export const WWOCardContainer = Styled.div`
 display: flex;
