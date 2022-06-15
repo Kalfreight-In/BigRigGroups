@@ -97,6 +97,8 @@ module.exports = {
         '35wv': '35wv',
         '1.8rem': '1.8rem',
         texarea: '31rem',
+        contactbutton:'28rem',
+
       },
       height: {
         '40rem': '40rem',

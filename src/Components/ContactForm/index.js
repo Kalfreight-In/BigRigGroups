@@ -60,7 +60,7 @@ const Contactform = () => {
           </h1>
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2 md:mt-0 mt-20">
             Hey! How can we help you today?
-          </p>{' '}
+          </p>{" "}
           <p className="text-neautralform lg:text-left text-center font-Poppins text-md font-bold  mb-2 ">
             Fill in this form for an on-point solution in no time.
           </p>
@@ -157,8 +157,8 @@ const Contactform = () => {
           </div>
         </div>
 
-        <div class="">
-          <div class="">
+        <div className=" ">
+          <div class="flex justify-center items-center">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-password"
@@ -168,7 +168,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-3xl "
+              class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-56 lg:w-full w-full max-w-3xl flex"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>
@@ -178,9 +178,12 @@ const Contactform = () => {
             </p> */}
           </div>
         </div>
-        <div class="lg:flex lg:items-center justify-center items-center">
+        <div
+          // className="lg:flex lg:items-center justify-center items-center"
+          className="flex justify-center items-center"
+        >
           <div>
-            <button className="text-white bg-Lightblue md:rounded rounded-md p-4 md:px-0 px-40 w-28 mt-2  flex justify-center items-center">
+            <button className="text-white bg-Lightblue md:rounded rounded-md p-4 md:px-0 px-40 md:w-56 w-80 lg:w-contactbutton mt-2  flex justify-center items-center">
               {buttonText}
             </button>
           </div>
