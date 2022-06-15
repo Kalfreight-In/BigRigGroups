@@ -37,7 +37,7 @@ export default function Footer() {
           }}
         >
           <div
-            id="mainiconcontainer"
+         
             className=" justify-center items-center pt-4  flex lg:hidden "
           >
             <div id="allicons" className="flex  ">
@@ -48,7 +48,7 @@ export default function Footer() {
                     '_blank'
                   )
                 }
-                className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+                className="text-white  h-1.8rem w-1.8rem mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
               />
               <AiOutlineInstagram
                 onClick={() =>
@@ -57,7 +57,7 @@ export default function Footer() {
                     '_blank'
                   )
                 }
-                className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+                className="text-white h-1.8rem w-1.8rem mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
               />
               <TiSocialLinkedinCircular
                 onClick={() =>
@@ -66,7 +66,7 @@ export default function Footer() {
                     '_blank'
                   )
                 }
-                className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                className="text-white   h-linkdenheight w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
               />
             </div>
           </div>
