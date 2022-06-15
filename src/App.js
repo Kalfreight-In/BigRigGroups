@@ -15,7 +15,6 @@ import { UnderConstruction } from './Components/UnderConstruction';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -59,3 +58,4 @@ function App() {
 }
 
 export default App;
+

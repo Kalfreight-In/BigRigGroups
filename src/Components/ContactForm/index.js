@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import emailjs from 'emailjs-com';
 const Contactform = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

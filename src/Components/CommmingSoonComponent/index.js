@@ -38,7 +38,7 @@ export const CommmingSoonComponentindex = (data) => {
                 className="w-full sm:w-1/2 md:w-1/3 md:w-1/4 xl:w-fit mb-4 mt-12 flex align-center justify-center "
                 key={brand.id}
               >
-                <img
+                <img  
                   src={brand.imageurl}
                   alt={brand.heading}
                   className="mx-6 my-2 align-center w-40 h-16"
