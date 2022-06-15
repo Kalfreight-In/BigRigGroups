@@ -126,15 +126,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.svg-container {
-  display: inline-block;
-  position: relative;
-  width: 50%;
-  margin: 1%;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 .svg-content {
   display: inline-block;
   position: absolute;
