@@ -30,7 +30,7 @@ const HeroSection = () => {
     <HeroContainer>
       <Gradients></Gradients>
       <HeroBg className=" mt-0">
-        <VideoBg playsinline autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg playsInline autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
 
       <HeroContent>

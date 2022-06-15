@@ -53,21 +53,20 @@ const Contactform = () => {
       id="shadow"
       className="p-8 rounded-3xl shadow-2xl flex justify-center items-center   "
     >
-      <form class="w-full max-w-md" onSubmit={(e) => handleSubmit(e)}>
-        <div className=" ">
-          <h1 className="text-Heading text-heading font-bold ml-4 md:block hidden">
+      <form class="w-full max-w-md " onSubmit={(e) => handleSubmit(e)}>
+        <div className="lg:block flex flex-col justify-center items-center ">
+          <h1 className="text-Heading text-heading font-bold  md:block hidden">
             Contact Us
           </h1>
-          <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4 md:mt-0 mt-20">
+          <p className="text-neautralform  font-Poppins text-md font-bold  my-2 md:mt-0 mt-20">
             Hey! How can we help you today?
           </p>{' '}
-          <br />
-          {/* <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
+          <p className="text-neautralform lg:text-left text-center font-Poppins text-md font-bold  mb-2 ">
             Fill in this form for an on-point solution in no time.
-          </p> */}
+          </p>
         </div>
-        <div class="flex flex-wrap  mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 ">
+        <div class="flex flex-col justify-center items-center lg:flex-row  gap-x-3">
+          <div class=" ">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-first-name"
@@ -76,7 +75,7 @@ const Contactform = () => {
             </label> */}
             <input
               onChange={(e) => setName(e.target.value)}
-              className="appearance-none block  bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white md:w-56 w-80 md:ml-0 ml-Input"
+              className="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
               id="grid-first-name"
               type="text"
               placeholder="Name"
@@ -88,8 +87,8 @@ const Contactform = () => {
             </p> */}
           </div>
 
-          <div class="w-full md:w-1/2 px-3">
-            <div class="w-full px-3">
+          <div class="">
+            <div class="">
               {/* <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-password"
@@ -111,8 +110,8 @@ const Contactform = () => {
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap  mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div class="flex flex-col justify-center items-center lg:flex-row  gap-x-3">
+          <div class="">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-first-name"
@@ -123,7 +122,7 @@ const Contactform = () => {
             <input
               onChange={(e) => setphoneno(e.target.value)}
               value={phoneno}
-              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-4"
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
               id="email"
               placeholder="Mobile No"
               type="Phone"
@@ -134,8 +133,8 @@ const Contactform = () => {
             </p> */}
           </div>
 
-          <div class="w-full md:w-1/2 px-3">
-            <div class="w-full px-3">
+          <div class="">
+            <div class="flex  justify-center items-center">
               {/* <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-password"
@@ -158,8 +157,8 @@ const Contactform = () => {
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
+        <div class="">
+          <div class="">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-password"
@@ -169,7 +168,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-3xl md:ml-0 ml-4"
+              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-3xl "
               id="message"
               placeholder="What can we do for you?"
             ></textarea>
@@ -179,14 +178,14 @@ const Contactform = () => {
             </p> */}
           </div>
         </div>
-        <div class="md:flex md:items-center">
+        <div class="lg:flex lg:items-center justify-center items-center">
           <div>
-            <button className="text-white bg-Lightblue md:rounded rounded-md p-4 md:px-0 px-40 w-28 mt-2 ml-4 flex justify-center items-center">
+            <button className="text-white bg-Lightblue md:rounded rounded-md p-4 md:px-0 px-40 w-28 mt-2  flex justify-center items-center">
               {buttonText}
             </button>
           </div>
 
-          <div class="md:w-2/3"></div>
+          {/* <div class="md:w-2/3"></div> */}
         </div>
       </form>
     </div>
