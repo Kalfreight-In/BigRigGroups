@@ -131,7 +131,7 @@ object-fit: cover;
 background: #232a34;
 background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 @media screen and (max-width: 1024) {
-    display: blick;
+    display: block;
     height: 60%;
     object-fit: cover;
 }

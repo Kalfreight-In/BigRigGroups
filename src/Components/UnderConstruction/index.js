@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrandCompnentBrands } from '../../data.js';
 import { Slideshow } from '../Slider/slideshow/index.js';
-export const UnderConstruction = () => {
+export const UnderConstruction = ({
+  icon = 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRig-Big.png',
+}) => {
   return (
     <>
       <div className="mt-28">
@@ -10,10 +12,7 @@ export const UnderConstruction = () => {
             className="flex flex-row align-center justify-center"
             // key={item.id}
           >
-            <img
-              src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRig-Big.png"
-              className=""
-            ></img>
+            <img src={icon} className=""></img>
             {/* <img
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/underConstruction.gif"
               className="w-fit"

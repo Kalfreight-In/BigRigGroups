@@ -4,14 +4,14 @@ import './simplefunction.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ErrorBoundary from './Components/ErrorBoundary';
-// import FooterSection from './Components/FooterSection'; 
+// import FooterSection from './Components/FooterSection';
 import Navbar from './Components/Navbar';
 import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
 import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
-import Trailer_and_Leasing from './pages/TrailerandLeasing'; 
-import { UnderConstruction } from './Components/UnderConstruction'; 
+import Trailer_and_Leasing from './pages/TrailerandLeasing';
+import { UnderConstruction } from './Components/UnderConstruction';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,9 @@ function App() {
 
         <Route
           path="/trailerandleasing"
-          element={<UnderConstruction />}
+          element={
+            <UnderConstruction icon="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png" />
+          }
         ></Route>
         <Route
           path="/partz"
@@ -58,4 +60,3 @@ function App() {
 }
 
 export default App;
-
