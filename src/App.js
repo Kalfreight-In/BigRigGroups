@@ -34,7 +34,7 @@ function App() {
         <Route
           path="/trailerandleasing"
           element={
-            <UnderConstruction icon="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png" />
+            <UnderConstruction icon="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/trailersLogo.png" />
           }
         ></Route>
         <Route

@@ -705,7 +705,36 @@ export const BigPArtzBrands = [
     ],
   },
 ];
+export const BigTrailersBrand = [
+  {
+    id: '0',
+    logo: 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/trailersLogo.png',
+    name: 'KalTrailers',
+    desc: 'Top-notch quality tires and best-in-class services are just a call away.  ',
+    Brands: [
+      {
+        id: '2',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/cooper.png',
+        heading: 'CT_Horiz',
+      },
 
+      {
+        id: '9',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/BKT-logo.png',
+        heading: 'Havco',
+      },
+
+      {
+        id: '14',
+        imageurl:
+          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BigRigTireSponsers/pirelli.png',
+        heading: 'Havco',
+      },
+    ],
+  },
+];
 export const BigTireBrands = [
   {
     id: '0',
