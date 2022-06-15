@@ -24,7 +24,7 @@ export default function Roadservice() {
               Canada and an impressive team of tire specialists enable us to
               respond efficiently and keep you always on the go.
             </p>
-            <div className="flex md:justify-start justify-center items-center md:px-8">
+            <div className="flex md:justify-start justify-center items-center md:px-8"> 
               <button
                 onClick={() => {
                   setCTA("800-977-0010");
