@@ -68,7 +68,10 @@
   }
 }
 .svg-container {
-  width: 100%;
+  width: 50%;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 .item {
   flex: 1;
