@@ -20,7 +20,7 @@ export const UnderConstruction = ({
           </div>
 
           <div className="flex flex-row align-center justify-center md:text-5xl text-2xl text-Heading font-bold  pb-8 md:pr-16">
-            Page Under Contruction
+            Page Under Construction 
           </div>
           <div className="flex flex-row align-center justify-center mt-2 text-Description font-desc text-desc w-full text-center content-center">
             {/* <div className="justify-self-center md:w-1/3 w-max">
