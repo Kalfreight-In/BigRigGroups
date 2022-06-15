@@ -63,7 +63,7 @@ function GroupWebsiteComponent() {
               </motion.div>
               <div className="md:6/12 flex-col flex content-center  flex-1 md:mt-0 mt-8">
                 <div className="md:6/12 flex-col flex content-center justify-center md:w-4/3 flex-1 self-start items-start m-4 laptop:ml-28  mt-2">
-                  <div className="md:flex hidden flex-row items-center content-start mt-2 md:-ml-32 pl-6">
+                  <div className="md:flex hidden flex-row items-center content-start mt-2 md:-ml-32 md:pl-28 pl-6">
                     <motion.img
                       whileInView={{ scale: [0.5, 1] }}
                       transition={{ duration: 0.2, ease: 'easeInOut' }}
