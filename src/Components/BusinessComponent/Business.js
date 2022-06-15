@@ -22,7 +22,8 @@ export const NavLinks = styled(LinkR)`
   // cursor: pointer;
 `;
 export default function Business() {
-  const isDesktop = useMediaQuery('(min-width: 768px)');
+  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isTablet = useMediaQuery('(max-width: 1024px)');
 
   const [hoverRef, isHovered] = useHover();
   const titleAnimation = useSpring({
@@ -48,7 +49,7 @@ export default function Business() {
             <div class=" flex w-full">
               <div class={`gallery-wrap flex md:flex-row flex-col w-fill`}>
                 {mydata.thebox.map((element) =>
-                  !isDesktop ? (
+                  isMobile ? (
                     <NavLinks
                       to={element.url}
                       className="h-businessImage md:bg-cover my-4  bg-contain bg-no-repeat bg-center"
