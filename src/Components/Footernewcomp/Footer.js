@@ -10,7 +10,7 @@ export default function Footer() {
   const [Hinventery, setHinventery] = useState(false);
   const [Hquicklinks, setHquicklinks] = useState(false);
   const [Hcontactus, setHcontactus] = useState(false);
-  
+
   return (
     <>
       <div className="bg-Lightblue ">
@@ -34,10 +34,7 @@ export default function Footer() {
             // backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             width: 'full',
-            
           }}
-
-
         >
           <div
             id="mainiconcontainer"
@@ -77,7 +74,7 @@ export default function Footer() {
             <div className="lg:ml-16 w-max justify-center ml-4 lg:mt-0">
               <div>
                 <img
-                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png" 
+                  src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                   alt="logo"
                   className="2xl:h-28 lg:h-24  h-20 md:block hidden"
                   to="mailto:umarkhurshid3@gmail.com"
@@ -167,7 +164,7 @@ export default function Footer() {
                     className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
                   />
                 </div>
-              </div> */} 
+              </div> */}
             </div>
           </div>
 
