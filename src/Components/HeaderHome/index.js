@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from './media/bgvideo2(1).mp4';
-
+// import { isMobile } from 'react-device-detect';
 import {
   HeroContainer,
   HeroP,
@@ -9,7 +9,7 @@ import {
   HeroPromoContainer,
   VideoBg,
   ContainerMain,
-  Samosa,
+  Samosa, 
 } from './HeroElements';
 
 import styled from 'styled-components';
@@ -25,7 +25,7 @@ const Gradients = styled.div`
 `;
 // ??
 const HeroSection = () => {
-  const isDesktop = useMediaQuery('(min-width: 1024)');
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <HeroContainer>
       <Gradients></Gradients>
@@ -35,13 +35,13 @@ const HeroSection = () => {
 
       <HeroContent>
         <div className="">
-          <div className="text-center text-5xl font-bold text-white">
-            Transforming Trucking Dynamics{' '}
+          <div className="text-center text-3xl md:4xl lg:text-5xl  font-bold text-white">
+            Transforming Trucking Dynamics
           </div>
 
-          <div className="text-center">
+          <div className="text-center text-2xl text-white font-normal mt-4">
             Offering New & Used Dry Vans, Trucks & Reefers
-            {!isDesktop ? <br></br> : null}
+            {isMobile ? <br/> : null}
             OEM Parts, Tires, and Services
           </div>
         </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
           <span className="btn-text">Contact us</span>
         </button> */}
       </HeroContent>
-      <HeroPromoContainer></HeroPromoContainer>
+      {/* <HeroPromoContainer></HeroPromoContainer> */}
     </HeroContainer>
   );
 };
