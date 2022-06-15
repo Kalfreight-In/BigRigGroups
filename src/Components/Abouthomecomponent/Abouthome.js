@@ -11,9 +11,9 @@ export default function Abouthome() {
           className="h-medium-height lg:h-mobileSecondImage md:bg-cover bg-contain bg-no-repeat md:bg-center bg-bottom "
           style={{
             backgroundImage:
-              "url(" +
-              "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png" +
-              ")",
+              'url(' +
+              'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/abouthomeimage.png' +
+              ')',
           }}
         >
           <div>

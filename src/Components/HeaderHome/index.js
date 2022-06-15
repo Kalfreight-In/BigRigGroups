@@ -9,7 +9,7 @@ import {
   HeroPromoContainer,
   VideoBg,
   ContainerMain,
-  Samosa, 
+  Samosa,
 } from './HeroElements';
 
 import styled from 'styled-components';
@@ -25,12 +25,12 @@ const Gradients = styled.div`
 `;
 // ??
 const HeroSection = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <HeroContainer>
       <Gradients></Gradients>
       <HeroBg className=" mt-0">
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg playsinline autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
 
       <HeroContent>
@@ -41,11 +41,11 @@ const HeroSection = () => {
 
           <div className="text-center md:text-2xl text-descnew text-white md:font-normal font-semibold mt-4">
             Offering New & Used Dry Vans, Trucks & Reefers
-            <br/> 
+            <br />
             OEM Parts, Tires, and Services
           </div>
         </div>
-         
+
         {/* <PCENTER class="text-gray-600 p-8">
           Work with a trusted global third-party logistics provider that has 
           been empowering business growth for over 15 years. Our centralized
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
         {/* <button className="btn block md:hidden">
           <span className="btn-text">Contact us</span>
-        </button> */} 
+        </button> */}
       </HeroContent>
       {/* <HeroPromoContainer></HeroPromoContainer> */}
     </HeroContainer>

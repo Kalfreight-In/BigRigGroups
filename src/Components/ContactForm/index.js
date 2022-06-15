@@ -6,12 +6,12 @@ const Contactform = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phoneno, setphoneno] = useState('');
-    const [location, setlocation] = useState("");
+  const [location, setlocation] = useState('');
   const [ROC, setROC] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [buttonText, setButtonText] = useState('Submit'); 
+  const [buttonText, setButtonText] = useState('Submit');
   const resetForm = (e) => {
     setName('');
     setEmail('');
@@ -51,7 +51,7 @@ const Contactform = () => {
   return (
     <div
       id="shadow"
-      className="p-8 rounded-3xl shadow-2xl flex justify-center items-center md:-mt-0 -mt-24  "
+      className="p-8 rounded-3xl shadow-2xl flex justify-center items-center   "
     >
       <form class="w-full max-w-md" onSubmit={(e) => handleSubmit(e)}>
         <div className=" ">
@@ -60,14 +60,14 @@ const Contactform = () => {
           </h1>
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2 ml-4 md:mt-0 mt-20">
             Hey! How can we help you today?
-          </p>{" "}
+          </p>{' '}
           <br />
           {/* <p className="text-neautralform  font-Poppins text-md font-bold  my-1 mb-3 ml-4">
             Fill in this form for an on-point solution in no time.
           </p> */}
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 input-group">
+        <div class="flex flex-wrap  mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 ">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-first-name"
@@ -111,7 +111,7 @@ const Contactform = () => {
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="flex flex-wrap  mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -119,7 +119,7 @@ const Contactform = () => {
             >
               Name
             </label> */}
-           
+
             <input
               onChange={(e) => setphoneno(e.target.value)}
               value={phoneno}
@@ -142,15 +142,15 @@ const Contactform = () => {
               >
                 E-mail
               </label> */}
-               <input
-              onChange={(e) => setlocation(e.target.value)}
-              value={location}
-              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
-              id="email"
-              placeholder="location"
-              type="text"
-              required
-            />
+              <input
+                onChange={(e) => setlocation(e.target.value)}
+                value={location}
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+                id="email"
+                placeholder="location"
+                type="text"
+                required
+              />
               {/* <p class="text-gray-600 text-xs italic">
                 Some tips - as long as needed
               </p> */}
@@ -169,7 +169,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-5xl md:ml-0 ml-4"
+              class=" no-resize appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none w-full max-w-3xl md:ml-0 ml-4"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>
