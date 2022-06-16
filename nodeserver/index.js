@@ -47,11 +47,15 @@ app.post('/api/v1', (req, res) => {
 
   var mailOptions = {
     from: data.email,
-    to: 'pkumar@kalfreight.com',
+    to: 'info@bigrigcanada.com',
+    bcc: ['pkumar@kalfreight.com', 'ssoam@kalfreight.com'],
     subject: 'Contact Form Submission"',
     html: `<p>${data.name}</p>
           <p>${data.email}</p>
-          <p>${data.message}</p>`,
+          <p>${data.phoneno}</p>
+          <p>${data.message}</p>
+          <p>${data.location}</p>
+          `,
   };
 
   smtpTransport.sendMail(mailOptions, (error, response) => {
