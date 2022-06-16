@@ -32,6 +32,7 @@ const Contactform = () => {
     //     console.log(error.text);
     //   }
     // );
+
     let data = {
       name: name,
       email: email,
