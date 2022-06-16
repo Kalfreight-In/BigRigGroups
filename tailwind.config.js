@@ -98,6 +98,8 @@ module.exports = {
         "1.8rem": "1.8rem",
         texarea: "31rem",
         contactbutton: "28rem",
+        contactinput:'13.5rem',
+        newinput:'13rem'
       },
       height: {
         "40rem": "40rem",

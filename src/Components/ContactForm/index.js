@@ -76,7 +76,7 @@ const Contactform = () => {
             </label> */}
             <input
               onChange={(e) => setName(e.target.value)}
-              className="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              className="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-newinput w-80 md:ml-0 ml-1"
               id="grid-first-name"
               type="text"
               placeholder="Name"
@@ -99,7 +99,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-newinput w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="Email Address"
                 type="email"
@@ -123,7 +123,7 @@ const Contactform = () => {
             <input
               onChange={(e) => setphoneno(e.target.value)}
               value={phoneno}
-              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-contactinput w-80 md:ml-0 ml-1"
               id="email"
               placeholder="Mobile No"
               type="Phone"
@@ -145,7 +145,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => setlocation(e.target.value)}
                 value={location}
-                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-contactinput w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="location"
                 type="text"
