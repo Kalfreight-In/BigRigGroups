@@ -8,7 +8,7 @@ export default function Abouthome() {
       <div id="aboutus" className="h-medium-height lg:h-mobileSecondImage">
         <div
           // className="h-medium-height "
-          className="h-medium-height lg:h-mobileSecondImage md:bg-cover bg-contain bg-no-repeat md:bg-center bg-bottom "
+          className="h-medium-height lg:h-75vh xl:h-mobileSecondImage md:bg-cover bg-contain bg-no-repeat md:bg-center bg-bottom "
           style={{
             backgroundImage:
               'url(' +
