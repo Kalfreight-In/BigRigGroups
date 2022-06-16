@@ -13,11 +13,12 @@ import { MapConatiner } from '../../Container/MapContainer';
 import './Home.scss';
 import { BrandCompnentBrands } from '../../data';
 import Business from '../../Components/BusinessComponent/Business';
-
+import Mapnew from '../../Components/Mapclickcomp/Mapnew';
 function Home() {
   return (
     <>
       <HeroSection> </HeroSection>
+      <Mapnew/>
       <Business></Business>
       {/* {isDesktop ? <Business /> : null} */}
 

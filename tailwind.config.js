@@ -99,7 +99,8 @@ module.exports = {
         texarea: "31rem",
         contactbutton: "28rem",
         contactinput:'13.5rem',
-        newinput:'13rem'
+        newinput:'13rem',
+        textareaInput:'20rem'
       },
       height: {
         "40rem": "40rem",
@@ -112,7 +113,8 @@ module.exports = {
         businessImage: "65vh",
         "1.8rem": "1.8rem",
         linkdenheight: "1.8rem",
-        groupmainimage: "75vh",
+        groupmainimage: "100vh",
+       
       },
       lineHeight: {
         "44px": "44px",
