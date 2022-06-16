@@ -13,28 +13,41 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-Lightblue">
+      <div
+        className="bg-Lightblue md:bg-cover bg-contain"
+        style={{
+          backgroundImage:
+            'url(' +
+            'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
+            ')',
+
+          backgroundPosition: 'center',
+          // backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: 'full',
+        }}
+      >
         <div className="p-8  md:p-0 xl:block flex justify-center ">
           <img
             src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
             alt="logo"
-            className="2xl:h-28 xl:h-24  h-20 xl:hidden flex md:ml-0 xl:ml-36 "
+            className="2xl:h-28 xl:h-24  h-20 xl:hidden flex md:ml-0 xl:ml-36 mt-4"
           />
         </div>
 
         <div
           className="flex md:flex-row flex-col-reverse 2xl:pb-8 xl:pt-8 md:pt-4 md:flex md:justify-between md:bg-cover bg-contain"
-          style={{
-            backgroundImage:
-              'url(' +
-              'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
-              ')',
+          // style={{
+          //   backgroundImage:
+          //     'url(' +
+          //     'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Map/map-bg.png' +
+          //     ')',
 
-            backgroundPosition: 'center',
-            // backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            width: 'full',
-          }}
+          //   backgroundPosition: 'center',
+          //   // backgroundSize: 'cover',
+          //   backgroundRepeat: 'no-repeat',
+          //   width: 'full',
+          // }}
         >
           <div className=" justify-center items-center pt-4   flex md:hidden ">
             <div id="allicons" className="flex  ">
