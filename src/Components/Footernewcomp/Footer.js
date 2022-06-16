@@ -14,11 +14,11 @@ export default function Footer() {
   return (
     <>
       <div className="bg-Lightblue">
-        <div className="p-8  md:p-0 md:block flex justify-center ">
+        <div className="p-8  md:p-0 lg:block flex justify-center ">
           <img
             src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
             alt="logo"
-            className="2xl:h-28 lg:h-24  h-20 md:hidden flex md:ml-0 lg:ml-36 "
+            className="2xl:h-28 lg:h-24  h-20 lg:hidden flex md:ml-0 lg:ml-36 "
           />
         </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
             width: 'full',
           }}
         >
-          <div className=" justify-center items-center pt-4  flex md:hidden ">
+          <div className=" justify-center items-center pt-4  flex lg:hidden ">
             <div id="allicons" className="flex  ">
               <RiFacebookCircleLine
                 onClick={() =>
@@ -68,8 +68,8 @@ export default function Footer() {
             </div>
           </div>
           <div className=" ">
-            <div className="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12 w-screen">
-              <div className="footer-info lg:w-1/3 md:px-4 md:block hidden items-center justify-center">
+            <div className="lg:flex lg:flex-wrap lg:-mx-4 py-6 lg:pb-12 w-screen">
+              <div className="footer-info lg:w-1/3 lg:px-4 lg:block hidden items-center justify-center">
                 <div className="lg:ml-16 w-max justify-center ml-4 lg:mt-0">
                   <div>
                     <img
@@ -166,7 +166,7 @@ export default function Footer() {
               </div> */}
                 </div>
               </div>
-              <div className="md:w-2/3 lg:w-1/3 md:px-4 ">
+              <div className="lg:w-2/3 xl:w-1/3 md:px-4 ">
                 <div className="sm:flex">
                   <div className="sm:flex-1">
                     <div
@@ -177,43 +177,43 @@ export default function Footer() {
                         setHcontactus(false);
                       }}
                     >
-                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal md:text-left text-center   ">
+                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal lg:text-left text-center   ">
                         Inventory
                       </h1>
                     </div>
 
                     <div
-                      className={`text-white 2xl:leading-8 leading-6 md:block   ${
+                      className={`text-white 2xl:leading-8 leading-6 lg:block   ${
                         Hinventery ? '' : 'hidden'
                       }`}
                     >
                       <Link
                         to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center  "
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  lg:text-left text-center  "
                       >
                         Flatbed for sale
                       </Link>
                       <Link
                         to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  lg:text-left text-center"
                       >
                         Used Trucks for sale
                       </Link>
                       <Link
                         to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center "
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  lg:text-left text-center "
                       >
                         New Trailers for sale
                       </Link>
                       <Link
                         to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center "
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  lg:text-left text-center "
                       >
                         Used Dry van for sale
                       </Link>
                       <Link
                         to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center "
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  lg:text-left text-center "
                       >
                         Reefer trailers for sale
                       </Link>
@@ -229,13 +229,13 @@ export default function Footer() {
                         setHcontactus(false);
                       }}
                     >
-                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal md:text-left  text-center ">
+                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal lg:text-left  text-center ">
                         Quick Links
                       </h1>
                     </div>
 
                     <div
-                      className={`text-white  2xl:leading-8 leading-6 md:block  ${
+                      className={`text-white  2xl:leading-8 leading-6 lg:block  ${
                         Hquicklinks ? '' : 'hidden'
                       }`}
                     >
@@ -249,7 +249,7 @@ export default function Footer() {
 
                         {window.location.pathname == '/' ? (
                           <Slink
-                            className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center cursor-pointer "
+                            className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center cursor-pointer "
                             to="aboutus"
                             smooth={true}
                             duration={1000}
@@ -261,7 +261,7 @@ export default function Footer() {
                           </Slink>
                         ) : (
                           <a
-                            className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center cursor-pointer "
+                            className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center cursor-pointer "
                             href="/#aboutus"
                             smooth={true}
                             duration={1000}
@@ -276,7 +276,7 @@ export default function Footer() {
                       <div>
                         <Link
                           to="/newsevents"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center "
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center "
                         >
                           News & Events
                         </Link>
@@ -284,7 +284,7 @@ export default function Footer() {
                       <div>
                         <Link
                           to="/newsevents"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center  "
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center  "
                         >
                           Parts Inventory
                         </Link>
@@ -292,7 +292,7 @@ export default function Footer() {
                       <div>
                         <Link
                           to="/newsevents"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center "
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center "
                         >
                           Financing Options
                         </Link>
@@ -300,14 +300,14 @@ export default function Footer() {
                       <div>
                         <Link
                           to="/newsevents"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  md:text-left text-center"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   lg:text-left text-center"
                         >
                           24X7 Roadside Assistance
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="flex-1 block md:hidden mt-4 sm:mt-0">
+                  <div className="flex-1 block lg:hidden mt-4 sm:mt-0">
                     <div
                       className="text-white cursor-pointer"
                       onClick={() => {
@@ -317,18 +317,18 @@ export default function Footer() {
                         setHcontactus(!Hcontactus);
                       }}
                     >
-                      <h1 className=" md:font-bold font-normal md:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
+                      <h1 className=" md:font-bold font-normal  lg:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
                         Contact Us
                       </h1>
                     </div>
 
                     <div
-                      className={`text-white 2xl:leading-8 leading-6 md:block ${
+                      className={`text-white 2xl:leading-8 leading-6 lg:block ${
                         Hcontactus ? '' : 'hidden'
                       }`}
                     >
-                      <div className="flex flex-row space-x-2  align-center justify-center md:justify-start mt-3">
-                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8 ">
+                      <div className="flex flex-row space-x-2  align-center justify-center lg:justify-start mt-3">
+                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8 ">
                           Careers
                         </div>
                         <span> » </span>
@@ -336,13 +336,13 @@ export default function Footer() {
                           href="mailto:hr@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8"
                         >
                           hr@bigrigcanada.com{' '}
                         </a>
                       </div>
-                      <div className="flex flex-row space-x-2 align-center justify-center md:justify-start mt-3">
-                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8">
+                      <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start mt-3">
+                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8">
                           Tires
                         </div>
                         <span> » </span>
@@ -350,13 +350,13 @@ export default function Footer() {
                           href="mailto:tires@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  md:text-left text-center md:ml-0 ml-8"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   lg:text-left text-center md:ml-0 ml-8"
                         >
                           tires@bigrigcanada.com
                         </a>
                       </div>
-                      <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                      <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                        <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                           {' '}
                           Partz{' '}
                         </div>
@@ -365,14 +365,14 @@ export default function Footer() {
                           href="mailto:partz@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8"
                         >
                           partz@bigrigcanada.com{' '}
                         </a>
                       </div>
 
-                      <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                        <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                      <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                        <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                           Trailers & Leasing
                         </div>
                         <span> » </span>
@@ -380,13 +380,13 @@ export default function Footer() {
                           href="mailto:trailers@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8"
                         >
                           trailers@bigrigcanada.com
                         </a>
                       </div>
-                      <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                        <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                      <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                        <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                           For any other inquiry
                         </div>
                         <span> » </span>
@@ -394,7 +394,7 @@ export default function Footer() {
                           href="mailto:info@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
-                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center cursor-pointer md:ml-0 ml-8"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center cursor-pointer md:ml-0 ml-8"
                         >
                           info@bigrigcanada.com
                         </a>
@@ -448,7 +448,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="  md:flex-1 flex-1 md:w-2/12 hidden md:flex md:justify-end justify-center  ">
+              <div className="  lg:flex-1 flex-1 lg:w-2/12 hidden lg:flex md:justify-end justify-center  ">
                 <div>
                   <div
                     className="text-white cursor-pointer"
@@ -459,7 +459,7 @@ export default function Footer() {
                       setHcontactus(!Hcontactus);
                     }}
                   >
-                    <h1 className=" md:font-bold font-normal md:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
+                    <h1 className=" md:font-bold font-normal  lg:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
                       Contact Us
                     </h1>
                   </div>
@@ -469,8 +469,8 @@ export default function Footer() {
                       Hcontactus ? '' : 'hidden'
                     }`}
                   >
-                    <div className="flex flex-row space-x-2  align-center justify-center md:justify-start mt-3">
-                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8 ">
+                    <div className="flex flex-row space-x-2  align-center justify-center lg:justify-start mt-3">
+                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8 ">
                         Careers
                       </div>
                       <span> » </span>
@@ -478,13 +478,13 @@ export default function Footer() {
                         href="mailto:hr@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8"
                       >
                         hr@bigrigcanada.com{' '}
                       </a>
                     </div>
-                    <div className="flex flex-row space-x-2 align-center justify-center md:justify-start mt-3">
-                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8">
+                    <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start mt-3">
+                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8">
                         Tires
                       </div>
                       <span> » </span>
@@ -492,13 +492,13 @@ export default function Footer() {
                         href="mailto:tires@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  md:text-left text-center md:ml-0 ml-8"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   lg:text-left text-center md:ml-0 ml-8"
                       >
                         tires@bigrigcanada.com
                       </a>
                     </div>
-                    <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                    <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                      <div className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                         {' '}
                         Partz{' '}
                       </div>
@@ -507,14 +507,14 @@ export default function Footer() {
                         href="mailto:partz@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center md:ml-0 ml-8"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center md:ml-0 ml-8"
                       >
                         partz@bigrigcanada.com{' '}
                       </a>
                     </div>
 
-                    <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                      <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                    <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                      <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                         Trailers & Leasing
                       </div>
                       <span> » </span>
@@ -522,13 +522,13 @@ export default function Footer() {
                         href="mailto:trailers@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8"
                       >
                         trailers@bigrigcanada.com
                       </a>
                     </div>
-                    <div className="flex flex-row space-x-2 align-center justify-center md:justify-start  mt-3">
-                      <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover   md:text-left text-center md:ml-0 ml-8">
+                    <div className="flex flex-row space-x-2 align-center justify-center lg:justify-start  mt-3">
+                      <div className=" antialiased w-max block md:text-16px text-navsmall hover:text-yellow-shadowhover    lg:text-left text-center md:ml-0 ml-8">
                         For any other inquiry
                       </div>
                       <span> » </span>
@@ -536,7 +536,7 @@ export default function Footer() {
                         href="mailto:info@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover    md:text-left text-center cursor-pointer md:ml-0 ml-8"
+                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     lg:text-left text-center cursor-pointer md:ml-0 ml-8"
                       >
                         info@bigrigcanada.com
                       </a>
@@ -589,13 +589,13 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="footer-info lg:w-1/3 md:px-4 md:hidden flex items-center justify-center">
+              <div className="footer-info lg:w-1/3 md:px-4 lg:hidden flex items-center justify-center">
                 <div className="lg:ml-16 w-max justify-center ml-4 lg:mt-0">
                   <div>
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                       alt="logo"
-                      className="2xl:h-28 lg:h-24  h-20 md:block hidden"
+                      className="2xl:h-28 lg:h-24  h-20 lg:block hidden"
                       to="mailto:umarkhurshid3@gmail.com"
                     />
                   </div>

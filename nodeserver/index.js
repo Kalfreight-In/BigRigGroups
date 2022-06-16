@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,17 +24,30 @@ app.post('/api/v1', (req, res) => {
   var data = req.body;
   console.log(`data is ${data.name}`);
   var smtpTransport = nodemailer.createTransport({
-    service: 'gmail',
+    // Host: 'smtp.office365.com',
 
+    // Port: 587,
+
+    // auth: {
+    //   user: 'noreply@kalgroup.com',
+    //   pass: 'Xoc00360',
+    // },
+    // tls: {
+    //   ciphers: 'SSL',
+    // },
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
     auth: {
-      user: 'noreply@kalgroup.com',
-      pass: 'Xoc00360',
+      user: 'kalfreightgroup@gmail.com',
+      pass: 'qszaswknsvaicxju',
     },
   });
 
   var mailOptions = {
     from: data.email,
-    to: 'noreply@kalgroup.com',
+    to: 'pkumar@kalfreight.com',
     subject: 'Contact Form Submission"',
     html: `<p>${data.name}</p>
           <p>${data.email}</p>
