@@ -12,6 +12,7 @@ import Footer from './Components/Footernewcomp/Footer';
 import BottomBar from './Components/Bottombar';
 import Trailer_and_Leasing from './pages/TrailerandLeasing';
 import { UnderConstruction } from './Components/UnderConstruction';
+import Mapnew from './Components/Mapclickcomp/Mapnew';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
         />
 
         <Route path="/Bigrigcananda" element={<></>} />
+        <Route path="/mappage" element={<Mapnew/>} /> 
       </Routes>
       <Footer />
       {/* <FooterSection></FooterSection> */}

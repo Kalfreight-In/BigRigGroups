@@ -13,7 +13,6 @@ import { MapConatiner } from '../../Container/MapContainer';
 import './Home.scss';
 import { BrandCompnentBrands } from '../../data';
 import Business from '../../Components/BusinessComponent/Business';
-
 function Home() {
   return (
     <>
