@@ -69,8 +69,8 @@ export default function Footer() {
           </div>
           <div className=" ">
             <div className="xl:flex xl:flex-wrap xl:-mx-4 py-6 xl:pb-12 w-screen">
-              <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items-center justify-center">
-                <div className="xl:ml-16 w-max justify-center ml-4 xl:mt-0">
+              <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items- start justify- start">
+                <div className="xl:ml-16 w-max justify- start ml-4 xl:mt-0">
                   <div>
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
@@ -79,13 +79,9 @@ export default function Footer() {
                       to="mailto:umarkhurshid3@gmail.com"
                     />
                   </div>
-                  <div className="text-white flex justify-center  xl:mt-12 mt-4 ml-0 ">
+
+                  <div className="text-white flex justify-start  xl:mt-12 mt-4 ml-0 ">
                     <div className="mt-3">
-                      {/* <img
-                    src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
-                    alt=""
-                    className="text-white mt-2 "
-                  /> */}
                       <AiOutlineClockCircle className="md:h-8 h-6 md:w-8 w-6 " />
                     </div>
                     <div className="block xl:ml-3 ml-0">
@@ -97,26 +93,21 @@ export default function Footer() {
                     </div>
                   </div>
 
-                  <div className="text-white flex xl:justify-center justify-start mt-4 md:ml-0 ml-0 ">
+                  <div className="text-white flex xl:justify- start justify-start mt-4 md:ml-0 ml-0 ">
                     <div className="mt-2">
                       <a href="tel:8009770010" target="_blank" rel="noreferrer">
                         <img
                           src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
                           alt=""
                           className="text-white"
-                          width={15}
+                          width={20}
                         />
                       </a>
                     </div>
                     <div className="ml-4">
-                      {/* <div className="block">
-                    Why speak to robots when
-                    <br></br>
-                    we have subject matter experts just a call away.
-                  </div> */}
                       <a href="tel:8009770010" target="_blank">
                         {' '}
-                        <div className="md:text-xl xl:text-2xl text-xl font-bold xl:font-semibold  ">
+                        <div className="md:text-xl xl:text-2xl text-xl font-bold xl:font-semibold ml-2  ">
                           800-977-0010
                         </div>{' '}
                       </a>
@@ -124,46 +115,46 @@ export default function Footer() {
                   </div>
 
                   <div className="text-white flex mb-8 xl:mb-2  pt-5">
-                    <div className="xl:ml-4 ml-0">
-                      <div className="w-full  md:ml-0 xl:ml-12 ml:-0 ">
+                    <div className=" ml-0">
+                      <div className="w-full  md:ml-0  ml:-0 ">
                         English, ਪੰਜਾਬੀ, Español, हिन्दी,
                       </div>
                     </div>
                   </div>
                   {/* <div
-                id="mainiconcontainer"
-                className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
-              >
-                <div id="allicons" className="flex justify-between  ">
-                  <RiFacebookCircleLine
-                    onClick={() =>
-                      window.open(
-                        'https://www.facebook.com/BigRiggroups/',
-                        '_blank'
-                      )
-                    }
-                    className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
-                  />
-                  <AiOutlineInstagram
-                    onClick={() =>
-                      window.open(
-                        'https://www.instagram.com/bigriggroup/',
-                        '_blank'
-                      )
-                    }
-                    className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
-                  />
-                  <TiSocialLinkedinCircular
-                    onClick={() =>
-                      window.open(
-                        'https://www.linkedin.com/company/bigriggroup',
-                        '_blank'
-                      )
-                    }
-                    className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
-                  />
-                </div>
-              </div> */}
+id="mainiconcontainer"
+className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
+>
+<div id="allicons" className="flex justify-between  ">
+  <RiFacebookCircleLine
+    onClick={() =>
+      window.open(
+        'https://www.facebook.com/BigRiggroups/',
+        '_blank'
+      )
+    }
+    className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+  />
+  <AiOutlineInstagram
+    onClick={() =>
+      window.open(
+        'https://www.instagram.com/bigriggroup/',
+        '_blank'
+      )
+    }
+    className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+  />
+  <TiSocialLinkedinCircular
+    onClick={() =>
+      window.open(
+        'https://www.linkedin.com/company/bigriggroup',
+        '_blank'
+      )
+    }
+    className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+  />
+</div>
+</div> */}
                 </div>
               </div>
               <div className="  xl:w-1/3 md:px-4 ">
@@ -589,8 +580,8 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="footer-info xl:w-1/3 md:px-4 xl:hidden flex items-center justify-center">
-                <div className="xl:ml-16 w-max justify-center ml-4 xl:mt-0">
+              <div className="footer-info xl:w-1/3 md:px-4 xl:hidden flex items-center justify-center mt-4">
+                <div className="xl:ml-16 w-max justify-center items-center  flex flex-col ml-4 xl:mt-0">
                   <div>
                     <img
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
@@ -599,47 +590,53 @@ export default function Footer() {
                       to="mailto:umarkhurshid3@gmail.com"
                     />
                   </div>
-                  <div className="text-white flex justify-center  xl:mt-12 mt-4 ml-0 ">
-                    <div className="mt-3">
-                      {/* <img
+                  <div className="md:flex block md:flex-row gap-x-8">
+                    <div className="text-white flex justify-center  xl:mt-12 mt-4 ml-0 ">
+                      <div className="mt-3">
+                        {/* <img
                     src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectoremail.svg"
                     alt=""
                     className="text-white mt-2 "
                   /> */}
-                      <AiOutlineClockCircle className="md:h-8 h-6 md:w-8 w-6 " />
-                    </div>
-                    <div className="block xl:ml-3 ml-0">
-                      {/* <div className="block">Working hours</div> */}
-                      <div className="md:text-xl text-16px ml-2 xl:ml-0 text-xl md:font-bold font-semibold ">
-                        8 AM to 5 PM <br />
-                        (Monday to Friday) 
+                        <AiOutlineClockCircle className="md:h-8 h-6 md:w-8 w-6 " />
+                      </div>
+                      <div className="block xl:ml-3 ml-0">
+                        {/* <div className="block">Working hours</div> */}
+                        <div className="md:text-xl text-16px ml-2 xl:ml-0 text-xl md:font-bold font-semibold ">
+                          8 AM to 5 PM <br />
+                          (Monday to Friday) 
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="text-white flex xl:justify-center justify-start mt-4 md:ml-0 ml-0 ">
-                    <div className="mt-2">
-                      <a href="tel:8009770010" target="_blank" rel="noreferrer">
-                        <img
-                          src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
-                          alt=""
-                          className="text-white"
-                          width={15}
-                        />
-                      </a>
-                    </div>
-                    <div className="ml-4">
-                      {/* <div className="block">
+                    <div className="text-white flex xl:justify-center justify-start mt-4 md:ml-0 ml-0 ">
+                      <div className="mt-2">
+                        <a
+                          href="tel:8009770010"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/Vectorphone.svg"
+                            alt=""
+                            className="text-white"
+                            width={23}
+                          />
+                        </a>
+                      </div>
+                      <div className="ml-4">
+                        {/* <div className="block">
                     Why speak to robots when
                     <br></br>
                     we have subject matter experts just a call away.
                   </div> */}
-                      <a href="tel:8009770010" target="_blank">
-                        {' '}
-                        <div className="md:text-xl xl:text-2xl text-xl font-bold xl:font-semibold  ">
-                          800-977-0010
-                        </div>{' '}
-                      </a>
+                        <a href="tel:8009770010" target="_blank">
+                          {' '}
+                          <div className="md:text-2xl text-lg font-bold xl:font-semibold  ">
+                            800-977-0010
+                          </div>{' '}
+                        </a>
+                      </div>
                     </div>
                   </div>
 
