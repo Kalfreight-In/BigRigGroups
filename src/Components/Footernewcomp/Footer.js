@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
           </div>
           <div className=" ">
-            <div className="xl:flex xl:flex-wrap xl:-mx-4 py-6 xl:pb-12 w-screen">
+            <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6 xl:pb-12 w-screen"> 
               <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items- start justify- start">
                 <div className="xl:ml-16 w-max justify- start ml-4 xl:mt-0">
                   <div>
