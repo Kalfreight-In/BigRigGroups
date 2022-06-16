@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrandCompnentBrands } from '../../data.js';
 import { Slideshow } from '../Slider/slideshow/index.js';
+import { BigTrailersBrand } from '../../data.js';
 export const UnderConstruction = ({
   icon = 'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BigRig-Big.png',
 }) => {
@@ -29,7 +30,10 @@ export const UnderConstruction = ({
 
             <br />
           </div>
-          <Slideshow data={BrandCompnentBrands} smallSlider={true}></Slideshow>
+          <Slideshow
+            data={BigTrailersBrand[0].Brands}
+            smallSlider={true}
+          ></Slideshow>
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div
