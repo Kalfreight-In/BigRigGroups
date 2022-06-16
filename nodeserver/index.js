@@ -50,11 +50,11 @@ app.post('/api/v1', (req, res) => {
     to: 'info@bigrigcanada.com',
     bcc: ['pkumar@kalfreight.com', 'ssoam@kalfreight.com'],
     subject: 'Contact Form Submission"',
-    html: `<p>${data.name}</p>
-          <p>${data.email}</p>
-          <p>${data.phoneno}</p>
-          <p>${data.message}</p>
-          <p>${data.location}</p>
+    html: `<p>Name  ${data.name}</p>
+          <p>Email ${data.email}</p>
+          <p>Phone no ${data.phoneno}</p>
+          <p>message ${data.message}</p>
+          <p>location ${data.location}</p>
           `,
   };
 
