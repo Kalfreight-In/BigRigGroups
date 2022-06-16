@@ -8,7 +8,7 @@ import Link from 'react-scroll/modules/components/Link';
 import { useState } from 'react';
 
 function GroupWebsiteComponent() {
-  const [showmore, setshowmore] = useState(false);
+  const [showmore, setshowmore] = useState(true);
   return (
     <>
       <div
@@ -102,7 +102,7 @@ function GroupWebsiteComponent() {
                               setshowmore(!showmore);
                             }}
                           >
-                            Show More
+                            {showmore ? 'Show More' : 'Show less'}
                           </div>
                         </>
                       ) : (
