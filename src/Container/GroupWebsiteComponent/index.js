@@ -97,7 +97,7 @@ function GroupWebsiteComponent() {
                             {data.desc}
                           </p>
                           <div
-                            className="text-lg underline text-sky-400 cursor-pointer block xl:hidden"
+                            className="text-lg underline text-sky-400 cursor-pointer hidden md:block lg:hidden"
                             onClick={() => {
                               setshowmore(!showmore);
                             }}
@@ -107,7 +107,9 @@ function GroupWebsiteComponent() {
                         </>
                       ) : (
                         <div
-                          className={`xl:block  ${showmore ? 'hidden' : ' '}`}
+                          className={`lg:block block   ${
+                            showmore ? 'md:hidden ' : ' '
+                          }`}
                         >
                           <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
                             {data.desc}
