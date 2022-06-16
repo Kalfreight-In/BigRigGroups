@@ -126,7 +126,7 @@ const Contactform = () => {
             <input
               onChange={(e) => setphoneno(e.target.value)}
               value={phoneno}
-              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+              class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-fit w-80 md:ml-0 ml-1"
               id="email"
               placeholder="Mobile No"
               type="Phone"
@@ -148,7 +148,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => setlocation(e.target.value)}
                 value={location}
-                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-56 w-80 md:ml-0 ml-1"
+                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 md:w-48 w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="location"
                 type="text"
@@ -161,7 +161,7 @@ const Contactform = () => {
           </div>
         </div>
 
-        <div className=" ">
+        <div className="w-full">
           <div class="flex justify-center items-center">
             {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -172,7 +172,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-52 lg:w-full w-full md:max-w-3xl max-w-textareawidth flex"
+              class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3  leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-56 lg:w-full w-full md:max-w-3xl max-w-textareawidth flex"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>
