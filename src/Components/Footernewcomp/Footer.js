@@ -49,7 +49,7 @@ export default function Footer() {
           //   width: 'full',
           // }}
         >
-          <div className=" justify-center items-center pb-4  flex md:hidden ">
+          {/* <div className=" justify-center items-center pb-4  flex md:hidden ">
             <div id="allicons" className="flex  ">
               <RiFacebookCircleLine
                 onClick={() =>
@@ -79,7 +79,7 @@ export default function Footer() {
                 className="text-white   h-linkdenheight w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
               />
             </div>
-          </div>
+          </div> */}
           <div className=" ">
             <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6 xl:pb-12 w-screen">
               <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items- start justify- start">
@@ -415,7 +415,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                     </Link>
                   </div> */}
 
-                      <div
+                      {/* <div
                         id="mainiconcontainer"
                         className=" justify-end mr-28 pt-4 pr-16 hidden xl:flex "
                       >
@@ -448,7 +448,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                             className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
