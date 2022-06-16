@@ -24,10 +24,10 @@ export default function Roadservice() {
               Canada and an impressive team of tire specialists enable us to
               respond efficiently and keep you always on the go.
             </p>
-            <div className="flex md:justify-start justify-center items-center md:px-8"> 
+            <div className="flex md:justify-start justify-center items-center md:px-8">
               <button
                 onClick={() => {
-                  setCTA("800-977-0010");
+                  setCTA('800-977-0010');
                 }}
                 className="text-white bg-yellow-bg  font-semibold  mt-4 rounded-md shadow-sm hover:shadow-md shadow-yellow-shadow transition-all hover:drop-shadow-lg   2xl:w-80 lg:w-56 w-full md:w-52 2xl:h-16 h-12 2xl:text-2xl lg:text-md md:text-md   2xl:p-0 p-2 flex justify-center items-center"
               >
@@ -35,11 +35,16 @@ export default function Roadservice() {
               </button>
             </div>
           </div>
-          <div className="  flex-1">
+          <div
+            className="flex-1 bg-cover"
+            style={{
+              backgroundImage: `url(https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/blacknewtruck.png)`,
+            }}
+          >
             <img
               src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/blacknewtruck.png"
               alt="truck"
-              className="w-full "
+              className="w-full block md:hidden"
             />
           </div>
         </div>

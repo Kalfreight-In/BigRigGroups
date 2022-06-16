@@ -5,8 +5,10 @@ import BgImage from '../../assets/Images/GroupWebsitesBackground.png';
 import { GroupWebsiteComponentdata } from '../../data.js';
 import ContactSection from '../../Components/ContactSection1';
 import Link from 'react-scroll/modules/components/Link';
+import { useState } from 'react';
 
 function GroupWebsiteComponent() {
+  const [showmore, setshowmore] = useState(false);
   return (
     <>
       <div
@@ -80,6 +82,7 @@ function GroupWebsiteComponent() {
                       </h2>
                     </div>
                   </div>
+
                   {data.desc.map((data) => (
                     <div
                       className="2xl:w-3/4 2xl:mt-4 md:mt-2 md:mx-0 mx-6 "
@@ -88,21 +91,44 @@ function GroupWebsiteComponent() {
                       {/* <h2 className="2xl:mt-4  md:mt-2 text-2xl text-Heading font-bold md:text-subheading ">
                         {data.head}
                       </h2> */}
-                      <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
-                        {data.desc}
-                      </p>
-                      {data.desc1 ? (
-                        <div className="mt-2 md:mr-6 2xl:mr-0">
-                          <p className="text-Description font-desc text-descnew text-justify ">
-                            {data.desc1[0].head}
+                      {data.id == 1 ? (
+                        <>
+                          <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
+                            {data.desc}
                           </p>
-                          {data.desc1[0].desc.map((info) => (
-                            <p className=" laptop:mt-2 text-Description font-desc text-descnew text-justify md:mt-2 mt-4">
-                              * {info.desc}
-                            </p>
-                          ))}
+                          <div
+                            className="text-lg underline text-sky-400 cursor-pointer block xl:hidden"
+                            onClick={() => {
+                              setshowmore(!showmore);
+                            }}
+                          >
+                            Show More
+                          </div>
+                        </>
+                      ) : (
+                        <div
+                          className={`xl:block  ${showmore ? 'hidden' : ' '}`}
+                        >
+                          <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
+                            {data.desc}
+                          </p>
+                          {data.desc1 ? (
+                            <div className="mt-2 md:mr-6 2xl:mr-0  ">
+                              <p className="text-Description font-desc text-descnew text-justify ">
+                                {data.desc1[0].head}
+                              </p>
+                              {data.desc1[0].desc.map((info) => (
+                                <p className=" laptop:mt-2 text-Description font-desc text-descnew text-justify md:mt-2 mt-4">
+                                  * {info.desc}
+                                </p>
+                              ))}
+                            </div>
+                          ) : null}
                         </div>
-                      ) : null}
+                      )}
+                      {/* <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
+                        {data.desc}
+                      </p> */}
                     </div>
                   ))}
                   {data.comingsoon ? (

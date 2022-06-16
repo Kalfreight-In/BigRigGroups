@@ -9,7 +9,11 @@
 #Alberta {
   fill: #eaa959;
 }
-
+// #Ontario {
+//   .cls-1 {
+//     fill: #eaa959;
+//   }
+// }
 .Marker {
   fill: #0068c9;
 
@@ -67,7 +71,7 @@
     min-height: 35vh;
   }
   @media (max-width: 1280px) {
-    min-height: 45vh;
+    min-height: 35vh;
   }
 }
 .svg-container {
@@ -143,4 +147,17 @@
 }
 .margin-All {
   margin: 0rem 1rem 0rem 1rem;
+}
+.marker {
+  &:hover {
+    height: 2 00%;
+  }
+}
+.marker {
+  transition: all 1s;
+  transform-origin: 50% 50%;
+}
+
+.UC {
+  fill: #8c5309 !important;
 }
