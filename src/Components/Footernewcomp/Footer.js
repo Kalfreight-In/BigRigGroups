@@ -49,7 +49,7 @@ export default function Footer() {
           //   width: 'full',
           // }}
         >
-          <div className=" justify-center items-center pb-4  flex md:hidden ">
+          {/* <div className=" justify-center items-center pb-4  flex md:hidden ">
             <div id="allicons" className="flex  ">
               <RiFacebookCircleLine
                 onClick={() =>
@@ -79,9 +79,9 @@ export default function Footer() {
                 className="text-white   h-linkdenheight w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
               />
             </div>
-          </div>
+          </div> */}
           <div className=" ">
-            <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6 xl:pb-12 w-screen"> 
+            <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6 xl:pb-12 w-screen">
               <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items- start justify- start">
                 <div className="xl:ml-16 w-max justify- start ml-4 xl:mt-0">
                   <div>
@@ -134,6 +134,7 @@ export default function Footer() {
                       </div>
                     </div>
                   </div>
+
                   {/* <div
 id="mainiconcontainer"
 className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
@@ -414,7 +415,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                     </Link>
                   </div> */}
 
-                      <div
+                      {/* <div
                         id="mainiconcontainer"
                         className=" justify-end mr-28 pt-4 pr-16 hidden xl:flex "
                       >
@@ -447,7 +448,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                             className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -658,6 +659,37 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                       <div className="w-full  md:ml-0 xl:ml-12 ml:-0 ">
                         English, ਪੰਜਾਬੀ, Español, हिन्दी,
                       </div>
+                    </div>
+                  </div>
+                  <div id="mainiconcontainer" className=" justify-end pb-4  ">
+                    <div id="allicons" className="flex justify-between  ">
+                      <RiFacebookCircleLine
+                        onClick={() =>
+                          window.open(
+                            'https://www.facebook.com/BigRiggroups/',
+                            '_blank'
+                          )
+                        }
+                        className="text-white  h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-facebook ease-in duration-300"
+                      />
+                      <AiOutlineInstagram
+                        onClick={() =>
+                          window.open(
+                            'https://www.instagram.com/bigriggroup/',
+                            '_blank'
+                          )
+                        }
+                        className="text-white h-1.8rem w-1.8rem mx-4 cursor-pointer hover:drop-shadow-socialicons hover:text-instagram ease-in duration-300"
+                      />
+                      <TiSocialLinkedinCircular
+                        onClick={() =>
+                          window.open(
+                            'https://www.linkedin.com/company/bigriggroup',
+                            '_blank'
+                          )
+                        }
+                        className="text-white   h-8 w-8 mx-4  cursor-pointer hover:drop-shadow-socialicons hover:text-linkden ease-in duration-300 "
+                      />
                     </div>
                   </div>
                   {/* <div
