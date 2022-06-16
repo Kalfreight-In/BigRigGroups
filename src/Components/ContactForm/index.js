@@ -169,7 +169,7 @@ const Contactform = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-56 lg:w-full w-full max-w-3xl flex"
+              class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-52 lg:w-full w-full md:max-w-3xl max-w-textareawidth flex"
               id="message"
               placeholder="What can we do for you?"
             ></textarea>
