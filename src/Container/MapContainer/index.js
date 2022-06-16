@@ -8,13 +8,13 @@ export const MapConatiner = () => {
   return (
     <div
       id="Location"
-      className="bg-Lightblue flex flex-col-reverse  md:flex-row p-8"
+      className="bg-Lightblue flex flex-col-reverse  md:flex-row p-8 "
     >
       <div className=" svg-container">
         <Map Af={AfisHovered} Ca={CaisHovered}></Map>
       </div>
 
-      <div className=" md:6/12 flex-col flex content-center  flex-1 md:ml-8 ml-0">
+      <div className=" md:6/12 flex-col flex content-center  flex-1 md:ml-8 ml-0 ">
         <div className=" flex-col flex content-center justify-center md:w-4/3 flex-1 self-start items-start m-4 2xl:ml-12 xl:ml-8 mt-2 ">
           <div>
             <h3 className="xl:text-4xl md:self-start text-white font-bold md:text-2xl text-3xl md:w-max text-center">
