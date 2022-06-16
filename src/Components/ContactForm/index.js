@@ -16,6 +16,8 @@ const Contactform = () => {
     setName('');
     setEmail('');
     setMessage('');
+    setphoneno('');
+    setlocation('');
     setSuccess(false);
     setError(false);
     setErrorMessage('');
@@ -38,10 +40,11 @@ const Contactform = () => {
       email: email,
       message: message,
       phoneno: phoneno,
+      location: location,
     };
 
     axios
-      .post('http://localhost:5000/api/v1', data)
+      .post('https://nodeserver-contactus.herokuapp.com/api/v1', data)
       .then((res) => [setSuccess(true), resetForm()])
       .catch(() => {
         setError(true);
@@ -61,7 +64,7 @@ const Contactform = () => {
           </h1>
           <p className="text-neautralform  font-Poppins text-md font-bold  my-2 md:mt-0 mt-20">
             Hey! How can we help you today?
-          </p>{" "}
+          </p>{' '}
           <p className="text-neautralform lg:text-left text-center font-Poppins text-md font-bold  mb-2 ">
             Fill in this form for an on-point solution in no time.
           </p>
@@ -197,5 +200,3 @@ const Contactform = () => {
 };
 
 export default Contactform;
-
-
