@@ -49,7 +49,7 @@ export default function Footer() {
           //   width: 'full',
           // }}
         >
-          <div className=" justify-center items-center pt-4   flex md:hidden ">
+          <div className=" justify-center items-center pb-4  flex md:hidden ">
             <div id="allicons" className="flex  ">
               <RiFacebookCircleLine
                 onClick={() =>
