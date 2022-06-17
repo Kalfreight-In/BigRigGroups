@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import Sparkles from '../../animation/Sparkel';
+import { motion } from 'framer-motion';
 const Contactform = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -18,7 +19,7 @@ const Contactform = () => {
     setMessage('');
     setphoneno('');
     setlocation('');
-    setSuccess(false);
+
     setError(false);
     setErrorMessage('');
     setButtonText('Submit');
@@ -58,15 +59,44 @@ const Contactform = () => {
       className="p-8 rounded-3xl shadow-2xl flex justify-center items-center   "
     >
       {success ? (
-        <div className="flex flex-col">
-          <div>
-            <img></img>
+        <motion.div
+          animate={{ scale: [0.5, 1] }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <div className="flex flex-col justify-center items-center">
+            <div className="w-max">
+              <Sparkles>
+                <img
+                  src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/animation/3dbuddy.png"
+                  width={350}
+                ></img>
+              </Sparkles>
+            </div>
+            <div className="text-2xl font-bold text-black w-2/4 mt-3 text-center mb-16 ">
+              <Sparkles>
+                Thanks you for reaching out, we will get back to you as soon as
+                possible.
+              </Sparkles>
+            </div>
+            <div
+              className="text-3xl font-bold text-black text-center  cursor-pointer mb-2"
+              onClick={() => {
+                setSuccess(false);
+              }}
+            >
+              <motion.div
+                animate={{ scale: [0.8, 1] }}
+                transition={{
+                  ease: 'linear',
+                  duration: 0.9,
+                  repeat: Infinity,
+                }}
+              >
+                Something else <strong className="text-5xl ">!</strong>
+              </motion.div>
+            </div>
           </div>
-          <div className="text-2xl">
-            Thanks you for reaching out, we will get back to you as soon as
-            possible.
-          </div>
-        </div>
+        </motion.div>
       ) : (
         <form class="w-full max-w-md " onSubmit={(e) => handleSubmit(e)}>
           <div className="lg:block flex flex-col justify-center items-center ">
@@ -186,6 +216,7 @@ const Contactform = () => {
                 class=" no-resize appearance-none  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3  leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none md:w-textareaInput lg:w-full w-full md:max-w-3xl max-w-textareawidth flex"
                 id="message"
                 placeholder="What can we do for you?"
+                required
               ></textarea>
               {/* <p class="text-gray-600 text-xs italic">
             Re-size can be disabled by set by resize-none / resize-y /
