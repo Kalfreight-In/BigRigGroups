@@ -9,7 +9,7 @@ const Contactform = () => {
   const [phoneno, setphoneno] = useState('');
   const [location, setlocation] = useState('');
   const [ROC, setROC] = useState('');
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [buttonText, setButtonText] = useState('Submit');
