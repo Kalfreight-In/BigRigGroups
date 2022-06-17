@@ -21,7 +21,7 @@ export default function Mapnew() {
           <div id="secondnewmap" className="mt-28 ml-16 leading-9">
             <h1 className="text-4xl font-semibold text-Heading">Location</h1>
 
-            <div id="list" className="mt-8 font-medium ml-6 w-max">
+            <div id="list" className="mt-8 font-medium xl:ml-6 ml-0 w-max">
               <ul>
                 <a
                   href="https://www.google.com/maps/place/15083+Valley+Blvd,+Fontana,+CA+92335,+USA/@34.0693237,-117.4780847,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b41ac34562d:0x6e84801266440fc5!8m2!3d34.0693237!4d-117.475896"
@@ -65,6 +65,7 @@ export default function Mapnew() {
                 >
                   <li className='hover:text-Lightblue'>&#9679; &nbsp;  Atlanta GA 30354</li>
                 </a>
+                {}
                 <a
                   href="https://www.google.com/maps/place/1080+W+Henri+De+Tonti+Blvd,+Springdale,+AR+72762,+USA/@36.1781444,-94.2546425,17z/data=!4m5!3m4!1s0x87c972b7967b5855:0xc59619ee1ceb2cc0!8m2!3d36.1781444!4d-94.2520823"
                   target="_blank"
