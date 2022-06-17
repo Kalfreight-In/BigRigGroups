@@ -5,6 +5,9 @@ import { useHover } from '../../Hooks/Hover';
 function Map({ Af, Ca, toranto, surey, edmenton }) {
   const [hoverRef, isHovered] = useHover();
   const [hoverRef1, isHovered1] = useHover();
+  const [toranto2, istoranto2] = useHover();
+  const [surey2, issurey2] = useHover();
+  const [edmenton2, isedmenton2] = useHover();
 
   return (
     <svg
@@ -161,12 +164,13 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       <svg
         className="marker toranto UC"
         width="29"
-        height="20"
+        height="25"
         x="610.39"
         y="764.49"
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        ref={toranto2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -176,12 +180,13 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       <svg
         className="marker edmenton UC"
         width="29"
-        height="20"
+        height="25"
         x="190.52"
         y="560.07"
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        ref={edmenton2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -191,12 +196,13 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       <svg
         className="marker surrey UC"
         width="29"
-        height="20"
+        height="25"
         x="70.96"
-        y="638.88"
+        y="630.88"
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        ref={surey2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -206,12 +212,13 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       <svg
         className="marker abbotsford"
         width="29"
-        height="20"
+        height="25"
         x="80.52"
-        y="652.25"
+        y="642.25"
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        ref={hoverRef}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -221,18 +228,19 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       <svg
         className="marker calgary"
         width="29"
-        height="20"
-        x="170.96"
+        height="25"
+        x="180.96"
         y="635.84"
         viewBox="0 0 29 41"
         xmlns="http://www.w3.org/2000/svg"
+        ref={hoverRef1}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
           className="cls-2"
         />
       </svg>
-      {toranto ? (
+      {toranto || istoranto2 ? (
         <g id="Toranto">
           <g id="Text-BC">
             <rect
@@ -249,7 +257,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
           </g>
         </g>
       ) : null}
-      {edmenton ? (
+      {edmenton || isedmenton2 ? (
         <g id="Edmonton">
           <rect
             width="79.39"
@@ -265,7 +273,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
           </text>
         </g>
       ) : null}
-      {surey ? (
+      {surey || issurey2 ? (
         <g id="Surey">
           <rect
             width="59.39"
@@ -288,12 +296,12 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
               width="215.39"
               height="28.82"
               x="104.52"
-              y="652.25"
+              y="642.25"
               className="cls-3"
               rx="3.44"
             ></rect>
 
-            <text x="104.52" y="672.25" fill="black">
+            <text x="104.52" y="662.25" fill="black">
               1225 Riverside Rd, BC V2S 7P1
             </text>
           </g>
@@ -305,7 +313,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
             <rect
               width="215.39"
               height="28.82"
-              x="198.96"
+              x="208.96"
               y="629.84"
               className="cls-3"
               rx="3.44"
