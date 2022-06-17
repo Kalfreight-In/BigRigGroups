@@ -2,23 +2,31 @@ import React from 'react';
 import Map from '../../assets/Map';
 import { motion } from 'framer-motion';
 import { useHover } from '../../Hooks/Hover';
-import {Link} from "react-router-dom";
 export const MapConatiner = () => {
   const [AfhoverRef, AfisHovered] = useHover();
   const [CahoverRef, CaisHovered] = useHover();
+  const [TorantoRef, TorantoisHovered] = useHover();
+  const [SureyRef, SureyisHovered] = useHover();
+  const [EdmentonRef, EdmentonisHovered] = useHover();
   return (
     <div
       id="Location"
       className="bg-Lightblue flex flex-col-reverse  md:flex-row p-8 "
     >
       <div className=" svg-container">
-        <Map Af={AfisHovered} Ca={CaisHovered}></Map>
+        <Map
+          Af={AfisHovered}
+          Ca={CaisHovered}
+          toranto={TorantoisHovered}
+          surey={SureyisHovered}
+          edmenton={EdmentonisHovered}
+        ></Map>
       </div>
 
       <div className=" md:6/12 flex-col flex content-center  flex-1 md:ml-8 ml-0 ">
         <div className=" flex-col flex content-center justify-center md:w-4/3 flex-1 self-start items-start m-4 2xl:ml-12 xl:ml-8 mt-2 ">
           <div>
-            <h3 className="xl:text-4xl md:self-start text-white font-bold md:text-2xl text-3xl md:w-max text-center">
+            <h3 className="xl:text-4xl md:self-start text-white font-bold md:text-3xl text-3xl md:w-max text-center">
               National Footprint:
             </h3>
             <div className="mt-2 text-white font-desc text-descnew text-center">
@@ -26,18 +34,18 @@ export const MapConatiner = () => {
               <br></br>
               <span>For assistance in the USA. </span>
 
-              <Link
-                to="/mappage"
+              <a
+                href="#"
                 className="hover:text-yellow-shadowhover transition  text-yellow-shadowhover"
               >
                 click here
-              </Link>  
+              </a>
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 md:ml-0 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -46,7 +54,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 md:text-sm  text-lg text-white md:font-bold font-extrabold md:text-subheading cursor-pointer"
+                className="mt-4 md:text-xl  text-lg text-white md:font-bold font-extrabold cursor-pointer"
                 ref={CahoverRef}
               >
                 Abbotsford
@@ -59,7 +67,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -68,7 +76,7 @@ export const MapConatiner = () => {
             ></motion.img>
             <div>
               <h4
-                className="mt-4 md:text-sm text-lg  text-white md:font-bold font-extrabold md:text-subheading cursor-pointer"
+                className="mt-4 md:text-xl text-lg  text-white md:font-bold font-extrabold  cursor-pointer"
                 ref={AfhoverRef}
               >
                 Calgary
@@ -86,43 +94,58 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="60"
               className="pr-8 "
             ></motion.img>
-            <div>
-              <div className=" text-white font-desc text-descnew">Toronto</div>
+            <div className="cursor-pointer">
+              <div
+                className=" text-white font-desc text-descnew"
+                ref={TorantoRef}
+              >
+                Toronto
+              </div>
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="60"
               className="pr-8 "
             ></motion.img>
-            <div>
-              <div className=" text-white font-desc text-descnew">Surrey</div>
+            <div className="cursor-pointer">
+              <div
+                className=" text-white font-desc text-descnew"
+                ref={SureyRef}
+              >
+                Surrey
+              </div>
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
               width="60"
               className="pr-8 "
             ></motion.img>
-            <div>
-              <div className=" text-white font-desc text-descnew">Edmonton</div>
+            <div className="cursor-pointer">
+              <div
+                className=" text-white font-desc text-descnew"
+                ref={EdmentonRef}
+              >
+                Edmonton
+              </div>
             </div>
           </div>
         </div>

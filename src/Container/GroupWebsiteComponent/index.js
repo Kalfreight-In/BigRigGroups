@@ -8,7 +8,7 @@ import Link from 'react-scroll/modules/components/Link';
 import { useState } from 'react';
 
 function GroupWebsiteComponent() {
-  const [showmore, setshowmore] = useState(false);
+  const [showmore, setshowmore] = useState(true);
   return (
     <>
       <div
@@ -97,17 +97,19 @@ function GroupWebsiteComponent() {
                             {data.desc}
                           </p>
                           <div
-                            className="text-lg underline text-sky-400 cursor-pointer block xl:hidden"
+                            className="text-lg underline text-sky-400 cursor-pointer hidden md:block lg:hidden"
                             onClick={() => {
                               setshowmore(!showmore);
                             }}
                           >
-                            Show More
+                            {showmore ? 'Show More' : 'Show less'}
                           </div>
                         </>
                       ) : (
                         <div
-                          className={`xl:block  ${showmore ? 'hidden' : ' '}`}
+                          className={`lg:block block   ${
+                            showmore ? 'md:hidden ' : ' '
+                          }`}
                         >
                           <p className="mt-2  text-Description font-desc text-descnew text-justify md:mr-6 2xl:mr-0">
                             {data.desc}
