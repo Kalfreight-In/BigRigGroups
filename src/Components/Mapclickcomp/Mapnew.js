@@ -2,7 +2,7 @@ import React from 'react';
 export default function Mapnew() {
   return (
     <>
-      <div id="mainnewmap" className='mt-28 flex ml-16'> 
+      <div id="mainnewmap" className='mt-28 flex md:ml-16 ml-0'> 
         <div
           id="innermainnewmap"
           className="flex lg:flex-row flex-col justify-start "
@@ -14,15 +14,15 @@ export default function Mapnew() {
             <img
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/newmapimage.png"
               alt=""
-              className="border-black border-r pr-4 max-w-full h-auto"
+              className="border-black border-r pr-4 max-w-full  h-auto"
             />
           </div>
 
-          <div id="secondnewmap" className="mt-28 ml-16 leading-9">
-            <h1 className="text-4xl font-semibold text-Heading">Location</h1>
+          <div id="secondnewmap" className="2xl:mt-28 mt-2 2xl:ml-16 ml-0 leading-9">
+            <h1 className="text-4xl font-semibold text-Heading px-12">Location</h1>
 
             <div id="list" className="mt-8 font-medium xl:ml-6 ml-0 w-max">
-              <ul>
+              <ul className='px-12'>
                 <a
                   href="https://www.google.com/maps/place/15083+Valley+Blvd,+Fontana,+CA+92335,+USA/@34.0693237,-117.4780847,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b41ac34562d:0x6e84801266440fc5!8m2!3d34.0693237!4d-117.475896"
                   target="_blank"

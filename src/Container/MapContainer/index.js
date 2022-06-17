@@ -46,7 +46,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 md:ml-0 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -68,7 +68,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -95,7 +95,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -114,7 +114,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -133,7 +133,7 @@ export const MapConatiner = () => {
           <div className="flex flex-row items-center content-start mt-2">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -166,3 +166,5 @@ export const MapConatiner = () => {
                 Edmonton
               </div> */
 }
+
+
