@@ -2,6 +2,7 @@ import React from 'react';
 import Map from '../../assets/Map';
 import { motion } from 'framer-motion';
 import { useHover } from '../../Hooks/Hover';
+import { Link } from 'react-router-dom';
 export const MapConatiner = () => {
   const [AfhoverRef, AfisHovered] = useHover();
   const [CahoverRef, CaisHovered] = useHover();
@@ -34,12 +35,12 @@ export const MapConatiner = () => {
               <br></br>
               <span>For assistance in the USA. </span>
 
-              <a
-                href="#"
+              <Link
+                to="/mappage"
                 className="hover:text-yellow-shadowhover transition  text-yellow-shadowhover"
               >
                 click here
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 md:ml-0 ">
