@@ -13,6 +13,7 @@ import BottomBar from './Components/Bottombar';
 import Trailer_and_Leasing from './pages/TrailerandLeasing';
 import { UnderConstruction } from './Components/UnderConstruction';
 import Mapnew from './Components/Mapclickcomp/Mapnew';
+import { CreditApplication } from './pages/Home/creditApplication';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/newsevents" element={<UnderConstruction />} />
-        <Route path="/creditapplication" element={<UnderConstruction />} />
+        <Route path="/sitemap" element={<UnderConstruction />} />
+        <Route path="/terms_of_Use" element={<UnderConstruction />} />
+        <Route path="/Privacy_Policy" element={<UnderConstruction />} />
+        <Route path="/creditapplication" element={<CreditApplication />} />
 
         <Route
           path="/trailerandleasing"
@@ -52,7 +56,7 @@ function App() {
         />
 
         <Route path="/Bigrigcananda" element={<></>} />
-        <Route path="/mappage" element={<Mapnew/>} /> 
+        <Route path="/mappage" element={<Mapnew />} />
       </Routes>
       <Footer />
       {/* <FooterSection></FooterSection> */}

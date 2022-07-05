@@ -2,11 +2,11 @@ import { React, useEffect, useState } from 'react';
 import { isMobile, browserName } from 'react-device-detect';
 import { useHover } from '../../Hooks/Hover';
 
-function Map({ Af, Ca, toranto, surey, edmenton }) {
+function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
   const [hoverRef, isHovered] = useHover();
   const [hoverRef1, isHovered1] = useHover();
-  const [toranto2, istoranto2] = useHover();
-  const [surey2, issurey2] = useHover();
+  const [Toronto2, isToronto2] = useHover();
+  const [Surrey2, isSurrey2] = useHover();
   const [edmenton2, isedmenton2] = useHover();
 
   return (
@@ -141,7 +141,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
       ></path> */}
 
       {/* <path
-        id="Surey-marker"
+        id="Surrey-marker"
         d="M88.44 643.86a3.74 3.74 0 10-7.48 0c0 2.79 3.74 6.85 3.74 6.85s3.74-4.06 3.74-6.85zm-5 0a1.24 1.24 0 111.23 1.23 1.23 1.23 0 01-1.2-1.23zm-3.11 7.44v1.24h8.72v-1.24z"
         className="cls-2"
       ></path>
@@ -152,7 +152,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
         data-name="Edmonton"
       ></path>
       <path
-        id="TorantoMarker"
+        id="TorontoMarker"
         d="M637 768.7a3.74 3.74 0 00-7.48 0c0 2.78 3.74 6.84 3.74 6.84s3.74-4.06 3.74-6.84zm-5 0a1.23 1.23 0 111.23 1.23 1.23 1.23 0 01-1.23-1.23zm-3.11 7.44v1.23h8.72v-1.23z"
         className="cls-2"
       ></path>
@@ -162,7 +162,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
         className="cls-2"
       ></path> */}
       <svg
-        className="marker toranto UC"
+        className="marker Toronto UC"
         width="29"
         height="25"
         x="610.39"
@@ -170,7 +170,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        ref={toranto2}
+        ref={Toronto2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -194,7 +194,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
         />
       </svg>
       <svg
-        className="marker surrey UC"
+        className="marker Surrey UC"
         width="29"
         height="25"
         x="70.96"
@@ -202,7 +202,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        ref={surey2}
+        ref={Surrey2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -240,8 +240,8 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
           className="cls-2"
         />
       </svg>
-      {toranto || istoranto2 ? (
-        <g id="Toranto">
+      {Toronto || isToronto2 ? (
+        <g id="Toronto">
           <g id="Text-BC">
             <rect
               width="59.39"
@@ -252,7 +252,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
               rx="3.44"
             ></rect>
             <text x="643.39" y="782" fill="black">
-              Toranto
+              Toronto
             </text>
           </g>
         </g>
@@ -273,8 +273,8 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
           </text>
         </g>
       ) : null}
-      {surey || issurey2 ? (
-        <g id="Surey">
+      {Surrey || isSurrey2 ? (
+        <g id="Surrey">
           <rect
             width="59.39"
             height="28.82"
@@ -285,7 +285,7 @@ function Map({ Af, Ca, toranto, surey, edmenton }) {
           ></rect>
 
           <text x="95.96" y="648.88" fill="black">
-            Surey
+            Surrey
           </text>
         </g>
       ) : null}

@@ -11,6 +11,7 @@ import {
   SidebarLinkR,
   SideBtnWrap,
   SidebarRoute,
+  SidebarLinkA,
 } from './SlidebarElement';
 // import { animateScroll as scroll, Link } from 'react-scroll';
 const Sidebar = ({ isOpen, toggle }) => {
@@ -50,9 +51,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </SidebarLinkR>
           <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
-          <SidebarLinkR to="/creditapplication">
+          <SidebarLinkA to="/creditapplication">
             CREDIT APPLICATION
-          </SidebarLinkR>
+          </SidebarLinkA>
           <SidebarLinkR to="/Location">
             <Link
               to="Location"

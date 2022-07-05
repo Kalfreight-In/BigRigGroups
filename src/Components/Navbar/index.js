@@ -150,7 +150,7 @@ const Navbar = ({ toggle }) => {
                   <NavLinks
                     to="/tires"
                     onClick={toggleHome}
-                    className="2xl:text-sm  xl:text-xs md:text-xs md:text-xs w-max"
+                    className="2xl:text-sm  xl:text-xs md:text-xs w-max"
                   >
                     TIRES & SERVICES
                   </NavLinks>
@@ -162,7 +162,7 @@ const Navbar = ({ toggle }) => {
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
-                    className="2xl:text-sm xl:text-xs  md:text-xs md:text-xs "
+                    className="2xl:text-sm xl:text-xs  md:text-xs  "
                   >
                     <Link
                       to="ContactSection"
@@ -177,12 +177,11 @@ const Navbar = ({ toggle }) => {
                   </NavLinks>
                 ) : (
                   <NavLinksA
-                    href="/#ContactSection"
                     onClick={toggleHome}
-                    className="2xl:text-sm xl:text-xs  md:text-xs md:text-xs "
+                    className="2xl:text-sm xl:text-xs  md:text-xs "
                   >
                     <a
-                      href="/#ContactSection"
+                      href="#ContactSection"
                       smooth={true}
                       duration={1000}
                       spy={true}
@@ -245,13 +244,13 @@ const Navbar = ({ toggle }) => {
               )}
 
               <NavItem>
-                <NavLinks
-                  to="/creditapplication"
+                <NavLinksA
+                  href="/creditapplication"
                   onClick={toggleHome}
                   className="2xl:text-sm xl:text-xs  md:text-xs md:text-xs w-max"
                 >
                   CREDIT APPLICATION
-                </NavLinks>
+                </NavLinksA>
               </NavItem>
 
               <MobileIcon onClick={toggle}>

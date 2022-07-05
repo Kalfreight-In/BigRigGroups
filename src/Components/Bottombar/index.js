@@ -63,20 +63,20 @@ const BottomBar = ({ toggle }) => {
           </NavItem> */}
           <NavItem>
             <NavLinks
-              to="/About"
+              to="/sitemap"
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm md:text-xs"
             >
-              <a to="/About">Sitemap</a>
+              <a to="/sitemap">Sitemap</a>
             </NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks
-              to="/About"
+              to="/terms_of_Use"
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm md:text-xs"
             >
-              <a to="/About">Terms of Use</a>
+              <a to="/terms_of_Use">Terms of Use</a>
             </NavLinks>
           </NavItem>
           {/* <NavItem>
@@ -113,11 +113,11 @@ const BottomBar = ({ toggle }) => {
           </NavItem> */}
           <NavItem>
             <NavLinks
-              to="/Contact"
+              to="/Privacy_Policy"
               onClick={toggleHome}
               className="2xl:text-desc text-navsmall md:text-sm md:text-xs"
             >
-              <a to="/Contact">Privacy Policy</a>
+              <a to="/Privacy_Policy">Privacy Policy</a>
             </NavLinks>
           </NavItem>
           {/* <NavItem>
