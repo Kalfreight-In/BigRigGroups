@@ -41,29 +41,18 @@ const Sidebar = ({ isOpen, toggle }) => {
             <Link
               to="ContactSection"
               onClick={toggle}
-              smooth={true}
               duration={1000}
-              spy={true}
-              exact={true}
               offset={-80}
             >
               CONTACT
             </Link>
           </SidebarLinkR>
           <SidebarLinkR to="/newsevents">NEWS & EVENTS</SidebarLinkR>
-          <SidebarLinkA to="/creditapplication">
+          <SidebarLinkA href="/creditapplication">
             CREDIT APPLICATION
           </SidebarLinkA>
           <SidebarLinkR to="/Location">
-            <Link
-              to="Location"
-              onClick={toggle}
-              smooth={true}
-              duration={1000}
-              spy={true}
-              exact={true}
-              offset={-80}
-            >
+            <Link to="Location" onClick={toggle} duration={1000} offset={-80}>
               LOCATIONS
             </Link>
           </SidebarLinkR>

@@ -194,10 +194,10 @@ const Button = styled.button`
 //         <WWOCCButtonM className="p-8">
 //           <Link
 //             to="Footertag"
-//             smooth={true}
+//
 //             duration={500}
-//             spy={true}
-//             exact={true}
+//
+//
 //             offset={-80}
 //           >
 //             Contact Us
@@ -326,10 +326,10 @@ const HeroSection = () => {
           {/* <NavLinks>
             <Link
               to="Map"
-              smooth={true}
+               
               duration={500}
-              spy={true}
-              exact={true}
+               
+               
               offset={-80}
             >
               <SocialMediaActions>

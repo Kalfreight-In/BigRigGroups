@@ -139,7 +139,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/partz"
                   onClick={toggleHome}
-                  className="2xl:text-sm  xl:text-xs md:text-xs md:text-xs"
+                  className="2xl:text-sm  xl:text-xs md:text-xs "
                 >
                   PARTZ
                 </NavLinks>
@@ -158,20 +158,13 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
               <NavItem>
-                {window.location.pathname == '/' ? (
+                {window.location.pathname === '/' ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  md:text-xs  "
                   >
-                    <Link
-                      to="ContactSection"
-                      smooth={true}
-                      duration={1000}
-                      spy={true}
-                      exact={true}
-                      offset={-80}
-                    >
+                    <Link to="ContactSection" duration={1000} offset={-80}>
                       CONTACT
                     </Link>
                   </NavLinks>
@@ -180,14 +173,7 @@ const Navbar = ({ toggle }) => {
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  md:text-xs "
                   >
-                    <a
-                      href="#ContactSection"
-                      smooth={true}
-                      duration={1000}
-                      spy={true}
-                      exact={true}
-                      offset={-80}
-                    >
+                    <a href="#ContactSection" duration={1000} offset={-80}>
                       CONTACT
                     </a>
                   </NavLinksA>
@@ -198,26 +184,19 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="/newsevents"
                   onClick={toggleHome}
-                  className="2xl:text-sm  xl:text-xs md:text-xs  md:text-xs w-max"
+                  className="2xl:text-sm  xl:text-xs   md:text-xs w-max"
                 >
                   NEWS & EVENTS
                 </NavLinks>
               </NavItem>
-              {window.location.pathname == '/' ? (
+              {window.location.pathname === '/' ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
                     onClick={toggleHome}
-                    className="2xl:text-sm  md:text-xs md:text-xs "
+                    className="2xl:text-sm  md:text-xs  "
                   >
-                    <Link
-                      to="Location"
-                      smooth={true}
-                      duration={1000}
-                      spy={true}
-                      exact={true}
-                      offset={-80}
-                    >
+                    <Link to="Location" duration={1000} offset={-80}>
                       LOCATIONS
                     </Link>
                   </NavLinks>
@@ -227,16 +206,9 @@ const Navbar = ({ toggle }) => {
                   <NavLinksA
                     href="/#Location"
                     onClick={toggleHome}
-                    className="2xl:text-sm xl:text-xs  md:text-xs md:text-xs "
+                    className="2xl:text-sm xl:text-xs  md:text-xs  "
                   >
-                    <a
-                      href="/#Location"
-                      smooth={true}
-                      duration={1000}
-                      spy={true}
-                      exact={true}
-                      offset={-80}
-                    >
+                    <a href="/#Location" duration={1000} offset={-80}>
                       LOCATIONS
                     </a>
                   </NavLinksA>
@@ -246,8 +218,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinksA
                   href="/creditapplication"
-                  onClick={toggleHome}
-                  className="2xl:text-sm xl:text-xs  md:text-xs md:text-xs w-max"
+                  className="2xl:text-sm xl:text-xs  md:text-xs  w-max"
                 >
                   CREDIT APPLICATION
                 </NavLinksA>

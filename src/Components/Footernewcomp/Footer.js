@@ -256,10 +256,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                           <Slink
                             className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center cursor-pointer "
                             to="aboutus"
-                            smooth={true}
                             duration={1000}
-                            spy={true}
-                            exact={true}
                             offset={-80}
                           >
                             About Us
@@ -268,10 +265,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                           <a
                             className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center cursor-pointer "
                             href="/#aboutus"
-                            smooth={true}
                             duration={1000}
-                            spy={true}
-                            exact={true}
                             offset={-80}
                           >
                             About Us

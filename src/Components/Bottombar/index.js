@@ -92,10 +92,10 @@ const BottomBar = ({ toggle }) => {
             <NavLinks to="/products" onClick={toggleHome}>
               <a
                 to="/products"
-                smooth={true}
+                 
                 duration={500}
-                spy={true}
-                exact={true}
+                 
+                 
                 offset={-80}
               >
                 Products
@@ -123,7 +123,7 @@ const BottomBar = ({ toggle }) => {
           {/* <NavItem>
             
           <NavLinks >
-          <Link to='ContactUs' smooth={true} duration={500} spy={true} exact={true} offset={-80}>Contact Us</Link>
+          <Link to='ContactUs'   duration={500}     offset={-80}>Contact Us</Link>
           </NavLinks>
           </NavItem> */}
 

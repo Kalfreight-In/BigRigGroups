@@ -172,14 +172,7 @@ function GroupWebsiteComponent() {
                     </section>
                   ) : (
                     <div className="md:w-fit w-full ">
-                      <Link
-                        to="ContactSection"
-                        smooth={true}
-                        duration={1000}
-                        spy={true}
-                        exact={true}
-                        offset={-80}
-                      >
+                      <Link to="ContactSection" duration={1000} offset={-80}>
                         <button className="md:ml-0 md:mr-0 mr-4  text-white bg-yellow-bg md:px-4   md:p-2 p-4  font-semibold  2xl:mt-6 mt-2 rounded-md shadow-sm hover:shadow-md italic  shadow-yellow-shadow transition-all hover:drop-shadow-md  flex items-center justify-center  w-full  2xl:text-xl md:text-md text-2xl ">
                           {data.cta.heading}
                         </button>
