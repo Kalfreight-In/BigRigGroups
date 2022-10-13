@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kal-partz",
+  "private_key_id": "d9e09365fa43a45a1af575da61e304070a1b6a14",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkB1SLyzKqsCWE\njwL5cN3syuZqPJtE/17InV0K08+mr8BACbFdQq0jLIh71xv9Dsj7QgRnOGxFFrfy\nnIxXsWv0gXEukTT9FAAI9jX7WnltRekkZxfs19qTB/WiZFvEdlV5NqE6EFhCdY96\nw8xTdbMHusr9N8MTQws9kXSWPsTKsNrFZSCGRq+bTk77WNeltSjLq59i/N5Ybn3J\no9qkTW+8e1a0dUwpjhOqiIQ6ozI7a2gCptu5lE1GrI6z25Xx7dk4ggfJXtJw+nKD\niv42aH5bnZQBhaI7299Fb7hxTH6vuV/fCOslpGwqGFB0c1lOpvw83NZK7koQ66BA\n6HhxxeIhAgMBAAECggEAGK2RpsaXhN6jhmINzIGSogGU0P71TVguZnhmey6K20Ut\n43SR3rodWmFk11zxtQz4Z/TyvKTchTh5zGKJKthiqZKf+KWYF0tfBfok/QALrMkL\n3pI0I0oGdICKEDiRJem3yljRwO6cmMMfJxU2NIhMuyj7SUWOb+NyWXz80W34JZZg\nUYiWHpl6e+avVqpHg/8XfVxtYPzVZ8UbiDoa+aByJOQ35rC9SbLDzA27sQIA6ucd\nUQeoszAdvZs4AHjHBzFbVO+fzXhA5QEP7idDZua+zr0wM+fcwMIXfr8SIWO5rKTB\nLAEfgu1LDxmS+ocM8QrWdw79DkBiht1cuHwcHZjmUQKBgQDYzuPKrQgXOExp1MRS\n7BddSNj9AKcTgRa414O0XugObPOVt1arwLnukb5e1hKMxq71KOj5q+8Sdqxpvg4k\n06hu8O8WyY4L5IMysXrr6Si6cyyYC8b522Zyzhz9PC66XDVVmKKuMMavvfYa1CZu\nbgF8OddRq9u6GPrv2OPl3XahYwKBgQDBrf3dgMV5MdqodwZjvoifQeqNrjHmjfTr\nISEARHny+6inrT1Dmsf0hhutk/t2SGPAbPs3PlTtMFok3UXSU4nKE8cpJ+bVyFa3\n//y22qR1kET6RRZlr7qwDaMXavfiby6FbRPKZ4ACGSNMQ4GV0ZfocIy7obw9UfwF\nGmraZuYnqwKBgHXriQ/KLtVaRI1nMOSdDlQpdAOfoD/GfVJJvZOT7wkxjwbGMfi2\nmSo90NoJ+wrgYXZsKtLpBd339+yHd2/mQv0cRB4TwBON1SH0UBQRu5o1XHLSLQXm\npAEbQ78kRZIM5uFIZGrzko0xd7K94q07XclwOEFuhNLiFVHwmHuEiapbAoGAZNGw\nm9RDd2InQ5ip39Q4BEbo1RW/bhepTZhyOFRs8rpjwd0hTgbNXZFN6R5mQN1P58QT\nRV+SD+IimpwAk4re6C1BeEAIHnLqCWAc6gaIo5YVAf5iuU4vrSN8KV2KafmcSuJL\n8gnMjcsOH83oL9fp7ppf9/AqL/V0biehRc1Ys38CgYA9VI+DuzAJ3xO6qb8rMMOj\nDgDNDAJ5AGk+Kg0ZXxbEhGu+nhGzUCf6rlTNH/kLH9QoV3l3lNarksLo8cT0cFZX\npJogff6xgDr1MRajg4drv3f0kMq3szWQU88xQqkD1guO8skE4qiosnuR3+Zn3rQQ\ncn9XMrbmPVTayOFCb3QrTQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "resumekalgroup-876@kal-partz.iam.gserviceaccount.com",
+  "client_id": "105145579313008452950",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/resumekalgroup-876%40kal-partz.iam.gserviceaccount.com"
+}
