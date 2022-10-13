@@ -4,13 +4,15 @@ const cors = require('cors');
 const app = express();
 const emailMessage = require('./Routes/emailMessage');
 const UploadImage = require('./Routes/uploadImage');
+const subscribe = require('./Routes/subscribe');
+
 const port = process.env.PORT || 5000;
 
 const { Storage } = require('@google-cloud/storage');
 const path = require('path');
 const Multer = require('Multer');
 const { format } = require('path');
-const { subscribe } = require('./Routes/emailMessage');
+
 const { smtpTransport } = require('./variable/Transport');
 
 app.use(bodyParser.json());

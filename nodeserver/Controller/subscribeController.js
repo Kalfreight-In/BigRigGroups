@@ -1,10 +1,11 @@
 const nodemailer = require('nodemailer');
-
+const path = require('path');
 const { google } = require('googleapis');
 const subscribe = async (req, res) => {
   var data = req.body;
   const auth = new google.auth.GoogleAuth({
-    keyFile: 'keys.json', //the key file
+    keyFile: path.join(__dirname, './keys.json), 
+    I//the key file
     //url to spreadsheets API
     scopes: 'https://www.googleapis.com/auth/spreadsheets',
   });
