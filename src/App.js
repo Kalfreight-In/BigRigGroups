@@ -14,6 +14,7 @@ import Trailer_and_Leasing from './pages/TrailerandLeasing';
 import { UnderConstruction } from './Components/UnderConstruction';
 import Mapnew from './Components/Mapclickcomp/Mapnew';
 import { CreditApplication } from './pages/Home/creditApplication';
+import { Career } from './pages/carrear';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,8 +35,8 @@ function App() {
         <Route path="/sitemap" element={<UnderConstruction />} />
         <Route path="/terms_of_Use" element={<UnderConstruction />} />
         <Route path="/Privacy_Policy" element={<UnderConstruction />} />
-        <Route path="/creditapplication" component={CreditApplication} />
-
+        <Route path="/creditapplication" element={<CreditApplication />} />
+        <Route path="/career" element={<Career />} />
         <Route
           path="/trailerandleasing"
           element={

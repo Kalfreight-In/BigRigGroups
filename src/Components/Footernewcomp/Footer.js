@@ -332,7 +332,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         </div>
                         <span> » </span>
                         <a
-                          href="mailto:hr@bigrigcanada.com"
+                          href="/career"
                           target="_blank"
                           rel="noreferrer"
                           className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     xl:text-left text-center md:ml-0 ml-8"
@@ -474,7 +474,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                       </div>
                       <span> » </span>
                       <a
-                        href="mailto:hr@bigrigcanada.com"
+                        href="/career"
                         target="_blank"
                         rel="noreferrer"
                         className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     xl:text-left text-center md:ml-0 ml-8"

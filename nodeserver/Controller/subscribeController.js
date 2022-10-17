@@ -3,9 +3,10 @@ const path = require('path');
 const { google } = require('googleapis');
 const subscribe = async (req, res) => {
   var data = req.body;
+  console.log(`${data} ........ ${req.body}`);
   const auth = new google.auth.GoogleAuth({
-    keyFile: path.join(__dirname, './keys.json), 
-    I//the key file
+    keyFile: path.join(__dirname, './keys.json'),
+    //the key file
     //url to spreadsheets API
     scopes: 'https://www.googleapis.com/auth/spreadsheets',
   });
@@ -21,15 +22,25 @@ const subscribe = async (req, res) => {
   });
   const spreadsheetId = '1dOoyOurqpJtcvqtd3A7oxzElE-21-a8Bsec_HHQvAXY';
   //write data into the google sheets
-  await googleSheetsInstance.spreadsheets.values.append({
-    auth, //auth object
-    spreadsheetId, //spreadsheet id
-    range: 'Sheet1!A:B', //sheet name and range of cells
-    valueInputOption: 'USER_ENTERED', // The information will be passed according to what the usere passes in as date, number or text
-    resource: {
-      values: [['Email', data.Email]],
-    },
-  });
+  try {
+    await googleSheetsInstance.spreadsheets.values.append({
+      auth, //auth object
+      spreadsheetId, //spreadsheet id
+      range: 'Sheet1!A:B', //sheet name and range of cells
+      valueInputOption: 'USER_ENTERED', // The information will be passed according to what the usere passes in as date, number or text
+      resource: {
+        values: [['Email', data.Email]],
+      },
+    });
+
+    res.json({
+      status: true,
+      message: 'Challenges found !',
+      status_code: 'done',
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 module.exports = {
