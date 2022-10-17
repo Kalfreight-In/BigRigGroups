@@ -173,21 +173,30 @@ const Navbar = ({ toggle }) => {
                     onClick={toggleHome}
                     className="2xl:text-sm xl:text-xs  md:text-xs "
                   >
-                    <a href="#ContactSection" duration={1000} offset={-80}>
+                    <a href="/#ContactSection" duration={1000} offset={-80}>
                       CONTACT
                     </a>
                   </NavLinksA>
                 )}
               </NavItem>
 
+              {/* <NavItem>
+                  <NavLinks
+                    to="/newsevents"
+                    onClick={toggleHome}
+                    className="2xl:text-sm  xl:text-xs   md:text-xs w-max"
+                  >
+                    NEWS & EVENTS
+                  </NavLinks>
+                </NavItem> */}
               <NavItem>
-                <NavLinks
-                  to="/newsevents"
+                <NavLinksA
+                  href="/careers"
                   onClick={toggleHome}
                   className="2xl:text-sm  xl:text-xs   md:text-xs w-max"
                 >
-                  NEWS & EVENTS
-                </NavLinks>
+                  CAREER
+                </NavLinksA>
               </NavItem>
               {window.location.pathname === '/' ? (
                 <NavItem>

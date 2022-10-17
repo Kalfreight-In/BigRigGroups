@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLinkR>
           <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
-          <SidebarLinkR to="/ContactSection">
+          <SidebarLinkR to="#ContactSection">
             <Link
               to="ContactSection"
               onClick={toggle}

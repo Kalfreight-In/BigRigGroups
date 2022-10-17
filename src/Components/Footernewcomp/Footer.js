@@ -304,6 +304,14 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                           24X7 Roadside Assistance
                         </Link>
                       </div>
+                      <div className="cursor-pointer">
+                        <a
+                          href="/careers"
+                          className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center"
+                        >
+                          Career
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div className="flex-1 block xl:hidden mt-4 sm:mt-0">
@@ -332,7 +340,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         </div>
                         <span> » </span>
                         <a
-                          href="/career"
+                          href="mailto:hr@bigrigcanada.com"
                           target="_blank"
                           rel="noreferrer"
                           className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     xl:text-left text-center md:ml-0 ml-8"
@@ -474,7 +482,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                       </div>
                       <span> » </span>
                       <a
-                        href="/career"
+                        href="mailto:hr@bigrigcanada.com"
                         target="_blank"
                         rel="noreferrer"
                         className="block md:text-16px text-navsmall hover:text-yellow-shadowhover     xl:text-left text-center md:ml-0 ml-8"
