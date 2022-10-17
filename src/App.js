@@ -15,7 +15,7 @@ import { UnderConstruction } from './Components/UnderConstruction';
 import Mapnew from './Components/Mapclickcomp/Mapnew';
 import { CreditApplication } from './pages/Home/creditApplication';
 import { Career } from './pages/carrear';
-
+import { Success } from './pages/success';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -37,6 +37,7 @@ function App() {
         <Route path="/Privacy_Policy" element={<UnderConstruction />} />
         <Route path="/creditapplication" element={<CreditApplication />} />
         <Route path="/careers" element={<Career />} />
+        <Route path="/success" element={<Success></Success>} />
         <Route
           path="/trailerandleasing"
           element={

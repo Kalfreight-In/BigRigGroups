@@ -51,6 +51,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkA href="/creditapplication">
             CREDIT APPLICATION
           </SidebarLinkA>
+          <SidebarLinkA href="/careers">Careers</SidebarLinkA>
           <SidebarLinkR to="/Location">
             <Link to="Location" onClick={toggle} duration={1000} offset={-80}>
               LOCATIONS
