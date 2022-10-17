@@ -309,7 +309,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                           href="/careers"
                           className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center"
                         >
-                          Career
+                          Careers
                         </a>
                       </div>
                     </div>

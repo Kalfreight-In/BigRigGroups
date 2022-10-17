@@ -36,7 +36,7 @@ function App() {
         <Route path="/terms_of_Use" element={<UnderConstruction />} />
         <Route path="/Privacy_Policy" element={<UnderConstruction />} />
         <Route path="/creditapplication" element={<CreditApplication />} />
-        <Route path="/career" element={<Career />} />
+        <Route path="/careers" element={<Career />} />
         <Route
           path="/trailerandleasing"
           element={

@@ -195,7 +195,7 @@ const Navbar = ({ toggle }) => {
                   onClick={toggleHome}
                   className="2xl:text-sm  xl:text-xs   md:text-xs w-max"
                 >
-                  CAREER
+                  CAREERS
                 </NavLinksA>
               </NavItem>
               {window.location.pathname === '/' ? (
