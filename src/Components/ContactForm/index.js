@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Sparkles from '../../animation/Sparkel';
 import { motion } from 'framer-motion';
+import { handleInput } from '../../HelpFunctions/PhoneNoFormatter';
 const Contactform = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -165,7 +166,7 @@ const Contactform = () => {
           </label> */}
 
               <input
-                onChange={(e) => setphoneno(e.target.value)}
+                onChange={(e) => handleInput(e, setphoneno)}
                 value={phoneno}
                 class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
                 id="email"
