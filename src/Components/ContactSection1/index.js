@@ -60,7 +60,7 @@ const ContactSectio = ({ isOpen, toggle }) => {
               <FotterContactlist>
                 <FotterContactName>Contact Details</FotterContactName>
                 <FotterContactNo>
-                  (800) 977 0010
+                  800 977 0010
                   {/* Finsweet@gmail.com */}
                 </FotterContactNo>
               </FotterContactlist>

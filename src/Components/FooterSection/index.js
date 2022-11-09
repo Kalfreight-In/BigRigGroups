@@ -50,7 +50,7 @@ const FooterSection = ({ isOpen, toggle }) => {
         <FotterContact>
           <FotterContactlist>
             <FotterContactName>Help line Number</FotterContactName>
-            <FotterContactNo>(800) 977 0010</FotterContactNo>
+            <FotterContactNo>800 977 0010</FotterContactNo>
             {/* //todo */}
           </FotterContactlist>
         </FotterContact>

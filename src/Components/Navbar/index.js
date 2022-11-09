@@ -250,7 +250,7 @@ const Navbar = ({ toggle }) => {
                     width="18px"
                   />
                 </div>
-                (800) 977 0010
+                800 977 0010
               </button>
             </a>
           </NavBtn>
