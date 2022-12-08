@@ -35,7 +35,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkR to="/trailerandleasing">
             TRAILERS & LEASING
           </SidebarLinkR>
-          <SidebarLinkR to="/partz">PARTZ</SidebarLinkR>
+          <SidebarLinkA to="https://bigrigpartz.com" target="_blank">
+            PARTZ
+          </SidebarLinkA>
           <SidebarLinkR to="/tires"> TIRES & SERVICES</SidebarLinkR>
           <SidebarLinkR to="#ContactSection">
             <Link

@@ -136,13 +136,14 @@ const Navbar = ({ toggle }) => {
               </NavItem> */}
 
               <NavItem>
-                <NavLinks
-                  to="/partz"
+                <NavLinksA
+                  href="https://bigrigpartz.com/"
+                  target="_blank"
                   onClick={toggleHome}
                   className="2xl:text-sm  xl:text-xs md:text-xs "
                 >
                   PARTZ
-                </NavLinks>
+                </NavLinksA>
               </NavItem>
 
               <NavItem>
