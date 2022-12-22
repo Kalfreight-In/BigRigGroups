@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
       );
     } else if (window.location.pathname == '//') {
       console.log(`lollll h hgaya${window.location.pathname}`);
-      scroll.scrollTo(7000);
+      scroll.scrollTo(000);
     } else {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
