@@ -72,7 +72,6 @@ const Navbar = ({ toggle }) => {
       );
     } else if (window.location.pathname == '//') {
       console.log(`lollll h hgaya${window.location.pathname}`);
-      scroll.scrollTo(000);
     } else {
       setlogo(
         'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
@@ -98,7 +97,7 @@ const Navbar = ({ toggle }) => {
             <NavLogo to="/" onClick={toggleHome} className="max-w-max">
               <img
                 // className="2xl:w-56 w-44  2xl:h-44 h-32  "
-                className="pt-0 flex-1 w-40 "
+                className="pt-0 flex-1 w-50 "
                 src={logo}
                 alt="logo"
               />

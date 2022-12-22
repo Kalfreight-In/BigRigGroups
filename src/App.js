@@ -4,6 +4,7 @@ import './simplefunction.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ErrorBoundary from './Components/ErrorBoundary';
+import Snowfall from 'react-snowfall';
 // import FooterSection from './Components/FooterSection';
 import Navbar from './Components/Navbar';
 import { CommmingSoonComponentindex } from './Components/CommmingSoonComponent';
@@ -28,7 +29,28 @@ function App() {
       <ErrorBoundary>
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
-
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: '100',
+          pointerEvents: 'none',
+        }}
+      >
+        <Snowfall
+          style={{ zIndex: '100' }}
+          height="100%"
+          width="100%"
+          color="#ffff"
+          snowflakeCount={250}
+          radius={[0.3, 2.0]}
+          speed={[0.5, 3.0]}
+          wind={[-0.5, 2.0]}
+        />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/newsevents" element={<UnderConstruction />} />
