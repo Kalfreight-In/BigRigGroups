@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import logo from '../../assets/TrailerAndLeasing/Images/logo.png';
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
@@ -17,6 +17,7 @@ import {
 } from './FooterSectionElements';
 
 const FooterSection = ({ isOpen, toggle }) => {
+  const [year, setYear] = useState(() => new Date().getFullYear());
   return (
     <FooterContainer id="Footertag">
       <FooterLogo>
@@ -26,7 +27,7 @@ const FooterSection = ({ isOpen, toggle }) => {
           </div> */}
           <div>
             <h1 className="pt-10 font-bold text-xl   text-white md:block hidden">
-              © BigRig Group Inc, 2022 All rights reserved.
+              © BigRig Group Inc, {year} All rights reserved.
             </h1>
           </div>
         </div>
