@@ -22,9 +22,7 @@ app.use(cors());
 app.use('/api/v1', emailMessage);
 app.use('/api/upload', UploadImage);
 app.use('/api/subscribe', subscribe);
-app.get('/', (req, res) => {
-  res.send('Welcome to my api');
-});
+
 // const multer = Multer({
 //   storage: Multer.memoryStorage(),
 //   limits: {

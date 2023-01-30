@@ -30,10 +30,17 @@ export const UnderConstruction = ({
 
             <br />
           </div>
-          <Slideshow
+          {/* <Slideshow
             data={BigTrailersBrand[0].Brands}
             smallSlider={true}
-          ></Slideshow>
+          ></Slideshow> */}
+          <div className="flex sm:flex-row flex-col md:justify-around items-center md:px-20 px-4 ">
+            {BigTrailersBrand[0].Brands.map((brand) => (
+              <div className=" w-96">
+                <img src={brand.imageurl} />
+              </div>
+            ))}
+          </div>
           {/* <div className="flex flex-wrap mx-20 my-16 align-center justify-center">
             {data1[0].Brands.map((brand) => (
               <div

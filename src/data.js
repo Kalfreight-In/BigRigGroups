@@ -716,34 +716,9 @@ export const BigTrailersBrand = [
         id: '1',
         imageurl:
           'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BrandsLogo/carrier%20logo.png',
-        heading: 'Havco',
+        heading: 'Carrier',
       },
 
-      {
-        id: '2',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Freightliner-logo.png',
-        heading: 'Freightliner',
-      },
-
-      {
-        id: '3',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Kenworth-logo.png',
-        heading: 'Kenworth',
-      },
-      {
-        id: '4',
-        imageurl:
-          'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/BrandsLogo/og-iron-mark.jpg',
-        heading: 'Havco',
-      },
-      {
-        id: '5',
-        imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Peterbilt-logo.png ',
-        heading: 'Peterbilt',
-      },
       {
         id: '6',
         imageurl:
