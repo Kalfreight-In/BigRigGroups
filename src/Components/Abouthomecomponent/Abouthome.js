@@ -1,5 +1,8 @@
 import React from 'react';
 import { AboutusSec } from '../../data';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
+
 
 export default function Abouthome() {
   const aboutdata = AboutusSec[0];
@@ -34,9 +37,11 @@ export default function Abouthome() {
                   </div>
 
                   <div className="flex justify-center itesm-center lg:mt-16 mt-8">
-                    <button className="  text-white bg-Lightblue  font-bold  rounded-md shadow-sm hover:shadow-md shadow-blue-shadow hover:shadow-blue-shadowhover md:w-3/12  md:p-4 p-3 lg:4/5 lg:w-1/6 w-1/2 md:mb-6  2xl:text-2xl lg:text-md ">
-                      See more
+                  <ScrollLink to="ContactSection" smooth={true} duration={500}>
+                    <button className="  text-white bg-Lightblue  font-bold  rounded-md shadow-sm hover:shadow-md shadow-blue-shadow hover:shadow-blue-shadowhover p-4 md:px-8 w-60 2xl:text-2xl lg:text-md ">
+                      Reach Us
                     </button>
+                    </ScrollLink>
                   </div>
                 </div>
 

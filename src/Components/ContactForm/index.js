@@ -192,7 +192,7 @@ const Contactform = () => {
                   value={location}
                   class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
                   id="email"
-                  placeholder="location"
+                  placeholder="Location"
                   type="text"
                   required
                 />

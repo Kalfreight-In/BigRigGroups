@@ -153,7 +153,7 @@ export const GroupWebsiteComponentdata = [
       {
         id: 2,
         // head: `24/7  Road service`,
-        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, and heavy-duty wheel alignments in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc. `,
+        desc: `We have an excellent team of qualified technicians performing after-sales services, such as retread services, flat repairs, tire balancing, and heavy-duty wheel alignments in our well-equipped facilities. In addition, we offer world-class ringtread services in partnership with Marangoni Tread North America, Inc. `,
       },
       // {
       //   id: 3,
