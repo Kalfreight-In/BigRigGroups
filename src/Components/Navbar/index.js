@@ -114,7 +114,7 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   to="/trailerandleasing"
                   onClick={toggleHome}
@@ -122,6 +122,16 @@ const Navbar = ({ toggle }) => {
                 >
                   TRAILERS & LEASING
                 </NavLinks>
+              </NavItem> */}
+               <NavItem>
+                <NavLinksA
+                  href="http://www.bigrigtrailers.com/"
+                  target="_blank"
+                  onClick={toggleHome}
+                  className="2xl:text-sm  xl:text-xs md:text-xs "
+                >
+                  TRAILERS & LEASING
+                </NavLinksA>
               </NavItem>
 
               {/* <NavItem>

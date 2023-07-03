@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
           </div> */}
           <div className=" ">
-            <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6 xl:pb-12 w-screen">
+            <div className="xl:flex xl:flex-wrap xl:-mx-4 pt-6  w-screen">
               <div className="footer-info xl:w-1/3 xl:px-4 xl:block hidden items- start justify- start">
                 <div className="xl:ml-16 w-max justify- start ml-4 xl:mt-0">
                   <div>
@@ -89,8 +89,7 @@ export default function Footer() {
                       src="https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/bigrigfooterlogo.png"
                       alt="logo"
                       className="2xl:h-28 xl:h-24  h-20 md:block hidden"
-                      to="mailto:umarkhurshid3@gmail.com"
-                    />
+                     />
                   </div>
 
                   <div className="text-white flex justify-start  xl:mt-12 mt-4 ml-0 ">
@@ -182,8 +181,8 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         setHcontactus(false);
                       }}
                     >
-                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal xl:text-left text-center   ">
-                        Inventory
+                      <h1 className="1xl:text-footerheading text-desc md:font-bold font-normal xl:text-left text-center   ">
+                        Our Businesses
                       </h1>
                     </div>
 
@@ -192,25 +191,19 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         Hinventery ? '' : 'hidden'
                       }`}
                     >
+                     <a href="https://www.bigrigtrailers.com/" className="block md:text-16px text-navsmall hover:text-yellow-shadowhover mt-3 xl:text-left text-center" target="_blank">
+  Trailers & Leasing
+</a>
+<a href="https://www.bigrigpartz.com/" className="block md:text-16px text-navsmall hover:text-yellow-shadowhover mt-3 xl:text-left text-center" target="_blank">
+  BigRig Parts
+</a>
                       <Link
-                        to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  xl:text-left text-center  "
-                      >
-                        Flatbed for sale
-                      </Link>
-                      <Link
-                        to="/newsevents"
-                        className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  xl:text-left text-center"
-                      >
-                        Used Trucks for sale
-                      </Link>
-                      <Link
-                        to="/newsevents"
+                        to="/tires"
                         className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  xl:text-left text-center "
                       >
-                        New Trailers for sale
+                        Tires and Services
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/newsevents"
                         className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  xl:text-left text-center "
                       >
@@ -221,7 +214,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3  xl:text-left text-center "
                       >
                         Reefer trailers for sale
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
 
@@ -234,7 +227,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         setHcontactus(false);
                       }}
                     >
-                      <h1 className="2xl:text-footerheading text-desc md:font-bold font-normal xl:text-left  text-center ">
+                      <h1 className="1xl:text-footerheading text-desc md:font-bold font-normal xl:text-left  text-center ">
                         Quick Links
                       </h1>
                     </div>
@@ -280,22 +273,22 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                           News & Events
                         </Link>
                       </div>
-                      <div>
+                      {/* <div>
                         <Link
                           to="/newsevents"
                           className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center  "
                         >
                           Parts Inventory
                         </Link>
-                      </div>
-                      <div>
+                      </div> */}
+                      {/* <div>
                         <Link
                           to="/newsevents"
                           className="block md:text-16px text-navsmall hover:text-yellow-shadowhover  mt-3   xl:text-left text-center "
                         >
                           Financing Options
                         </Link>
-                      </div>
+                      </div> */}
                       <div>
                         <Link
                           to="/newsevents"
@@ -324,13 +317,13 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                         setHcontactus(!Hcontactus);
                       }}
                     >
-                      <h1 className=" md:font-bold font-normal  xl:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
+                      <h1 className=" 1xl:text-footerheading text-desc md:font-bold font-normal xl:text-left text-center  ">
                         Contact Us
                       </h1>
                     </div>
 
                     <div
-                      className={`text-white 2xl:leading-8 leading-6 xl:block ${
+                      className={`text-white 1xl:leading-8 leading-6 xl:block ${
                         Hcontactus ? '' : 'hidden'
                       }`}
                     >
@@ -466,7 +459,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                       setHcontactus(!Hcontactus);
                     }}
                   >
-                    <h1 className=" md:font-bold font-normal  xl:text-left text-center   2xl:text-footerheading text-desc md:ml-0 pl-0  ">
+                    <h1 className=" md:font-bold font-normal  xl:text-left text-center   1xl:text-footerheading text-desc md:ml-0 pl-0  ">
                       Contact Us
                     </h1>
                   </div>

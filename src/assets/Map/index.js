@@ -2,12 +2,13 @@ import { React, useEffect, useState } from 'react';
 import { isMobile, browserName } from 'react-device-detect';
 import { useHover } from '../../Hooks/Hover';
 
-function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
+function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
   const [hoverRef, isHovered] = useHover();
   const [hoverRef1, isHovered1] = useHover();
-  const [Toronto2, isToronto2] = useHover();
-  const [Surrey2, isSurrey2] = useHover();
+  const [Bolton2, isBolton2] = useHover();
+  //const [Surrey2, isSurrey2] = useHover();
   const [edmenton2, isedmenton2] = useHover();
+  const [Brampton2, isBrampton2] = useHover();
 
   return (
     <svg
@@ -162,15 +163,15 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
         className="cls-2"
       ></path> */}
       <svg
-        className="marker Toronto UC"
+        className="marker Bolton UC"
         width="29"
         height="25"
-        x="610.39"
-        y="764.49"
+        x="628.39"
+        y="743.49"
         viewBox="0 0 29 41"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        ref={Toronto2}
+        ref={Bolton2}
       >
         <path
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
@@ -193,7 +194,27 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
           className="cls-2 UC"
         />
       </svg>
+
       <svg
+        className="marker Brampton UC"
+        width="29"
+        height="25"
+        x="617.39"
+        y="752.49"
+        viewBox="0 0 29 41"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        ref={Brampton2}
+      >
+        <path
+          d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
+          className="cls-2 UC"
+        />
+      </svg>
+
+      
+
+      {/* <svg
         className="marker Surrey UC"
         width="29"
         height="25"
@@ -208,7 +229,7 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
           className="cls-2 UC"
         />
-      </svg>
+      </svg> */}
       <svg
         className="marker abbotsford"
         width="29"
@@ -240,40 +261,66 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
           className="cls-2"
         />
       </svg>
-      {Toronto || isToronto2 ? (
-        <g id="Toronto">
+      {Bolton || isBolton2 ? (
+        <g id="Bolton">
           <g id="Text-BC">
             <rect
-              width="59.39"
+              width="258.39"
               height="28.82"
-              x="641.39"
-              y="762.49"
+              x="658.39"
+              y="740.49"
               className="cls-3"
               rx="3.44"
             ></rect>
-            <text x="643.39" y="782" fill="black">
-              Toronto
+            <text x="665.39" y="760" fill="black">
+            12125 Coleraine Drive, Bolton, ON
             </text>
           </g>
         </g>
       ) : null}
+    
       {edmenton || isedmenton2 ? (
         <g id="Edmonton">
           <rect
-            width="79.39"
-            height="28.82"
-            x="212.52"
-            y="556.07"
+            width="280.39"
+            height="50.82"
+            x="220.52"
+            y="545.07"
             className="cls-3"
             rx="3.44"
           ></rect>
 
-          <text x="215.52" y="576.07" fill="black">
-            Edmonton
-          </text>
+<text x="228.39" y="548.49" fill="black">
+            <tspan x="228.39" dy="1em">18410 118a Ave NW, Edmonton,</tspan>
+        <tspan x="228.39" dy="1.3em">Alberta, Canada, T5S 2M3</tspan>  
+             </text>
         </g>
       ) : null}
-      {Surrey || isSurrey2 ? (
+
+{Brampton || isBrampton2 ? (
+        <g id="Brampton">
+          <rect
+            width="230.39"
+            height="65.82"
+            x="643.52"
+            y="735.07"
+            className="cls-3"
+            rx="3.44"
+          ></rect>
+
+            <text x="650.39" y="745.49" fill="black">
+            <tspan x="650.39" dy="1em">100 Whybank Dr, Brampton,</tspan>
+        <tspan x="650.39" dy="1.3em">Ontario, Canada, L7A 0N7</tspan>  
+             </text>
+
+
+        </g>
+      ) : null}
+
+
+
+
+      {/* {Surrey || isSurrey2 ? (
         <g id="Surrey">
           <rect
             width="59.39"
@@ -288,12 +335,13 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
             Surrey
           </text>
         </g>
-      ) : null}
+      ) : null} */}
+      
       {isHovered || Ca ? (
         <g id="Abbotsford">
           <g id="Text-BC">
             <rect
-              width="215.39"
+              width="230.39"
               height="28.82"
               x="104.52"
               y="642.25"
@@ -301,7 +349,7 @@ function Map({ Af, Ca, Toronto, Surrey, edmenton }) {
               rx="3.44"
             ></rect>
 
-            <text x="104.52" y="662.25" fill="black">
+            <text x="110.52" y="662.25" fill="black">
               1225 Riverside Rd, BC V2S 7P1
             </text>
           </g>

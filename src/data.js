@@ -907,7 +907,7 @@ export const Businessdata = [
         logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstrllogo.png',
         heading: 'GET ON THE ROAD WITH POWERFUL ENGINE',
         desc: 'Contact Us for the best trucks and trailers',
-        url: '/trailerandleasing',
+        url: 'https://bigrigtrailers.com',
         logotwo:
           'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
         btn: 'Trailers & Leasing',
@@ -946,4 +946,5 @@ export const Businessdata = [
       },
     ],
   },
+  
 ];
