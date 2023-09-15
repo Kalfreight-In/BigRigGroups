@@ -1,7 +1,7 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React from "react";
+import { useEffect } from "react";
 export const Career = () => {
-  console.log('careers');
+  console.log("careers");
 
   useEffect(() => {
     (function () {
@@ -10,18 +10,18 @@ export const Career = () => {
         gt = d.getElementById,
         cr = d.createElement,
         tg = d.getElementsByTagName,
-        id = 'aidaform-embed';
+        id = "aidaform-embed";
       if (!gt.call(d, id)) {
-        r = cr.call(d, 'script');
+        r = cr.call(d, "script");
         r.id = id;
-        r.src = 'https://embed.aidaform.com/embed.js';
-        (d.head || tg.call(d, 'head')[0]).appendChild(r);
+        r.src = "https://embed.aidaform.com/embed.js";
+        (d.head || tg.call(d, "head")[0]).appendChild(r);
       }
     })();
-    var i = document.getElementById('aiidalive');
+    var i = document.getElementById("aiidalive");
 
     setTimeout(() => {
-      var addressContainer = document.getElementById('aidaform');
+      var addressContainer = document.getElementById("aidaform");
       addressContainer.appendChild(i);
     }, 1000);
   }, []);
