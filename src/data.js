@@ -202,24 +202,24 @@ export const GroupWebsiteComponentdata = [
 ];
 
 export const BrandCompnentBrands = [
-  {
-    id: '1',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Freightliner-logo.png',
-    heading: 'Freightliner',
-  },
-  {
-    id: '2',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Kenworth-logo.png',
-    heading: 'Kenworth',
-  },
-  {
-    id: '3',
-    imageurl:
-      'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Peterbilt-logo.png ',
-    heading: 'Peterbilt',
-  },
+  // {
+  //   id: '1',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Freightliner-logo.png',
+  //   heading: 'Freightliner',
+  // },
+  // {
+  //   id: '2',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Kenworth-logo.png',
+  //   heading: 'Kenworth',
+  // },
+  // {
+  //   id: '3',
+  //   imageurl:
+  //     'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/BrandsLogo/Peterbilt-logo.png ',
+  //   heading: 'Peterbilt',
+  // },
   {
     id: '4',
     imageurl:

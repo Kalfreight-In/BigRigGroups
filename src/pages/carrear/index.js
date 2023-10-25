@@ -1,16 +1,18 @@
 import React, { useState, useEffect,} from 'react';
 import PdfFinanceAndLeasingAssistant from '../../documents/FinanceAndLeasingAssistant.pdf';  
-import PdfHRAssistant from '../../documents/HR Assistant.pdf'; 
-import PdfInsideTire from '../../documents/Inside Tire Sales.pdf'; 
+import PdfHRAssistant from '../../documents/HRAssistant_1.pdf'; 
+import PdfFrontCounterSales from '../../documents/FrontCounterRepresentative_1.pdf'
+import PdfInsideTire from '../../documents/InsideTireSalesRepresentative_1.pdf'; 
 import PdfOutsideTire from '../../documents/Outside Tire Sales.pdf'; 
-import PdfPartsCounter from '../../documents/Parts Counter Sales.pdf'; 
-import PdfPartsOutside from '../../documents/Parts Outside Sales Rep.pdf'; 
+import PdfPartsCounter from '../../documents/PartsCounterSales_1.pdf'; 
+import PdfPartsOutside from '../../documents/PartsOutsideSalesRep_1.pdf'; 
+import PdfPartsInside from '../../documents/PartsInsideSalesRep_1.pdf'
 import PdfSafetyAndCompliance from '../../documents/Safety and compliance coordinator.pdf'; 
-import PdfServiceTruck from '../../documents/Service Truck Tire Technician.pdf';
-import PdfTireSales from '../../documents/Tire Sales Manager.pdf';
-import PdfTireTech from '../../documents/Tire Technician.pdf';
+import PdfServiceTruck from '../../documents/ServiceTruckTireTechnician_1.pdf';
+import PdfTireSales from '../../documents/TireSalesManager_1.pdf';
+import PdfTireTech from '../../documents/TireTechnician_1.pdf';
 import PdfTitleSpec from '../../documents/Title Specialist.pdf';
-import PdfAfterHr from '../../documents/Parts After Hours Sales Rep.pdf';
+import PdfAfterHr from '../../documents/PartsAfterHoursSalesRep_1.pdf';
 import emailjs from 'emailjs-com';
 
 
@@ -50,16 +52,16 @@ export const Career = () => {
     'Tire Technician',
     'Inside Tire Sales Representative',
     'Outside Tire Sales Representative',
-    'Service Truck Technician',
+    'Service Truck Tire Technician',
     'Other'
   ];
 
   const jobDescriptions = {
     'Financing – Leasing Administrator': PdfFinanceAndLeasingAssistant,
     'Safety and Compliance': PdfSafetyAndCompliance,
-    'Inside Part Sales Representative':PdfPartsOutside,
+    'Inside Part Sales Representative':PdfPartsInside,
     'Outside Part Sales Representative':PdfPartsOutside,
-    'Front Counter Representative': PdfPartsCounter,
+    'Front Counter Representative': PdfFrontCounterSales,
     'Parts Counter Sales':PdfPartsCounter,
     'HR Assistant': PdfHRAssistant,
     'Title Specialist': PdfTitleSpec,
@@ -67,7 +69,7 @@ export const Career = () => {
     'Tire Technician':PdfTireTech,
     'Inside Tire Sales Representative':PdfInsideTire,
     'Outside Tire Sales Representative':PdfOutsideTire,
-    'Service Truck Technician':PdfServiceTruck,
+    'Service Truck Tire Technician':PdfServiceTruck,
     'After Hrs. Counter Representative':PdfAfterHr,
 
    
@@ -247,7 +249,7 @@ export const Career = () => {
               <option value="Tire Technician">Tire Technician</option>
               <option value="Inside Tire Sales Representative">Inside Tire Sales Representative</option>
               <option value="Outside Tire Sales Representative">Outside Tire Sales Representative</option>
-              <option value="Service Truck Technician">Service Truck Technician</option>
+              <option value="Service Truck Tire Technician">Service Truck Tire Technician</option>
               <option value="Other">Other</option>
             </select>
           </div>

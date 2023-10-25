@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
         <Nav scrollNav={scrollNav}>
           <div className="flex flex-row ml-8">
             <NavLogo to="/" onClick={toggleHome} className="max-w-max">
@@ -113,7 +113,6 @@ const Navbar = ({ toggle }) => {
                   HOME
                 </NavLinks>
               </NavItem>
-
               {/* <NavItem>
                 <NavLinks
                   to="/trailerandleasing"
@@ -123,7 +122,7 @@ const Navbar = ({ toggle }) => {
                   TRAILERS & LEASING
                 </NavLinks>
               </NavItem> */}
-               <NavItem>
+              <NavItem>
                 <NavLinksA
                   href="http://www.bigrigtrailers.com/"
                   target="_blank"
@@ -133,7 +132,6 @@ const Navbar = ({ toggle }) => {
                   TRAILERS & LEASING
                 </NavLinksA>
               </NavItem>
-
               {/* <NavItem>
                 <NavLinks
                   to="/partz"
@@ -143,7 +141,6 @@ const Navbar = ({ toggle }) => {
                   PARTZ
                 </NavLinks>
               </NavItem> */}
-
               <NavItem>
                 <NavLinksA
                   href="https://bigrigpartz.com/"
@@ -154,7 +151,6 @@ const Navbar = ({ toggle }) => {
                   PARTZ
                 </NavLinksA>
               </NavItem>
-
               <NavItem>
                 <a href="/tires">
                   <NavLinks
@@ -166,9 +162,8 @@ const Navbar = ({ toggle }) => {
                   </NavLinks>
                 </a>
               </NavItem>
-
               <NavItem>
-                {window.location.pathname === '/' ? (
+                {window.location.pathname === "/" ? (
                   <NavLinks
                     to="ContactSection"
                     onClick={toggleHome}
@@ -189,7 +184,6 @@ const Navbar = ({ toggle }) => {
                   </NavLinksA>
                 )}
               </NavItem>
-
               {/* <NavItem>
                   <NavLinks
                     to="/newsevents"
@@ -208,7 +202,7 @@ const Navbar = ({ toggle }) => {
                   CAREERS
                 </NavLinksA>
               </NavItem>
-              {window.location.pathname === '/' ? (
+              {window.location.pathname === "/" ? (
                 <NavItem>
                   <NavLinks
                     to="Location"
@@ -233,7 +227,6 @@ const Navbar = ({ toggle }) => {
                   </NavLinksA>
                 </NavItem>
               )}
-
               <NavItem>
                 <NavLinksA
                   href="/creditapplication"
@@ -242,7 +235,16 @@ const Navbar = ({ toggle }) => {
                   CREDIT APPLICATION
                 </NavLinksA>
               </NavItem>
-
+              (
+              <NavItem>
+                <NavLinksA
+                  href="/Nopayment"
+                  className="2xl:text-sm xl:text-xs  md:text-xs  w-max"
+                >
+                  NO PAYMENT FOR 6 MONTHS OFFER
+                </NavLinksA>
+              </NavItem>
+              )
               <MobileIcon onClick={toggle}>
                 <FaBars color="#111" />
               </MobileIcon>

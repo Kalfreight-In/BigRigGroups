@@ -16,6 +16,7 @@ import { UnderConstruction } from './Components/UnderConstruction';
 import Mapnew from './Components/Mapclickcomp/Mapnew';
 import { CreditApplication } from './pages/Home/creditApplication';
 import { Career } from './pages/carrear';
+import { Nopayment } from './pages/Nopayment';
 import { Success } from './pages/success';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ function App() {
   return (
     <Router>
       <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
-      <ErrorBoundary>
+      <ErrorBoundary> 
         <Navbar toggle={toggle}></Navbar>
       </ErrorBoundary>
       {/* <div
@@ -59,6 +60,7 @@ function App() {
         <Route path="/Privacy_Policy" element={<UnderConstruction />} />
         <Route path="/creditapplication" element={<CreditApplication />} />
         <Route path="/careers" element={<Career />} />
+        <Route path='/Nopayment' element={<Nopayment/>} />
         <Route path="/success" element={<Success></Success>} />
         <Route
           path="/trailerandleasing"
