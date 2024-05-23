@@ -20,7 +20,7 @@ export const MapConatiner = () => {
           Af={AfisHovered}
           Ca={CaisHovered}
           Bolton={BoltonisHovered}
-         // Surrey={SurreyisHovered}
+          // Surrey={SurreyisHovered}
           edmenton={EdmentonisHovered}
           Brampton={BramptonisHovered}
         ></Map>
@@ -32,7 +32,7 @@ export const MapConatiner = () => {
             <h3 className="xl:text-4xl md:self-start text-white font-bold md:text-3xl text-3xl md:w-max text-center">
               National Footprint:
             </h3>
-            <div className="mt-2 text-white font-desc text-descnew text-center">
+            {/* <div className="mt-2 text-white font-desc text-descnew text-center">
               <span>Visit our nearest yard.</span>
               <br></br>
               <span>For assistance in the USA. </span>
@@ -43,12 +43,12 @@ export const MapConatiner = () => {
               >
                 click here
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-row items-center content-start mt-2 md:ml-0 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -63,14 +63,14 @@ export const MapConatiner = () => {
                 Abbotsford
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
-                1225 Riverside Rd, BC V2S 7P1
+                2105 Carpenter St, Abbotsford, BC V2T 6L9, Canada
               </div>
             </div>
           </div>
           <div className="flex flex-row items-center content-start mt-2 ">
             <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -85,15 +85,15 @@ export const MapConatiner = () => {
                 Calgary
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
-                9115 52 St.SE, AB T2C 2R4
+                9115 52 St.SE, AB T2C 2R4, Canada
               </div>
-            </div>      
+            </div>
           </div>
 
-          <div className="flex flex-row items-center content-start mt-2 ">
-          <motion.img
+          {/* <div className="flex flex-row items-center content-start mt-2 ">
+            <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -108,15 +108,15 @@ export const MapConatiner = () => {
                 Edmonton
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
-              18410 118a Ave NW, Edmonton, Alberta, Canada, T5S 2M3
+                18410 118a Ave NW, Edmonton, Alberta, Canada, T5S 2M3
               </div>
-            </div>      
-          </div>
+            </div>
+          </div> */}
 
-          <div className="flex flex-row items-center content-start mt-2 ">
-          <motion.img
+          {/* <div className="flex flex-row items-center content-start mt-2 ">
+            <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -131,15 +131,15 @@ export const MapConatiner = () => {
                 Brampton
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
-              100 Whybank Dr, Brampton, Ontario, Canada, L7A 0N7
+                100 Whybank Dr, Brampton, Ontario, Canada, L7A 0N7
               </div>
-            </div>      
-          </div>
+            </div>
+          </div> */}
 
-          <div className="flex flex-row items-center content-start mt-2 ">
-          <motion.img
+          {/* <div className="flex flex-row items-center content-start mt-2 ">
+            <motion.img
               whileInView={{ scale: [0.5, 1] }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               alt="profile_circle"
               //  className="overlay_circle"
               src="https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/8ae50d3492cecd39993497fceab3e9dc5c73ef79/src/assets/Map/marker.svg"
@@ -154,12 +154,10 @@ export const MapConatiner = () => {
                 Bolton
               </h4>
               <div className="mt-4 text-white font-desc text-descnew">
-              12125 Coleraine Drive, Bolton, ON
+                12125 Coleraine Drive, Bolton, ON
               </div>
-            </div>      
-          </div>
-
-
+            </div>
+          </div> */}
 
           {/* <div className="my-6">
             <h3 className="xl:text-4xl self-start text-white font-bold md:text-2xl  w-max">
@@ -223,7 +221,6 @@ export const MapConatiner = () => {
               </div>
             </div>
           </div> */}
-
         </div>
       </div>
     </div>

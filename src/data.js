@@ -899,52 +899,51 @@ export const AboutusSec = [
 
 export const Businessdata = [
   {
-    id: '0',
-    heading: 'Our Business Verticals',
+    id: "0",
+    heading: "Our Business Verticals",
     thebox: [
       {
-        id: '1',
-        logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstrllogo.png',
-        heading: 'GET ON THE ROAD WITH POWERFUL ENGINE',
-        desc: 'Contact Us for the best trucks and trailers',
-        url: 'https://bigrigtrailers.com',
+        id: "1",
+        logo: "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstrllogo.png",
+        heading: "GET ON THE ROAD WITH POWERFUL ENGINE",
+        desc: "Contact Us for the best trucks and trailers",
+        eurl: "https://bigrigtrailers.com",
         logotwo:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
-        btn: 'Trailers & Leasing',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png",
+        btn: "Trailers & Leasing",
         imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/trailers.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/trailers.png",
         Mimageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mtrailers.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mtrailers.png",
       },
       {
-        id: '2',
-        logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesspartzlogo.png',
-        heading: 'LAST LONG WITH THE BEST PARTS ON THE MARKET',
-        desc: 'We have the best brands to get your truck on the road',
-        url: '/partz',
+        id: "2",
+        logo: "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesspartzlogo.png",
+        heading: "LAST LONG WITH THE BEST PARTS ON THE MARKET",
+        desc: "We have the best brands to get your truck on the road",
+        eurl: "https://bigrigpartz.com/",
         logotwo:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstools.png',
-        btn: 'Parts & services',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstools.png",
+        btn: "Parts & services",
         imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Parts.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Parts.png",
         Mimageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mparts.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mparts.png",
       },
       {
-        id: '3',
-        logo: 'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstirelogo.png',
-        heading: 'LOOKING FOR TIRES IS NOT A PROBLEM NOW',
-        desc: 'Contact Us for the best trucks and trailers',
-        url: '/tires',
+        id: "3",
+        logo: "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstirelogo.png",
+        heading: "LOOKING FOR TIRES IS NOT A PROBLEM NOW",
+        desc: "Contact Us for the best trucks and trailers",
+        url: "/tires",
         logotwo:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png',
-        btn: 'Tires & Services',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png",
+        btn: "Tires & Services",
         imageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/tires.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/tires.png",
         Mimageurl:
-          'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mtires.png',
+          "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/icons/Mtires.png",
       },
     ],
   },
-  
 ];

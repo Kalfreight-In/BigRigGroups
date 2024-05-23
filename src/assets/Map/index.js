@@ -162,7 +162,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
         d="M101.75 656.9a3.75 3.75 0 00-7.49 0c0 2.79 3.75 6.85 3.75 6.85s3.74-4.06 3.74-6.85zm-5 0a1.24 1.24 0 111.25 1.24 1.26 1.26 0 01-1.23-1.24zm-3.1 7.45v1.23h8.71v-1.23z"
         className="cls-2"
       ></path> */}
-      <svg
+      {/* <svg
         className="marker Bolton UC"
         width="29"
         height="25"
@@ -177,8 +177,8 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
           className="cls-2 UC"
         />
-      </svg>
-      <svg
+      </svg> */}
+      {/* <svg
         className="marker edmenton UC"
         width="29"
         height="25"
@@ -193,9 +193,9 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
           className="cls-2 UC"
         />
-      </svg>
+      </svg> */}
 
-      <svg
+      {/* <svg
         className="marker Brampton UC"
         width="29"
         height="25"
@@ -210,9 +210,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
           d="M26.7499 12.333C26.7499 5.57509 21.2578 0.0830078 14.4999 0.0830078C7.742 0.0830078 2.24992 5.57509 2.24992 12.333C2.24992 21.5205 14.4999 34.7913 14.4999 34.7913C14.4999 34.7913 26.7499 21.5205 26.7499 12.333ZM10.4166 12.333C10.4166 10.0872 12.2541 8.24967 14.4999 8.24967C16.7458 8.24967 18.5833 10.0872 18.5833 12.333C18.5833 14.5788 16.7662 16.4163 14.4999 16.4163C12.2541 16.4163 10.4166 14.5788 10.4166 12.333ZM0.208252 36.833V40.9163H28.7916V36.833H0.208252Z"
           className="cls-2 UC"
         />
-      </svg>
-
-      
+      </svg> */}
 
       {/* <svg
         className="marker Surrey UC"
@@ -261,7 +259,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
           className="cls-2"
         />
       </svg>
-      {Bolton || isBolton2 ? (
+      {/* {Bolton || isBolton2 ? (
         <g id="Bolton">
           <g id="Text-BC">
             <rect
@@ -277,9 +275,9 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
             </text>
           </g>
         </g>
-      ) : null}
-    
-      {edmenton || isedmenton2 ? (
+      ) : null} */}
+
+      {/* {edmenton || isedmenton2 ? (
         <g id="Edmonton">
           <rect
             width="280.39"
@@ -295,9 +293,9 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
         <tspan x="228.39" dy="1.3em">Alberta, Canada, T5S 2M3</tspan>  
              </text>
         </g>
-      ) : null}
+      ) : null} */}
 
-{Brampton || isBrampton2 ? (
+      {/* {Brampton || isBrampton2 ? (
         <g id="Brampton">
           <rect
             width="230.39"
@@ -315,10 +313,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
 
 
         </g>
-      ) : null}
-
-
-
+      ) : null} */}
 
       {/* {Surrey || isSurrey2 ? (
         <g id="Surrey">
@@ -336,12 +331,12 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
           </text>
         </g>
       ) : null} */}
-      
+
       {isHovered || Ca ? (
         <g id="Abbotsford">
           <g id="Text-BC">
             <rect
-              width="230.39"
+              width="400.39"
               height="28.82"
               x="104.52"
               y="642.25"
@@ -350,7 +345,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
             ></rect>
 
             <text x="110.52" y="662.25" fill="black">
-              1225 Riverside Rd, BC V2S 7P1
+              2105 Carpenter St, Abbotsford, BC V2T 6L9, Canada
             </text>
           </g>
         </g>
@@ -359,7 +354,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
         <g id="Calgary">
           <g id="Text-BC">
             <rect
-              width="215.39"
+              width="315.39"
               height="28.82"
               x="208.96"
               y="629.84"
@@ -367,7 +362,7 @@ function Map({ Af, Ca, Bolton, edmenton, Brampton }) {
               rx="3.44"
             ></rect>
             <text x="210.96" y="649.84" fill="black">
-              9115 52 St SE, AB T2C 2R4
+              9115 52 St SE, AB T2C 2R4, Canada
             </text>
           </g>
         </g>
