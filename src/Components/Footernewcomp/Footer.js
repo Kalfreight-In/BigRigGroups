@@ -99,7 +99,7 @@ export default function Footer() {
                     <div className="block xl:ml-3 ml-0">
                       {/* <div className="block">Working hours</div> */}
                       <div className="md:text-xl text-16px ml-2 xl:ml-0 text-xl md:font-bold font-semibold ">
-                        8 AM to 5 PM <br />
+                        8:30 AM to 6:00 PM <br />
                         (Monday to Friday) 
                       </div>
                     </div>
@@ -612,7 +612,7 @@ className=" justify-end mr-28 pt-4 pr-16 md:flex xl:hidden block "
                       <div className="block xl:ml-3 ml-0">
                         {/* <div className="block">Working hours</div> */}
                         <div className="md:text-xl text-16px ml-2 xl:ml-0 text-xl md:font-bold font-semibold ">
-                          8 AM to 5 PM <br />
+                          8:30 AM to 6:00 PM <br />
                           (Monday to Friday) 
                         </div>
                       </div>

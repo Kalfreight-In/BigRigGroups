@@ -1,141 +1,73 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { animateScroll as scroll, Link } from 'react-scroll';
-// import businesstrailernew from "../../assets/Images/businesstrailernew.png";
-// import businesstruck from "../../assets/Images/businesstruck.png";
-// import businesstrailernew from "../../assets/Images/businesstrailernew";
-import styled from 'styled-components';
-import { Businessdata } from '../../data';
-import Accordion from '../Accordion';
-import { useSpring, animated } from 'react-spring';
-import { useHover } from '../../Hooks/Hover';
-import { NavLink as LinkR } from 'react-router-dom';
-// import { isMobile, isTablet } from 'react-device-detect';
-import useMediaQuery from '../../Hooks/CustomMediaQuery';
-var mydata = Businessdata[0];
+import React from "react";
+import { Link as ScrollLink } from "react-scroll";
+import styled from "styled-components";
+import { Businessdata } from "../../data";
+import { useSpring, animated } from "react-spring";
+import { useHover } from "../../Hooks/Hover";
+import { NavLink as LinkR } from "react-router-dom";
+import useMediaQuery from "../../Hooks/CustomMediaQuery";
+
+const mydata = Businessdata[0];
+
 export const NavLinks = styled(LinkR)`
-  // background: ${(props) => `url(${props.Mimage})`};
-
-  // @media (max-width: 768px) {
-  //   background: ${(props) => `url(${props.Mimage})`};
-  // }
-  // cursor: pointer;
+  // Your styled-component CSS here, if any
 `;
-export default function Business() {
-  const isMobile = useMediaQuery('(max-width: 768px)');
-  const isTablet = useMediaQuery('(max-width: 1024px)');
 
+export default function Business() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isTablet = useMediaQuery("(max-width: 1024px)");
   const [hoverRef, isHovered] = useHover();
   const titleAnimation = useSpring({
     from: {
-      transform: 'translateY(-30px)',
+      transform: "translateY(-30px)",
     },
-    to: [{ transform: 'translateY(15px)' }],
+    to: [{ transform: "translateY(15px)" }],
     config: { mass: 3, tension: 500, friction: 25 },
   });
 
   return (
-    <>
-      {/* <div class="social"></div> */}
-      <div className="bg-businessbackground">
-        <div className="md:p-12  p-0 drop-shadow-2xl">
-          <div className="flex justify-center items-center font-semibold pt-2">
-            <h1 className="md:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
-              {mydata.heading}
-            </h1>
-          </div>
+    <div className="bg-businessbackground">
+      <div className="md:p-12 p-0 drop-shadow-2xl">
+        <div className="flex justify-center items-center font-semibold pt-2">
+          <h1 className="md:text-5xl text-3xl font-bold link link-underline link-underline-black text-Heading mb-6 pb-2">
+            {mydata.heading}
+          </h1>
+        </div>
 
-          <div className={`flex w-full md:flex-row flex-col`}>
-            <div class=" flex w-full">
-              <div class={`gallery-wrap flex md:flex-row flex-col w-fill`}>
-                {mydata.thebox.map((element) =>
-                  isTablet ? (
-                    <NavLinks
-                      to={element.url}
-                      className={`h-businessImage   ${
-                        !isMobile ? 'Mitem' : ' '
-                      }    md:my-0 my-4  bg-contain bg-no-repeat bg-center`}
-                      style={{
-                        backgroundImage: `url(${element.Mimageurl})`,
-                      }}
-                      // whileHover={{
-                      //   transition: {
-                      //     duration: 0.5,
-                      //     ease: 'easeInOut',
-                      //   },
-                      // }}
-                    >
-                      {' '}
-                    </NavLinks>
-                  ) : (
-                    <NavLinks
-                      to={element.url}
-                      className={`item `}
-                      style={{
-                        backgroundImage: `url(${element.imageurl})`,
-                      }}
-                      // whileHover={{
-                      //   transition: {
-                      //     duration: 0.5,
-                      //     ease: 'easeInOut',
-                      //   },
-                      // }}
-                    >
-                      {/* <Accordion title={element.heading} text={element.desc} /> */}
-
-                      {/* <div
-                        id="backgroundd"
-                        className="h-65vh  mx-2 mt-8 "
-                        style={{
-                          // backgroundImage:
-                          //   'url(' +
-                          //   'https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/businessback.svg' +
-                          //   ')',
-                          backgroundPosition: 'center',
-                          backgroundSize: 'cover',
-                          backgroundRepeat: 'no-repeat',
-                        }}
-                      >
-                        <div id="box">
-                          <div>
-                            <img
-                              src={element.logo}
-                              alt="logo"
-                              className="w-56 h-20"
-                            />
-                          </div>
-                          <div>
-                            <h1 className="text-Heading text-5xl font-sub-heading font-semibold w-4/5 leading-44px pt-6">
-                              {element.heading}
-                            </h1>
-                          </div>
-                          <div>
-                            <p className="text-2xl pt-12 font-normal w-64">
-                              {element.desc}
-                            </p>
-                          </div>
-
-                          <div id="imagemain" className="flex justify-between">
-                            <div></div>
-                            <div>
-                              <img src={element.logotwo} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                      {/* <div id="btn">
-                        <button className="bg-Lightblue w-50rem h-14 ml-4">
-                          {element.btn}
-                        </button>
-                      </div> */}
-                    </NavLinks>
-                  )
-                )}
-              </div>
+        <div className={`flex w-full md:flex-row flex-col`}>
+          <div className="flex w-full">
+            <div className={`gallery-wrap flex md:flex-row flex-col w-full`}>
+              {mydata.thebox.map((element, index) =>
+                isTablet ? (
+                  <NavLinks
+                    key={index}
+                    to={element.url}
+                    className={`h-businessImage ${
+                      !isMobile ? "Mitem" : ""
+                    } md:my-0 my-4 bg-contain bg-no-repeat bg-center`}
+                    style={{
+                      backgroundImage: `url(${element.Mimageurl})`,
+                    }}
+                  >
+                    {/* Content if needed */}
+                  </NavLinks>
+                ) : (
+                  <NavLinks
+                    key={index}
+                    to={element.url}
+                    className="item"
+                    style={{
+                      backgroundImage: `url(${element.imageurl})`,
+                    }}
+                  >
+                    {/* Content if needed */}
+                  </NavLinks>
+                )
+              )}
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

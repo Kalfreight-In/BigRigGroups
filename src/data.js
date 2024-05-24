@@ -907,7 +907,7 @@ export const Businessdata = [
         logo: "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstrllogo.png",
         heading: "GET ON THE ROAD WITH POWERFUL ENGINE",
         desc: "Contact Us for the best trucks and trailers",
-        eurl: "https://bigrigtrailers.com",
+        url: "https://bigrigtrailers.com",
         logotwo:
           "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstires.png",
         btn: "Trailers & Leasing",
@@ -921,7 +921,7 @@ export const Businessdata = [
         logo: "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesspartzlogo.png",
         heading: "LAST LONG WITH THE BEST PARTS ON THE MARKET",
         desc: "We have the best brands to get your truck on the road",
-        eurl: "https://bigrigpartz.com/",
+        url: "https://bigrigpartz.com/",
         logotwo:
           "https://raw.githubusercontent.com/kalfreight-in/BigRigGroups/master/src/assets/Images/busnesection/businesstools.png",
         btn: "Parts & services",

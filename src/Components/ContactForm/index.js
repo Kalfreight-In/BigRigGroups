@@ -144,7 +144,7 @@ const Contactform = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
+                  className="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
                   id="email"
                   placeholder="Email Address"
                   type="email"
@@ -156,7 +156,7 @@ const Contactform = () => {
               </div>
             </div>
           </div>
-          <div class="flex flex-col justify-center items-center lg:flex-row  gap-x-3">
+          <div className="flex flex-col justify-center items-center lg:flex-row  gap-x-3">
             <div class="">
               {/* <label
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -168,7 +168,7 @@ const Contactform = () => {
               <input
                 onChange={(e) => handleInput(e, setphoneno)}
                 value={phoneno}
-                class="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
+                className="appearance-none block  bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:w-contactinput w-80 md:ml-0 ml-1"
                 id="email"
                 placeholder="Mobile No"
                 type="Phone"
@@ -180,7 +180,7 @@ const Contactform = () => {
             </div>
 
             <div class="">
-              <div class="flex  justify-center items-center">
+              <div className="flex  justify-center items-center">
                 {/* <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-password"

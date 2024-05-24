@@ -50,35 +50,36 @@ const Navbar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
-  useEffect(() => {
+useEffect(() => {
+  if (window && window.location) {
     console.log(window.location.pathname);
-    if (window.location.pathname == '/trailerandleasing') {
+    if (window.location.pathname === "/trailerandleasing") {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Trailers-nav-logo.png"
       );
 
       setScrollNav(true);
-    } else if (window.location.pathname == '/') {
+    } else if (window.location.pathname === "/") {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
       );
-    } else if (window.location.pathname == '/partz') {
+    } else if (window.location.pathname === "/partz") {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/Parts-nav-logo.png"
       );
-    } else if (window.location.pathname == '/tires') {
+    } else if (window.location.pathname === "/tires") {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/icons/tires-nav-logo.png"
       );
-    } else if (window.location.pathname == '//') {
-      console.log(`lollll h hgaya${window.location.pathname}`);
     } else {
       setlogo(
-        'https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png'
+        "https://raw.githubusercontent.com/Kalfreight-In/BigRigGroups/main/src/assets/Images/navlogobig.png"
       );
       scroll.scrollToTop();
     }
-  }, [window.location.pathname]);
+  }
+}, [window && window.location && window.location.pathname]);
+
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
